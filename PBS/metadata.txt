@@ -13,17 +13,26 @@ SurfBGM = Surfing
 BicycleBGM = Bicycle
 #-------------------------------
 [1]
-TrainerType = POKEMONTRAINER_Red
-WalkCharset = trainer_POKEMONTRAINER_Red
-RunCharset = boy_run
-CycleCharset = boy_bike
-SurfCharset = boy_surf
-FishCharset = boy_fish_offset
+TrainerType = PkMnTRAINER_Male
+WalkCharset = hero_male_walk
+RunCharset = hero_male_run
+CycleCharset = hero_male_cycle
+SurfCharset = hero_male_surf
+FishCharset = hero_male_fish
 #-------------------------------
 [2]
-TrainerType = POKEMONTRAINER_Leaf
-WalkCharset = trainer_POKEMONTRAINER_Leaf
-RunCharset = girl_run
-CycleCharset = girl_bike
-SurfCharset = girl_surf
-FishCharset = girl_fish_offset
+TrainerType = PkMnTRAINER_Female
+WalkCharset = hero_female_walk
+RunCharset = hero_female_run
+CycleCharset = hero_female_cycle
+SurfCharset = hero_female_surf
+FishCharset = hero_female_fish
+#-------------------------------
+[3]
+TrainerType = PkMnTRAINER_Femalen
+WalkCharset = invisible
+RunCharset = invisible
+CycleCharset = invisible
+SurfCharset = invisible
+FishCharset = invisible
+#-------------------------------

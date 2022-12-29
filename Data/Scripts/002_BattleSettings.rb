@@ -6,7 +6,7 @@ module Settings
   # Whether any Pokémon (originally owned by the player or foreign) can disobey
   # the player's commands if the Pokémon is too high a level compared to the
   # number of Gym Badges the player has.
-  ANY_HIGH_LEVEL_POKEMON_CAN_DISOBEY          = false
+  ANY_HIGH_LEVEL_POKEMON_CAN_DISOBEY          = true
   # Whether foreign Pokémon can disobey the player's commands if the Pokémon is
   # too high a level compared to the number of Gym Badges the player has.
   FOREIGN_HIGH_LEVEL_POKEMON_CAN_DISOBEY      = true
@@ -43,7 +43,7 @@ module Settings
   # Whether Pokémon with high happiness will gain more Exp from battles, have a
   # chance of avoiding/curing negative effects by themselves, resisting
   # fainting, etc.
-  AFFECTION_EFFECTS        = false
+  AFFECTION_EFFECTS        = true
   # Whether a Pokémon's happiness is limited to 179, and can only be increased
   # further with friendship-raising berries. Related to AFFECTION_EFFECTS by
   # default as affection effects only start applying above a happiness of 179.
@@ -64,7 +64,7 @@ module Settings
 
   # The Game Switch which, while ON, prevents all Pokémon in battle from Mega
   # Evolving even if they otherwise could.
-  NO_MEGA_EVOLUTION = 34
+  NO_MEGA_EVOLUTION = 975
 
   #=============================================================================
 
@@ -98,7 +98,7 @@ module Settings
 
   # The Game Switch which, whie ON, prevents the player from losing money if
   # they lose a battle (they can still gain money from trainers for winning).
-  NO_MONEY_LOSS                       = 33
+  NO_MONEY_LOSS                       = 658
   # Whether party Pokémon check whether they can evolve after all battles
   # regardless of the outcome (true), or only after battles the player won (false).
   CHECK_EVOLUTION_AFTER_ALL_BATTLES   = (MECHANICS_GENERATION >= 6)

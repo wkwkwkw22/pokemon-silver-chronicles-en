@@ -139,10 +139,9 @@ module Settings
   # number. If the Variable isn't set to 0, then all trainers with the
   # associated trainer type will be named as whatever is in that Variable.
   RIVAL_NAMES = [
-    [:RIVAL1,   12],
-    [:RIVAL2,   12],
+    [:Rival, 111],
+    [:RIVAL2, 12],
     [:CHAMPION, 12]
-  ]
 
   #=============================================================================
 
@@ -156,14 +155,14 @@ module Settings
   # second badge, etc.
   #   e.g. To require the second badge, put false and 1.
   #        To require at least 2 badges, put true and 2.
-  BADGE_FOR_CUT       = 1
-  BADGE_FOR_FLASH     = 2
-  BADGE_FOR_ROCKSMASH = 3
-  BADGE_FOR_SURF      = 4
-  BADGE_FOR_FLY       = 5
-  BADGE_FOR_STRENGTH  = 6
-  BADGE_FOR_DIVE      = 7
-  BADGE_FOR_WATERFALL = 8
+  BADGE_FOR_CUT            = 2
+  BADGE_FOR_FLASH          = 1
+  BADGE_FOR_ROCKSMASH      = 3
+  BADGE_FOR_SURF           = 4
+  BADGE_FOR_FLY            = 5
+  BADGE_FOR_STRENGTH       = 4
+  BADGE_FOR_DIVE           = 15
+  BADGE_FOR_WATERFALL      = 8
 
   #=============================================================================
 
@@ -214,8 +213,11 @@ module Settings
   # that Dex list, no matter which region the player is currently in.
   def self.pokedex_names
     return [
-      [_INTL("Kanto Pokédex"), 0],
-      [_INTL("Johto Pokédex"), 1],
+      [_INTL("Kanto Pokédex"),0],
+      [_INTL("Johto Pokédex"),1],
+      [_INTL("Hoenn Pokédex"),2],
+      [_INTL("Sinnoh Pokédex"),3],
+      [_INTL("Unova Pokédex"),4],
       _INTL("National Pokédex")
     ]
   end
@@ -318,16 +320,16 @@ module Settings
   STARTING_OVER_SWITCH      = 1
   # The Game Switch that is set to ON when the player has seen Pokérus in the
   # Poké Center (and doesn't need to be told about it again).
-  SEEN_POKERUS_SWITCH       = 2
+  SEEN_POKERUS_SWITCH       = 979
   # The Game Switch which, while ON, makes all wild Pokémon created be shiny.
-  SHINY_WILD_POKEMON_SWITCH = 31
+  SHINY_WILD_POKEMON_SWITCH = 978
   # The Game Switch which, while ON, makes all Pokémon created considered to be
   # met via a fateful encounter.
-  FATEFUL_ENCOUNTER_SWITCH  = 32
+  FATEFUL_ENCOUNTER_SWITCH  = 977
   # The Game Switch which, while ON, disables the effect of the Pokémon Box Link
   # and prevents the player from accessing Pokémon storage via the party screen
   # with it.
-  DISABLE_BOX_LINK_SWITCH   = 35
+  DISABLE_BOX_LINK_SWITCH   = 976
 
   #=============================================================================
 

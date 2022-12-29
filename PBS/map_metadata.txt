@@ -1,399 +1,1163 @@
 ﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
-[001]   # Intro
-Name = Intro
-#-------------------------------
-[002]   # Lappet Town
-Name = Lappet Town
+[001]   # New Bark Town
+Name = New Bark Town
 Outdoor = true
 ShowArea = true
-MapPosition = 0,13,12
-BattleBack = field
+MapPosition = 0,23,13
 #-------------------------------
-[003]   # \PN's house
-Name = \PN's house
-HealingSpot = 2,8,8
-MapPosition = 0,13,12
+[002]   # My House 2nd floor
+Name = My House 2nd floor
+MapPosition = 0,23,13
 #-------------------------------
-[004]   # Pokémon Lab
-Name = Pokémon Lab
-ShowArea = false
-MapPosition = 0,13,12
+[003]   # My House
+Name = My House
+MapPosition = 0,23,13
 #-------------------------------
-[005]   # Route 1
-Name = Route 1
+[004]   # Route 29
+Name = Route 29
+Outdoor = true
+MapPosition = 0,21,13
+BattleBack = grass
+MapSize = 3,111
+Environment = Grass
+#-------------------------------
+[005]   # Cherrygrove City
+Name = Cherrygrove City
 Outdoor = true
 ShowArea = true
+MapPosition = 0,19,13
+BattleBack = grass2
+#-------------------------------
+[006]   # Route 30
+Name = Route 30
+Outdoor = true
+MapPosition = 0,19,11
+BattleBack = grass
+#-------------------------------
+[007]   # Goldenrod City - Gym
+Name = Goldenrod City - Gym
 MapPosition = 0,13,11
-BattleBack = field
+BattleBack = battle3
+Environment = None
 #-------------------------------
-[006]   # Kurt's house
-Name = Route 1
-MapPosition = 0,13,11
+[008]   # Elm's Lab
+Name = Elm's Lab
+MapPosition = 0,23,13
 #-------------------------------
-[007]   # Cedolan City
-Name = Cedolan City
+[009]   # Route 31
+Name = Route 31
+Outdoor = true
+MapPosition = 0,19,9
+#-------------------------------
+[010]   # Violet City
+Name = Violet City
 Outdoor = true
 ShowArea = true
-MapPosition = 0,13,10
-MapSize = 2,11
+MapPosition = 0,17,9
 #-------------------------------
-[008]   # Daisy's house
-Name = Lappet Town
-MapPosition = 0,13,12
-#-------------------------------
-[009]   # Cedolan City Poké Center
-Name = Cedolan City
-HealingSpot = 8,17,11
-MapPosition = 0,14,10
-#-------------------------------
-[010]   # Cedolan Gym
-Name = Cedolan City
-MapPosition = 0,13,10
-BattleBack = indoor3
-Environment = Rock
-Flags = DisableBoxLink
-#-------------------------------
-[011]   # Pokémon Institute
-Name = Cedolan City
-MapPosition = 0,14,10
-#-------------------------------
-[012]   # Cedolan City Condo
-Name = Cedolan City
-MapPosition = 0,14,10
-#-------------------------------
-[013]   # Game Corner
-Name = Cedolan City
-MapPosition = 0,14,10
-#-------------------------------
-[014]   # Cedolan Dept. 1F
-Name = Cedolan City
-MapPosition = 0,13,10
-#-------------------------------
-[015]   # Cedolan Dept. 2F
-Name = Cedolan City
-MapPosition = 0,13,10
-#-------------------------------
-[016]   # Cedolan Dept. 3F
-Name = Cedolan City
-MapPosition = 0,13,10
-#-------------------------------
-[017]   # Cedolan Dept. 4F
-Name = Cedolan City
-MapPosition = 0,13,10
-#-------------------------------
-[018]   # Cedolan Dept. 5F
-Name = Cedolan City
-MapPosition = 0,13,10
-#-------------------------------
-[019]   # Cedolan Dept. Rooftop
-Name = Cedolan City
-MapPosition = 0,13,10
-#-------------------------------
-[020]   # Cedolan Dept. Elevator
-Name = Cedolan City
-MapPosition = 0,13,10
-#-------------------------------
-[021]   # Route 2
-Name = Route 2
+[011]   # Route 32
+Name = Route 32
 Outdoor = true
-ShowArea = true
-Weather = Rain,100
+MapPosition = 0,16,12
+#-------------------------------
+[013]   # Route 36
+Name = Route 36
+Outdoor = true
 MapPosition = 0,14,8
-BattleBack = field
-MapSize = 1,11
 #-------------------------------
-[023]   # Lerucean Town
-Name = Lerucean Town
+[014]   # Ruins of Alph
+Name = Ruins of Alph
 Outdoor = true
 ShowArea = true
-MapPosition = 0,15,8
+MapPosition = 0,15,9
 #-------------------------------
-[024]   # Lerucean Town Poké Center
-Name = Lerucean Town
-HealingSpot = 23,11,15
-MapPosition = 0,15,8
-#-------------------------------
-[025]   # Lerucean Town Mart
-Name = Lerucean Town
-MapPosition = 0,15,8
-#-------------------------------
-[026]   # Pokémon Fan Club
-Name = Lerucean Town
-MapPosition = 0,15,8
-#-------------------------------
-[027]   # Pokémon Day Care
-Name = Lerucean Town
-MapPosition = 0,15,8
-#-------------------------------
-[028]   # Natural Park
-Name = Natural Park
-Outdoor = true
-ShowArea = true
-MapPosition = 0,16,8
-BattleBack = field
-Flags = MossRock,BugContest
-#-------------------------------
-[029]   # Natural Park Entrance
-Name = Natural Park
-Bicycle = true
-MapPosition = 0,16,8
-Flags = BugContestReception
-#-------------------------------
-[030]   # Natural Park Pavillion
-Name = Natural Park
-MapPosition = 0,16,8
-Flags = BugContestReception
-#-------------------------------
-[031]   # Route 3
-Name = Route 3
-Outdoor = true
-ShowArea = true
-MapPosition = 0,14,6
-BattleBack = field
-MapSize = 2,1101
-#-------------------------------
-[034]   # Ice Cave
-Name = Route 3
-Bicycle = true
-MapPosition = 0,15,6
-BattleBack = cave1
-Environment = Cave
-Flags = IceRock
-#-------------------------------
-[035]   # Ingido Plateau outside
-Name = Ingido Plateau
-Outdoor = true
-ShowArea = true
-MapPosition = 0,13,6
-#-------------------------------
-[036]   # Pokémon League entrance
-Name = Ingido Plateau
-HealingSpot = 35,17,7
-MapPosition = 0,13,6
-#-------------------------------
-[037]   # Pokémon League room 1
-Name = Ingido Plateau
-MapPosition = 0,13,6
-BattleBack = elite1
-Flags = DisableBoxLink
-#-------------------------------
-[038]   # Hall of Fame
-Name = Ingido Plateau
-MapPosition = 0,13,6
-Flags = DisableBoxLink
-#-------------------------------
-[039]   # Route 4
-Name = Route 4
-Outdoor = true
-ShowArea = true
-MapPosition = 0,11,6
-BattleBack = field
-MapSize = 2,11
-#-------------------------------
-[040]   # Route 4 Cycling Road
-Name = Route 4
-Outdoor = true
-ShowArea = true
-BicycleAlways = true
-MapPosition = 0,11,6
-#-------------------------------
-[041]   # Route 5
-Name = Route 5
-Outdoor = true
-ShowArea = true
-BicycleAlways = true
-MapPosition = 0,11,7
-MapSize = 1,111
-#-------------------------------
-[044]   # Route 6
-Name = Route 6
-Outdoor = true
-ShowArea = true
-MapPosition = 0,11,10
-BattleBack = field
-MapSize = 2,11
-#-------------------------------
-[045]   # Route 6 Cycling Road
-Name = Route 6
-Outdoor = true
-ShowArea = true
-BicycleAlways = true
-MapPosition = 0,11,10
-#-------------------------------
-[046]   # Route 4 Cycling Road gate
-Name = Route 4
-Bicycle = true
-MapPosition = 0,12,6
-#-------------------------------
-[047]   # Route 7
-Name = Route 7
-Outdoor = true
-ShowArea = true
-Weather = Rain,0
-MapPosition = 0,15,10
-BattleBack = rocky
-MapSize = 2,11
-Environment = Rock
-#-------------------------------
-[049]   # Rock Cave 1F
-Name = Route 7
-Bicycle = true
-MapPosition = 0,16,10
-BattleBack = cave1
-Environment = Cave
-Flags = Magnetic,DistortionWorld
-#-------------------------------
-[050]   # Rock Cave B1F
-Name = Route 7
-Bicycle = true
-MapPosition = 0,16,10
+[017]   # Dark Cave
+Name = Dark Cave
 DarkMap = true
-BattleBack = cave3
+BattleBack = cave1
 Environment = Cave
-Flags = Magnetic,DistortionWorld
 #-------------------------------
-[051]   # Dungeon
-Name = Route 7
+[018]   # New Bark Town - House
+Name = New Bark Town - House
+MapPosition = 0,23,13
+#-------------------------------
+[019]   # New Bark Town - House
+Name = New Bark Town - House
+MapPosition = 0,23,13
+#-------------------------------
+[030]   # Violet City - Sprout Tower
+Name = Violet City - Sprout Tower
+MapPosition = 0,17,8
+BattleBack = battle1
+#-------------------------------
+[031]   # Violet City - Sprout Tower 2F
+Name = Violet City - Sprout Tower 2F
+MapPosition = 0,17,8
+Dungeon = false
+BattleBack = battle1
+Environment = Cave
+#-------------------------------
+[032]   # Violet City - Sprout Tower 3F
+Name = Violet City - Sprout Tower 3F
+MapPosition = 0,17,8
+BattleBack = battle1
+Environment = Cave
+#-------------------------------
+[034]   # Violet City - Poké Center
+Name = Violet City - Poké Center
+HealingSpot = 10,44,43
+#-------------------------------
+[036]   # Violet City - Gym
+Name = Violet City - Gym
+BattleBack = battle2
+#-------------------------------
+[039]   # Union Cave
+Name = Union Cave
+ShowArea = true
 Bicycle = true
-MapPosition = 0,16,10
-Dungeon = true
+MapPosition = 0,13,14
+DarkMap = true
+BattleBack = cave2
+Environment = None
+#-------------------------------
+[040]   # Union Cave 2nd
+Name = Union Cave 2nd
+ShowArea = true
+Bicycle = true
+MapPosition = 0,10,5
 BattleBack = cave2
 Environment = Cave
-Flags = Magnetic,DistortionWorld,ScaleWildEncounterLevels
 #-------------------------------
-[052]   # Battle Frontier
-Name = Battle Frontier
+[041]   # Route 33
+Name = Route 33
+Outdoor = true
+Bicycle = true
+Weather = Rain,80
+MapPosition = 0,16,15
+SnapEdges = false
+BattleBack = grass
+Environment = Grass
+#-------------------------------
+[042]   # Azalea Town
+Name = Azalea Town
 Outdoor = true
 ShowArea = true
-MapPosition = 0,17,10
+HealingSpot = 42,41,9
+MapPosition = 0,14,15
 #-------------------------------
-[053]   # Battle Frontier Poké Center
-Name = Battle Frontier
-HealingSpot = 52,17,14
-MapPosition = 0,17,10
+[047]   # Slowpoke Well
+Name = Slowpoke Well
+MapPosition = 0,13,15
+BattleBack = cave1
+Environment = Cave
 #-------------------------------
-[054]   # Battle Frontier Mart
-Name = Battle Frontier
-MapPosition = 0,17,10
-#-------------------------------
-[055]   # Battle Tower
-Name = Battle Frontier
-HealingSpot = 52,30,10
-MapPosition = 0,17,10
-#-------------------------------
-[056]   # Battle Tower arena
-Name = Battle Frontier
-MapPosition = 0,17,10
-BattleBack = indoor1
-Flags = DisableBoxLink
-#-------------------------------
-[057]   # Stadium Cup lobby
-Name = Battle Frontier
-MapPosition = 0,17,10
-#-------------------------------
-[058]   # Battle Palace
-Name = Battle Frontier
-MapPosition = 0,17,10
-#-------------------------------
-[059]   # Battle Palace arena
-Name = Battle Frontier
-MapPosition = 0,17,10
-BattleBack = indoor1
-Flags = DisableBoxLink
-#-------------------------------
-[060]   # Battle Arena
-Name = Battle Frontier
-MapPosition = 0,17,10
-#-------------------------------
-[061]   # Battle Arena arena
-Name = Battle Frontier
-MapPosition = 0,17,10
-BattleBack = indoor1
-Flags = DisableBoxLink
-#-------------------------------
-[062]   # Battle Factory
-Name = Battle Frontier
-MapPosition = 0,17,10
-#-------------------------------
-[063]   # Battle Factory intro corridor
-Name = Battle Frontier
-MapPosition = 0,17,10
-Flags = DisableBoxLink
-#-------------------------------
-[064]   # Battle Factory arena
-Name = Battle Frontier
-MapPosition = 0,17,10
-BattleBack = indoor1
-Flags = DisableBoxLink
-#-------------------------------
-[065]   # Battle Factory corridor
-Name = Battle Frontier
-MapPosition = 0,17,10
-Flags = DisableBoxLink
-#-------------------------------
-[066]   # Safari Zone outside
-Name = Safari Zone
-Outdoor = true
-ShowArea = true
-MapPosition = 0,12,12
-BattleBack = field
-#-------------------------------
-[067]   # Safari Zone gate
-Name = Safari Zone
-MapPosition = 0,12,12
-#-------------------------------
-[068]   # Safari Zone
-Name = Safari Zone
-Outdoor = true
-ShowArea = true
-MapPosition = 0,12,12
-SafariMap = true
-BattleBack = forest
+[050]   # Ilex Forest
+Name = Ilex Forest
+MapPosition = 0,13,15
+BattleBack = ilex
 Environment = Forest
 #-------------------------------
-[069]   # Route 8
-Name = Route 8
+[053]   # Route 34
+Name = Route 34
+Outdoor = true
+MapPosition = 0,13,14
+#-------------------------------
+[056]   # Goldenrod City
+Name = Goldenrod City
 Outdoor = true
 ShowArea = true
-MapPosition = 0,13,13
-DiveMap = 70
-BattleBack = field
+HealingSpot = 56,34,49
+MapPosition = 0,13,12
 #-------------------------------
-[070]   # Route 8 underwater
-Name = Route 8
-MapPosition = 0,13,13
-BattleBack = underwater
-Environment = Underwater
+[059]   # Goldenrod City - Tunnel
+Name = Goldenrod City - Tunnel
+BattleBack = tunnel
 #-------------------------------
-[071]   # Route 8 harbor
-Name = Route 8
-MapPosition = 0,13,13
-#-------------------------------
-[072]   # Berth Island
-Name = Berth Island
+[075]   # National Park
+Name = National Park
 Outdoor = true
 ShowArea = true
-Weather = Storm,50
-MapPosition = 0,18,17
-BattleBack = field
-Flags = DistortionWorld
+MapPosition = 0,13,8
 #-------------------------------
-[073]   # Faraday Island
-Name = Faraday Island
+[078]   # Rota 35
+Name = Rota 35
+Outdoor = true
+MapPosition = 0,13,9
+#-------------------------------
+[082]   # Rota 37
+Name = Rota 37
+Outdoor = true
+MapPosition = 0,14,7
+#-------------------------------
+[083]   # Ecruteak
+Name = Ecruteak
 Outdoor = true
 ShowArea = true
-MapPosition = 0,22,16
-BattleBack = field
-Flags = DistortionWorld
+HealingSpot = 83,26,35
+Weather = Rain,25
+MapPosition = 0,14,6
 #-------------------------------
-[074]   # Route 6 Cycling Road gate
-Name = Route 6
+[093]   # Rota 38
+Name = Rota 38
+Outdoor = true
+MapPosition = 0,11,6
+#-------------------------------
+[095]   # Rota 39
+Name = Rota 39
+Outdoor = true
+MapPosition = 0,10,7
+#-------------------------------
+[096]   # Olivine City
+Name = Olivine City
+Outdoor = true
+ShowArea = true
+HealingSpot = 96,14,23
+MapPosition = 0,10,8
+#-------------------------------
+[101]   # Rota 40
+Name = Rota 40
+Outdoor = true
+MapPosition = 0,9,9
+#-------------------------------
+[102]   # Rota 41
+Name = Rota 41
+Outdoor = true
+MapPosition = 0,9,12
+#-------------------------------
+[117]   # Cianwood Town
+Name = Cianwood Town
+Outdoor = true
+ShowArea = true
+HealingSpot = 117,22,37
+MapPosition = 0,7,11
+#-------------------------------
+[124]   # Rota 42
+Name = Rota 42
+Outdoor = true
+MapPosition = 0,16,6
+#-------------------------------
+[126]   # Mohogany
+Name = Mohogany
+Outdoor = true
+ShowArea = true
+HealingSpot = 126,15,20
+MapPosition = 0,18,6
+#-------------------------------
+[127]   # Caverna
+Name = Caverna
 Bicycle = true
-MapPosition = 0,12,10
+DarkMap = true
 #-------------------------------
-[075]   # Tiall Region
-Name = Tiall Region
+[128]   # Cav2
+Name = Cav2
+Bicycle = true
+DarkMap = true
+#-------------------------------
+[129]   # Cav
+Name = Cav
+Bicycle = true
+DarkMap = true
+#-------------------------------
+[130]   # MAP130
+Name = MAP130
+Bicycle = true
+DarkMap = true
+#-------------------------------
+[131]   # MAP131
+Name = MAP131
+Bicycle = true
+DarkMap = true
+#-------------------------------
+[132]   # MAP132
+Name = MAP132
+Bicycle = true
+DarkMap = true
+#-------------------------------
+[136]   # Rota 43
+Name = Rota 43
 Outdoor = true
+MapPosition = 0,18,5
+#-------------------------------
+[139]   # Lago da Raiva
+Name = Lago da Raiva
+Outdoor = true
+ShowArea = true
+HealingSpot = 139,32,46
+Weather = Rain,100
+MapPosition = 0,18,3
+#-------------------------------
+[152]   # Rota 44
+Name = Rota 44
+Outdoor = true
+MapPosition = 0,20,6
+#-------------------------------
+[153]   # Caverna de Gelo
+Name = Caverna de Gelo
+Bicycle = true
+MapPosition = 0,22,1
+Dungeon = false
+#-------------------------------
+[154]   # Rota baixo
+Name = Rota baixo
+Outdoor = true
+Bicycle = true
+MapPosition = 4,6,12
+#-------------------------------
+[155]   # Ilha Mandarim do Norte
+Name = Ilha Mandarim do Norte
+Outdoor = true
+ShowArea = true
+Bicycle = true
+HealingSpot = 155,29,15
+MapPosition = 4,8,7
+#-------------------------------
+[156]   # Rota cima
+Name = Rota cima
+Outdoor = true
+MapPosition = 4,5,8
+#-------------------------------
+[157]   # Rota lado esquerdo
+Name = Rota lado esquerdo
+Outdoor = true
+MapPosition = 4,6,8
+#-------------------------------
+[158]   # Blacktorn City
+Name = Blacktorn City
+Outdoor = true
+ShowArea = true
+HealingSpot = 158,35,47
+MapPosition = 0,22,6
+#-------------------------------
+[167]   # Toca do dragão
+Name = Toca do dragão
+Outdoor = false
+MapPosition = 0,22,1
+#-------------------------------
+[169]   # Rota 45
+Name = Rota 45
+Outdoor = true
+Weather = Sandstorm,100
+MapPosition = 0,22,9
+#-------------------------------
+[171]   # Planalto Indigo
+Name = Planalto Indigo
+Outdoor = true
+ShowArea = true
+MapPosition = 1,6,5
+#-------------------------------
+[175]   # Route 27
+Name = Route 27
+Outdoor = true
+MapPosition = 1,4,13
+#-------------------------------
+[180]   # Victory Road
+Name = Victory Road
+#-------------------------------
+[181]   # Elite 4
+Name = Elite 4
+HealingSpot = 171,27,10
+#-------------------------------
+[189]   # Final
+Name = Final
+DiveMap = 300
+#-------------------------------
+[200]   # Littleroot town
+Name = Littleroot town
+Outdoor = true
+ShowArea = true
+HealingSpot = 200,16,17
+MapPosition = 2,7,12
+#-------------------------------
+[201]   # rota 101
+Name = rota 101
+Outdoor = true
+MapPosition = 2,7,11
+#-------------------------------
+[202]   # Oldale Town
+Name = Oldale Town
+Outdoor = true
+ShowArea = true
+HealingSpot = 202,14,8
+MapPosition = 2,5,11
+#-------------------------------
+[203]   # rota 102
+Name = rota 102
+Outdoor = true
+MapPosition = 2,5,11
+#-------------------------------
+[204]   # rota 103
+Name = rota 103
+Outdoor = true
+MapPosition = 2,8,9
+#-------------------------------
+[205]   # Petalburg
+Name = Petalburg
+Outdoor = true
+ShowArea = true
+HealingSpot = 205,20,23
+MapPosition = 2,4,10
+#-------------------------------
+[206]   # Rota 104
+Name = Rota 104
+Outdoor = true
+MapPosition = 2,4,9
+#-------------------------------
+[207]   # Dewford
+Name = Dewford
+Outdoor = true
+ShowArea = true
+HealingSpot = 207,9,11
+MapPosition = 2,5,15
+#-------------------------------
+[208]   # Rota 106
+Name = Rota 106
+Outdoor = true
+MapPosition = 2,5,14
+#-------------------------------
+[209]   # Slateport
+Name = Slateport
+Outdoor = true
+ShowArea = true
+HealingSpot = 209,21,18
+MapPosition = 2,10,12
+#-------------------------------
+[210]   # rota 110
+Name = rota 110
+Outdoor = true
+MapPosition = 2,10,10
+#-------------------------------
+[211]   # Rota 109
+Name = Rota 109
+Outdoor = true
+MapPosition = 2,10,13
+#-------------------------------
+[227]   # Pokecenter
+Name = Pokecenter
+MapPosition = 2,5,11
+#-------------------------------
+[243]   # Rustboro City 
+Name = Rustboro City 
+Outdoor = true
+ShowArea = true
+HealingSpot = 243,20,39
+MapPosition = 2,4,7
+#-------------------------------
+[245]   # Mauville City
+Name = Mauville City
+Outdoor = true
+ShowArea = true
+HealingSpot = 245,22,5
+MapPosition = 2,10,8
+#-------------------------------
+[247]   # Lavaridge Town 
+Name = Lavaridge Town 
+Outdoor = true
+ShowArea = true
+HealingSpot = 247,15,12
+MapPosition = 2,8,5
+#-------------------------------
+[248]   # Fallarbor Town 
+Name = Fallarbor Town 
+Outdoor = true
+ShowArea = true
+HealingSpot = 248,14,13
+MapPosition = 2,6,2
+#-------------------------------
+[249]   # Fortree City 
+Name = Fortree City 
+Outdoor = true
+ShowArea = true
+HealingSpot = 249,5,10
+MapPosition = 2,13,2
+#-------------------------------
+[250]   # Lilycove City
+Name = Lilycove City
+Outdoor = true
+ShowArea = true
+HealingSpot = 250,24,16
+MapPosition = 2,18,4
+#-------------------------------
+[251]   # Mossdeep City
+Name = Mossdeep City
+Outdoor = true
+ShowArea = true
+Bicycle = true
+HealingSpot = 251,28,17
+MapPosition = 2,22,6
+#-------------------------------
+[256]   # Coliseum town
+Name = Coliseum town
+Outdoor = true
+ShowArea = true
+HealingSpot = 256,52,47
+MapPosition = 3,23,4
+#-------------------------------
+[257]   # Rota
+Name = Rota
+Outdoor = true
+MapPosition = 3,23,6
+#-------------------------------
+[261]   # National Park
+Name = National Park
+MapPosition = 0,13,8
+#-------------------------------
+[263]   # Pallet town
+Name = Pallet town
+Outdoor = true
+ShowArea = true
+HealingSpot = 263,27,21
+MapPosition = 1,13,12
+#-------------------------------
+[264]   # Rota 01
+Name = Rota 01
+Outdoor = true
+MapPosition = 1,13,11
+#-------------------------------
+[265]   # Viridian City
+Name = Viridian City
+Outdoor = true
+ShowArea = true
+HealingSpot = 265,22,30
+MapPosition = 1,13,9
+#-------------------------------
+[266]   # Rota 2
+Name = Rota 2
+Outdoor = true
+MapPosition = 1,13,7
+#-------------------------------
+[267]   # Viridian Forest
+Name = Viridian Forest
+MapPosition = 1,13,6
+#-------------------------------
+[269]   # Pewter City
+Name = Pewter City
+Outdoor = true
+ShowArea = true
+HealingSpot = 269,16,37
+MapPosition = 1,13,4
+#-------------------------------
+[270]   # Rota 3
+Name = Rota 3
+Outdoor = true
+MapPosition = 1,16,4
+#-------------------------------
+[271]   # Cerulean City
+Name = Cerulean City
+Outdoor = true
+ShowArea = true
+HealingSpot = 271,22,20
+MapPosition = 1,21,4
+#-------------------------------
+[273]   # Rota para cidade 2
+Name = Rota para cidade 2
+Outdoor = true
+MapPosition = 3,23,7
+#-------------------------------
+[285]   # Verdanturf
+Name = Verdanturf
+Outdoor = true
+ShowArea = true
+HealingSpot = 285,24,9
+MapPosition = 2,8,5
+#-------------------------------
+[288]   # Rota 107
+Name = Rota 107
+Outdoor = true
+MapPosition = 2,6,15
+#-------------------------------
+[291]   # Rota 118
+Name = Rota 118
+Outdoor = true
+MapPosition = 2,11,8
+#-------------------------------
+[292]   # Rota 112
+Name = Rota 112
+Outdoor = true
+MapPosition = 2,9,5
+#-------------------------------
+[293]   # rota 113
+Name = rota 113
+Outdoor = true
+MapPosition = 2,8,2
+#-------------------------------
+[294]   # Unown Cave
+Name = Unown Cave
+BattleBack = unown
+Environment = Cave
+#-------------------------------
+[297]   # Rota 46
+Name = Rota 46
+Outdoor = true
+MapPosition = 0,21,12
+#-------------------------------
+[299]   # Rota 23
+Name = Rota 23
+Outdoor = true
+MapPosition = 1,6,6
+#-------------------------------
+[327]   # Rota 114
+Name = Rota 114
+Outdoor = true
+MapPosition = 2,5,2
+#-------------------------------
+[329]   # Rota 122
+Name = Rota 122
+Outdoor = true
+MapPosition = 2,16,6
+#-------------------------------
+[330]   # Cinnabar Island
+Name = Cinnabar Island
+Outdoor = true
+ShowArea = true
+HealingSpot = 330,20,12
 MapPosition = 1,13,16
-BattleBack = city
+#-------------------------------
+[331]   # Fuchsia City
+Name = Fuchsia City
+Outdoor = true
+ShowArea = true
+HealingSpot = 331,24,33
+MapPosition = 1,18,14
+#-------------------------------
+[336]   # Rota 26
+Name = Rota 26
+Outdoor = true
+MapPosition = 1,6,8
+#-------------------------------
+[337]   # Rota 26
+Name = Rota 26
+Outdoor = true
+MapPosition = 1,6,13
+#-------------------------------
+[338]   # Rota 26 complemento cima
+Name = Rota 26 complemento cima
+#-------------------------------
+[340]   # Valencia Island
+Name = Valencia Island
+Outdoor = true
+ShowArea = true
+HealingSpot = 340,11,32
+MapPosition = 4,5,15
+#-------------------------------
+[341]   # Ilha Mikan
+Name = Ilha Mikan
+Outdoor = true
+ShowArea = true
+HealingSpot = 341,18,30
+MapPosition = 4,6,10
+#-------------------------------
+[342]   # Rota baixo
+Name = Rota baixo
+Outdoor = true
+MapPosition = 4,5,15
+#-------------------------------
+[343]   # Vale Vileplume
+Name = Vale Vileplume
+Outdoor = true
+#-------------------------------
+[344]   # Elm's House
+Name = Elm's House
+MapPosition = 0,23,13
+#-------------------------------
+[346]   # Whirl Islands
+Name = Whirl Islands
+#-------------------------------
+[350]   # Lavender Town
+Name = Lavender Town
+Outdoor = true
+ShowArea = true
+HealingSpot = 350,6,6
+MapPosition = 1,25,8
+#-------------------------------
+[361]   # Rota 22
+Name = Rota 22
+Outdoor = true
+MapPosition = 1,10,9
+#-------------------------------
+[377]   # Rota 4
+Name = Rota 4
+Outdoor = true
+MapPosition = 1,17,4
+#-------------------------------
+[379]   # Rota 5
+Name = Rota 5
+Outdoor = true
+MapPosition = 1,21,6
+#-------------------------------
+[380]   # Vermilion City
+Name = Vermilion City
+Outdoor = true
+ShowArea = true
+HealingSpot = 380,15,7
+MapPosition = 1,21,10
+#-------------------------------
+[381]   # Rota 6
+Name = Rota 6
+Outdoor = true
+MapPosition = 1,21,9
+#-------------------------------
+[382]   # Rota 24
+Name = Rota 24
+Outdoor = true
+MapPosition = 1,22,3
+#-------------------------------
+[383]   # Rota 25
+Name = Rota 25
+Outdoor = true
+MapPosition = 1,24,2
+#-------------------------------
+[384]   # Saffron
+Name = Saffron
+Outdoor = true
+ShowArea = true
+HealingSpot = 384,24,39
+MapPosition = 1,21,8
+#-------------------------------
+[385]   # Rota 7
+Name = Rota 7
+Outdoor = true
+MapPosition = 1,20,8
+#-------------------------------
+[386]   # Celadon City
+Name = Celadon City
+Outdoor = true
+ShowArea = true
+HealingSpot = 386,48,16
+MapPosition = 1,18,8
+#-------------------------------
+[387]   # Rota 8
+Name = Rota 8
+Outdoor = true
+MapPosition = 1,24,8
+#-------------------------------
+[388]   # Rota 9
+Name = Rota 9
+Outdoor = true
+MapPosition = 1,23,5
+#-------------------------------
+[389]   # Rota 10
+Name = Rota 10
+Outdoor = true
+MapPosition = 1,25,7
+#-------------------------------
+[390]   # Mt. Moon
+Name = Mt. Moon
+MapPosition = 1,17,4
+#-------------------------------
+[391]   # Mt. Moon 1.2
+Name = Mt. Moon 1.2
+MapPosition = 1,17,4
+#-------------------------------
+[392]   # Mt. Moon 1.3
+Name = Mt. Moon 1.3
+MapPosition = 1,17,4
+#-------------------------------
+[403]   # Rota 11
+Name = Rota 11
+Outdoor = true
+MapPosition = 1,24,10
+#-------------------------------
+[408]   # Rota 12
+Name = Rota 12
+Outdoor = true
+MapPosition = 1,25,10
+#-------------------------------
+[409]   # Rota 13
+Name = Rota 13
+Outdoor = true
+MapPosition = 1,25,12
+#-------------------------------
+[410]   # Rota 14
+Name = Rota 14
+Outdoor = true
+MapPosition = 1,23,13
+#-------------------------------
+[411]   # Rota 15
+Name = Rota 15
+Outdoor = true
+MapPosition = 1,21,14
+#-------------------------------
+[414]   # Rota 16
+Name = Rota 16
+Outdoor = true
+MapPosition = 1,17,9
+#-------------------------------
+[418]   # Rota 17
+Name = Rota 17
+Outdoor = true
+BicycleAlways = true
+MapPosition = 1,16,11
+#-------------------------------
+[419]   # Rota 18
+Name = Rota 18
+Outdoor = true
+MapPosition = 1,17,14
+#-------------------------------
+[422]   # Rota 19
+Name = Rota 19
+Outdoor = true
+MapPosition = 1,18,15
+#-------------------------------
+[423]   # Rota 20
+Name = Rota 20
+Outdoor = true
+MapPosition = 1,15,16
+#-------------------------------
+[424]   # Rota 21
+Name = Rota 21
+Outdoor = true
+MapPosition = 1,13,14
+#-------------------------------
+[486]   # Zona Safari Centro
+Name = Zona Safari Centro
+Outdoor = true
+MapPosition = 1,16,14
+SafariMap = true
+#-------------------------------
+[487]   # Casa Centro
+Name = Casa Centro
+SafariMap = true
+#-------------------------------
+[488]   # Área 1
+Name = Área 1
+Outdoor = true
+MapPosition = 1,16,14
+SafariMap = true
+#-------------------------------
+[489]   # Casa Área 1
+Name = Casa Área 1
+Outdoor = false
+SafariMap = true
+#-------------------------------
+[490]   # Área 2
+Name = Área 2
+Outdoor = true
+MapPosition = 1,16,14
+SafariMap = true
+#-------------------------------
+[491]   # Casa Área 2
+Name = Casa Área 2
+SafariMap = true
+#-------------------------------
+[492]   # Área 3
+Name = Área 3
+Outdoor = true
+MapPosition = 1,16,14
+SafariMap = true
+#-------------------------------
+[493]   # Casa Área 3
+Name = Casa Área 3
+SafariMap = true
+#-------------------------------
+[494]   # Casa Secreta
+Name = Casa Secreta
+SafariMap = true
+#-------------------------------
+[521]   # Rota baixo
+Name = Rota baixo
+Outdoor = true
+MapPosition = 4,8,9
+#-------------------------------
+[522]   # Ilha Sunburst
+Name = Ilha Sunburst
+Outdoor = true
+ShowArea = true
+HealingSpot = 522,25,20
+MapPosition = 4,9,11
+#-------------------------------
+[523]   # Rota baixo
+Name = Rota baixo
+Outdoor = true
+MapPosition = 4,9,12
+#-------------------------------
+[524]   # Ilha Pinkan
+Name = Ilha Pinkan
+Outdoor = true
+ShowArea = true
+MapPosition = 4,12,13
+#-------------------------------
+[525]   # Rota esquerda
+Name = Rota esquerda
+Outdoor = true
+MapPosition = 4,10,13
+#-------------------------------
+[526]   # Ilha Mandarim do Sul
+Name = Ilha Mandarim do Sul
+Outdoor = true
+ShowArea = true
+HealingSpot = 526,17,10
+MapPosition = 4,28,16
+#-------------------------------
+[527]   # Rota direita
+Name = Rota direita
+Outdoor = true
+MapPosition = 4,14,13
+#-------------------------------
+[528]   # Rota direita da direita
+Name = Rota direita da direita
+Outdoor = true
+MapPosition = 4,15,13
+#-------------------------------
+[529]   # Rota cima
+Name = Rota cima
+Outdoor = true
+MapPosition = 4,17,14
+#-------------------------------
+[530]   # Rota direita
+Name = Rota direita
+Outdoor = true
+MapPosition = 4,29,16
+#-------------------------------
+[531]   # Ilha Trovita
+Name = Ilha Trovita
+Outdoor = true
+ShowArea = true
+HealingSpot = 531,18,12
+MapPosition = 4,13,14
+#-------------------------------
+[534]   # Rota direita-direita
+Name = Rota direita-direita
+Outdoor = true
+MapPosition = 4,22,16
+#-------------------------------
+[535]   # Ilha Moro
+Name = Ilha Moro
+Outdoor = true
+ShowArea = true
+HealingSpot = 535,24,18
+MapPosition = 4,24,13
+#-------------------------------
+[536]   # Rota baixo
+Name = Rota baixo
+Outdoor = true
+MapPosition = 4,24,14
+#-------------------------------
+[537]   # Rota cima
+Name = Rota cima
+Outdoor = true
+MapPosition = 4,26,12
+#-------------------------------
+[538]   # Ilhas Grapefruit
+Name = Ilhas Grapefruit
+Outdoor = true
+ShowArea = true
+MapPosition = 4,26,8
+#-------------------------------
+[539]   # Rota baixo
+Name = Rota baixo
+Outdoor = true
+MapPosition = 4,26,10
+#-------------------------------
+[540]   # Ilha Navel
+Name = Ilha Navel
+Outdoor = true
+ShowArea = true
+HealingSpot = 540,18,20
+MapPosition = 4,25,5
+#-------------------------------
+[541]   # Rota baixo
+Name = Rota baixo
+Outdoor = true
+MapPosition = 4,24,7
+#-------------------------------
+[542]   # Rota cima
+Name = Rota cima
+Outdoor = true
+MapPosition = 4,25,3
+#-------------------------------
+[543]   # Ilha Kumquat
+Name = Ilha Kumquat
+Outdoor = true
+ShowArea = true
+HealingSpot = 543,39,15
+MapPosition = 4,17,3
+#-------------------------------
+[544]   # Rota direita
+Name = Rota direita
+Outdoor = true
+MapPosition = 4,20,3
+#-------------------------------
+[545]   # Rota baixo
+Name = Rota baixo
+Outdoor = true
+MapPosition = 4,17,4
+#-------------------------------
+[546]   # Ilha Pummello
+Name = Ilha Pummello
+Outdoor = true
+ShowArea = true
+HealingSpot = 546,21,35
+MapPosition = 4,6,3
+#-------------------------------
+[547]   # Ilha de Shamouti
+Name = Ilha de Shamouti
+Outdoor = true
+ShowArea = true
+HealingSpot = 547,26,13
+MapPosition = 4,17,8
+#-------------------------------
+[548]   # Rota esquerda
+Name = Rota esquerda
+Outdoor = true
+MapPosition = 4,14,3
+#-------------------------------
+[549]   # Rota direita
+Name = Rota direita
+Outdoor = true
+MapPosition = 4,10,3
+#-------------------------------
+[598]   # Caverna
+Name = Caverna
+#-------------------------------
+[599]   # Caverna de Cristal
+Name = Caverna de Cristal
+Bicycle = true
+DarkMap = true
+#-------------------------------
+[610]   # Caverna Kabuto
+Name = Caverna Kabuto
+#-------------------------------
+[611]   # caverna kabuto 2°
+Name = caverna kabuto 2°
+#-------------------------------
+[643]   # Casa
+Name = Casa
+Outdoor = false
+#-------------------------------
+[644]   # Ilha do Fogo
+Name = Ilha do Fogo
+Outdoor = true
+MapPosition = 4,18,8
+#-------------------------------
+[645]   # Ilha do Raio
+Name = Ilha do Raio
+Outdoor = true
+Weather = Storm,50
+MapPosition = 4,17,9
+#-------------------------------
+[646]   # Ilha do Gelo
+Name = Ilha do Gelo
+Outdoor = true
+Weather = Snow,100
+MapPosition = 4,16,9
+#-------------------------------
+[647]   # Caverna
+Name = Caverna
+#-------------------------------
+[648]   # Caverna 2nd
+Name = Caverna 2nd
+#-------------------------------
+[649]   # Caverna 3nd
+Name = Caverna 3nd
+#-------------------------------
+[650]   # Caverna
+Name = Caverna
+#-------------------------------
+[651]   # Caverna 2nd
+Name = Caverna 2nd
+#-------------------------------
+[671]   # Rota 115
+Name = Rota 115
+Outdoor = true
+MapPosition = 2,4,5
+#-------------------------------
+[672]   # Rota 116
+Name = Rota 116
+Outdoor = true
+MapPosition = 2,5,7
+#-------------------------------
+[673]   # Rota 111
+Name = Rota 111
+Outdoor = true
+MapPosition = 2,10,6
+#-------------------------------
+[674]   # Rota 117
+Name = Rota 117
+Outdoor = true
+MapPosition = 2,8,8
+#-------------------------------
+[675]   # Rota 119
+Name = Rota 119
+Outdoor = true
+ShowArea = false
+MapPosition = 2,12,4
+#-------------------------------
+[676]   # Rota 120
+Name = Rota 120
+Outdoor = true
+MapPosition = 2,13,3
+#-------------------------------
+[677]   # Rota 121
+Name = Rota 121
+Outdoor = true
+MapPosition = 2,15,5
+#-------------------------------
+[678]   # Rota 124
+Name = Rota 124
+Outdoor = true
+MapPosition = 2,19,5
+#-------------------------------
+[686]   # Rota 123
+Name = Rota 123
+Outdoor = true
+MapPosition = 2,15,7
+#-------------------------------
+[698]   # Vale Petalburg
+Name = Vale Petalburg
+Outdoor = true
+ShowArea = true
+#-------------------------------
+[716]   # gim
+Name = gim
+DarkMap = false
+#-------------------------------
+[717]   # GRANITE CAVE(24.7)
+Name = GRANITE CAVE(24.7)
+ShowArea = true
+MapPosition = 2,5,15
+#-------------------------------
+[718]   # GRANITE CAVE(24.8)
+Name = GRANITE CAVE(24.8)
+MapPosition = 2,5,15
+#-------------------------------
+[737]   # Whirl Island sub
+Name = Whirl Island sub
+#-------------------------------
+[738]   # Descendo
+Name = Descendo
+#-------------------------------
+[739]   # Final
+Name = Final
+#-------------------------------
+[751]   # Fiery Path
+Name = Fiery Path
+Outdoor = false
+ShowArea = true
+MapPosition = 2,9,5
+#-------------------------------
+[766]   # Mt Chimney
+Name = Mt Chimney
+Outdoor = true
+ShowArea = true
+MapPosition = 2,9,4
+#-------------------------------
+[767]   # Jagged Pass
+Name = Jagged Pass
+Outdoor = true
+MapPosition = 2,8,4
+#-------------------------------
+[811]   # Mt. Pire (24.21)
+Name = Mt. Pire (24.21)
+Outdoor = true
+MapPosition = 2,16,6
+#-------------------------------
+[812]   # Mt. Pire (24.22)
+Name = Mt. Pire (24.22)
+Outdoor = true
+MapPosition = 2,16,6
+#-------------------------------
+[814]   # Observatório
+Name = Observatório
+Outdoor = true
+MapPosition = 2,18,5

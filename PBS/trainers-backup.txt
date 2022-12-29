@@ -1197,6 +1197,8 @@ Pokemon = MEGANIUM,65
 Pokemon = MEWTWO,100
     Shiny = yes
     Moves = PSYCHIC,RECOVER,FIREPUNCH,ICEPUNCH
+    Item = SITRUSBERRY
+    IV = 20
 #-------------------------------
 [LEADER_Brock,Brock]
 Pokemon = GEODUDE,40
@@ -2156,6 +2158,8 @@ Pokemon = TYPHLOSION,60
 Pokemon = MEGANIUM,60
 Pokemon = MEWTWO,70
     Shiny = yes
+    Item = SITRUSBERRY
+    IV = 20
 #-------------------------------
 [SWIMMERmA,Luis]
 Pokemon = HORSEA,32
