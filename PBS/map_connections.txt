@@ -1,47 +1,33 @@
 ﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
-# complemento1 (794) - Rota 120 (676)
-794,South,0,676,North,0
-# complemento2 (795) - Rota 120 (676)
-795,West,0,676,East,0
-# complemento2 (795) - complemento1 (794)
-795,West,0,794,East,15
-# Rota 119 (675) - MAP792 (792)
-675,East,26,792,West,0
-# MAP791 (791) - Rota 119 (675)
-791,East,0,675,West,0
-# Rota 29 (4) - New Bark Town (1)
+# Route 29 (4) - New Bark Town (1)
 4,East,2,1,West,0
-# Rota 27 (175) - New Bark Town (1)
+# Route 27 (175) - New Bark Town (1)
 175,West,2,1,East,0
-# Rota 26 complemento (337) - Rota 26 (336)
-337,North,0,336,South,0
-# Rota 26 complemento cima (338) - Rota 26 (336)
-338,South,0,336,North,0
-# Rota 27 (175) - Rota 26 (336)
-175,East,0,336,West,81
-# Rota 27 (175) - Rota 26 complemento (337)
-175,East,18,337,West,0
-# Rota 30 (6) - Cherrygrove City (5)
-6,South,0,5,North,7
-# Rota 29 (4) - Cherrygrove City (5)
+# Route 29 (4) - Cherrygrove City (5)
 4,West,0,5,East,0
-# Rota 31 (9) - Rota 30 (6)
+# Route 30 (6) - Cherrygrove City (5)
+6,South,0,5,North,7
+# Route 31 (9) - Route 30 (6)
 9,South,0,6,North,0
-# Violetcity (10) - Rota 32 (11)
+# Violet City (10) - Route 32 (11)
 10,South,0,11,North,7
-# Violetcity (10) - Rota 36 (13)
+# Violet City (10) - Route 36 (13)
 10,West,7,13,East,0
-# Azaléia Town (42) - Rota 33 (41)
-42,East,0,41,West,0
-# Rota 34 (53) - Goldenrod Town (56)
-53,North,0,56,South,0
-# Rota 36 (13) - Rota 35 (78)
+# Route 36 (13) - Rota 35 (78)
 13,South,0,78,North,19
-# Rota 36 (13) - Rota 37 (82)
+# Route 36 (13) - Rota 37 (82)
 13,North,0,82,South,0
+# Azalea Town (42) - Route 33 (41)
+42,East,0,41,West,0
+# Azalea Town (42) - Complemento Azaléia (841)
+42,North,0,841,South,0
+# Route 34 (53) - Goldenrod City (56)
+53,North,0,56,South,0
 # Ecruteak (83) - Rota 37 (82)
 83,South,0,82,North,0
+# Ecruteak complemento (339) - Ecruteak (83)
+339,East,0,83,West,0
 # Rota 39 (95) - Rota 38 (93)
 95,East,0,93,West,0
 # Olivine City (96) - Rota 39 (95)
@@ -52,22 +38,126 @@
 102,North,36,101,South,0
 # Rota 41 (102) - Cianwood Town (117)
 102,West,25,117,East,0
-# Rota 44 (152) - Mohogany (126)
-152,West,1,126,East,0
 # Rota 42 (124) - Mohogany (126)
 124,East,0,126,West,2
+# Rota 44 (152) - Mohogany (126)
+152,West,1,126,East,0
 # Rota 43 (136) - Lago da Raiva (139)
 136,North,0,139,South,10
-# Ecruteak complemento (339) - Ecruteak (83)
-339,East,0,83,West,0
-# Blacktorn City (158) - Rota 45 (169)
-158,South,0,169,North,1
-# Rota 45 (169) - Rota 46 (297)
-169,West,72,297,East,0
-# Rota 23 (299) - INDIGO (171)
+# Ilha Mikan (341) - Rota baixo (154)
+341,South,0,154,North,6
+# Vale Vileplume (343) - Rota baixo (154)
+343,North,1,154,South,0
+# Ilha Mandarim do Norte (155) - Ilha Mikan (341)
+155,South,0,341,North,91
+# Rota lado esquerdo (157) - Ilha Mandarim do Norte (155)
+157,East,0,155,West,0
+# Rota baixo (521) - Ilha Mandarim do Norte (155)
+521,North,0,155,South,0
+# Rota cima (156) - Ilha Mikan (341)
+156,South,0,341,North,0
+# Rota lado esquerdo (157) - Rota cima (156)
+157,West,0,156,East,0
+# Rota baixo (521) - Rota cima (156)
+521,North,0,156,South,91
+# Rota lado esquerdo (157) - Ilha Mikan (341)
+157,South,0,341,North,61
+# Rota baixo (521) - Rota lado esquerdo (157)
+521,West,0,157,East,30
+# Rota 23 (299) - Planalto Indigo (171)
 299,North,0,171,South,14
+# Route 27 (175) - Rota 26 (336)
+175,East,0,336,West,81
+# Route 27 (175) - Rota 26 (337)
+175,East,18,337,West,0
+# rota 101 (201) - Littleroot town (200)
+201,South,0,200,North,0
+# Oldale Town (202) - rota 101 (201)
+202,South,0,201,North,9
+# Oldale Town (202) - rota 103 (204)
+202,North,0,204,South,0
+# Oldale Town (202) - rota 102 (203)
+202,West,0,203,East,5
+# Petalburg (205) - rota 102 (203)
+205,East,9,203,West,0
+# rota 110 (210) - rota 103 (204)
+210,West,59,204,East,0
+# Rota 104 (206) - Petalburg (205)
+206,East,43,205,West,0
+# Rota 104 (206) - Rota 105 (286)
+206,South,0,286,North,2
+# Rota 104 (206) - Rota 107 (288)
+206,East,149,288,West,0
+# Rota 104 (206) - Rustboro City  (243)
+206,North,2,243,South,0
+# Dewford (207) - Rota 107 (288)
+207,East,0,288,West,0
+# Rota 106 (208) - Dewford (207)
+208,South,3,207,North,0
+# Rota 106 (208) - Rota 105 (286)
+208,North,0,286,South,5
+# Rota 106 (208) - Rota 107 (288)
+208,South,37,288,North,0
+# Rota 106 (208) - Rota 108 (289)
+208,South,92,289,North,0
+# rota 110 (210) - Slateport (209)
+210,South,0,209,North,3
+# Rota 109 (211) - Slateport (209)
+211,North,0,209,South,1
+# Rota 134 (690) - Slateport (209)
+690,West,5,209,East,0
+# rota 110 (210) - Rota 112 (292)
+210,West,0,292,East,140
+# rota 113 (293) - rota 110 (210)
+293,East,163,210,West,0
+# Rota 117 (674) - rota 110 (210)
+674,East,26,210,West,0
+# Mauville City (245) - rota 110 (210)
+245,South,0,210,North,0
+# Rota 108 (289) - Rota 109 (211)
+289,East,0,211,West,10
+# Rustboro City  (243) - Rota 115 (671)
+243,North,0,671,South,1
+# Rustboro City  (243) - Rota 116 (672)
+243,East,0,672,West,3
+# Rota 131 (681) - Automare (244)
+681,West,2,244,East,0
+# Mauville City (245) - Rota 112 (292)
+245,West,0,292,East,120
+# Mauville City (245) - rota 113 (293)
+245,West,0,293,East,143
+# Mauville City (245) - Rota 111 (673)
+245,North,0,673,South,0
+# Mauville City (245) - Rota 117 (674)
+245,West,0,674,East,6
+# Mauville City (245) - Rota 118 (291)
+245,East,0,291,West,0
+# Rota 122 (329) - Mauville City (245)
+329,South,0,245,North,215
+# Rota 112 (292) - Lavaridge Town  (247)
+292,West,35,247,East,0
+# rota 113 (293) - Fallarbor Town  (248)
+293,West,0,248,East,2
+# Rota 114 (327) - Fallarbor Town  (248)
+327,East,0,248,West,1
+# Fortree City  (249) - Rota 120 (676)
+249,East,5,676,West,0
+# Rota 119 (675) - Fortree City  (249)
+675,East,0,249,West,5
+# Lilycove City (250) - Rota 121 (677)
+250,West,5,677,East,0
+# Lilycove City (250) - Rota 124 (678)
+250,East,0,678,West,11
+# Mossdeep City (251) - Rota 124 (678)
+251,West,0,678,East,40
+# Mossdeep City (251) - Rota 127 (680)
+251,South,0,680,North,1
+# Rota (257) - Coliseum town (256)
+257,North,0,256,South,8
 # Pallet town (263) - Rota 01 (264)
 263,North,4,264,South,0
+# Pallet town (263) - Rota 21 (424)
+263,South,2,424,North,0
 # Viridian City (265) - Rota 01 (264)
 265,South,0,264,North,0
 # Rota 22 (361) - Viridian City (265)
@@ -78,6 +168,8 @@
 266,North,2,269,South,0
 # Rota 3 (270) - Pewter City (269)
 270,West,0,269,East,24
+# Rota 4 (377) - Pewter City (269)
+377,West,6,269,East,0
 # Rota 4 (377) - Rota 3 (270)
 377,South,0,270,North,0
 # Rota 4 (377) - Cerulean City (271)
@@ -88,288 +180,187 @@
 382,South,0,271,North,9
 # Rota 9 (388) - Cerulean City (271)
 388,West,0,271,East,5
-# Rota 25 (383) - Rota 24 (382)
-383,West,0,382,East,0
-# Rota 10 (389) - Rota 9 (388)
-389,West,2,388,East,0
-# Rota 10 (389) - Lavender Town (350)
-389,South,3,350,North,0
-# Lavender Town (350) - Rota 8 (387)
-350,West,0,387,East,5
-# Lavender Town (350) - Rota 12 (408)
-350,South,0,408,North,0
-# Rota 11 (403) - Rota 12 (408)
-403,East,0,408,West,50
-# Rota 10 (389) - Lavender Town (350)
-389,South,3,350,North,0
-# Rota 6 (381) - Vermilion City (380)
-381,South,0,380,North,9
-# Rota 11 (403) - Vermilion City (380)
-403,West,0,380,East,1
-# Rota 13 (409) - Rota 12 (408)
-409,North,48,408,South,0
-# Rota 14 (410) - Rota 13 (409)
-410,East,0,409,West,0
-# Rota 15 (411) - Rota 14 (410)
-411,East,0,410,West,30
+# Verdanturf (285) - Rota 117 (674)
+285,East,0,674,West,1
+# Rota 108 (289) - Rota 107 (288)
+289,West,0,288,East,0
+# Rota 123 (686) - Rota 118 (291)
+686,West,0,291,East,0
+# Rota 122 (329) - Rota 118 (291)
+329,South,0,291,North,175
+# Rota 119 (675) - Rota 118 (291)
+675,South,0,291,North,40
+# rota 113 (293) - Rota 112 (292)
+293,South,60,292,North,0
+# Rota 111 (673) - Rota 112 (292)
+673,West,20,292,East,0
+# Rota 111 (673) - rota 113 (293)
+673,West,0,293,East,3
+# Rota 122 (329) - Rota 121 (677)
+329,North,0,677,South,8
+# Rota 122 (329) - Rota 123 (686)
+329,South,0,686,North,95
+# Cinnabar Island (330) - Rota 20 (423)
+330,East,0,423,West,39
+# Rota 21 (424) - Cinnabar Island (330)
+424,South,2,330,North,0
 # Rota 15 (411) - Fuchsia City (331)
 411,West,0,331,East,1
 # Rota 19 (422) - Fuchsia City (331)
 422,North,0,331,South,13
 # Fuchsia City (331) - Rota 18 (419)
 331,West,11,419,East,0
-# Rota 19 (422) - Rota 20 (423)
-422,West,1,423,East,0
-# Cinnabar Island (330) - Rota 20 (423)
-330,East,0,423,West,39
-# Rota 21 (424) - Cinnabar Island (330)
-424,South,2,330,North,0
-# Pallet town (263) - Rota 21 (424)
-263,South,2,424,North,0
-# Rota 18 (419) - Rota 17 (418)
-419,North,0,418,South,1
 # Fuchsia City (331) - Rota 17 (418)
 331,West,0,418,East,149
-# Rota 16 (414) - Celadon City (386)
-414,East,0,386,West,0
-# Rota 16 (414) - Rota 17 (418)
-414,South,0,418,North,0
-# Celadon City (386) - Rota 7 (385)
-386,East,9,385,West,0
-# Rota (257) - Coliseum town (256)
-257,North,0,256,South,8
+# Rota 26 (337) - Rota 26 (336)
+337,North,0,336,South,0
+# Rota 26 complemento cima (338) - Rota 26 (336)
+338,South,0,336,North,0
 # Valencia Island (340) - Rota baixo (342)
 340,South,4,342,North,0
-# Ilha do Gelo (646) - Ilha do Raio (645)
-646,North,0,645,South,0
+# Rota 10 (389) - Lavender Town (350)
+389,South,3,350,North,0
+# Lavender Town (350) - Rota 8 (387)
+350,West,0,387,East,5
+# Lavender Town (350) - Rota 12 (408)
+350,South,0,408,North,0
+# Rota 6 (381) - Vermilion City (380)
+381,South,0,380,North,9
+# Rota 11 (403) - Vermilion City (380)
+403,West,0,380,East,1
+# Rota 25 (383) - Rota 24 (382)
+383,West,0,382,East,0
+# Celadon City (386) - Rota 7 (385)
+386,East,9,385,West,0
+# Rota 16 (414) - Celadon City (386)
+414,East,0,386,West,0
+# Rota 10 (389) - Rota 9 (388)
+389,West,2,388,East,0
+# Rota 11 (403) - Rota 12 (408)
+403,East,0,408,West,50
+# Rota 13 (409) - Rota 12 (408)
+409,North,48,408,South,0
+# Rota 14 (410) - Rota 13 (409)
+410,East,0,409,West,0
+# Rota 15 (411) - Rota 14 (410)
+411,East,0,410,West,30
+# Rota 16 (414) - Rota 17 (418)
+414,South,0,418,North,0
+# Rota 18 (419) - Rota 17 (418)
+419,North,0,418,South,1
+# Rota 19 (422) - Rota 20 (423)
+422,West,1,423,East,0
+# Rota baixo (521) - Ilha Sunburst (522)
+521,South,0,522,North,1
 # Rota baixo (523) - Ilha Sunburst (522)
 523,North,0,522,South,0
 # Rota esquerda (525) - Ilha Sunburst (522)
 525,West,0,522,East,35
-# Rota baixo (521) - Ilha Sunburst (522)
-521,South,0,522,North,1
-# Rota cima (542) - Rota direita (544)
-542,West,0,544,East,7
-# Ilha Kumquat (543) - Rota direita (544)
-543,East,8,544,West,0
-# Ilha Mikan (341) - Rota baixo (154)
-341,South,0,154,North,6
-# Vale Vileplume (343) - Rota baixo (154)
-343,North,1,154,South,0
-# Ilha Mandarim do Norte (155) - Ilha Mikan (341)
-155,South,0,341,North,91
-# Rota cima (156) - Ilha Mikan (341)
-156,South,0,341,North,0
-# Rota lado esquerdo (157) - Ilha Mikan (341)
-157,South,0,341,North,61
-# Rota cima (529) - Rota direita da direita (528)
-529,North,0,528,South,13
-# Rota direita (530) - Rota direita da direita (528)
-530,West,0,528,East,80
-# Ilha Trovita (531) - Rota direita da direita (528)
-531,North,42,528,South,0
-# Rota direita (527) - Rota direita da direita (528)
-527,East,0,528,West,0
-# Rota cima (537) - Rota baixo (539)
-537,North,0,539,South,0
-# Ilhas Grapefruit (538) - Rota baixo (539)
-538,South,27,539,North,0
 # Rota esquerda (525) - Rota baixo (523)
 525,West,0,523,East,0
-# Ilha Moro (535) - Rota direita-direita (534)
-535,West,45,534,East,0
-# Rota direita (530) - Rota direita-direita (534)
-530,East,0,534,West,3
-# Rota baixo (536) - Rota direita-direita (534)
-536,West,20,534,East,0
-# Ilha de Pummelo (547) - Rota baixo (545)
-547,North,0,545,South,0
-# Rota esquerda (548) - Rota baixo (545)
-548,East,55,545,West,0
-# Ilha Kumquat (543) - Rota baixo (545)
-543,South,0,545,North,0
-# Rota direita (549) - Rota baixo (545)
-549,South,110,545,North,0
-# Rota lado esquerdo (157) - Ilha Mandarim do Norte (155)
-157,East,0,155,West,0
-# Rota baixo (521) - Ilha Mandarim do Norte (155)
-521,North,0,155,South,0
 # Ilha Pinkan (524) - Rota cima (529)
 524,South,78,529,North,0
-# Rota direita (530) - Rota cima (529)
-530,West,0,529,East,30
-# Ilha Trovita (531) - Rota cima (529)
-531,East,0,529,West,0
-# Ilha Mandarim do Sul (526) - Rota cima (529)
-526,North,0,529,South,2
-# Rota direita (527) - Rota cima (529)
-527,South,43,529,North,0
-# Rota baixo (541) - Ilha Navel (540)
-541,North,0,540,South,0
-# Rota cima (542) - Ilha Navel (540)
-542,South,7,540,North,0
-# Rota direita (549) - Ilha Shamouti  (546)
-549,West,0,546,East,28
 # Rota esquerda (525) - Ilha Pinkan (524)
 525,East,5,524,West,0
 # Ilha Trovita (531) - Ilha Pinkan (524)
 531,North,0,524,South,23
 # Rota direita (527) - Ilha Pinkan (524)
 527,West,0,524,East,5
+# Ilha Mandarim do Sul (526) - Rota cima (529)
+526,North,0,529,South,2
+# Ilha Mandarim do Sul (526) - Rota direita (530)
+526,East,0,530,West,0
+# Rota direita (527) - Rota direita da direita (528)
+527,East,0,528,West,0
+# Rota direita (527) - Rota cima (529)
+527,South,43,529,North,0
+# Rota direita (527) - Ilha Trovita (531)
+527,South,0,531,North,12
+# Rota cima (529) - Rota direita da direita (528)
+529,North,0,528,South,13
+# Rota direita (530) - Rota direita da direita (528)
+530,West,0,528,East,80
+# Ilha Trovita (531) - Rota direita da direita (528)
+531,North,42,528,South,0
+# Rota direita (530) - Rota cima (529)
+530,West,0,529,East,30
+# Ilha Trovita (531) - Rota cima (529)
+531,East,0,529,West,0
+# Rota direita (530) - Rota direita-direita (534)
+530,East,0,534,West,3
+# Ilha Moro (535) - Rota direita-direita (534)
+535,West,45,534,East,0
+# Rota baixo (536) - Rota direita-direita (534)
+536,West,20,534,East,0
 # Rota baixo (536) - Ilha Moro (535)
 536,North,0,535,South,0
 # Rota cima (537) - Ilha Moro (535)
 537,South,0,535,North,2
-# Rota lado esquerdo (157) - Rota cima (156)
-157,West,0,156,East,0
-# Rota baixo (521) - Rota cima (156)
-521,North,0,156,South,91
-# Ilha Mandarim do Sul (526) - Rota direita (530)
-526,East,0,530,West,0
+# Rota cima (537) - Rota baixo (539)
+537,North,0,539,South,0
+# Ilhas Grapefruit (538) - Rota baixo (539)
+538,South,27,539,North,0
 # Ilhas Grapefruit (538) - Rota baixo (541)
 538,North,0,541,South,2
-# Rota esquerda (548) - Ilha de Pummelo (547)
-548,East,125,547,West,0
-# Rota direita (527) - Ilha Trovita (531)
-527,South,0,531,North,12
-# Rota baixo (521) - Rota lado esquerdo (157)
-521,West,0,157,East,30
+# Rota baixo (541) - Ilha Navel (540)
+541,North,0,540,South,0
+# Rota cima (542) - Ilha Navel (540)
+542,South,7,540,North,0
+# Rota cima (542) - Rota direita (544)
+542,West,0,544,East,7
+# Ilha Kumquat (543) - Rota direita (544)
+543,East,8,544,West,0
+# Ilha Kumquat (543) - Rota baixo (545)
+543,South,0,545,North,0
 # Ilha Kumquat (543) - Rota esquerda (548)
 543,West,0,548,East,0
+# Ilha de Shamouti (547) - Rota baixo (545)
+547,North,0,545,South,0
+# Rota esquerda (548) - Rota baixo (545)
+548,East,55,545,West,0
+# Rota direita (549) - Rota baixo (545)
+549,South,110,545,North,0
+# Rota direita (549) - Ilha Pummello (546)
+549,West,0,546,East,28
+# Rota esquerda (548) - Ilha de Shamouti (547)
+548,East,125,547,West,0
+# Ilha de Shamouti (547) - Ilha do Fogo (644)
+547,South,0,644,North,0
 # Rota direita (549) - Rota esquerda (548)
 549,East,0,548,West,0
-
 # Ilha do Raio (645) - Ilha do Fogo (644)
 645,North,0,644,South,0
-# Ilha de Pummelo (547) - Ilha do Fogo (644)
-547,South,0,644,North,0
 # Ilha do Gelo (646) - Ilha do Raio (645)
 646,North,0,645,South,0
-
-# rota 110 (210) - Slateport (209)
-210,South,0,209,North,3
-# Rota 109 (211) - Slateport (209)
-211,North,0,209,South,1
-# rota 110 (210) - rota 103 (204)
-210,West,59,204,East,0
-# Oldale Town (202) - rota 103 (204)
-202,North,0,204,South,0
-# rota 101 (201) - Litleroot town (200)
-201,South,0,200,North,0
-# Oldale Town (202) - rota 101 (201)
-202,South,0,201,North,9
-# Petalburg (205) - rota 102 (203)
-205,East,9,203,West,0
-# Oldale Town (202) - rota 102 (203)
-202,West,0,203,East,5
-# Rota 104 (206) - Petalburg (205)
-206,East,43,205,West,0
-# Rota 104 (206) - Rota 105 (286)
-206,South,0,286,North,2
-# Rota 106 (208) - Rota 105 (286)
-208,North,0,286,South,5
-# Rota 108 (289) - Rota 109 (211)
-289,East,0,211,West,10
-# Rota 104 (206) - Rota 107 (288)
-206,East,149,288,West,0
-# Rota 108 (289) - Rota 107 (288)
-289,West,0,288,East,0
-# Dewford (207) - Rota 107 (288)
-207,East,0,288,West,0
-# Rota 106 (208) - Rota 107 (288)
-208,South,37,288,North,0
-# Rota 106 (208) - Rota 108 (289)
-208,South,92,289,North,0
-# Rota 106 (208) - Dewford (207)
-208,South,3,207,North,0
 # Rota 116 (672) - Rota 115 (671)
 672,West,0,671,East,77
-# Rustboro City  (243) - Rota 115 (671)
-243,North,0,671,South,1
-# Rustboro City  (243) - Rota 116 (672)
-243,East,0,672,West,3
-# Rota 104 (206) - Rustboro City  (243)
-206,North,2,243,South,0
-# Rota 112 (292) - Lavaridge Town  (247)
-292,West,35,247,East,0
-# rota 110 (210) - Rota 112 (292)
-210,West,0,292,East,140
-# rota 113 (293) - Rota 112 (292)
-293,South,60,292,North,0
-# Rota 111 (673) - Rota 112 (292)
-673,West,20,292,East,0
-# Mauville City (245) - Rota 112 (292)
-245,West,0,292,East,120
-# rota 113 (293) - Fallabor Town  (248)
-293,West,0,248,East,2
-# Rota 114 (327) - Fallabor Town  (248)
-327,East,0,248,West,1
-# rota 113 (293) - rota 110 (210)
-293,East,163,210,West,0
-# Rota 117 (674) - rota 110 (210)
-674,East,26,210,West,0
-# Mauville City (245) - rota 110 (210)
-245,South,0,210,North,0
-# Rota 111 (673) - rota 113 (293)
-673,West,0,293,East,3
-# Mauville City (245) - rota 113 (293)
-245,West,0,293,East,143
 # Rota 117 (674) - Rota 111 (673)
 674,East,0,673,West,134
-# Mauville City (245) - Rota 111 (673)
-245,North,0,673,South,0
-# Mauville City (245) - Rota 117 (674)
-245,West,0,674,East,6
-# Verdanturf (285) - Rota 117 (674)
-285,East,0,674,West,1
+# Rota 119 (675) - MAP792 (792)
+675,East,26,792,West,0
+# MAP791 (791) - Rota 119 (675)
+791,East,0,675,West,0
+# complemento1 (794) - Rota 120 (676)
+794,South,0,676,North,0
+# complemento2 (795) - Rota 120 (676)
+795,West,0,676,East,0
 # Rota 121 (677) - Rota 120 (676)
 677,West,0,676,East,75
-# Fortree City  (249) - Rota 120 (676)
-249,East,5,676,West,0
-# Mauville City (245) - Rota 118 (291)
-245,East,0,291,West,0
-# Rota 123 (686) - Rota 118 (291)
-686,West,0,291,East,0
-# Rota 122 (329) - Rota 118 (291)
-329,South,0,291,North,175
-# Lilycove City (250) - Rota 121 (677)
-250,West,5,677,East,0
-# Rota 122 (329) - Rota 121 (677)
-329,North,0,677,South,8
-# Rota 127 (680) - Rota 126 (683)
-680,West,10,683,East,0
-# Lilycove City (250) - Rota 124 (678)
-250,East,0,678,West,11
 # Rota 127 (680) - Rota 124 (678)
 680,North,0,678,South,79
-# Mossdeep City (251) - Rota 124 (678)
-251,West,0,678,East,40
-# Rota 119 (675) - Fortree City  (249)
-675,East,0,249,West,5
-# Rota 122 (329) - Mauville City (245)
-329,South,0,245,North,215
-# Mossdeep City (251) - Rota 127 (680)
-251,South,0,680,North,1
-# Rota 122 (329) - Rota 123 (686)
-329,South,0,686,North,95
-# Rota 130 (688) - Rota 129 (687)
-688,East,0,687,West,2
+# Rota 127 (680) - Rota 126 (683)
+680,West,10,683,East,0
 # Rota 131 (681) - Rota 130 (688)
 681,East,1,688,West,0
-# Rota 131 (681) - Automare (244)
-681,West,2,244,East,0
-# Rota 134 (690) - Slateport (209)
-690,West,5,209,East,0
+# Rota 130 (688) - Rota 129 (687)
+688,East,0,687,West,2
 # Rota 134 (690) - Rota 133 (689)
 690,East,0,689,West,0
-# Rota 119 (675) - Rota 118 (291)
-675,South,0,291,North,40
-# Azaléia Town (42) - Complemento Azaléia (841)
-42,North,0,841,South,0
-# Rota 3 (270) - Pewter City (269)
-270,West,0,269,East,24
-# Rota 4 (377) - Pewter City (269)
-377,West,6,269,East,0
-# Rota 4 (377) - Rota 3 (270)
-377,South,0,270,North,0
-
+# complemento2 (795) - complemento1 (794)
+795,West,0,794,East,15
+# Rota 45 (169) - Route 46 (297)
+169,West,72,297,East,0
+# Route 46 - Complemento (852) - Route 46 (297)
+852,West,0,297,East,20
+# Blacktorn City (158) - Rota 45 (169)
+158,South,0,169,North,1

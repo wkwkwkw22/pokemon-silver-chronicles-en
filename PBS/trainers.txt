@@ -84,12 +84,13 @@ Pokemon = BELLSPROUT,7
 Pokemon = HOOTHOOT,7
 #-------------------------------
 [ELDER,Li]
+Items = DYNAMAXBAND
 Pokemon = BELLSPROUT,12
     Moves = VINEWHIP,STUNSPORE
 Pokemon = HOOTHOOT,12
 Pokemon = BELLSPROUT,12
     Moves = VINEWHIP,POISONPOWDER
-    TrainerAce = yes
+    Ace = yes
     DynamaxLvl = 5
 Pokemon = BELLSPROUT,12
     Moves = VINEWHIP,SLEEPPOWDER

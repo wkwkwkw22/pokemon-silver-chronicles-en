@@ -109,7 +109,7 @@ class Battle::Battler
     return true if !@battle.pbOwnedByPlayer?(@index)
     disobedient = false
     # Pokémon may be disobedient; calculate if it is
-    badge_level = 10 * (@battle.pbPlayer.badge_count + 1)
+    badge_level = (10 * (@battle.pbPlayer.badge_count + 1))  + 5
     badge_level = GameData::GrowthRate.max_level if @battle.pbPlayer.badge_count >= 8
     if Settings::ANY_HIGH_LEVEL_POKEMON_CAN_DISOBEY ||
        (Settings::FOREIGN_HIGH_LEVEL_POKEMON_CAN_DISOBEY && @pokemon.foreign?(@battle.pbPlayer))

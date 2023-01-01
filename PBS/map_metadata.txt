@@ -55,6 +55,7 @@ Name = Violet City
 Outdoor = true
 ShowArea = true
 MapPosition = 0,17,9
+Flags = PowerSpot
 #-------------------------------
 [011]   # Route 32
 Name = Route 32
@@ -103,6 +104,7 @@ Name = Violet City - Sprout Tower 3F
 MapPosition = 0,17,8
 BattleBack = battle1
 Environment = Cave
+Flags = PowerSpot
 #-------------------------------
 [034]   # Violet City - Poké Center
 Name = Violet City - Poké Center
@@ -169,10 +171,12 @@ Outdoor = true
 ShowArea = true
 HealingSpot = 56,34,49
 MapPosition = 0,13,12
+Flags = PowerSpot
 #-------------------------------
 [059]   # Goldenrod City - Tunnel
 Name = Goldenrod City - Tunnel
 BattleBack = tunnel
+Flags = PowerSpot
 #-------------------------------
 [075]   # National Park
 Name = National Park
@@ -437,7 +441,7 @@ Name = Pokecenter
 MapPosition = 2,5,11
 #-------------------------------
 [243]   # Rustboro City 
-Name = Rustboro City 
+Name = Rustboro City
 Outdoor = true
 ShowArea = true
 HealingSpot = 243,20,39
@@ -451,21 +455,21 @@ HealingSpot = 245,22,5
 MapPosition = 2,10,8
 #-------------------------------
 [247]   # Lavaridge Town 
-Name = Lavaridge Town 
+Name = Lavaridge Town
 Outdoor = true
 ShowArea = true
 HealingSpot = 247,15,12
 MapPosition = 2,8,5
 #-------------------------------
 [248]   # Fallarbor Town 
-Name = Fallarbor Town 
+Name = Fallarbor Town
 Outdoor = true
 ShowArea = true
 HealingSpot = 248,14,13
 MapPosition = 2,6,2
 #-------------------------------
 [249]   # Fortree City 
-Name = Fortree City 
+Name = Fortree City
 Outdoor = true
 ShowArea = true
 HealingSpot = 249,5,10
@@ -586,10 +590,11 @@ Name = Unown Cave
 BattleBack = unown
 Environment = Cave
 #-------------------------------
-[297]   # Rota 46
+[297]   # Route 46
 Name = Rota 46
 Outdoor = true
 MapPosition = 0,21,12
+BattleBack = grass
 #-------------------------------
 [299]   # Rota 23
 Name = Rota 23
