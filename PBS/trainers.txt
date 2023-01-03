@@ -116,6 +116,7 @@ Pokemon = PIDGEY,7
 Pokemon = PIDGEY,7
 #-------------------------------
 [LEADER_Falkner,Falkner]
+Items = MEGARING
 LoseText = "I understand...I'll blow out gracefully..."
 Pokemon = PIDGEY,10
 Pokemon = PIDGEOTTO,13

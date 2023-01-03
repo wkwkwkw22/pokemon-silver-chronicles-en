@@ -78,7 +78,7 @@ Land,21
     5,PIDGEY,4
     4,BIDOOF,3,6
     4,SHINX,4,5
-    2,BULBASAUR,4,6
+    2,YAMPER,4,6
 Water,2
     60,MAGIKARP,2
     30,GOLDEEN,3
@@ -105,7 +105,7 @@ LandNight,21
     5,SPINARAK,3,5
     4,BIDOOF,3,6
     4,SHINX,4,6
-    2,BULBASAUR,4,6
+    2,YAMPER,4,6
 #-------------------------------
 [011] # Pokémon Institute
 Land,21
@@ -1894,7 +1894,7 @@ Water,2
 #-------------------------------
 [546]
 Land,21
-    100,BULBASAUR,20
+    100,YAMPER,20
 Water,2
     60,GYARADOS,37,40
     30,POLIWHIRL,37,41
@@ -2277,7 +2277,7 @@ Cave,5
     30,ZUBAT,23
     11,SEEL,22,24
     8,GOLBAT,23
-    1,BULBASAUR,20
+    1,YAMPER,20
 #-------------------------------
 [739]
 Cave,5
