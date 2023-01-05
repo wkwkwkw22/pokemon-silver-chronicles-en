@@ -37,10 +37,12 @@ Pokemon = RATICATE,26
 Pokemon = RATICATE,26
 #-------------------------------
 [YOUNGSTER,Mario]
+LoseText = "That's strange.\nI won before."
 Pokemon = PIDGEY,2
 Pokemon = RATTATA,4
 #-------------------------------
 [BUGCATCHER,Don]
+LoseText = "I need to train more."
 Pokemon = CATERPIE,3
 Pokemon = CATERPIE,3
 #-------------------------------
@@ -59,31 +61,38 @@ Pokemon = BUTTERFREE,22
 Pokemon = BEEDRILL,23
 #-------------------------------
 [MONGE,Nico]
+LoseText = "I fought hard but I'm still pretty weak."
 Pokemon = BELLSPROUT,3
 Pokemon = BELLSPROUT,3
 Pokemon = BELLSPROUT,3
 #-------------------------------
 [MONGE,Chow]
+LoseText = "T-Thank you."
 Pokemon = BELLSPROUT,3
 Pokemon = BELLSPROUT,3
 Pokemon = BELLSPROUT,3
 #-------------------------------
 [MONGE,Edmond]
+LoseText = "I'm weak!"
 Pokemon = BELLSPROUT,3
 Pokemon = BELLSPROUT,3
 Pokemon = BELLSPROUT,3
 #-------------------------------
 [MONGE,Jin]
+LoseText = "Beaten by a rookie"
 Pokemon = BELLSPROUT,6
 #-------------------------------
 [MONGE,Neal]
+LoseText = "It's my head that shines!"
 Pokemon = BELLSPROUT,6
 #-------------------------------
 [MONGE,Troy]
+LoseText = "Yes, you really trust!"
 Pokemon = BELLSPROUT,7
 Pokemon = HOOTHOOT,7
 #-------------------------------
 [ELDER,Li]
+LoseText = "Ah, excellent!"
 Items = DYNAMAXBAND
 Pokemon = BELLSPROUT,12
     Moves = VINEWHIP,STUNSPORE
@@ -109,9 +118,11 @@ Pokemon = RATTATA,15
     Moves = QUICKATTACK,BITE,SUPERFANG
 #-------------------------------
 [BIRDKEEPER,Abe]
+LoseText = "It can't be real!"
 Pokemon = SPEAROW,9
 #-------------------------------
 [BIRDKEEPER,Rod]
+LoseText = "Gaaah!"
 Pokemon = PIDGEY,7
 Pokemon = PIDGEY,7
 #-------------------------------
@@ -129,11 +140,9 @@ Pokemon = STARLY,12
 Pokemon = WINGULL,13
 #-------------------------------
 [YOUNGSTER,Albert]
+LoseText = "You're strong!"
 Pokemon = RATTATA,6
 Pokemon = ZUBAT,8
-#-------------------------------
-[PICNICKER,Liz]
-Pokemon = NIDORANfE,9
 #-------------------------------
 [PICNICKER,Liz]
 LoseText = "So strong!"
@@ -145,48 +154,60 @@ Pokemon = NIDORANfE,15
 Pokemon = NIDORINA,16
 #-------------------------------
 [FISHERMAN,Henry]
+LoseText = "Splash?"
 Pokemon = POLIWAG,8
 Pokemon = POLIWAG,8
 #-------------------------------
 [FISHERMAN,Justin]
+LoseText = "Splooosh!"
 Pokemon = MAGIKARP,5
 Pokemon = MAGIKARP,5
 Pokemon = MAGIKARP,15
 Pokemon = MAGIKARP,5
 #-------------------------------
 [FISHERMAN,Ralph]
+LoseText = "Tch!I tried to rush things..."
 Pokemon = GOLDEEN,10
 #-------------------------------
 [YOUNGSTER,Gordon]
+LoseText = "Oh no!I thought I could win."
 Pokemon = WOOPER,10
 #-------------------------------
 [CAMPER,Roland]
+LoseText = "Hmmm.That's disapointing..."
 Pokemon = NIDORANmA,9
 #-------------------------------
 [BIRDKEEPER,Peter]
+LoseText = "I know what my weaknesses are."
 Pokemon = PIDGEY,6
 Pokemon = PIDGEY,6
 Pokemon = SPEAROW,8
 #-------------------------------
 [HIKER,Daniel]
+LoseText = "Whoa! I'm beaten big time."
 Pokemon = ONIX,9
 #-------------------------------
 [HIKER,Russel]
+LoseText = "Oh, oh, oh!"
 Pokemon = GEODUDE,4
 Pokemon = GEODUDE,6
 Pokemon = GEODUDE,8
 #-------------------------------
 [KINDLER,Bill]
+LoseText = " I flamed out!"
 Pokemon = KOFFING,6
 Pokemon = KOFFING,6
 #-------------------------------
 [POKeMANIAC,Larry]
+LoseText = "Ugh!My poor Pokémon..."
 Pokemon = SLOWPOKE,10
 #-------------------------------
 [KINDLER,Ray]
+LoseText = "Lights!"
 Pokemon = VULPIX,9
 #-------------------------------
 [HIKER,Anthony]
+LoseText = "Whoa. You got more zip than me."
 Pokemon = GEODUDE,11
 Pokemon = MACHOP,11
 #-------------------------------
@@ -195,15 +216,18 @@ LoseText = "So strong!"
 Pokemon = GEODUDE,16
 Pokemon = MACHOKE,17
 #-------------------------------
-[ROCKET_Male,Grunt]
+[ROCKET_Male,Grunt, 1]
+LoseText = "Arrgh! This is NOT my day!"
 Pokemon = RATTATA,9
 Pokemon = RATTATA,9
 #-------------------------------
-[ROCKET_Female,Grunt]
+[ROCKET_Female,Grunt, 1]
+LoseText = "You rotten kid!"
 Pokemon = ZUBAT,9
 Pokemon = EKANS,11
 #-------------------------------
 [ROCKET_Male,???]
+LoseText = "Just...Too strong..."
 Pokemon = ZUBAT,9
 Pokemon = RATTATA,7
 Pokemon = ZUBAT,9

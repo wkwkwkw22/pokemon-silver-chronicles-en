@@ -22,7 +22,13 @@
 19,TUBER_Male,TUBER,30,,,,Mixed,,
 20,HEXMANIAC,HEX MANIAC,30,,,,Mixed,,
 21,PkMnBREEDER_Female,PkMn BREEDER,30,,,,Mixed,,
-22,ROCKET_Male,ROCKET,30,,,GSCTeamRocketEncounter.mid,Mixed,,
+#----------22---------------------
+[ROCKET_Male]
+Name = Team Rocket
+Gender = Male
+BaseMoney = 32
+IntroBGM = GSCTeamRocketEncounter
+#-------------------------------
 23,ROCKET_Female,ROCKET,30,,,GSCTeamRocketEncounter.mid,Mixed,,
 24,INTERVIEWERS,INTERVIEWERS,30,,,Encounter-Reporter-TV_Theme_2.mid,Mixed,,
 25,TUBER_Female,TUBER,30,,,,Mixed,,
