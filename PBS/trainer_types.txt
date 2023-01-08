@@ -28,6 +28,7 @@ Name = Team Rocket
 Gender = Male
 BaseMoney = 32
 IntroBGM = GSCTeamRocketEncounter
+BattleBGM = team-rocket-battle
 #-------------------------------
 23,ROCKET_Female,ROCKET,30,,,GSCTeamRocketEncounter.mid,Mixed,,
 24,INTERVIEWERS,INTERVIEWERS,30,,,Encounter-Reporter-TV_Theme_2.mid,Mixed,,
@@ -133,7 +134,15 @@ IntroBGM = GSCTeamRocketEncounter
 124,EUSINE,Homem Misterioso,100,GSCRival.mid,Victory - Trainer.mid,GSCTeamRocketEncounter.mid,Mixed,,
 125,ROCKET_EXECUTIVE2,Rocket Executive,80,GSCRival.mid,Victory - Trainer.mid,GSCTeamRocketEncounter.mid,Mixed,,
 126,ROCKET_EXECUTIVE3,Rocket Executive,80,GSCRival.mid,Victory - Trainer.mid,GSCTeamRocketEncounter.mid,Mixed,,
-127,ROCKET_PROTON,Rocket Executive,80,GSCRival.mid,Victory - Trainer.mid,GSCRival.mid,Mixed,,
+#----------127---------------------
+[ROCKET_PROTON]
+Name = Rocket Executive
+Gender = Male
+BaseMoney = 80
+IntroBGM = GSCTeamRocketEncounter
+BattleBGM = team-rocket-battle
+VictoryBGM = Victory - Trainer
+#-------------------------------
 128,GUARDIAOFOGO,Guardiao,30,,,,Mixed,,
 129,GUARDIAORAIO,Guardiao,30,,,,Mixed,,
 130,GUARDIAOGELO,Guardiao,30,,,,Mixed,,

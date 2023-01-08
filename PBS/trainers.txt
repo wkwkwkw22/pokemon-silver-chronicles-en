@@ -116,6 +116,7 @@ Pokemon = GOLBAT,16
     Moves = SUPERSONIC,ABSORB,POISONFANG,SNORE
 Pokemon = RATTATA,15
     Moves = QUICKATTACK,BITE,SUPERFANG
+	Form = 1
 #-------------------------------
 [BIRDKEEPER,Abe]
 LoseText = "It can't be real!"
@@ -269,36 +270,31 @@ Pokemon = CROCONAW,18
     Moves = WATERGUN,BITE,ICEFANG
 #-------------------------------
 [TWINS,Amy & May]
-Pokemon = LEDYBA,10
-Pokemon = SPINARAK,10
+LoseText = "Oh, goodness!"
+Pokemon = LEDYBA,11
+Pokemon = SPINARAK,11
 #-------------------------------
 [BUGCATCHER,Josh]
+LoseText = "Uuuurrghh!"
 Pokemon = PARAS,13
 #-------------------------------
 [BUGCATCHER,Al]
-Pokemon = CATERPIE,12
-Pokemon = WEEDLE,12
+LoseText = "You proved how strong you are."
+Pokemon = CATERPIE,13
+Pokemon = WEEDLE,13
 #-------------------------------
 [BUGCATCHER,Benny]
-Pokemon = WEEDLE,7
-Pokemon = BEEDRILL,12
-Pokemon = KAKUNA,9
+LoseText = "Just evolving isn't enough!"
+Pokemon = WEEDLE,10
+Pokemon = BEEDRILL,13
+Pokemon = KAKUNA,12
 #-------------------------------
 [LEADER_Bugsy,Bugsy]
-LoseText = "Humpf! Useless Pokémon!"
-Pokemon = PINSIR,16
-    Moves = ROCKTOMB,STORMTHROW,VITALTHROW,BUGBITE
-Pokemon = BEEDRILL,16
-    Moves = TOXICSPIKES,FURYATTACK,PURSUIT,ACROBATICS
-Pokemon = BUTTERFREE,16
-    Moves = POISONPOWDER,STUNSPORE,PSYBEAM
-Pokemon = SHEDINJA,15
-    Moves = DIG,PROTECT,SANDATTACK,SHADOWSNEAK
+LoseText = "Aw, that's the end of it..."
+Items = MEGARING
 Pokemon = SCIZOR,20
     Moves = POISONPOWDER,STUNSPORE,PSYBEAM
     Item = SCIZORITE
-Pokemon = VESPIQUEN,18
-    Moves = CONFUSERAY,PROTECT,STUNSPORE,BUGBITE
 #-------------------------------
 [CAMPER,Tood]
 Pokemon = PSYDUCK,14

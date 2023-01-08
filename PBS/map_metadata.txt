@@ -55,7 +55,6 @@ Name = Violet City
 Outdoor = true
 ShowArea = true
 MapPosition = 0,17,9
-Flags = PowerSpot
 #-------------------------------
 [011]   # Route 32
 Name = Route 32
@@ -154,6 +153,11 @@ MapPosition = 0,13,15
 BattleBack = cave1
 Environment = Cave
 #-------------------------------
+[048]   # Azalea Town - Gym
+Name = Azalea Town - Gym
+MapPosition = 0,14,15
+Environment = Grass
+#-------------------------------
 [050]   # Ilex Forest
 Name = Ilex Forest
 MapPosition = 0,13,15
@@ -171,12 +175,10 @@ Outdoor = true
 ShowArea = true
 HealingSpot = 56,34,49
 MapPosition = 0,13,12
-Flags = PowerSpot
 #-------------------------------
 [059]   # Goldenrod City - Tunnel
 Name = Goldenrod City - Tunnel
 BattleBack = tunnel
-Flags = PowerSpot
 #-------------------------------
 [075]   # National Park
 Name = National Park
