@@ -307,12 +307,14 @@ Pokemon = VESPIQUEN,18
     Moves = CONFUSERAY,PROTECT,STUNSPORE,BUGBITE
 #-------------------------------
 [CAMPER,Tood]
+LoseText = "You don't have to worry about the night when you're with strong Pokémon."
 Pokemon = PSYDUCK,14
 #-------------------------------
 [KINDLER,Keith]
 Pokemon = GROWLITHE,17
 #-------------------------------
 [YOUNGSTER,Ian]
+LoseText = "No! There are better Trainers."
 Pokemon = MANKEY,10
 Pokemon = DIGLETT,12
 #-------------------------------
@@ -323,15 +325,18 @@ Pokemon = DIGLETT,22
 Pokemon = PRIMEAPE,23
 #-------------------------------
 [POKeFAN_Male,Brandon]
+LoseText = "Why does it end this way??"
 Pokemon = SNUBBULL,13
 #-------------------------------
 [YOUNGSTER,Samuel]
+LoseText = "Whoa"
 Pokemon = RATTATA,7
 Pokemon = SANDSHREW,10
 Pokemon = SPEAROW,8
 Pokemon = SPEAROW,8
 #-------------------------------
 [PICNICKER,Gina]
+LoseText = "Oh, no! I just can't win..."
 Pokemon = HOPPIP,8
 Pokemon = HOPPIP,9
 Pokemon = BULBASAUR,12

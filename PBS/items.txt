@@ -4674,6 +4674,16 @@ Flags = Fling_90
 Move = ROCKCLIMB
 Description = A charging attack that may also leave the foe confused.
 #-------------------------------
+[TM101]
+Name = TM101
+NamePlural = TM101s
+Pocket = 4
+Price = 2000
+FieldUse = TR
+Flags = Fling_30
+Move = HEADBUTT
+Description = The user sticks out its head and attacks by charging into the foe. It may also make the target flinch.
+#-------------------------------
 [HM01]
 Name = HM01
 NamePlural = HM01s

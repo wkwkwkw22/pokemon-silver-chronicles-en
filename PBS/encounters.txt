@@ -279,7 +279,7 @@ Cave,14
     1,SLOWPOKE,8,10
 #-------------------------------
 [050] # Ilex Forest
-Cave,5
+Cave,15
     21,WEEDLE,6
     20,PARAS,6
     10,EKANS,6,7
@@ -305,7 +305,7 @@ SuperRod
     45,POLIWAG,40
 HeadbuttLow
     30,CATERPIE,3,6
-    25,WEEDLE,3,6
+    25,HERACROSS,6,8
     20,METAPOD,5,7
     10,KAKUNA,5,7
     5,HERACROSS,5,7
@@ -637,9 +637,9 @@ Land,21
 [175] # Route 27
 Land,21
     50,DODUO,28
+    10,ARBOK,30
     10,ARBOK,27
     10,ARBOK,28
-    10,ARBOK,30
     9,PONYTA,32
     5,RATICATE,29
     4,RATICATE,30
@@ -1500,10 +1500,10 @@ SuperRod
 Land,21
     20,TANGELA,21
     20,TANGELA,20
-    10,TANGELA,18
-    10,TANGELA,22
     10,TANGELA,23
     10,TANGELA,19
+    10,TANGELA,18
+    10,TANGELA,22
     5,TANGELA,17
     5,TANGELA,16
     4,TANGELA,25
@@ -1982,10 +1982,10 @@ Cave,5
 Cave,5
     20,GOLBAT,25,31
     20,MACHOP,25,32
-    10,GEODUDE,25,32
-    10,GEODUDE,26,33
     10,GEODUDE,24,31
     10,GEODUDE,23,30
+    10,GEODUDE,25,32
+    10,GEODUDE,26,33
     5,PHANPY,23,27
     5,ZUBAT,22,27
     4,GOLBAT,27,33
