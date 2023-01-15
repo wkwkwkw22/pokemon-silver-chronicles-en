@@ -9,7 +9,6 @@ class PokemonGlobalMetadata
 end
 
 
-
 class Game_Temp
   attr_accessor :encounter_triggered
   attr_accessor :encounter_type
@@ -537,6 +536,8 @@ class TrainerBattle
         arg.party.each { |pkmn| pokemon_array.push(pkmn) }
       when Array   # [trainer type, trainer name, version number, speech (optional)]
         raise _INTL("Trainer type {1} was given but not a trainer name.", trainer_type) if trainer_type
+        pbMessage(_INTL("{1} entered here", trainer_type))
+
         trainer = pbLoadTrainer(arg[0], arg[1], arg[2])
         pbMissingTrainer(arg[0], arg[1], arg[2]) if !trainer
         trainer = pbLoadTrainer(arg[0], arg[1], arg[2]) if !trainer   # Try again

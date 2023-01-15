@@ -342,20 +342,24 @@ Pokemon = HOPPIP,9
 Pokemon = BULBASAUR,12
 #-------------------------------
 [SUPERNERD,Eric]
+LoseText = " ...Grumble..."
 Pokemon = GRIMER,16
 Pokemon = GRIMER,15
 Pokemon = LICKITUNG,13
 #-------------------------------
 [COLLECTOR,Isaac]
+LoseText = "Ayeee!"
 Pokemon = LICKITUNG,12
 #-------------------------------
 [SUPERNERD,Teru]
+LoseText = "Ow, ow, ow!"
 Pokemon = MAGNEMITE,15
 Pokemon = VOLTORB,13
 Pokemon = MAGNEMITE,13
 Pokemon = MAGNEMITE,13
 #-------------------------------
 [COLLECTOR,Donald]
+LoseText = "Gah! I lost! That makes me mad!"
 Pokemon = SLOWPOKE,10
 Pokemon = SLOWPOKE,10
 #-------------------------------
@@ -2988,14 +2992,17 @@ Pokemon = LINOONE,14
 Pokemon = WINGULL,15
 #-------------------------------
 [YOUNGSTER,Dani]
+LoseText = "That will not remain like this!"
 Pokemon = RATTATA,9
 Pokemon = SPINARAK,10
 #-------------------------------
 [LASS,Rose]
+LoseText = "This Pokémon stole all my lunch food!"
 Pokemon = BUTTERFREE,10
 Pokemon = SENTRET,9
 #-------------------------------
 [KINDLER,Pedro]
+LoseText = "This Pokémon is not yours?!"
 Pokemon = VULPIX,9
 Pokemon = SLUGMA,10
 #-------------------------------
