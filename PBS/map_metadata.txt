@@ -40,6 +40,7 @@ Name = Goldenrod City - Gym
 MapPosition = 0,13,11
 BattleBack = battle3
 Environment = None
+Flags = PowerSpot
 #-------------------------------
 [008]   # Elm's Lab
 Name = Elm's Lab

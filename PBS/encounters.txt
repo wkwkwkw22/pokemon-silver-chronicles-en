@@ -349,7 +349,7 @@ SuperRod
     1,POLIWAG,7
 LandNight,21
     20,DROWZEE,10,12
-    20,RATTATA,10,11
+    20,RATTATA_1,10,12
     15,PIDGEY,10,12
     10,ABRA,10
     10,HOOTHOOT,11,12
@@ -358,7 +358,7 @@ LandNight,21
     4,PANCHAM,11,14
     4,SNUBBULL,10,12
     1,DITTO,10
-    1,SNUBBULL,10
+    1,SNUBBULL,14
 #-------------------------------
 [075] # National Park
 Land,21

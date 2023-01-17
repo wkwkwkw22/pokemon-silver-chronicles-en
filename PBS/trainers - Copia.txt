@@ -1,4 +1,4 @@
-﻿# See the documentation on the wiki to learn how to edit this file.
+# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
 [Rival,???,1]
 LoseText = Hmm... Are you happy you won?!
@@ -92,8 +92,8 @@ Pokemon = BELLSPROUT,7
 Pokemon = HOOTHOOT,7
 #-------------------------------
 [ELDER,Li]
-Items = DYNAMAXBAND
 LoseText = Ah, excellent!
+Items = DYNAMAXBAND
 Pokemon = BELLSPROUT,12
     Moves = VINEWHIP,STUNSPORE
 Pokemon = HOOTHOOT,12
@@ -115,8 +115,8 @@ Pokemon = EKANS,13
 Pokemon = GOLBAT,16
     Moves = SUPERSONIC,ABSORB,POISONFANG,SNORE
 Pokemon = RATTATA,15
-    Form = 1
     Moves = QUICKATTACK,BITE,SUPERFANG
+	Form = 1
 #-------------------------------
 [BIRDKEEPER,Abe]
 LoseText = It can't be real!
@@ -195,7 +195,7 @@ Pokemon = GEODUDE,6
 Pokemon = GEODUDE,8
 #-------------------------------
 [KINDLER,Bill]
-LoseText = I flamed out!
+LoseText =  I flamed out!
 Pokemon = KOFFING,6
 Pokemon = KOFFING,6
 #-------------------------------
@@ -217,12 +217,12 @@ LoseText = So strong!
 Pokemon = GEODUDE,16
 Pokemon = MACHOKE,17
 #-------------------------------
-[ROCKET_Male,Grunt,1]
+[ROCKET_Male,Grunt, 1]
 LoseText = Arrgh! This is NOT my day!
 Pokemon = RATTATA,9
 Pokemon = RATTATA,9
 #-------------------------------
-[ROCKET_Female,Grunt,1]
+[ROCKET_Female,Grunt, 1]
 LoseText = You rotten kid!
 Pokemon = ZUBAT,9
 Pokemon = EKANS,11
@@ -234,7 +234,6 @@ Pokemon = RATTATA,7
 Pokemon = ZUBAT,9
 #-------------------------------
 [ROCKET_Male,?]
-LoseText = ...
 Pokemon = KOFFING,14
 #-------------------------------
 [Rival,???,4]
@@ -291,8 +290,8 @@ Pokemon = BEEDRILL,13
 Pokemon = KAKUNA,12
 #-------------------------------
 [LEADER_Bugsy,Bugsy]
-Items = MEGARING
 LoseText = Aw, that's the end of it...
+Items = MEGARING
 Pokemon = PINSIR,16
     Moves = ROCKTOMB,STORMTHROW,VITALTHROW,BUGBITE
 Pokemon = BEEDRILL,16
@@ -312,7 +311,6 @@ LoseText = You don't have to worry about the night when you're with strong Poké
 Pokemon = PSYDUCK,14
 #-------------------------------
 [KINDLER,Keith]
-LoseText = ...
 Pokemon = GROWLITHE,17
 #-------------------------------
 [YOUNGSTER,Ian]
@@ -344,7 +342,7 @@ Pokemon = HOPPIP,9
 Pokemon = BULBASAUR,12
 #-------------------------------
 [SUPERNERD,Eric]
-LoseText = ...Grumble...
+LoseText =  ...Grumble...
 Pokemon = GRIMER,16
 Pokemon = GRIMER,15
 Pokemon = LICKITUNG,13
@@ -366,72 +364,52 @@ Pokemon = SLOWPOKE,10
 Pokemon = SLOWPOKE,10
 #-------------------------------
 [PICNICKER,Kim]
-LoseText = Oh.I couldn't win...
 Pokemon = VULPIX,15
 #-------------------------------
 [CAMPER,Ivan]
-LoseText = I give up!
-Pokemon = DIGLETT,12
+Pokemon = DIGLETT,10
 Pokemon = DIGLETT,14
-Pokemon = ZUBAT,12
+Pokemon = ZUBAT,10
 #-------------------------------
 [CAMPER,Elliot]
-LoseText = I wish you would have lost for me...
 Pokemon = SANDSHREW,13
 Pokemon = MARILL,15
 #-------------------------------
 [PICNICKER,Brooke]
-LoseText = Oh, my! You're so strong!
 Pokemon = PIKACHU,16
 #-------------------------------
 [KINDLER,Walt]
-LoseText = Aw! I scorched the tip of my nose!
-Pokemon = MAGMAR,14
+Pokemon = MAGMAR,11
 Pokemon = MAGMAR,13
 #-------------------------------
-[JUGGLER,Irwin]
-LoseText =  Whew!That was a jolt!
+[DRAGONTAMER,Irwin]
+Pokemon = VOLTORB,2
 Pokemon = VOLTORB,6
-Pokemon = VOLTORB,8
-Pokemon = VOLTORB,12
+Pokemon = VOLTORB,10
 Pokemon = VOLTORB,14
 #-------------------------------
-[JUGGLER,Irwin,1]
-LoseText =  Whew!That was a jolt again!
-Pokemon = VOLTORB,22
-Pokemon = VOLTORB,26
-Pokemon = VOLTORB,28
-Pokemon = ELECTRODE,34
-#-------------------------------
 [BUGCATCHER,Arnie]
-LoseText =  I see. So you can battle that way.
 Pokemon = VENONAT,15
 #-------------------------------
 [BIRDKEEPER,Bryan]
-LoseText = Yikes! Not fast enough!
-Pokemon = PIDGEY,14
-Pokemon = PIDGEOTTO,15
+Pokemon = PIDGEY,12
+Pokemon = PIDGEOTTO,14
 #-------------------------------
 [POKeFAN_Female,Beverly]
-LoseText = ...
 Pokemon = SNUBBULL,14
 #-------------------------------
 [POKeFAN_Male,Wilson]
-LoseText = ...
 Pokemon = RAICHU,14
 #-------------------------------
 [PARASOLLADY,Krise]
-LoseText = ...
 Pokemon = ODDISH,12
 Pokemon = CUBONE,15
 #-------------------------------
 [SCHOOLKID_Boy,Jack]
-LoseText = ...
 Pokemon = ODDISH,12
 Pokemon = VOLTORB,15
 #-------------------------------
 [PSYCHIC_Male,Mark]
-LoseText = ...
 Pokemon = ABRA,13
 Pokemon = ABRA,13
 Pokemon = KADABRA,15
@@ -461,86 +439,72 @@ Pokemon = JIGGLYPUFF,15
 Items = DYNAMAXBAND
 LoseText = Ugh...
 Pokemon = CLEFAIRY,18
-    Moves = BRICKBREAK,BOUNCE,SNORE,REFLECT
+  Moves = BRICKBREAK,BOUNCE,SNORE,REFLECT
 Pokemon = MILTANK,20
-    Moves = ATTRACT,STOMP,ROLLOUT,MILKDRINK
+  Moves = ATTRACT,STOMP,ROLLOUT,MILKDRINK
 Pokemon = GIRAFARIG,20
-    Moves = PSYCHIC,SHADOWBALL,BATONPASS,CALMMIND
+  Moves = PSYCHIC,SHADOWBALL,BATONPASS,CALMMIND
 Pokemon = MEOWTH,21
     Ace = yes
     DynamaxLvl = 10
-    Gigantamax = yes
+	Gygantamax = yes
 Pokemon = LICKITUNG,19
-    Moves = FLAMETHROWER,THUNDERBOLT,WRINGOUT,ICEBEAM
+  Moves = FLAMETHROWER,THUNDERBOLT,WRINGOUT,ICEBEAM
 Pokemon = BIBAREL,18
-    Moves = SURF,ICEBEAM,CHARGEBEAM,DOUBLETEAM
+  Moves = SURF, ICEBEAM,CHARGEBEAM,DOUBLETEAM
 #-------------------------------
 [SCHOOLKID_Boy,Alan]
-LoseText = ...
 Pokemon = TANGELA,16
 #-------------------------------
 [PSYCHIC_Male,Greg]
-LoseText = ...
 Pokemon = DROWZEE,17
 #-------------------------------
 [TWINS,Ann & Anne]
-LoseText = ...
 Pokemon = CLEFAIRY,16
 Pokemon = JIGGLYPUFF,16
 #-------------------------------
 [KIMONO_Girl,Yoki]
-LoseText = ...
 Pokemon = FLAREON,17
 #-------------------------------
 [KIMONO_Girl,Sayo]
-LoseText = ...
 Pokemon = ESPEON,17
 #-------------------------------
 [KIMONO_Girl,Zuki]
-LoseText = ...
 Pokemon = UMBREON,17
 #-------------------------------
 [KIMONO_Girl,Kuni]
-LoseText = ...
 Pokemon = VAPOREON,17
 #-------------------------------
 [KIMONO_Girl,Miki]
-LoseText = ...
 Pokemon = JOLTEON,17
 #-------------------------------
 [Rival,reD]
-LoseText = ...
 Pokemon = HAUNTER,20
 Pokemon = QUILAVA,22
 Pokemon = ZUBAT,20
 Pokemon = MAGNEMITE,18
 #-------------------------------
 [Rival,blUe]
-LoseText = ...
 Pokemon = HAUNTER,20
 Pokemon = CROCONAW,22
 Pokemon = ZUBAT,20
 Pokemon = MAGNEMITE,18
 #-------------------------------
 [Rival,grEen]
-LoseText = ...
 Pokemon = HAUNTER,20
 Pokemon = BAYLEEF,22
 Pokemon = ZUBAT,20
 Pokemon = MAGNEMITE,18
 #-------------------------------
 [KINDLER,Dick]
-LoseText = ...
 Pokemon = CHARMELEON,17
 #-------------------------------
 [KINDLER,Ned]
-LoseText = ...
 Pokemon = KOFFING,15
 Pokemon = GROWLITHE,16
 Pokemon = KOFFING,15
 #-------------------------------
 [MONGE,Ping]
-LoseText = ...
 Pokemon = GASTLY,16
 Pokemon = GASTLY,16
 Pokemon = GASTLY,16
@@ -548,81 +512,65 @@ Pokemon = GASTLY,16
 Pokemon = GASTLY,16
 #-------------------------------
 [HEXMANIAC,Grace]
-LoseText = ...
 Pokemon = HAUNTER,20
 Pokemon = HAUNTER,20
 #-------------------------------
 [MONGE,Jeffrey]
-LoseText = ...
 Pokemon = HAUNTER,22
 #-------------------------------
 [HEXMANIAC,Martha]
-LoseText = ...
 Pokemon = GASTLY,18
 Pokemon = HAUNTER,20
 Pokemon = GASTLY,20
 #-------------------------------
 [LEADER_Morty,Morty]
-LoseText = ...
 Pokemon = GASTLY,21
 Pokemon = HAUNTER,21
 Pokemon = GENGAR,25
 Pokemon = HAUNTER,23
 #-------------------------------
 [BIRDKEEPER,Toby]
-LoseText = ...
 Pokemon = DODUO,15
 Pokemon = DODUO,16
 Pokemon = DODUO,17
 #-------------------------------
 [SAILOR,Harry]
-LoseText = ...
 Pokemon = WOOPER,19
 #-------------------------------
 [LASS,Dana]
-LoseText = ...
 Pokemon = FLAAFFY,18
 Pokemon = PSYDUCK,18
 #-------------------------------
 [SCHOOLKID_Boy,Chad]
-LoseText = ...
 Pokemon = MRMIME,19
 #-------------------------------
 [BEAUTY,Valerie]
-LoseText = ...
 Pokemon = HOPPIP,17
 Pokemon = SKIPLOOM,17
 #-------------------------------
 [PSYCHIC_Male,Norman]
-LoseText = ...
 Pokemon = SLOWPOKE,17
 Pokemon = SLOWPOKE,20
 #-------------------------------
 [POKeFAN_Male,Derek]
-LoseText = ...
 Pokemon = PIKACHU,17
 #-------------------------------
 [POKeFAN_Female,Ruth]
-LoseText = ...
 Pokemon = PIKACHU,17
 #-------------------------------
 [SAILOR,Eugene]
-LoseText = ...
 Pokemon = POLIWHIRL,17
 Pokemon = KRABBY,19
 Pokemon = RATICATE,17
 #-------------------------------
 [GENTLEMAN,Alfred]
-LoseText = ...
 Pokemon = NOCTOWL,20
 #-------------------------------
 [SAILOR,Huey]
-LoseText = ...
 Pokemon = POLIWAG,18
 Pokemon = POLIWHIRL,18
 #-------------------------------
 [BIRDKEEPER,Theo]
-LoseText = ...
 Pokemon = PIDGEY,17
 Pokemon = PIDGEY,15
 Pokemon = PIDGEY,19
@@ -630,57 +578,46 @@ Pokemon = PIDGEY,15
 Pokemon = PIDGEY,15
 #-------------------------------
 [GENTLEMAN,Preston]
-LoseText = ...
 Pokemon = GROWLITHE,18
 Pokemon = GROWLITHE,18
 #-------------------------------
 [LASS,Connie]
-LoseText = ...
 Pokemon = MARILL,21
 #-------------------------------
 [SAILOR,Terrell]
-LoseText = ...
 Pokemon = POLIWHIRL,20
 #-------------------------------
 [SAILOR,Kent]
-LoseText = ...
 Pokemon = KRABBY,18
 Pokemon = KRABBY,18
 #-------------------------------
 [BIRDKEEPER,Denis]
-LoseText = ...
 Pokemon = SPEAROW,18
 Pokemon = FEAROW,20
 Pokemon = SPEAROW,18
 #-------------------------------
 [SAILOR,Ernest]
-LoseText = ...
 Pokemon = MACHOP,18
 Pokemon = POLIWHIRL,18
 Pokemon = MACHOP,18
 #-------------------------------
 [SWIMMERmA,Simmon]
-LoseText = ...
 Pokemon = TENTACOOL,20
 Pokemon = TENTACOOL,20
 #-------------------------------
 [SWIMMERfE,Elaine]
-LoseText = ...
 Pokemon = STARYU,21
 #-------------------------------
 [SWIMMERfE,Paula]
-LoseText = ...
 Pokemon = STARYU,19
 Pokemon = SHELLDER,19
 #-------------------------------
 [SWIMMERmA,Charlie]
-LoseText = ...
 Pokemon = SHELLDER,21
 Pokemon = TENTACOOL,19
 Pokemon = TENTACRUEL,19
 #-------------------------------
 [SWIMMERmA,George]
-LoseText = ...
 Pokemon = TENTACOOL,16
 Pokemon = STARYU,19
 Pokemon = REMORAID,19
@@ -689,179 +626,144 @@ Pokemon = TENTACOOL,16
 Pokemon = TENTACOOL,17
 #-------------------------------
 [SWIMMERfE,Kara]
-LoseText = ...
 Pokemon = STARYU,20
 Pokemon = STARMIE,20
 #-------------------------------
 [SWIMMERfE,Wendy]
-LoseText = ...
 Pokemon = HORSEA,21
 Pokemon = HORSEA,21
 #-------------------------------
 [SWIMMERmA,Berke]
-LoseText = ...
 Pokemon = QWILFISH,23
 #-------------------------------
 [BLACKBELT,Yoshi]
-LoseText = ...
 Pokemon = HITMONLEE,27
 #-------------------------------
 [BLACKBELT,Lao]
-LoseText = ...
 Pokemon = HITMONCHAN,27
 #-------------------------------
 [BLACKBELT,Nob]
-LoseText = ...
 Pokemon = MACHOP,25
 Pokemon = MACHOKE,25
 #-------------------------------
 [BLACKBELT,Lung]
-LoseText = ...
 Pokemon = MANKEY,23
 Pokemon = MANKEY,23
 Pokemon = PRIMEAPE,25
 #-------------------------------
 [LEADER_Chuck,Chuck]
-LoseText = ...
 Pokemon = PRIMEAPE,27
 Pokemon = POLIWRATH,30
 #-------------------------------
 [LEADER_Jasmine,Jasmine]
-LoseText = ...
 Pokemon = MAGNEMITE,30
 Pokemon = STEELIX,35
 Pokemon = MAGNEMITE,30
 #-------------------------------
 [FISHERMAN,Chris]
-LoseText = ...
 Pokemon = QWILFISH,18
 #-------------------------------
 [POKeMANIAC,Shane]
-LoseText = ...
 Pokemon = NIDORINA,16
 Pokemon = NIDORINO,16
 #-------------------------------
 [HIKER,Benjamin]
-LoseText = ...
 Pokemon = DIGLETT,14
 Pokemon = GEODUDE,14
 Pokemon = DUGTRIO,16
 #-------------------------------
 [CAMPER,Spencer]
-LoseText = ...
 Pokemon = SANDSHREW,17
 Pokemon = SANDSLASH,17
 Pokemon = ZUBAT,19
 #-------------------------------
 [POKeMANIAC,Ron]
-LoseText = ...
 Pokemon = NIDOKING,19
 #-------------------------------
 [POKeMANIAC,Ben]
-LoseText = ...
 Pokemon = SLOWBRO,19
 #-------------------------------
 [ROCKET_Male,Grunt]
-LoseText = ...
 Pokemon = DROWZEE,17
 Pokemon = ZUBAT,19
 #-------------------------------
 [ROCKET_Male,Grunt2]
-LoseText = ...
 Pokemon = RATTATA,16
 Pokemon = RATTATA,16
 Pokemon = RATTATA,16
 Pokemon = RATTATA,16
 #-------------------------------
 [ROCKET_Male,Jed]
-LoseText = ...
 Pokemon = MAGNEMITE,20
 Pokemon = MAGNEMITE,20
 Pokemon = MAGNEMITE,20
 #-------------------------------
 [ROCKET_Male,Grunt3]
-LoseText = ...
 Pokemon = VENONAT,18
 Pokemon = VENONAT,18
 #-------------------------------
 [ROCKET_Male,Grunt4]
-LoseText = ...
 Pokemon = GOLBAT,18
 #-------------------------------
 [ROCKET_Male,Grunt5]
-LoseText = ...
 Pokemon = RATTATA,17
 Pokemon = ZUBAT,19
 Pokemon = RATTATA,17
 #-------------------------------
 [ROCKET_Male,Ross]
-LoseText = ...
 Pokemon = KOFFING,22
 Pokemon = KOFFING,22
 #-------------------------------
 [ROCKET_Female,Grunt]
-LoseText = ...
 Pokemon = EKANS,18
 Pokemon = GLOOM,18
 #-------------------------------
 [ROCKET_Male,Mitch]
-LoseText = ...
 Pokemon = DITTO,24
 #-------------------------------
 [ROCKET_Male,Grunt6]
-LoseText = ...
 Pokemon = RATICATE,19
 #-------------------------------
 [ROCKET_Male,Chefe]
-LoseText = ...
 Pokemon = ZUBAT,22
 Pokemon = RATICATE,24
 Pokemon = KOFFING,22
 #-------------------------------
 [ROCKET_Female,Chefa]
-LoseText = ...
 Pokemon = ARBOK,23
 Pokemon = MURKROW,25
 Pokemon = GLOOM,23
 #-------------------------------
 [ESQUIADOR,Brad]
-LoseText = ...
 Pokemon = SWINUB,26
 Pokemon = SWINUB,26
 #-------------------------------
 [ESQUIADOR,Douglas]
-LoseText = ...
 Pokemon = SHELLDER,24
 Pokemon = CLOYSTER,25
 Pokemon = SHELLDER,24
 #-------------------------------
 [ESQUIADOR,Ronald]
-LoseText = ...
 Pokemon = SEEL,24
 Pokemon = DEWGONG,25
 Pokemon = SEEL,24
 #-------------------------------
 [ESQUIADOR,Class]
-LoseText = ...
 Pokemon = DEWGONG,28
 #-------------------------------
 [LEADER_Pryce,Pryce]
-LoseText = ...
 Pokemon = SEEL,28
 Pokemon = DEWGONG,31
 Pokemon = PILOSWINE,34
 #-------------------------------
 [ROCKET_Male,Grunt7]
-LoseText = ...
 Pokemon = RATICATE,24
 Pokemon = RATICATE,24
 #-------------------------------
 [ROCKET_Female,Grunt2]
-LoseText = ...
 Pokemon = ARBOK,26
 #-------------------------------
 [ROCKET_Male,Grunt8]
-LoseText = ...
 Pokemon = RATTATA,21
 Pokemon = RATTATA,21
 Pokemon = RATTATA,23
@@ -869,38 +771,31 @@ Pokemon = RATTATA,23
 Pokemon = RATTATA,23
 #-------------------------------
 [ROCKET_Male,Grunt9]
-LoseText = ...
 Pokemon = ZUBAT,26
 Pokemon = ZUBAT,26
 #-------------------------------
 [ROCKET_Male,Grunt10]
-LoseText = ...
 Pokemon = GRIMER,23
 Pokemon = GRIMER,23
 Pokemon = MUK,25
 #-------------------------------
 [ROCKET_Male,Grunt11]
-LoseText = ...
 Pokemon = WEEZING,26
 #-------------------------------
 [ROCKET_Male,Mark]
-LoseText = ...
 Pokemon = MAGNEMITE,27
 Pokemon = MAGNEMITE,27
 Pokemon = MAGNEMITE,27
 #-------------------------------
 [ROCKET_Male,Grunt12]
-LoseText = ...
 Pokemon = ZUBAT,22
 Pokemon = GOLBAT,24
 Pokemon = GRIMER,22
 #-------------------------------
 [ROCKET_Male,Rich]
-LoseText = ...
 Pokemon = PORYGON,30
 #-------------------------------
 [ROCKET_Male,Executivo]
-LoseText = ...
 Pokemon = KOFFING,30
 Pokemon = KOFFING,30
 Pokemon = KOFFING,30
@@ -909,7 +804,6 @@ Pokemon = KOFFING,30
 Pokemon = KOFFING,30
 #-------------------------------
 [Rival,REd]
-LoseText = ...
 Pokemon = GOLBAT,30
 Pokemon = QUILAVA,32
 Pokemon = HAUNTER,30
@@ -917,7 +811,6 @@ Pokemon = MAGNEMITE,28
 Pokemon = SNEASEL,32
 #-------------------------------
 [Rival,greEn]
-LoseText = ...
 Pokemon = GOLBAT,30
 Pokemon = MEGANIUM,32
 Pokemon = HAUNTER,30
@@ -925,7 +818,6 @@ Pokemon = MAGNEMITE,28
 Pokemon = SNEASEL,32
 #-------------------------------
 [Rival,bluE]
-LoseText = ...
 Pokemon = GOLBAT,30
 Pokemon = FERALIGATR,32
 Pokemon = HAUNTER,30
@@ -933,121 +825,98 @@ Pokemon = MAGNEMITE,28
 Pokemon = SNEASEL,32
 #-------------------------------
 [ROCKET_Male,Grunt13]
-LoseText = ...
 Pokemon = RATTATA,27
 #-------------------------------
 [ROCKET_Female,Grunt3]
-LoseText = ...
 Pokemon = GLOOM,25
 Pokemon = GLOOM,25
 #-------------------------------
 [ROCKET_Male,Grunt14]
-LoseText = ...
 Pokemon = RATICATE,24
 Pokemon = GOLBAT,24
 #-------------------------------
 [ROCKET_Female,Grunt4]
-LoseText = ...
 Pokemon = EKANS,21
 Pokemon = EKANS,21
 Pokemon = ODDISH,23
 Pokemon = GLOOM,25
 #-------------------------------
 [ROCKETLEADER,Apollo]
-LoseText = ...
 Pokemon = HOUNDOUR,34
 Pokemon = KOFFING,34
 Pokemon = HOUNDOOM,38
 #-------------------------------
 [PSYCHIC_Male,Phil]
-LoseText = ...
 Pokemon = NATU,26
 Pokemon = KADABRA,28
 #-------------------------------
 [POKeMANIAC,Zach]
-LoseText = ...
 Pokemon = RHYHORN,27
 #-------------------------------
 [FISHERMAN,Wilton]
-LoseText = ...
 Pokemon = GOLDEEN,25
 Pokemon = GOLDEEN,25
 Pokemon = SEAKING,27
 #-------------------------------
 [LASS,Cybil]
-LoseText = ...
 Pokemon = BUTTERFREE,27
 Pokemon = BELLOSSOM,27
 #-------------------------------
 [COOLTRAINER_Male,Allen]
-LoseText = ...
 Pokemon = CHARMELEON,29
 #-------------------------------
 [BIRDKEEPER,Vance]
-LoseText = ...
 Pokemon = PIDGEOTTO,27
 Pokemon = PIDGEOTTO,26
 #-------------------------------
 [COOLTRAINER_Male,Paul]
-LoseText = ...
 Pokemon = DRATINI,34
 Pokemon = DRATINI,34
 Pokemon = DRATINI,34
 #-------------------------------
 [COOLTRAINER_Female,Fran]
-LoseText = ...
 Pokemon = SEADRA,37
 #-------------------------------
 [COOLTRAINER_Male,Mike]
-LoseText = ...
 Pokemon = DRAGONAIR,37
 #-------------------------------
 [COOLTRAINER_Male,Cody]
-LoseText = ...
 Pokemon = HORSEA,34
 Pokemon = SEADRA,36
 #-------------------------------
 [COOLTRAINER_Female,Lola]
-LoseText = ...
 Pokemon = DRATINI,34
 Pokemon = DRAGONAIR,36
 #-------------------------------
 [LEADER_Clair,Clair]
 Items = HYPERPOTION,HYPERPOTION
-LoseText = ...
 Pokemon = DRAGONAIR,37
 Pokemon = GYARADOS,38
 Pokemon = DRAGONAIR,38
 Pokemon = KINGDRA,41
 #-------------------------------
 [HIKER,Erik]
-LoseText = ...
 Pokemon = MACHOP,24
 Pokemon = GRAVELER,27
 Pokemon = MACHOP,27
 #-------------------------------
 [COOLTRAINER_Male,Ryan]
-LoseText = ...
 Pokemon = PIDGEOT,25
 Pokemon = ELECTABUZZ,27
 #-------------------------------
 [COOLTRAINER_Female,Kelly]
-LoseText = ...
 Pokemon = MARILL,27
 Pokemon = WARTORTLE,24
 Pokemon = WARTORTLE,24
 #-------------------------------
 [BLACKBELT,Kenji]
-LoseText = ...
 Pokemon = MACHOKE,28
 #-------------------------------
 [HIKER,Timothy]
-LoseText = ...
 Pokemon = DIGLETT,27
 Pokemon = DUGTRIO,27
 #-------------------------------
 [HIKER,Bailey]
-LoseText = ...
 Pokemon = GEODUDE,13
 Pokemon = GEODUDE,13
 Pokemon = GEODUDE,13
@@ -1055,7 +924,6 @@ Pokemon = GEODUDE,13
 Pokemon = GEODUDE,13
 #-------------------------------
 [ASH,Ketchum]
-LoseText = ...
 Pokemon = SCEPTILE,36
 Pokemon = SWELLOW,30
 Pokemon = PIKACHU,80
@@ -1064,7 +932,6 @@ Pokemon = AIPOM,26
 Pokemon = DONPHAN,30
 #-------------------------------
 [ELITEFOUR_Will,Will,1]
-LoseText = ...
 Pokemon = XATU,40
 Pokemon = SLOWBRO,41
 Pokemon = XATU,42
@@ -1072,7 +939,6 @@ Pokemon = JYNX,41
 Pokemon = EXEGGUTOR,41
 #-------------------------------
 [ELITEFOUR_Koga,Koga]
-LoseText = ...
 Pokemon = ARIADOS,40
 Pokemon = FORRETRESS,43
 Pokemon = MUK,42
@@ -1080,7 +946,6 @@ Pokemon = CROBAT,44
 Pokemon = VENOMOTH,41
 #-------------------------------
 [ELITEFOUR_Bruno,Bruno]
-LoseText = ...
 Pokemon = HITMONTOP,42
 Pokemon = ONIX,43
 Pokemon = MACHAMP,46
@@ -1088,29 +953,24 @@ Pokemon = HITMONLEE,42
 Pokemon = HITMONCHAN,42
 #-------------------------------
 [ROCKET_Male,Allen]
-LoseText = ...
 Pokemon = PERSIAN,33
 Pokemon = WEEPINBELL,32
 Pokemon = ONIX,34
 #-------------------------------
 [ROCKET_Male,Ray]
-LoseText = ...
 Pokemon = ONIX,40
 #-------------------------------
 [ROCKET_Male,Babel]
-LoseText = ...
 Pokemon = GRAVELER,31
 Pokemon = RATICATE,21
 Pokemon = MAGNETON,33
 #-------------------------------
 [ROCKET_Male,Toni]
-LoseText = ...
 Pokemon = ARIADOS,36
 Pokemon = CROBAT,32
 Pokemon = BEEDRILL,33
 #-------------------------------
 [LEADER_GIOVANNI,Giovanni]
-LoseText = ...
 Pokemon = WEEZING,50
 Pokemon = PERSIAN,52
 Pokemon = RHYDON,49
@@ -1118,7 +978,6 @@ Pokemon = CROBAT,41
 Pokemon = GRANBULL,47
 #-------------------------------
 [ELITEFOUR_Karen,Karen]
-LoseText = ...
 Pokemon = UMBREON,42
 Pokemon = GENGAR,45
 Pokemon = MURKROW,44
@@ -1126,24 +985,20 @@ Pokemon = HOUNDOOM,47
 Pokemon = VILEPLUME,42
 #-------------------------------
 [PSYCHIC_Male,Frend]
-LoseText = ...
 Pokemon = ABRA,25
 Pokemon = KADABRA,35
 Pokemon = ALAKAZAM,40
 #-------------------------------
 [PSYCHIC_Female,Clara]
-LoseText = ...
 Pokemon = DROWZEE,35
 Pokemon = HYPNO,40
 #-------------------------------
 [PSYCHIC_Male,Lucio]
-LoseText = ...
 Pokemon = HYPNO,40
 Pokemon = ALAKAZAM,40
 Pokemon = ESPEON,40
 #-------------------------------
 [HIKER,Frend]
-LoseText = ...
 Pokemon = GEODUDE,27
 Pokemon = GRAVELER,34
 Pokemon = MAROWAK,39
@@ -1152,7 +1007,6 @@ Pokemon = PINECO,30
 Pokemon = FORRETRESS,32
 #-------------------------------
 [HIKER,Yue]
-LoseText = ...
 Pokemon = GEODUDE,30
 Pokemon = GEODUDE,30
 Pokemon = GEODUDE,30
@@ -1161,7 +1015,6 @@ Pokemon = SUDOWOODO,35
 Pokemon = SUDOWOODO,35
 #-------------------------------
 [HIKER,Lucio]
-LoseText = ...
 Pokemon = GEODUDE,33
 Pokemon = RHYHORN,33
 Pokemon = GOLEM,40
@@ -1170,32 +1023,27 @@ Pokemon = GEODUDE,30
 Pokemon = RHYDON,40
 #-------------------------------
 [SWIMMERmA,Frend]
-LoseText = ...
 Pokemon = STARYU,40
 Pokemon = STARMIE,40
 #-------------------------------
 [SWIMMERmA,Yue]
-LoseText = ...
 Pokemon = HORSEA,38
 Pokemon = SEADRA,40
 Pokemon = GOLDEEN,40
 Pokemon = SEAKING,40
 #-------------------------------
 [SWIMMERmA,Lucio]
-LoseText = ...
 Pokemon = SQUIRTLE,25
 Pokemon = WARTORTLE,39
 Pokemon = BLASTOISE,40
 #-------------------------------
 [NINJABOY,Francis]
-LoseText = ...
 Pokemon = POOCHYENA,30
 Pokemon = PLUSLE,35
 Pokemon = POOCHYENA,30
 Pokemon = LINOONE,31
 #-------------------------------
 [PkMnTRAINER_Femalen,May]
-LoseText = ...
 Pokemon = BLAZIKEN,40
 Pokemon = GLACEON,37
 Pokemon = VENUSAUR,37
@@ -1203,7 +1051,6 @@ Pokemon = BEAUTIFLY,32
 Pokemon = WARTORTLE,36
 #-------------------------------
 [PkMnTRAINER_Malen,Brendan]
-LoseText = ...
 Pokemon = AGGRON,45
 Pokemon = SHIFTRY,38
 Pokemon = SWAMPERT,49
@@ -1211,84 +1058,70 @@ Pokemon = LUDICOLO,41
 Pokemon = TROPIUS,45
 #-------------------------------
 [SAILOR,Julio]
-LoseText = ...
 Pokemon = LOTAD,11
 Pokemon = WINGULL,14
 Pokemon = CARVANHA,13
 Pokemon = HUNTAIL,14
 #-------------------------------
 [AROMALADY,Daisy]
-LoseText = ...
 Pokemon = ROSELIA,16
 Pokemon = SPINDA,18
 #-------------------------------
 [TWINS,Amy & Liv]
-LoseText = ...
 Pokemon = PLUSLE,16
 Pokemon = MINUN,16
 Pokemon = SPINDA,16
 Pokemon = SWABLU,17
 #-------------------------------
 [POKeFAN_Male,Miguel]
-LoseText = ...
 Pokemon = SKITTY,16
 Pokemon = DELCATTY,20
 #-------------------------------
 [FISHERMAN,Andrew]
-LoseText = ...
 Pokemon = LOTAD,16
 Pokemon = CARVANHA,18
 Pokemon = WINGULL,18
 #-------------------------------
 [COLLECTOR,Gill]
-LoseText = ...
 Pokemon = NATU,26
 Pokemon = VILEPLUME,30
 Pokemon = AIPOM,24
 #-------------------------------
 [EXPERT_Male,Julio]
-LoseText = ...
 Pokemon = MURKROW,34
 Pokemon = PINECO,37
 Pokemon = TANGELA,32
 #-------------------------------
 [AROMALADY,Maria]
-LoseText = ...
 Pokemon = HOPPIP,26
 Pokemon = SKIPLOOM,27
 Pokemon = JUMPLUFF,36
 #-------------------------------
 [BLACKBELT,Fill]
-LoseText = ...
 Pokemon = MACHAMP,45
 #-------------------------------
 [SAILOR,Maicon]
-LoseText = ...
 Pokemon = MACHOKE,29
 Pokemon = TENTACOOL,30
 #-------------------------------
 [SAILOR,Abreu]
-LoseText = ...
 Pokemon = MAGNEMITE,28
 Pokemon = KRABBY,27
 Pokemon = VOLTORB,25
 #-------------------------------
 [SAILOR,Bred]
-LoseText = ...
 Pokemon = ELECTRODE,41
 Pokemon = KINGLER,38
 Pokemon = CLOYSTER,36
 Pokemon = TENTACRUEL,36
 #-------------------------------
 [PkMnTRAINER_Wally,Wally]
-LoseText = ...
 Pokemon = MIGHTYENA,35
 Pokemon = LINOONE,32
 Pokemon = BEAUTIFLY,34
 Pokemon = MEDICHAM,45
 #-------------------------------
 [Rival,greeN]
-LoseText = ...
 Pokemon = GOLBAT,35
 Pokemon = MEGANIUM,40
 Pokemon = HAUNTER,32
@@ -1296,7 +1129,6 @@ Pokemon = MAGNEMITE,30
 Pokemon = SNEASEL,35
 #-------------------------------
 [Rival,RED]
-LoseText = ...
 Pokemon = GOLBAT,35
 Pokemon = TYPHLOSION,40
 Pokemon = HAUNTER,32
@@ -1304,7 +1136,6 @@ Pokemon = MAGNEMITE,30
 Pokemon = SNEASEL,35
 #-------------------------------
 [Rival,blue]
-LoseText = ...
 Pokemon = GOLBAT,35
 Pokemon = FERALIGATR,40
 Pokemon = HAUNTER,32
@@ -1312,65 +1143,53 @@ Pokemon = MAGNEMITE,30
 Pokemon = SNEASEL,35
 #-------------------------------
 [COOLTRAINER_Female,Megan]
-LoseText = ...
 Pokemon = BULBASAUR,32
 Pokemon = IVYSAUR,32
 Pokemon = VENUSAUR,32
 #-------------------------------
 [COOLTRAINER_Male,Blake]
-LoseText = ...
 Pokemon = MAGNETON,32
 Pokemon = QUAGSIRE,31
 Pokemon = EXEGGCUTE,31
 #-------------------------------
 [COOLTRAINER_Male,Brian]
-LoseText = ...
 Pokemon = SANDSLASH,35
 #-------------------------------
 [PSYCHIC_Male,Gilbert]
-LoseText = ...
 Pokemon = STARMIE,30
 Pokemon = GIRAFARIG,34
 Pokemon = EXEGGCUTE,30
 #-------------------------------
 [COOLTRAINER_Female,Reena]
-LoseText = ...
 Pokemon = STARMIE,31
 Pokemon = STARMIE,31
 Pokemon = NIDOQUEEN,33
 #-------------------------------
 [FISHERMAN,Scott]
-LoseText = ...
 Pokemon = QWILFISH,30
 Pokemon = QWILFISH,30
 Pokemon = SEAKING,34
 #-------------------------------
 [PSYCHIC_Male,Richard]
-LoseText = ...
 Pokemon = ESPEON,36
 #-------------------------------
 [COOLTRAINER_Female,Joyce]
-LoseText = ...
 Pokemon = PIKACHU,36
 Pokemon = BLASTOISE,32
 #-------------------------------
 [COOLTRAINER_Male,Gaven]
-LoseText = ...
 Pokemon = VICTREEBEL,32
 Pokemon = KINGLER,32
 Pokemon = FLAREON,32
 #-------------------------------
 [COOLTRAINER_Male,Jake]
-LoseText = ...
 Pokemon = PARASECT,33
 Pokemon = GOLDUCK,35
 #-------------------------------
 [COOLTRAINER_Female,Beth]
-LoseText = ...
 Pokemon = RAPIDASH,36
 #-------------------------------
 [PROFESSOR_Ivy,Ivy]
-LoseText = ...
 Pokemon = GYARADOS,62
 Pokemon = BUTTERFREE,59
 Pokemon = POLIWRATH,59
@@ -1379,13 +1198,11 @@ Pokemon = CLOYSTER,60
 Pokemon = VILEPLUME,57
 #-------------------------------
 [PkMnTRAINER_Malen,BRendan]
-LoseText = ...
 Pokemon = AGGRON,49
 Pokemon = ABSOL,48
 Pokemon = SWAMPERT,55
 #-------------------------------
 [CYRUS_GIOVANNI,Cyrus & Giovanni]
-LoseText = ...
 Pokemon = WEEZING,56
 Pokemon = HONCHKROW,55
 Pokemon = WEAVILE,55
@@ -1394,7 +1211,6 @@ Pokemon = RHYDON,49
 Pokemon = CROBAT,46
 #-------------------------------
 [ELITEFOUR_Cynthia,Cynthia]
-LoseText = ...
 Pokemon = SPIRITOMB,61
 Pokemon = GARCHOMP,66
 Pokemon = GASTRODON,60
@@ -1403,7 +1219,6 @@ Pokemon = ROSERADE,60
 Pokemon = LUCARIO,63
 #-------------------------------
 [PAUL,Paul]
-LoseText = ...
 Pokemon = TORTERRA,65
 Pokemon = HONCHKROW,45
 Pokemon = WEAVILE,49
@@ -1412,7 +1227,6 @@ Pokemon = GLISCOR,45
 Pokemon = MAGMAR,46
 #-------------------------------
 [LEADER_GIOVANNI,GiovaNni]
-LoseText = ...
 Pokemon = WEEZING,56
 Pokemon = PERSIAN,60
 Pokemon = RHYDON,52
@@ -1421,7 +1235,6 @@ Pokemon = GRANBULL,47
 Pokemon = GENGAR,49
 #-------------------------------
 [RIVAL_ROCKET,Agente017]
-LoseText = ...
 Pokemon = FERALIGATR,65
 Pokemon = TYPHLOSION,65
 Pokemon = TYRANITAR,65
@@ -1432,7 +1245,6 @@ Pokemon = MEWTWO,100
     Moves = PSYCHIC,RECOVER,FIREPUNCH,ICEPUNCH
 #-------------------------------
 [LEADER_Brock,Brock]
-LoseText = ...
 Pokemon = GEODUDE,40
 Pokemon = MARSHTOMP,41
 Pokemon = HAPPINY,35
@@ -1441,263 +1253,215 @@ Pokemon = STEELIX,45
 Pokemon = CROBAT,41
 #-------------------------------
 [COOLTRAINER_Male,Julius]
-LoseText = ...
 Pokemon = PRIMEAPE,29
 Pokemon = GASTLY,27
 Pokemon = BEEDRILL,26
 #-------------------------------
 [COOLTRAINER_Male,Abreu]
-LoseText = ...
 Pokemon = MAROWAK,32
 Pokemon = WEEPINBELL,28
 #-------------------------------
 [YOUNGSTER,Jones]
-LoseText = ...
 Pokemon = VENONAT,26
 Pokemon = PIDGEOTTO,27
 Pokemon = VULPIX,28
 #-------------------------------
 [BUGCATCHER,RICK]
-LoseText = ...
 Pokemon = WEEDLE,27
 Pokemon = CATERPIE,28
 #-------------------------------
 [BUGCATCHER,DOUG]
-LoseText = ...
 Pokemon = WEEDLE,28
 Pokemon = WEEDLE,28
 Pokemon = KAKUNA,30
 #-------------------------------
 [BUGCATCHER,ANTHONY]
-LoseText = ...
 Pokemon = CATERPIE,28
 Pokemon = CATERPIE,28
 #-------------------------------
 [BUGCATCHER,CHARLIE]
-LoseText = ...
 Pokemon = METAPOD,30
 Pokemon = CATERPIE,29
 Pokemon = METAPOD,30
 #-------------------------------
 [BUGCATCHER,SAMMY]
-LoseText = ...
 Pokemon = BUTTERFREE,34
 #-------------------------------
 [CAMPER,LIAM]
-LoseText = ...
 Pokemon = GEODUDE,31
 Pokemon = SANDSHREW,32
 #-------------------------------
 [LASS,JANICE]
-LoseText = ...
 Pokemon = PIDGEY,25
 Pokemon = PIDGEY,24
 #-------------------------------
 [BUGCATCHER,COLTON]
-LoseText = ...
 Pokemon = CATERPIE,20
 Pokemon = WEEDLE,20
 Pokemon = CATERPIE,20
 #-------------------------------
 [YOUNGSTER,BEN]
-LoseText = ...
 Pokemon = RATTATA,20
 Pokemon = EKANS,20
 #-------------------------------
 [BUGCATCHER,GREG]
-LoseText = ...
 Pokemon = WEEDLE,24
 Pokemon = CATERPIE,19
 Pokemon = KAKUNA,19
 Pokemon = METAPOD,22
 #-------------------------------
 [LASS,SALLY]
-LoseText = ...
 Pokemon = PIDGEY,20
 Pokemon = NIDORANfE,20
 #-------------------------------
 [YOUNGSTER,CALVIN]
-LoseText = ...
 Pokemon = SPEAROW,21
 Pokemon = SPEAROW,21
 #-------------------------------
 [BUGCATCHER,JAMES]
-LoseText = ...
 Pokemon = CATERPIE,20
 Pokemon = METAPOD,20
 #-------------------------------
 [LASS,ROBIN]
-LoseText = ...
 Pokemon = JIGGLYPUFF,22
 Pokemon = PIDGEY,20
 #-------------------------------
 [RIVAL_YELLOW,Yellow,1]
-LoseText = ...
 Pokemon = BULBASAUR,14
 Pokemon = PIKACHU,44
 Pokemon = RATTATA,29
 #-------------------------------
 [RIVAL_YELLOW,Yellow,2]
-LoseText = ...
 Pokemon = CHARMANDER,14
 Pokemon = PIKACHU,44
 Pokemon = RATTATA,29
 #-------------------------------
 [RIVAL_YELLOW,Yellow,3]
-LoseText = ...
 Pokemon = SQUIRTLE,14
 Pokemon = PIKACHU,44
 Pokemon = RATTATA,29
 #-------------------------------
 [BUGCATCHER,KENT]
-LoseText = ...
 Pokemon = WEEDLE,20
 Pokemon = KAKUNA,20
 #-------------------------------
 [LASS,IRIS]
-LoseText = ...
 Pokemon = CLEFAIRY,27
 #-------------------------------
 [BUGCATCHER,ROBBY]
-LoseText = ...
 Pokemon = CATERPIE,19
 Pokemon = CATERPIE,22
 Pokemon = METAPOD,19
 #-------------------------------
 [LASS,MIRIAM]
-LoseText = ...
 Pokemon = ODDISH,25
 Pokemon = BELLSPROUT,26
 #-------------------------------
 [YOUNGSTER,JOSH]
-LoseText = ...
 Pokemon = RATTATA,25
 Pokemon = RATTATA,29
 Pokemon = ZUBAT,25
 #-------------------------------
 [HIKER,MARCOS]
-LoseText = ...
 Pokemon = GEODUDE,24
 Pokemon = GEODUDE,22
 Pokemon = ONIX,29
 #-------------------------------
 [ROCKET_Male,Grunt15]
-LoseText = ...
 Pokemon = BELLSPROUT,26
 Pokemon = RATTATA,24
 #-------------------------------
 [ROCKET_Male,Grunt16]
-LoseText = ...
 Pokemon = KOFFING,24
 Pokemon = RATICATE,25
 #-------------------------------
 [RIVAL_YELLOW,Yellow,4]
-LoseText = ...
 Pokemon = IVYSAUR,18
 Pokemon = PIKACHU,45
 Pokemon = RATTATA,29
 #-------------------------------
 [RIVAL_YELLOW,Yellow,5]
-LoseText = ...
 Pokemon = CHARMELEON,18
 Pokemon = PIKACHU,45
 Pokemon = RATTATA,29
 #-------------------------------
 [RIVAL_YELLOW,Yellow,6]
-LoseText = ...
 Pokemon = WARTORTLE,18
 Pokemon = PIKACHU,45
 Pokemon = RATTATA,29
 #-------------------------------
 [ROCKET_Male,Grunt17]
-LoseText = ...
 Pokemon = KOFFING,20
 Pokemon = RATICATE,25
 Pokemon = RATICATE,22
 #-------------------------------
 [ROCKET_Male,Grunt,2]
-LoseText = ...
 Pokemon = KOFFING,26
 Pokemon = EKANS,20
 Pokemon = MEOWTH,26
 #-------------------------------
 [ROCKET_Male,Grunt,3]
-LoseText = ...
 Pokemon = EKANS,26
 Pokemon = EKANS,25
 Pokemon = MEOWTH,23
 #-------------------------------
 [ROCKET_Male,ADM]
-LoseText = ...
 Pokemon = NIDORINA,25
 Pokemon = NIDORINO,25
 Pokemon = MACHOKE,23
 #-------------------------------
 [ROCKET_Female,ADM]
-LoseText = ...
 Pokemon = DRAGONAIR,35
 Pokemon = DITTO,27
 Pokemon = RHYHORN,32
 #-------------------------------
 [LEADER_GIOVANNI,Giovanni,2]
-LoseText = ...
 Pokemon = PERSIAN,52
 Pokemon = RHYDON,49
 Pokemon = CROBAT,41
 #-------------------------------
 [ROCKET_Male,Grunt,4]
-LoseText = ...
 Pokemon = EKANS,20
 Pokemon = GRIMER,28
 #-------------------------------
 [ROCKET_Male,Grunt,5]
-LoseText = ...
 Pokemon = TANGELA,29
 Pokemon = WEEPINBELL,28
 #-------------------------------
 [ROCKET_Male,Grunt,6]
-LoseText = ...
 Pokemon = BELLSPROUT,28
 Pokemon = RATICATE,25
 #-------------------------------
 [ROCKET_Male,ADM,2]
-LoseText = ...
 Pokemon = ARBOK,29
 Pokemon = RATICATE,28
 Pokemon = BEEDRILL,27
 Pokemon = FEAROW,28
 #-------------------------------
 [HIKER,FRANKLIN]
-LoseText = ...
 Pokemon = MACHOP,23
 Pokemon = GEODUDE,23
 #-------------------------------
 [HIKER,WAYNE]
-LoseText = ...
 Pokemon = ONIX,25
 #-------------------------------
 [YOUNGSTER,JOEY]
-LoseText = ...
 Pokemon = RATTATA,23
 Pokemon = SPEAROW,23
 #-------------------------------
 [YOUNGSTER,DAN]
-LoseText = ...
 Pokemon = SLOWPOKE,25
 #-------------------------------
 [CAMPER,FLINT]
-LoseText = ...
 Pokemon = RATTATA,23
 Pokemon = EKANS,23
 #-------------------------------
 [LASS,HALEY]
-LoseText = ...
 Pokemon = ODDISH,22
 Pokemon = PIDGEY,22
 Pokemon = ODDISH,22
 #-------------------------------
 [LEADER_Misty,Misty]
-LoseText = ...
 Pokemon = GOLDEEN,34
 Pokemon = STARYU,36
 Pokemon = STARMIE,44
@@ -1705,26 +1469,21 @@ Pokemon = GYARADOS,49
 Pokemon = HORSEA,35
 #-------------------------------
 [ROCKET_Male,ADM,3]
-LoseText = ...
 Pokemon = ARBOK,32
 Pokemon = RATICATE,34
 #-------------------------------
 [SAILOR,DWAYNE]
-LoseText = ...
 Pokemon = PIKACHU,28
 Pokemon = PIKACHU,28
 #-------------------------------
 [POKeFAN_Male,BAILY]
-LoseText = ...
 Pokemon = VOLTORB,29
 Pokemon = MAGNEMITE,29
 #-------------------------------
 [GENTLEMAN,TUCKER]
-LoseText = ...
 Pokemon = PIKACHU,30
 #-------------------------------
 [LEADER_Surge,Lt.Surge]
-LoseText = ...
 Pokemon = RAICHU,51
 Pokemon = ELECTRODE,47
 Pokemon = ELECTABUZZ,50
@@ -1732,96 +1491,78 @@ Pokemon = VOLTORB,36
 Pokemon = MAGNETON,46
 #-------------------------------
 [BUGCATCHER,KEIGO]
-LoseText = ...
 Pokemon = WEEDLE,28
 Pokemon = WEEDLE,28
 Pokemon = CATERPIE,28
 #-------------------------------
 [CAMPER,RICKY]
-LoseText = ...
 Pokemon = SQUIRTLE,30
 #-------------------------------
 [PICNICKER,NANCY]
-LoseText = ...
 Pokemon = RATTATA,29
 Pokemon = PIKACHU,29
 #-------------------------------
 [BUGCATCHER,ELIJAH]
-LoseText = ...
 Pokemon = BUTTERFREE,30
 #-------------------------------
 [PICNICKER,ISABELLE]
-LoseText = ...
 Pokemon = PIDGEY,28
 Pokemon = PIDGEY,28
 Pokemon = PIDGEY,28
 #-------------------------------
 [CAMPER,JEFF]
-LoseText = ...
 Pokemon = SPEAROW,28
 Pokemon = RATICATE,28
 #-------------------------------
 [PICNICKER,ALICIA]
-LoseText = ...
 Pokemon = ODDISH,28
 Pokemon = BELLSPROUT,28
 Pokemon = ODDISH,28
 #-------------------------------
 [HIKER,JEREMY]
-LoseText = ...
 Pokemon = MACHOP,28
 Pokemon = ONIX,29
 #-------------------------------
 [BUGCATCHER,BRENT]
-LoseText = ...
 Pokemon = BEEDRILL,30
 Pokemon = BEEDRILL,29
 #-------------------------------
 [CAMPER,CHRIS]
-LoseText = ...
 Pokemon = GROWLITHE,28
 Pokemon = CHARMANDER,28
 #-------------------------------
 [CAMPER,DREW]
-LoseText = ...
 Pokemon = RATTATA,26
 Pokemon = SANDSHREW,26
 Pokemon = EKANS,26
 Pokemon = SANDSHREW,26
 #-------------------------------
 [BUGCATCHER,CONNER]
-LoseText = ...
 Pokemon = CATERPIE,27
 Pokemon = WEEDLE,27
 Pokemon = VENONAT,29
 #-------------------------------
 [HIKER,BRICE]
-LoseText = ...
 Pokemon = GEODUDE,27
 Pokemon = GEODUDE,27
 Pokemon = MACHOP,28
 #-------------------------------
 [PICNICKER,CAITLIN]
-LoseText = ...
 Pokemon = MEOWTH,30
 #-------------------------------
 [HIKER,ALAN]
-LoseText = ...
 Pokemon = GEODUDE,28
 Pokemon = ONIX,29
 #-------------------------------
 [PICNICKER,HEIDI]
-LoseText = ...
 Pokemon = PIKACHU,29
 Pokemon = CLEFAIRY,28
 #-------------------------------
 [LASS,JULIA]
-LoseText = ...
 Pokemon = CLEFAIRY,29
 Pokemon = CLEFAIRY,29
 #-------------------------------
 [LASS,MEGAN]
-LoseText = ...
 Pokemon = PIDGEY,26
 Pokemon = RATTATA,26
 Pokemon = NIDORANmA,26
@@ -1829,93 +1570,76 @@ Pokemon = MEOWTH,26
 Pokemon = PIKACHU,26
 #-------------------------------
 [TRIATHLETE_MaleCyclist,JAREN]
-LoseText = ...
 Pokemon = KOFFING,32
 Pokemon = KOFFING,32
 #-------------------------------
 [TRIATHLETE_MaleCyclist,HARRYS]
-LoseText = ...
 Pokemon = FLAREON,34
 #-------------------------------
 [TRIATHLETE_MaleCyclist,DWAYNE]
-LoseText = ...
 Pokemon = KOFFING,27
 Pokemon = KOFFING,28
 Pokemon = KOFFING,29
 Pokemon = KOFFING,30
 #-------------------------------
 [LASS,KAY]
-LoseText = ...
 Pokemon = BELLSPROUT,30
 Pokemon = WEEPINBELL,30
 #-------------------------------
 [BEAUTY,BRIDGET]
-LoseText = ...
 Pokemon = ODDISH,28
 Pokemon = BELLSPROUT,28
 Pokemon = ODDISH,28
 Pokemon = BELLSPROUT,28
 #-------------------------------
 [BEAUTY,LORI]
-LoseText = ...
 Pokemon = EXEGGCUTE,30
 #-------------------------------
 [LASS,LISA]
-LoseText = ...
 Pokemon = ODDISH,30
 Pokemon = GLOOM,30
 #-------------------------------
 [LEADER_Erika,ERIKA]
-LoseText = ...
 Pokemon = TANGELA,49
 Pokemon = BELLOSSOM,49
 Pokemon = VILEPLUME,48
 Pokemon = VICTREEBEL,49
 #-------------------------------
 [ROCKET_Male,Grunt,7]
-LoseText = ...
 Pokemon = EKANS,29
 Pokemon = RATICATE,32
 #-------------------------------
 [ROCKET_Male,Grunt,8]
-LoseText = ...
 Pokemon = EKANS,29
 Pokemon = RATICATE,32
 Pokemon = FEAROW,35
 #-------------------------------
 [ROCKET_Male,Grunt,9]
-LoseText = ...
 Pokemon = NIDORINA,31
 Pokemon = NIDORINO,31
 #-------------------------------
 [ROCKET_Male,Grunt,10]
-LoseText = ...
 Pokemon = SANDSHREW,29
 Pokemon = MACHOP,31
 #-------------------------------
 [ROCKET_Male,Grunt,11]
-LoseText = ...
 Pokemon = MACHAMP,45
 #-------------------------------
 [ROCKET_Male,Grunt,12]
-LoseText = ...
 Pokemon = GRAVELER,34
 Pokemon = MAGNETON,33
 Pokemon = DODRIO,31
 Pokemon = GOLBAT,35
 #-------------------------------
 [ROCKET_Male,Grunt,13]
-LoseText = ...
 Pokemon = TANGELA,32
 Pokemon = DITTO,33
 #-------------------------------
 [ROCKET_Male,ADM,4]
-LoseText = ...
 Pokemon = RHYHORN,37
 Pokemon = WEEZING,41
 #-------------------------------
 [RIVAL_ROCKET,Agente017,2]
-LoseText = ...
 Pokemon = VENUSAUR,45
 Pokemon = CHARIZARD,46
 Pokemon = MACHAMP,45
@@ -1923,37 +1647,30 @@ Pokemon = BLASTOISE,44
 Pokemon = GENGAR,51
 #-------------------------------
 [YOUNGSTER,EDDIE]
-LoseText = ...
 Pokemon = EKANS,29
 #-------------------------------
 [YOUNGSTER,DAVE]
-LoseText = ...
 Pokemon = NIDORANmA,26
 Pokemon = NIDORINO,26
 #-------------------------------
 [YOUNGSTER,DILLON]
-LoseText = ...
 Pokemon = SANDSHREW,27
 Pokemon = ZUBAT,27
 #-------------------------------
 [YOUNGSTER,YASU]
-LoseText = ...
 Pokemon = RATTATA,25
 Pokemon = RATTATA,25
 Pokemon = RATICATE,30
 #-------------------------------
 [BEAUTY,LINDA]
-LoseText = ...
 Pokemon = BULBASAUR,30
 Pokemon = VENUSAUR,34
 Pokemon = IVYSAUR,32
 #-------------------------------
 [BEAUTY,CINDY]
-LoseText = ...
 Pokemon = NIDOQUEEN,36
 #-------------------------------
 [LEADER_Janine,JANINE]
-LoseText = ...
 Pokemon = GOLBAT,47
 Pokemon = WEEZING,44
 Pokemon = WEEZING,44
@@ -1961,150 +1678,122 @@ Pokemon = VENOMOTH,50
 Pokemon = ARIADOS,47
 #-------------------------------
 [ROCKET_Male,Grunt,14]
-LoseText = ...
 Pokemon = RATICATE,40
 #-------------------------------
 [ROCKET_Male,Grunt,15]
-LoseText = ...
 Pokemon = PRIMEAPE,34
 Pokemon = WEEPINBELL,31
 #-------------------------------
 [ROCKET_Male,Grunt,16]
-LoseText = ...
 Pokemon = MEOWTH,25
 Pokemon = PERSIAN,30
 Pokemon = MAGNEMITE,28
 #-------------------------------
 [ROCKET_Male,Grunt,17]
-LoseText = ...
 Pokemon = DODRIO,32
 Pokemon = GRIMER,28
 #-------------------------------
 [ROCKET_Male,Grunt,18]
-LoseText = ...
 Pokemon = FEAROW,40
 #-------------------------------
 [ROCKET_Male,Grunt,19]
-LoseText = ...
 Pokemon = RATICATE,31
 Pokemon = RHYHORN,32
 #-------------------------------
 [ROCKET_Male,Grunt,20]
-LoseText = ...
 Pokemon = RATICATE,31
 Pokemon = RHYHORN,32
 #-------------------------------
 [ROCKET_Male,Grunt,21]
-LoseText = ...
 Pokemon = WEEZING,33
 Pokemon = RHYHORN,33
 #-------------------------------
 [ROCKET_Male,Grunt,22]
-LoseText = ...
 Pokemon = KOFFING,24
 Pokemon = KOFFING,24
 Pokemon = KOFFING,27
 Pokemon = WEEZING,35
 #-------------------------------
 [ROCKET_Male,Grunt,23]
-LoseText = ...
 Pokemon = WEEZING,33
 Pokemon = ARBOK,33
 #-------------------------------
 [ROCKET_Male,Grunt,24]
-LoseText = ...
 Pokemon = GOLBAT,36
 Pokemon = DROWZEE,36
 #-------------------------------
 [ROCKET_Male,Grunt,25]
-LoseText = ...
 Pokemon = ZUBAT,27
 Pokemon = RATICATE,27
 Pokemon = GOLBAT,27
 #-------------------------------
 [ROCKET_Male,Grunt,26]
-LoseText = ...
 Pokemon = CUBONE,33
 Pokemon = ZUBAT,28
 #-------------------------------
 [ROCKET_Male,CIENTISTA,1]
-LoseText = ...
 Pokemon = MAGNEMITE,28
 Pokemon = VOLTORB,29
 Pokemon = MAGNETON,34
 #-------------------------------
 [ROCKET_Male,CIENTISTA,2]
-LoseText = ...
 Pokemon = GRIMER,25
 Pokemon = WEEZING,25
 Pokemon = KOFFING,25
 Pokemon = WEEZING,25
 #-------------------------------
 [ROCKET_Male,Grunt,27]
-LoseText = ...
 Pokemon = RATICATE,28
 Pokemon = HYPNO,30
 Pokemon = RATICATE,29
 #-------------------------------
 [ROCKET_Male,Grunt,28]
-LoseText = ...
 Pokemon = EKANS,27
 Pokemon = ZUBAT,27
 Pokemon = CUBONE,27
 #-------------------------------
 [ROCKET_Male,CIENTISTA,3]
-LoseText = ...
 Pokemon = ELECTRODE,33
 Pokemon = WEEZING,34
 #-------------------------------
 [ROCKET_Male,Grunt,29]
-LoseText = ...
 Pokemon = ARBOK,40
 #-------------------------------
 [ROCKET_Male,Grunt,30]
-LoseText = ...
 Pokemon = HYPNO,40
 #-------------------------------
 [ROCKET_Male,CIENTISTA,4]
-LoseText = ...
 Pokemon = ELECTRODE,40
 #-------------------------------
 [ROCKET_Male,Grunt,31]
-LoseText = ...
 Pokemon = MACHOP,29
 Pokemon = MACHOKE,35
 #-------------------------------
 [ROCKET_Male,Grunt,32]
-LoseText = ...
 Pokemon = ZUBAT,27
 Pokemon = ZUBAT,27
 Pokemon = GOLBAT,30
 #-------------------------------
 [ROCKET_Male,Grunt,33]
-LoseText = ...
 Pokemon = CUBONE,28
 Pokemon = MAROWAK,35
 #-------------------------------
 [ROCKET_Male,CIENTISTA,5]
-LoseText = ...
 Pokemon = VOLTORB,24
 Pokemon = MAGNETON,30
 Pokemon = MAGNEMITE,24
 Pokemon = KOFFING,24
 #-------------------------------
 [ROCKET_Male,Grunt,34]
-LoseText = ...
 Pokemon = SANDSHREW,28
 Pokemon = SANDSLASH,34
 #-------------------------------
 [ROCKET_Male,Grunt,35]
-LoseText = ...
 Pokemon = GOLBAT,30
 Pokemon = DROWZEE,30
 Pokemon = HYPNO,30
 #-------------------------------
 [EQUIPE_ROCKET,JESSIE & JAMES,1]
-LoseText = ...
 Pokemon = SEVIPER,37
 Pokemon = MIMEJR,30
 Pokemon = WOBBUFFET,38
@@ -2113,105 +1802,86 @@ Pokemon = YANMEGA,41
 Pokemon = MEOWTH,40
 #-------------------------------
 [PICNICKER,MARTHA]
-LoseText = ...
 Pokemon = ODDISH,29
 Pokemon = BULBASAUR,29
 #-------------------------------
 [HIKER,ALLEN]
-LoseText = ...
 Pokemon = GEODUDE,32
 #-------------------------------
 [HIKER,ERIC]
-LoseText = ...
 Pokemon = MACHOP,30
 Pokemon = ONIX,32
 #-------------------------------
 [PICNICKER,SOFIA]
-LoseText = ...
 Pokemon = JIGGLYPUFF,30
 Pokemon = PIDGEY,30
 Pokemon = MEOWTH,30
 #-------------------------------
 [HIKER,DUDLEY]
-LoseText = ...
 Pokemon = GEODUDE,30
 Pokemon = GEODUDE,30
 Pokemon = GRAVELER,33
 #-------------------------------
 [HIKER,LENNY]
-LoseText = ...
 Pokemon = GEODUDE,30
 Pokemon = MACHOP,31
 #-------------------------------
 [HIKER,OLIVER]
-LoseText = ...
 Pokemon = ONIX,30
 Pokemon = ONIX,32
 Pokemon = GEODUDE,30
 #-------------------------------
 [HIKER,LUCAS]
-LoseText = ...
 Pokemon = GEODUDE,32
 Pokemon = GRAVELER,36
 #-------------------------------
 [PICNICKER,DANA]
-LoseText = ...
 Pokemon = MEOWTH,30
 Pokemon = ODDISH,31
 Pokemon = PIDGEY,30
 #-------------------------------
 [PICNICKER,ARIANA]
-LoseText = ...
 Pokemon = PIDGEY,28
 Pokemon = RATTATA,28
 Pokemon = RATTATA,28
 Pokemon = BELLSPROUT,28
 #-------------------------------
 [PICNICKER,LEAH]
-LoseText = ...
 Pokemon = BELLSPROUT,31
 Pokemon = CLEFAIRY,31
 #-------------------------------
 [FISHERMAN,ANDREW]
-LoseText = ...
 Pokemon = MAGIKARP,31
 Pokemon = MAGIKARP,31
 #-------------------------------
 [CAMPER,JUSTIN]
-LoseText = ...
 Pokemon = NIDORANmA,34
 Pokemon = NIDORINO,34
 #-------------------------------
 [FISHERMAN,ELLIOT]
-LoseText = ...
 Pokemon = POLIWAG,30
 Pokemon = SHELLDER,30
 Pokemon = GOLDEEN,30
 Pokemon = HORSEA,30
 #-------------------------------
 [FISHERMAN,HANK]
-LoseText = ...
 Pokemon = GOLDEEN,42
 #-------------------------------
 [FISHERMAN,CHIP]
-LoseText = ...
 Pokemon = TENTACOOL,34
 Pokemon = GOLDEEN,33
 #-------------------------------
 [FISHERMAN,NED]
-LoseText = ...
 Pokemon = GOLDEEN,32
 Pokemon = POLIWAG,32
 Pokemon = GOLDEEN,32
 #-------------------------------
 [PICNICKER,ALMA]
-LoseText = ...
 Pokemon = GOLDEEN,35
 Pokemon = POLIWAG,35
 Pokemon = HORSEA,35
 #-------------------------------
 [PICNICKER,SUSIE]
-LoseText = ...
 Pokemon = PIDGEY,30
 Pokemon = PIKACHU,30
 Pokemon = RATTATA,30
@@ -2219,226 +1889,185 @@ Pokemon = MEOWTH,30
 Pokemon = MEOWTH,30
 #-------------------------------
 [BIRDKEEPER,SEBASTIAN]
-LoseText = ...
 Pokemon = PIDGEY,34
 Pokemon = PIDGEOTTO,36
 #-------------------------------
 [BEAUTY,LOLA]
-LoseText = ...
 Pokemon = RATTATA,35
 Pokemon = PIKACHU,35
 Pokemon = RATTATA,35
 #-------------------------------
 [BEAUTY,SHEILA]
-LoseText = ...
 Pokemon = CLEFAIRY,34
 Pokemon = MEOWTH,36
 #-------------------------------
 [PICNICKER,VALERIE]
-LoseText = ...
 Pokemon = POLIWAG,35
 Pokemon = POLIWAG,36
 #-------------------------------
 [PICNICKER,GWEN]
-LoseText = ...
 Pokemon = PIDGEY,32
 Pokemon = MEOWTH,32
 Pokemon = PIDGEY,32
 Pokemon = PIDGEOTTO,35
 #-------------------------------
 [BIRDKEEPER,PERRY]
-LoseText = ...
 Pokemon = SPEAROW,34
 Pokemon = PIDGEY,35
 Pokemon = SPEAROW,34
 #-------------------------------
 [BIRDKEEPER,ROBERT]
-LoseText = ...
 Pokemon = PIDGEY,33
 Pokemon = PIDGEOTTO,36
 Pokemon = SPEAROW,33
 Pokemon = FEAROW,36
 #-------------------------------
 [TRIATHLETE_MaleCyclist,JARED]
-LoseText = ...
 Pokemon = KOFFING,35
 Pokemon = KOFFING,35
 Pokemon = KOFFING,35
 #-------------------------------
 [BIRDKEEPER,CARTER]
-LoseText = ...
 Pokemon = PIDGEY,33
 Pokemon = DODUO,33
 Pokemon = PIDGEOTTO,37
 #-------------------------------
 [BIRDKEEPER,MITCH]
-LoseText = ...
 Pokemon = PIDGEY,31
 Pokemon = SPEAROW,31
 Pokemon = PIDGEY,31
 Pokemon = FEAROW,31
 #-------------------------------
 [BIRDKEEPER,MARLON]
-LoseText = ...
 Pokemon = SPEAROW,35
 Pokemon = DODUO,35
 Pokemon = FEAROW,35
 #-------------------------------
 [TRIATHLETE_MaleCyclist,ISAAC]
-LoseText = ...
 Pokemon = GRIMER,35
 Pokemon = GRIMER,35
 Pokemon = KOFFING,35
 #-------------------------------
 [TRIATHLETE_MaleCyclist,MALIK]
-LoseText = ...
 Pokemon = KOFFING,37
 Pokemon = GRIMER,35
 #-------------------------------
 [TRIATHLETE_MaleCyclist,GERALD]
-LoseText = ...
 Pokemon = GRIMER,35
 Pokemon = MUK,40
 #-------------------------------
 [BIRDKEEPER,BENNY]
-LoseText = ...
 Pokemon = SPEAROW,35
 Pokemon = FEAROW,37
 #-------------------------------
 [TWINS,KIRI & JAN]
-LoseText = ...
 Pokemon = CHARMANDER,35
 Pokemon = SQUIRTLE,35
 #-------------------------------
 [TRIATHLETE_MaleCyclist,ERNEST]
-LoseText = ...
 Pokemon = KOFFING,34
 Pokemon = WEEZING,39
 Pokemon = GRIMER,34
 #-------------------------------
 [TRIATHLETE_MaleCyclist,ALEX]
-LoseText = ...
 Pokemon = KOFFING,35
 Pokemon = GRIMER,35
 Pokemon = WEEZING,35
 #-------------------------------
 [BEAUTY,GRACE]
-LoseText = ...
 Pokemon = PIDGEOTTO,38
 Pokemon = WIGGLYTUFF,30
 #-------------------------------
 [BEAUTY,OLIVIA]
-LoseText = ...
 Pokemon = BULBASAUR,35
 Pokemon = IVYSAUR,39
 #-------------------------------
 [PICNICKER,KINDRA]
-LoseText = ...
 Pokemon = GLOOM,37
 Pokemon = ODDISH,34
 Pokemon = ODDISH,34
 #-------------------------------
 [PICNICKER,BECKY]
-LoseText = ...
 Pokemon = PIKACHU,36
 Pokemon = RAICHU,39
 #-------------------------------
 [INTERVIEWERS,RON & MYA]
-LoseText = ...
 Pokemon = HITMONCHAN,37
 Pokemon = HITMONLEE,37
 #-------------------------------
 [BIRDKEEPER,CHESTER]
-LoseText = ...
 Pokemon = DODRIO,40
 Pokemon = DODUO,34
 Pokemon = DODUO,34
 #-------------------------------
 [BIRDKEEPER,EDWIN]
-LoseText = ...
 Pokemon = PIDGEOTTO,36
 Pokemon = FARFETCHD,32
 Pokemon = DODUO,32
 Pokemon = PIDGEY,32
 #-------------------------------
 [PICNICKER,YAZMIN]
-LoseText = ...
 Pokemon = BELLSPROUT,34
 Pokemon = ODDISH,34
 Pokemon = TANGELA,34
 #-------------------------------
 [PICNICKER,CELIA]
-LoseText = ...
 Pokemon = CLEFAIRY,42
 #-------------------------------
 [TRIATHLETE_MaleCyclist,HIDEO]
-LoseText = ...
 Pokemon = WEEZING,36
 #-------------------------------
 [TRIATHLETE_MaleCyclist,ISAIAH]
-LoseText = ...
 Pokemon = MACHOP,36
 Pokemon = MACHOKE,37
 #-------------------------------
 [TRIATHLETE_MaleCyclist,VIRGIL]
-LoseText = ...
 Pokemon = WEEZING,37
 Pokemon = KOFFING,34
 Pokemon = WEEZING,37
 #-------------------------------
 [TRIATHLETE_MaleCyclist,NIKOLAS]
-LoseText = ...
 Pokemon = VOLTORB,36
 Pokemon = VOLTORB,36
 #-------------------------------
 [TRIATHLETE_MaleCyclist,COREY]
-LoseText = ...
 Pokemon = PRIMEAPE,38
 Pokemon = MACHOKE,38
 #-------------------------------
 [TRIATHLETE_MaleCyclist,JAXON]
-LoseText = ...
 Pokemon = WEEZING,38
 Pokemon = MUK,38
 #-------------------------------
 [BIRDKEEPER,WILTON]
-LoseText = ...
 Pokemon = SPEAROW,37
 Pokemon = FEAROW,39
 #-------------------------------
 [SWIMMERmA,REECE]
-LoseText = ...
 Pokemon = GOLDEEN,35
 Pokemon = HORSEA,30
 Pokemon = STARYU,32
 #-------------------------------
 [PkMnBREEDER_Male,DUSTY]
-LoseText = ...
 Pokemon = VULPIX,36
 Pokemon = GROWLITHE,36
 #-------------------------------
 [PkMnBREEDER_Male,ZAC]
-LoseText = ...
 Pokemon = GROWLITHE,36
 Pokemon = VULPIX,36
 #-------------------------------
 [PkMnBREEDER_Male,DEREK]
-LoseText = ...
 Pokemon = RAPIDASH,40
 #-------------------------------
 [PkMnBREEDER_Male,RAMON]
-LoseText = ...
 Pokemon = PONYTA,40
 #-------------------------------
 [LEADER_BLAINE,BLAINE]
-LoseText = ...
 Pokemon = NINETALES,49
 Pokemon = RAPIDASH,50
 Pokemon = ARCANINE,45
 Pokemon = MAGMAR,53
 #-------------------------------
 [LEADER_GARY,GARY]
-LoseText = ...
 Pokemon = DODRIO,56
 Pokemon = GOLEM,56
 Pokemon = BLASTOISE,57
@@ -2447,30 +2076,25 @@ Pokemon = ARCANINE,58
 Pokemon = UMBREON,60
 #-------------------------------
 [SWIMMERmA,TONY]
-LoseText = ...
 Pokemon = HORSEA,29
 Pokemon = HORSEA,30
 #-------------------------------
 [SWIMMERmA,DAVID]
-LoseText = ...
 Pokemon = GOLDEEN,28
 Pokemon = SHELLDER,28
 Pokemon = SEAKING,33
 #-------------------------------
 [SWIMMERmA,DOUGLAS]
-LoseText = ...
 Pokemon = HORSEA,28
 Pokemon = TENTACOOL,28
 Pokemon = TENTACOOL,28
 Pokemon = GOLDEEN,29
 #-------------------------------
 [SWIMMERmA,MATTHEW]
-LoseText = ...
 Pokemon = POLIWAG,29
 Pokemon = POLIWHIRL,33
 #-------------------------------
 [SWIMMERmA,AXLE]
-LoseText = ...
 Pokemon = TENTACOOL,27
 Pokemon = TENTACOOL,27
 Pokemon = TENTACRUEL,30
@@ -2478,91 +2102,75 @@ Pokemon = HORSEA,27
 Pokemon = STARYU,27
 #-------------------------------
 [SWIMMERfE,ALICE]
-LoseText = ...
 Pokemon = GOLDEEN,30
 Pokemon = SEAKING,32
 #-------------------------------
 [SWIMMERfE,CONNIE]
-LoseText = ...
 Pokemon = STARYU,30
 Pokemon = STARYU,30
 Pokemon = STARYU,30
 #-------------------------------
 [SWIMMERfE,ANYA]
-LoseText = ...
 Pokemon = POLIWAG,27
 Pokemon = SEAKING,30
 Pokemon = GOLDEEN,27
 Pokemon = POLIWAG,27
 #-------------------------------
 [SWIMMERmA,BARRY]
-LoseText = ...
 Pokemon = SHELLDER,31
 Pokemon = CLOYSTER,36
 #-------------------------------
 [SWIMMERmA,DARRIN]
-LoseText = ...
 Pokemon = HORSEA,30
 Pokemon = HORSEA,30
 Pokemon = SEADRA,30
 Pokemon = HORSEA,30
 #-------------------------------
 [SWIMMERfE,SHIRLEY]
-LoseText = ...
 Pokemon = SEADRA,34
 Pokemon = HORSEA,30
 Pokemon = SEADRA,34
 #-------------------------------
 [BIRDKEEPER,ROGER]
-LoseText = ...
 Pokemon = FEAROW,33
 Pokemon = FEAROW,33
 Pokemon = PIDGEOTTO,33
 #-------------------------------
 [SWIMMERfE,NORA]
-LoseText = ...
 Pokemon = SHELLDER,30
 Pokemon = SHELLDER,30
 Pokemon = CLOYSTER,36
 #-------------------------------
 [SWIMMERmA,DEAN]
-LoseText = ...
 Pokemon = STARYU,40
 #-------------------------------
 [SWIMMERfE,MELISSA]
-LoseText = ...
 Pokemon = POLIWAG,30
 Pokemon = SEAKING,33
 #-------------------------------
 [SWIMMERmA,JEROME]
-LoseText = ...
 Pokemon = STARYU,35
 Pokemon = WARTORTLE,35
 #-------------------------------
 [SWIMMERmA,RONALD]
-LoseText = ...
 Pokemon = POLIWHIRL,35
 Pokemon = TENTACOOL,33
 Pokemon = SEADRA,35
 #-------------------------------
 [SWIMMERmA,JACK]
-LoseText = ...
 Pokemon = STARMIE,45
 #-------------------------------
 [SWIMMERmA,SPENCER]
-LoseText = ...
 Pokemon = SEADRA,37
 Pokemon = TENTACRUEL,38
 #-------------------------------
 [LEADER_SABRINA,SABRINA]
-LoseText = ...
 Pokemon = KADABRA,47
 Pokemon = MRMIME,46
 Pokemon = VENOMOTH,47
 Pokemon = ALAKAZAM,55
 #-------------------------------
 [ELITEFOUR_Will,Will,2]
-LoseText = ...
 Pokemon = FLAREON,50
 Pokemon = SLOWBRO,52
 Pokemon = XATU,55
@@ -2571,7 +2179,6 @@ Pokemon = EXEGGUTOR,50
 Pokemon = ALAKAZAM,56
 #-------------------------------
 [ELITEFOUR_Lance,Lance,1]
-LoseText = ...
 Pokemon = GYARADOS,55
 Pokemon = CHARIZARD,59
 Pokemon = AERODACTYL,55
@@ -2580,7 +2187,6 @@ Pokemon = KINGDRA,52
 Pokemon = DRAGONITE,75
 #-------------------------------
 [ELITEFOUR_Lance,Lance,2]
-LoseText = ...
 Pokemon = GYARADOS,46
 Pokemon = DRAGONITE,49
 Pokemon = DRAGONITE,49
@@ -2589,7 +2195,6 @@ Pokemon = CHARIZARD,48
 Pokemon = DRAGONITE,50
 #-------------------------------
 [RIVAL_ROCKET,Agente017,3]
-LoseText = ...
 Pokemon = GENGAR,56
 Pokemon = SNEASEL,57
 Pokemon = FERALIGATR,60
@@ -2599,113 +2204,93 @@ Pokemon = MEWTWO,70
     Shiny = yes
 #-------------------------------
 [SWIMMERmA,Luis]
-LoseText = ...
 Pokemon = HORSEA,32
 Pokemon = BEEDRILL,40
 #-------------------------------
 [SWIMMERmA,Briam]
-LoseText = ...
 Pokemon = HORSEA,32
 Pokemon = HITMONCHAN,40
 #-------------------------------
 [SWIMMERmA,Etan]
-LoseText = ...
 Pokemon = HORSEA,32
 Pokemon = SPEAROW,40
 #-------------------------------
 [LEADER_CISSY,Cissy]
-LoseText = ...
 Pokemon = BLASTOISE,57
 Pokemon = SEADRA,56
 #-------------------------------
 [SWIMMERfE,MISTIE]
-LoseText = ...
 Pokemon = DEWGONG,35
 Pokemon = SHELLDER,32
 Pokemon = REMORAID,35
 #-------------------------------
 [TUBER_Female,KIA]
-LoseText = ...
 Pokemon = HORSEA,31
 Pokemon = SLOWPOKE,31
 #-------------------------------
 [SWIMMERmA,DONNELL]
-LoseText = ...
 Pokemon = SLOWPOKE,34
 Pokemon = PSYDUCK,34
 Pokemon = SLOWBRO,34
 #-------------------------------
 [SWIMMERmA,LUTHER]
-LoseText = ...
 Pokemon = POLIWHIRL,36
 Pokemon = POLIWHIRL,36
 #-------------------------------
 [SWIMMERfE,ALBERTA]
-LoseText = ...
 Pokemon = CORSOLA,35
 Pokemon = SHELLDER,35
 Pokemon = DEWGONG,35
 #-------------------------------
 [SWIMMERfE,CORI]
-LoseText = ...
 Pokemon = REMORAID,37
 Pokemon = STARYU,37
 Pokemon = SEADRA,37
 #-------------------------------
 [TUBER_Female,DEE]
-LoseText = ...
 Pokemon = SEEL,36
 Pokemon = GOLDEEN,36
 Pokemon = PSYDUCK,36
 Pokemon = POLIWAG,36
 #-------------------------------
 [SWIMMERmA,ANDRES]
-LoseText = ...
 Pokemon = TENTACOOL,34
 Pokemon = TENTACOOL,34
 Pokemon = TENTACRUEL,36
 #-------------------------------
 [SWIMMERfE,JILL]
-LoseText = ...
 Pokemon = DEWGONG,35
 Pokemon = CLOYSTER,35
 #-------------------------------
 [TUBER_Female,ERIN]
-LoseText = ...
 Pokemon = POLIWAG,30
 Pokemon = HORSEA,30
 #-------------------------------
 [ELITEFOUR_PRIMA,Prima]
-LoseText = ...
 Pokemon = SLOWBRO,55
 Pokemon = CLOYSTER,61
 Pokemon = DEWGONG,58
 Pokemon = JYNX,59
 #-------------------------------
 [HIKER,RANDY]
-LoseText = ...
 Pokemon = GEODUDE,38
 Pokemon = GRAVELER,38
 Pokemon = RHYHORN,38
 #-------------------------------
 [HIKER,SHANN]
-LoseText = ...
 Pokemon = GEODUDE,38
 Pokemon = GRAVELER,40
 #-------------------------------
 [HIKER,ANTOINE]
-LoseText = ...
 Pokemon = GROWLITHE,38
 Pokemon = PONYTA,38
 Pokemon = ARCANINE,38
 #-------------------------------
 [HIKER,ANTAWN]
-LoseText = ...
 Pokemon = ONIX,39
 Pokemon = MACHOKE,39
 #-------------------------------
 [HIKER,DANIEL]
-LoseText = ...
 Pokemon = SANDSLASH,36
 Pokemon = MAROWAK,36
 Pokemon = DUGTRIO,36
@@ -2713,98 +2298,80 @@ Pokemon = ONIX,36
 Pokemon = NIDOKING,36
 #-------------------------------
 [HIKER,SHAUN]
-LoseText = ...
 Pokemon = NIDORANmA,37
 Pokemon = NIDORINO,37
 Pokemon = NIDORINO,37
 Pokemon = NIDOKING,37
 #-------------------------------
 [HIKER,FABRICIO]
-LoseText = ...
 Pokemon = MUK,39
 Pokemon = WEEZING,39
 #-------------------------------
 [ROCKET_Male,Grunt,36]
-LoseText = ...
 Pokemon = MANKEY,36
 Pokemon = NIDORINO,37
 Pokemon = FEAROW,38
 #-------------------------------
 [ROCKET_Male,Grunt,37]
-LoseText = ...
 Pokemon = LICKITUNG,37
 Pokemon = PRIMEAPE,39
 #-------------------------------
 [ROCKET_Male,Grunt,38]
-LoseText = ...
 Pokemon = PHANPY,37
 Pokemon = PINSIR,37
 #-------------------------------
 [ROCKET_Male,Grunt,39]
-LoseText = ...
 Pokemon = PHANPY,37
 Pokemon = PINSIR,37
 #-------------------------------
 [FISHERMAN,Alexis]
-LoseText = ...
 Pokemon = SEAKING,40
 Pokemon = REMORAID,37
 #-------------------------------
 [SWIMMERmA,HERMANN]
-LoseText = ...
 Pokemon = CORSOLA,38
 Pokemon = PSYDUCK,40
 Pokemon = SLOWBRO,41
 #-------------------------------
 [SWIMMERmA,JERMAINE]
-LoseText = ...
 Pokemon = HORSEA,38
 Pokemon = SEADRA,39
 #-------------------------------
 [SWIMMERfE,CANDICE]
-LoseText = ...
 Pokemon = STARYU,39
 Pokemon = MANTINE,39
 Pokemon = STARMIE,39
 #-------------------------------
 [SWIMMERfE,TIERRE]
-LoseText = ...
 Pokemon = POLIWAG,40
 Pokemon = POLIWHIRL,40
 #-------------------------------
 [YOUNGSTER,SMITH]
-LoseText = ...
 Pokemon = TEDDIURSA,33
 Pokemon = SANDSLASH,40
 Pokemon = GLOOM,39
 #-------------------------------
 [TRIATHLETE_MaleSwimmer,Joshy]
-LoseText = ...
 Pokemon = GOLEM,45
 #-------------------------------
 [TRIATHLETE_FemaleSwimmer,Maria]
-LoseText = ...
 Pokemon = AZUMARILL,40
 Pokemon = MACHOKE,40
 #-------------------------------
 [PARASOLLADY,Kinberly]
-LoseText = ...
 Pokemon = JUMPLUFF,39
 Pokemon = SUNFLORA,40
 Pokemon = ESPEON,40
 #-------------------------------
 [YOUNGSTER,Ronaldo]
-LoseText = ...
 Pokemon = VILEPLUME,39
 Pokemon = PARASECT,40
 #-------------------------------
 [YOUNGSTER,Chris]
-LoseText = ...
 Pokemon = SLOWKING,40
 Pokemon = VENOMOTH,40
 #-------------------------------
 [PkMnTRAINER_Bill,Bill]
-LoseText = ...
 Pokemon = UMBREON,49
 Pokemon = FARFETCHD,49
 Pokemon = ESPEON,49
@@ -2813,29 +2380,24 @@ Pokemon = NINETALES,51
 Pokemon = JOLTEON,50
 #-------------------------------
 [SAILOR,Paul]
-LoseText = ...
 Pokemon = REMORAID,37
 Pokemon = DUNSPARCE,38
 Pokemon = MAROWAK,40
 #-------------------------------
 [SAILOR,Sidwell]
-LoseText = ...
 Pokemon = KINGLER,39
 Pokemon = GOLDUCK,40
 #-------------------------------
 [SAILOR,Waver]
-LoseText = ...
 Pokemon = MACHOKE,39
 Pokemon = URSARING,40
 #-------------------------------
 [SAILOR,Gusto]
-LoseText = ...
 Pokemon = HAUNTER,38
 Pokemon = MISDREAVUS,39
 Pokemon = MURKROW,38
 #-------------------------------
 [LEADER_RUDY,Rudy]
-LoseText = ...
 Pokemon = ELECTABUZZ,59
 Pokemon = EXEGGUTOR,58
 Pokemon = STARMIE,58
@@ -2844,7 +2406,6 @@ Pokemon = PIDGEOT,60
 Pokemon = GOLEM,59
 #-------------------------------
 [LEADER_DANNY,Danny]
-LoseText = ...
 Pokemon = NIDOQUEEN,61
 Pokemon = GOLEM,63
 Pokemon = ELECTRODE,59
@@ -2852,213 +2413,176 @@ Pokemon = SCIZOR,58
 Pokemon = MACHAMP,59
 #-------------------------------
 [LEADER_LUANA,Luana,1]
-LoseText = ...
 Pokemon = ALAKAZAM,70
 Pokemon = MAROWAK,67
 #-------------------------------
 [SWIMMERfE,MEG]
-LoseText = ...
 Pokemon = SEAKING,39
 Pokemon = STARMIE,39
 #-------------------------------
 [SWIMMERfE,KENDRA]
-LoseText = ...
 Pokemon = REMORAID,38
 Pokemon = PSYDUCK,38
 Pokemon = GOLDUCK,39
 #-------------------------------
 [SWIMMERmA,JOEL]
-LoseText = ...
 Pokemon = CORSOLA,40
 Pokemon = KINGLER,40
 #-------------------------------
 [TUBER_Female,MARCIA]
-LoseText = ...
 Pokemon = PSYDUCK,35
 Pokemon = GOLDUCK,36
 Pokemon = SEAKING,35
 Pokemon = GOLDEEN,36
 #-------------------------------
 [SWIMMERmA,GABE]
-LoseText = ...
 Pokemon = TENTACOOL,37
 Pokemon = HORSEA,37
 Pokemon = SHELLDER,37
 Pokemon = STARYU,37
 #-------------------------------
 [SWIMMERmA,DARIUS]
-LoseText = ...
 Pokemon = POLIWHIRL,38
 Pokemon = SLOWBRO,38
 Pokemon = WARTORTLE,38
 #-------------------------------
 [SWIMMERfE,SHARON]
-LoseText = ...
 Pokemon = KRABBY,38
 Pokemon = GOLDEEN,38
 Pokemon = WARTORTLE,38
 #-------------------------------
 [SWIMMERmA,PJ]
-LoseText = ...
 Pokemon = GYARADOS,42
 #-------------------------------
 [SWIMMERfE,KATELYN]
-LoseText = ...
 Pokemon = SHELLDER,39
 Pokemon = GOLDEEN,39
 Pokemon = CLOYSTER,39
 #-------------------------------
 [SWIMMERmA,TOBY]
-LoseText = ...
 Pokemon = HORSEA,39
 Pokemon = STARYU,39
 Pokemon = SEADRA,39
 #-------------------------------
 [SWIMMERmA,PRYOR]
-LoseText = ...
 Pokemon = PSYDUCK,37
 Pokemon = GOLDUCK,39
 Pokemon = SLOWBRO,37
 Pokemon = SLOWPOKE,39
 #-------------------------------
 [SWIMMERfE,DELLA]
-LoseText = ...
 Pokemon = POLIWHIRL,40
 Pokemon = WARTORTLE,41
 #-------------------------------
 [TUBER_Female,ROBANNA]
-LoseText = ...
 Pokemon = SHELLDER,38
 Pokemon = CLOYSTER,39
 #-------------------------------
 [SWIMMERfE,BARBARA]
-LoseText = ...
 Pokemon = SHELLDER,38
 Pokemon = SHELLDER,38
 Pokemon = CLOYSTER,40
 #-------------------------------
 [SWIMMERmA,EDDY]
-LoseText = ...
 Pokemon = GOLDEEN,39
 Pokemon = HORSEA,39
 Pokemon = SEAKING,39
 #-------------------------------
 [SWIMMERfE,BETH]
-LoseText = ...
 Pokemon = SHELLDER,39
 Pokemon = WARTORTLE,40
 Pokemon = CLOYSTER,40
 #-------------------------------
 [SWIMMERmA,SCOTTY]
-LoseText = ...
 Pokemon = PSYDUCK,40
 Pokemon = KRABBY,39
 Pokemon = GOLDUCK,40
 #-------------------------------
 [TUBER_Female,JUDY]
-LoseText = ...
 Pokemon = STARYU,39
 Pokemon = STARMIE,39
 Pokemon = SEAKING,39
 Pokemon = GOLDEEN,39
 #-------------------------------
 [SWIMMERmA,CRISTOFER]
-LoseText = ...
 Pokemon = HORSEA,40
 Pokemon = SEADRA,41
 #-------------------------------
 [SWIMMERfE,DOMINIQUE]
-LoseText = ...
 Pokemon = STARYU,38
 Pokemon = HORSEA,38
 Pokemon = STARMIE,38
 #-------------------------------
 [SWIMMERfE,TULLY]
-LoseText = ...
 Pokemon = SQUIRTLE,38
 Pokemon = SQUIRTLE,38
 Pokemon = WARTORTLE,38
 #-------------------------------
 [TUBER_Male,DEANNE]
-LoseText = ...
 Pokemon = SLOWPOKE,37
 Pokemon = HORSEA,37
 Pokemon = GOLDEEN,37
 Pokemon = STARYU,37
 #-------------------------------
 [SWIMMERmA,POWELL]
-LoseText = ...
 Pokemon = POLIWAG,40
 Pokemon = POLIWHIRL,40
 #-------------------------------
 [SWIMMERfE,VIOLA]
-LoseText = ...
 Pokemon = SQUIRTLE,40
 Pokemon = WARTORTLE,41
 Pokemon = BLASTOISE,42
 #-------------------------------
 [SWIMMERfE,ANDRIANNA]
-LoseText = ...
 Pokemon = DEWGONG,41
 Pokemon = CLOYSTER,41
 #-------------------------------
 [SWIMMERmA,PLATT]
-LoseText = ...
 Pokemon = KRABBY,41
 Pokemon = KINGLER,42
 #-------------------------------
 [SWIMMERmA,LEONARDO]
-LoseText = ...
 Pokemon = TENTACOOL,40
 Pokemon = TENTACRUEL,44
 #-------------------------------
 [SWIMMERfE,ELLENA]
-LoseText = ...
 Pokemon = SEADRA,40
 Pokemon = SEAKING,42
 #-------------------------------
 [SWIMMERmA,ORICK]
-LoseText = ...
 Pokemon = OMANYTE,40
 Pokemon = OMANYTE,40
 Pokemon = OMASTAR,42
 #-------------------------------
 [SWIMMERfE,UMA]
-LoseText = ...
 Pokemon = SHELLDER,40
 Pokemon = CLOYSTER,42
 #-------------------------------
 [SWIMMERmA,GRANT]
-LoseText = ...
 Pokemon = TENTACOOL,36
 Pokemon = SEEL,36
 Pokemon = TENTACRUEL,36
 #-------------------------------
 [SWIMMERfE,SCARLET]
-LoseText = ...
 Pokemon = PSYDUCK,36
 Pokemon = GOLDUCK,38
 #-------------------------------
 [SWIMMERfE,MIA]
-LoseText = ...
 Pokemon = GOLDEEN,36
 Pokemon = POLIWHIRL,38
 Pokemon = SEAKING,38
 #-------------------------------
 [SWIMMERmA,SHEPHERD]
-LoseText = ...
 Pokemon = POLIWAG,36
 Pokemon = SHELLDER,36
 Pokemon = POLIWHIRL,39
 #-------------------------------
 [SWIMMERfE,VERONICA]
-LoseText = ...
 Pokemon = SEEL,37
 Pokemon = STARYU,39
 Pokemon = DEWGONG,39
 #-------------------------------
 [LEADER_DRAKE,Drake]
-LoseText = ...
 Pokemon = DITTO,64
 Pokemon = VENUSAUR,69
 Pokemon = STEELIX,71
@@ -3067,473 +2591,396 @@ Pokemon = GENGAR,67
 Pokemon = DRAGONITE,80
 #-------------------------------
 [YOUNGSTER,TIERRE]
-LoseText = ...
 Pokemon = AMPHAROS,38
 Pokemon = VILEPLUME,38
 #-------------------------------
 [GENTLEMAN,THOMAS]
-LoseText = ...
 Pokemon = GROWLITHE,36
 Pokemon = GROWLITHE,40
 #-------------------------------
 [GENTLEMAN,ARTHUR]
-LoseText = ...
 Pokemon = NIDOKING,40
 Pokemon = NIDOQUEEN,40
 #-------------------------------
 [LASS,ANN]
-LoseText = ...
 Pokemon = PIDGEOTTO,36
 Pokemon = NIDORINA,36
 #-------------------------------
 [YOUNGSTER,TYLER]
-LoseText = ...
 Pokemon = NIDOKING,49
 #-------------------------------
 [SAILOR,PHILLIP]
-LoseText = ...
 Pokemon = MACHAMP,48
 #-------------------------------
 [SAILOR,HUEY]
-LoseText = ...
 Pokemon = TENTACOOL,36
 Pokemon = STARYU,36
 #-------------------------------
 [SAILOR,DYLAN]
-LoseText = ...
 Pokemon = HORSEA,35
 Pokemon = SEADRA,45
 Pokemon = KINGDRA,55
 #-------------------------------
 [SAILOR,LEONARD]
-LoseText = ...
 Pokemon = CRAWDAUNT,49
 #-------------------------------
 [GENTLEMAN,BROOKS]
-LoseText = ...
 Pokemon = PIKACHU,41
 #-------------------------------
 [GENTLEMAN,LAMAR]
-LoseText = ...
 Pokemon = ARCANINE,46
 Pokemon = RAPIDASH,46
 #-------------------------------
 [LASS,DAWN]
-LoseText = ...
 Pokemon = RATICATE,36
 Pokemon = PIKACHU,46
 #-------------------------------
 [SAILOR,TREVOR]
-LoseText = ...
 Pokemon = MACHOKE,39
 Pokemon = TENTACOOL,36
 #-------------------------------
 [SAILOR,EDMOND]
-LoseText = ...
 Pokemon = MACHOKE,39
 Pokemon = SHELLDER,36
 #-------------------------------
 [SAILOR,CHAMPION]
-LoseText = ...
 Pokemon = HARIYAMA,50
 Pokemon = URSARING,50
 Pokemon = MACHOKE,50
 Pokemon = MACHAMP,60
 #-------------------------------
 [TEAMAQUA_Male,Grunt]
-LoseText = ...
 Pokemon = POOCHYENA,3
 #-------------------------------
 [BOYFRIEND,Boy,1]
-LoseText = ...
 Pokemon = MUDKIP,5
+    Form = 0
     Moves = TACKLE,WATERGUN
     Happiness = 20
 #-------------------------------
 [BOYFRIEND,Boy,2]
-LoseText = ...
 Pokemon = TORCHIC,5
+    Form = 0
     Moves = SCRATCH,EMBER
     Happiness = 20
 #-------------------------------
 [BOYFRIEND,Boy,3]
-LoseText = ...
 Pokemon = TREECKO,5
+    Form = 0
     Moves = POUND,RAZORLEAF
 #-------------------------------
 [GIRLFRIEND,Girl,1]
-LoseText = ...
 Pokemon = TREECKO,5
+    Form = 0
     Moves = POUND,RAZORLEAF
 #-------------------------------
 [GIRLFRIEND,Girl,2]
-LoseText = ...
 Pokemon = TORCHIC,5
+    Form = 0
     Moves = SCRATCH,EMBER
 #-------------------------------
 [GIRLFRIEND,Girl,3]
-LoseText = ...
 Pokemon = TREECKO,5
+    Form = 0
     Moves = POUND,RAZORLEAF
 #-------------------------------
 [YOUNGSTER,Calvin,2]
-LoseText = ...
 Pokemon = POOCHYENA,5
 Pokemon = POOCHYENA,3
 #-------------------------------
 [BUGCATCHER,Rick,2]
-LoseText = ...
 Pokemon = WURMPLE,4
 Pokemon = WURMPLE,4
 #-------------------------------
 [YOUNGSTER,Allen]
-LoseText = ...
 Pokemon = ZIGZAGOON,4
 Pokemon = TAILLOW,3
 #-------------------------------
 [LASS,Tiana]
-LoseText = ...
 Pokemon = ZIGZAGOON,4
 Pokemon = SHROOMISH,4
 #-------------------------------
 [YOUNGSTER,Billy]
-LoseText = ...
 Pokemon = ZIGZAGOON,5
 Pokemon = SEEDOT,7
 #-------------------------------
 [BUGCATCHER,Lyle]
-LoseText = ...
 Pokemon = WURMPLE,3
 Pokemon = WURMPLE,3
 Pokemon = WURMPLE,3
 Pokemon = WURMPLE,3
 #-------------------------------
 [FISHERMAN,Darian]
-LoseText = ...
 Pokemon = LOTAD,4
 Pokemon = WAILMER,5
 #-------------------------------
 [LADY,Cindy]
-LoseText = ...
 Pokemon = ZIGZAGOON,6
 Pokemon = ZIGZAGOON,4
 #-------------------------------
 [TEAMAQUA_Male,Grunt,2]
-LoseText = ...
 Pokemon = POOCHYENA,9
 Pokemon = POOCHYENA,7
 #-------------------------------
 [TEAMAQUA_Male,Grunt,3]
-LoseText = ...
 Pokemon = POOCHYENA,9
 Pokemon = WURMPLE,8
 #-------------------------------
 [BUGCATCHER,James,2]
-LoseText = ...
 Pokemon = NINCADA,6
 Pokemon = NINCADA,6
 #-------------------------------
 [RICHBOY,Winston,1]
-LoseText = ...
 Pokemon = ZIGZAGOON,7
 Pokemon = ZIGZAGOON,6
 #-------------------------------
 [LASS,HALEY,2]
-LoseText = ...
 Pokemon = LOTAD,6
 Pokemon = SHROOMISH,6
 #-------------------------------
 [TWINS,Hina & Mia]
-LoseText = ...
 Pokemon = SEEDOT,6
 Pokemon = LOTAD,6
 #-------------------------------
 [FISHERMAN,Ivan]
-LoseText = ...
 Pokemon = CARVANHA,5
 Pokemon = CARVANHA,6
 Pokemon = CARVANHA,7
 #-------------------------------
 [SCHOOLKID_Boy,Adam,1]
-LoseText = ...
 Pokemon = WINGULL,6
 Pokemon = POOCHYENA,7
 #-------------------------------
 [SCHOOLKID_Female,Mariah,1]
-LoseText = ...
 Pokemon = ZIGZAGOON,6
 Pokemon = LOTAD,6
 #-------------------------------
 [YOUNGSTER,Josh,2]
-LoseText = ...
 Pokemon = ARON,7
 Pokemon = ARON,7
 #-------------------------------
 [YOUNGSTER,Tommy,1]
-LoseText = ...
 Pokemon = ARON,8
 Pokemon = ARON,8
 #-------------------------------
 [HIKER,Marc,1]
-LoseText = ...
 Pokemon = ARON,8
 Pokemon = ARON,8
 #-------------------------------
 [LEADER_Roxanne,Roxanne]
 Items = POTION,POTION
-LoseText = ...
 Pokemon = ARON,12
 Pokemon = ARON,12
 Pokemon = NOSEPASS,16
 #-------------------------------
 [BUGCATCHER,Jose,1]
-LoseText = ...
 Pokemon = WURMPLE,8
 Pokemon = NINCADA,8
 #-------------------------------
 [YOUNGSTER,JOEY,3]
-LoseText = ...
 Pokemon = MAKUHITA,8
 Pokemon = MAKUHITA,8
 #-------------------------------
 [SCHOOLKID_Female,Karen,1]
-LoseText = ...
 Pokemon = SHROOMISH,8
 Pokemon = SHROOMISH,8
 #-------------------------------
 [HIKER,Clark,1]
-LoseText = ...
 Pokemon = ARON,8
 Pokemon = ARON,8
 #-------------------------------
 [YOUNGSTER,Johnson,1]
-LoseText = ...
 Pokemon = SHROOMISH,8
 Pokemon = LOTAD,8
 #-------------------------------
 [HIKER,Devan,1]
-LoseText = ...
 Pokemon = ARON,8
 Pokemon = ARON,8
 #-------------------------------
 [TEAMAQUA_Male,Grunt,4]
-LoseText = ...
 Pokemon = POOCHYENA,12
 Pokemon = WURMPLE,10
 #-------------------------------
 [TEAMAQUA_Male,Grunt,5]
-LoseText = ...
 Pokemon = POOCHYENA,10
 Pokemon = POOCHYENA,12
 #-------------------------------
 [FISHERMAN,Nedd]
-LoseText = ...
 Pokemon = CARVANHA,9
 Pokemon = BARBOACH,9
 #-------------------------------
 [BATTLEGIRL,LAURA,1]
-LoseText = ...
 Pokemon = MEDITITE,11
 Pokemon = MEDITITE,10
 #-------------------------------
 [SAILOR,Brenden,1]
-LoseText = ...
 Pokemon = MAKUHITA,11
 Pokemon = MAKUHITA,12
 #-------------------------------
 [BATTLEGIRL,Lilith,1]
-LoseText = ...
 Pokemon = MEDITITE,11
 Pokemon = MEDITITE,12
 #-------------------------------
 [BLACKBELT,TAKAO,1]
-LoseText = ...
 Pokemon = MAKUHITA,12
 Pokemon = MAKUHITA,12
 #-------------------------------
 [BLACKBELT,Cristian,1]
-LoseText = ...
 Pokemon = MAKUHITA,12
 Pokemon = MAKUHITA,12
 #-------------------------------
 [BATTLEGIRL,JOCELYN,1]
-LoseText = ...
 Pokemon = MEDITITE,12
 Pokemon = MEDITITE,12
 #-------------------------------
 [LEADER_Brawly,Brawly]
 Items = SUPERPOTION,SUPERPOTION
-LoseText = ...
 Pokemon = MAKUHITA,16
 Pokemon = MEDITITE,16
 Pokemon = MEDICHAM,19
 #-------------------------------
 [BOYFRIEND,Boy,4]
-LoseText = ...
 Pokemon = MUDKIP,10
+    Form = 0
     Moves = TACKLE,WATERGUN
     Happiness = 20
 Pokemon = POOCHYENA,5
 #-------------------------------
 [BOYFRIEND,Boy,5]
-LoseText = ...
 Pokemon = TORCHIC,10
+    Form = 0
     Moves = SCRATCH,EMBER
 Pokemon = POOCHYENA,5
 #-------------------------------
 [BOYFRIEND,Boy,6]
-LoseText = ...
 Pokemon = TREECKO,10
+    Form = 0
     Moves = POUND,RAZORLEAF
 Pokemon = POOCHYENA,5
 #-------------------------------
 [GIRLFRIEND,Girl,4]
-LoseText = ...
 Pokemon = MUDKIP,10
+    Form = 0
     Moves = TACKLE,WATERGUN
 Pokemon = ZIGZAGOON,5
 #-------------------------------
 [GIRLFRIEND,Girl,5]
-LoseText = ...
 Pokemon = TORCHIC,10
+    Form = 0
     Moves = SCRATCH,EMBER
 Pokemon = ZIGZAGOON,5
 #-------------------------------
 [GIRLFRIEND,Girl,6]
-LoseText = ...
 Pokemon = TREECKO,10
+    Form = 0
     Moves = POUND,RAZORLEAF
 Pokemon = ZIGZAGOON,5
 #-------------------------------
 [TEAMAQUA_Male,Grunt,6]
-LoseText = ...
 Pokemon = POOCHYENA,9
 Pokemon = TAILLOW,9
 #-------------------------------
 [TEAMAQUA_Male,Grunt,7]
-LoseText = ...
 Pokemon = POOCHYENA,9
 Pokemon = LOMBRE,9
 #-------------------------------
 [TEAMMAGMA_Male,Grunt]
-LoseText = ...
 Pokemon = SABLEYE,13
 Pokemon = ARON,11
 #-------------------------------
 [TEAMMAGMA_Male,Grunt,2]
-LoseText = ...
 Pokemon = TORCHIC,14
 Pokemon = MEDITITE,9
 #-------------------------------
 [TEAMMAGMA_Male,Grunt,3]
-LoseText = ...
 Pokemon = ZANGOOSE,14
 Pokemon = SABLEYE,10
 #-------------------------------
 [BOYFRIEND,Boy,7]
-LoseText = ...
 Pokemon = MARSHTOMP,16
     Moves = TACKLE,WATERGUN,BIDE
 Pokemon = POOCHYENA,9
 Pokemon = CASCOON,7
 #-------------------------------
 [BOYFRIEND,Boy,8]
-LoseText = ...
 Pokemon = COMBUSKEN,16
     Moves = SCRATCH,EMBER,PECK
 Pokemon = POOCHYENA,9
 Pokemon = CASCOON,7
 #-------------------------------
 [BOYFRIEND,Boy,9]
-LoseText = ...
 Pokemon = GROVYLE,16
     Moves = POUND,RAZORLEAF,QUICKATTACK
 Pokemon = POOCHYENA,9
 Pokemon = CASCOON,7
 #-------------------------------
 [GIRLFRIEND,Girl,7]
-LoseText = ...
 Pokemon = MARSHTOMP,16
     Moves = TACKLE,WATERGUN,BIDE
 Pokemon = ZIGZAGOON,9
 Pokemon = SILCOON,7
 #-------------------------------
 [GIRLFRIEND,Girl,8]
-LoseText = ...
 Pokemon = COMBUSKEN,16
     Moves = SCRATCH,EMBER,PECK
 Pokemon = ZIGZAGOON,9
 Pokemon = SILCOON,7
 #-------------------------------
 [GIRLFRIEND,Girl,9]
-LoseText = ...
 Pokemon = GROVYLE,16
     Moves = POUND,RAZORLEAF,QUICKATTACK
 Pokemon = ZIGZAGOON,9
 Pokemon = SILCOON,7
 #-------------------------------
 [POKeFAN_Female,Isabel]
-LoseText = ...
 Pokemon = PLUSLE,14
 Pokemon = MINUN,14
 #-------------------------------
 [POKeFAN_Male,Kaleb]
-LoseText = ...
 Pokemon = MINUN,14
 Pokemon = PLUSLE,14
 #-------------------------------
 [YOUNGSTER,Timmy]
-LoseText = ...
 Pokemon = ARON,15
 Pokemon = ELECTRIKE,13
 #-------------------------------
 [COLLECTOR,Edwin]
-LoseText = ...
 Pokemon = LOMBRE,14
 Pokemon = NUZLEAF,14
 #-------------------------------
 [GUITARIST,Joseph]
-LoseText = ...
 Pokemon = ELECTRIKE,14
 Pokemon = MINUN,14
 #-------------------------------
 [TRIATHLETE_FemaleCyclist,Alyssa]
-LoseText = ...
 Pokemon = ELECTRIKE,14
 Pokemon = ELECTRIKE,14
 #-------------------------------
 [PSYCHIC_Male,Edward]
-LoseText = ...
 Pokemon = SPOINK,14
 Pokemon = SPOINK,14
 #-------------------------------
 [BATTLEGIRL,Vivian]
-LoseText = ...
 Pokemon = MEDITITE,17
 Pokemon = MEDITITE,17
 #-------------------------------
 [GUITARIST,Kirk]
-LoseText = ...
 Pokemon = ELECTRIKE,17
 Pokemon = PLUSLE,17
 #-------------------------------
 [YOUNGSTER,Beny]
-LoseText = ...
 Pokemon = ZIGZAGOON,17
 Pokemon = GULPIN,17
 #-------------------------------
 [BUGMANIAC,Angelo]
-LoseText = ...
 Pokemon = ILLUMISE,17
 Pokemon = VOLBEAT,17
 #-------------------------------
 [GUITARIST,Shawn]
-LoseText = ...
 Pokemon = ELECTRIKE,17
 Pokemon = MINUN,17
 #-------------------------------
 [Dupla_jovem,Mark & Julia,1]
-LoseText = ...
 Pokemon = POOCHYENA,13
 Pokemon = LINOONE,15
 Pokemon = POOCHYENA,12
@@ -3542,7 +2989,6 @@ Pokemon = LINOONE,13
 Pokemon = WINGULL,12
 #-------------------------------
 [TWINS,Ana & Bia]
-LoseText = ...
 Pokemon = POOCHYENA,14
 Pokemon = LINOONE,16
 Pokemon = POOCHYENA,16
@@ -3566,162 +3012,132 @@ Pokemon = VULPIX,9
 Pokemon = SLUGMA,10
 #-------------------------------
 [SCHOOLKID_Female,Karen]
-LoseText = ...
 Pokemon = SHROOMISH,8
 Pokemon = SHROOMISH,8
 #-------------------------------
 [HIKER,Clark]
-LoseText = ...
 Pokemon = ARON,8
 Pokemon = ARON,8
 #-------------------------------
 [YOUNGSTER,Johnson]
-LoseText = ...
 Pokemon = SHROOMISH,8
 Pokemon = LOTAD,8
 #-------------------------------
 [HIKER,Devan]
-LoseText = ...
 Pokemon = ARON,8
 Pokemon = ARON,8
 #-------------------------------
 [BUGCATCHER,Jose]
-LoseText = ...
 Pokemon = WURMPLE,8
 Pokemon = NINCADA,8
 #-------------------------------
 [BUGCATCHER,James]
-LoseText = ...
 Pokemon = NINCADA,6
 Pokemon = NINCADA,6
 #-------------------------------
 [RICHBOY,Winston]
-LoseText = ...
 Pokemon = ZIGZAGOON,7
 Pokemon = ZIGZAGOON,6
 #-------------------------------
 [YOUNGSTER,Tommy]
-LoseText = ...
 Pokemon = ARON,8
 Pokemon = ARON,8
 #-------------------------------
 [HIKER,Marc]
-LoseText = ...
 Pokemon = ARON,8
 Pokemon = ARON,8
 #-------------------------------
 [YOUNGSTER,Josh]
-LoseText = ...
 Pokemon = ARON,7
 Pokemon = ARON,7
 #-------------------------------
 [BLACKBELT,TAKAO]
-LoseText = ...
 Pokemon = MAKUHITA,12
 Pokemon = MAKUHITA,12
 #-------------------------------
 [BLACKBELT,Cristian]
-LoseText = ...
 Pokemon = MAKUHITA,12
 Pokemon = MAKUHITA,12
 #-------------------------------
 [BATTLEGIRL,JOCELYN]
-LoseText = ...
 Pokemon = MEDITITE,12
 Pokemon = MEDITITE,12
 #-------------------------------
 [BATTLEGIRL,LAURA]
-LoseText = ...
 Pokemon = MEDITITE,11
 Pokemon = MEDITITE,10
 #-------------------------------
 [SAILOR,Brenden]
-LoseText = ...
 Pokemon = MAKUHITA,11
 Pokemon = MAKUHITA,12
 #-------------------------------
 [BATTLEGIRL,Lilith]
-LoseText = ...
 Pokemon = MEDITITE,11
 Pokemon = MEDITITE,12
 #-------------------------------
 [YOUNGSTER,Calvin]
-LoseText = ...
 Pokemon = POOCHYENA,5
 Pokemon = POOCHYENA,3
 #-------------------------------
 [BUGCATCHER,Rick]
-LoseText = ...
 Pokemon = WURMPLE,4
 Pokemon = WURMPLE,4
 #-------------------------------
 [ROCKET_Male,CIENTISTA]
-LoseText = ...
 Pokemon = MAGNEMITE,28
 Pokemon = VOLTORB,29
 Pokemon = MAGNETON,34
 #-------------------------------
 [EUSINE,Eusine]
-LoseText = ...
 Pokemon = DROWZEE,25
 Pokemon = ELECTRODE,27
 Pokemon = HAUNTER,25
 #-------------------------------
 [ROCKET_Male,Grunt-Alarme2]
-LoseText = ...
 Pokemon = ZUBAT,16
 Pokemon = GRIMER,17
 Pokemon = RATTATA,18
 #-------------------------------
 [ROCKET_Male,Grunt-Alarme]
-LoseText = ...
 Pokemon = DROWZEE,19
 Pokemon = ZUBAT,18
 #-------------------------------
 [ROCKET_Female,Grunt-Pesquisadora]
-LoseText = ...
 Pokemon = EKANS,18
 Pokemon = GLOOM,18
 #-------------------------------
 [ROCKET_Female,ChefA]
-LoseText = ...
 Pokemon = ARBOK,32
 Pokemon = MURKROW,32
 Pokemon = VILEPLUME,32
 #-------------------------------
 [FISHERMAN,Edgar]
-LoseText = ...
 Pokemon = REMORAID,25
 Pokemon = REMORAID,25
 #-------------------------------
 [ROCKET_EXECUTIVE4,Lance]
-LoseText = ...
 Pokemon = GOLBAT,36
 Pokemon = MUK,36
 Pokemon = RATICATE,36
 #-------------------------------
 [ROCKET_EXECUTIVE3,Lambda]
-LoseText = ...
 Pokemon = KOFFING,34
 Pokemon = EXEGGUTOR,34
 Pokemon = VILEPLUME,36
 Pokemon = WEEZING,36
 #-------------------------------
 [ROCKET_EXECUTIVE2,Athena]
-LoseText = ...
 Pokemon = SNEASEL,36
 Pokemon = UMBREON,36
 Pokemon = MURKROW,38
 #-------------------------------
 [ROCKETLEADER,APollo]
-LoseText = ...
 Pokemon = NIDOKING,38
 Pokemon = URSARING,38
 Pokemon = GOLEM,40
 Pokemon = HOUNDOOM,42
 #-------------------------------
 [RIVAL_YELLOW,Yellow,7]
-LoseText = ...
 Pokemon = VENUSAUR,50
 Pokemon = RATICATE,54
 Pokemon = BUTTERFREE,54
@@ -3730,7 +3146,6 @@ Pokemon = DODRIO,55
 Pokemon = PIKACHU,59
 #-------------------------------
 [RIVAL_YELLOW,Yellow,8]
-LoseText = ...
 Pokemon = CHARIZARD,50
 Pokemon = RATICATE,54
 Pokemon = BUTTERFREE,54
@@ -3739,7 +3154,6 @@ Pokemon = DODRIO,55
 Pokemon = PIKACHU,59
 #-------------------------------
 [RIVAL_YELLOW,Yellow,9]
-LoseText = ...
 Pokemon = BLASTOISE,50
 Pokemon = RATICATE,54
 Pokemon = BUTTERFREE,54
@@ -3748,7 +3162,6 @@ Pokemon = DODRIO,55
 Pokemon = PIKACHU,59
 #-------------------------------
 [GUARDIAOFOGO,Moltres]
-LoseText = ...
 Pokemon = RAPIDASH,60
 Pokemon = TYPHLOSION,60
 Pokemon = MAGMAR,60
@@ -3757,7 +3170,6 @@ Pokemon = HOUNDOOM,62
 Pokemon = CHARIZARD,65
 #-------------------------------
 [GUARDIAORAIO,Zapdos]
-LoseText = ...
 Pokemon = RAICHU,60
 Pokemon = MAGNETON,60
 Pokemon = ELECTABUZZ,64
@@ -3765,7 +3177,6 @@ Pokemon = JOLTEON,64
 Pokemon = AMPHAROS,64
 #-------------------------------
 [GUARDIAOGELO,Articuno]
-LoseText = ...
 Pokemon = DEWGONG,60
 Pokemon = JYNX,59
 Pokemon = DELIBIRD,57
@@ -3774,7 +3185,6 @@ Pokemon = PILOSWINE,62
 Pokemon = CLOYSTER,65
 #-------------------------------
 [GUARDIAOLUGIA,Lugia]
-LoseText = ...
 Pokemon = UMBREON,64
 Pokemon = ESPEON,64
 Pokemon = TOGETIC,61
@@ -3783,7 +3193,6 @@ Pokemon = DITTO,63
 Pokemon = ALAKAZAM,67
 #-------------------------------
 [SRANDJR,Maglore & Caio,1]
-LoseText = ...
 Pokemon = DUSTOX,12
 Pokemon = MUDKIP,13
 Pokemon = WINGULL,12
@@ -3792,7 +3201,6 @@ Pokemon = LINOONE,13
 Pokemon = RALTS,14
 #-------------------------------
 [INTERVIEWERS,Mariah & Brad,1]
-LoseText = ...
 Pokemon = SHROOMISH,13
 Pokemon = VOLBEAT,14
 Pokemon = LINOONE,14
@@ -3801,7 +3209,6 @@ Pokemon = PLUSLE,12
 Pokemon = SPHEAL,14
 #-------------------------------
 [OLDCOUPLE,Nevaresca & Carveci,1]
-LoseText = ...
 Pokemon = ELECTRIKE,13
 Pokemon = MAKUHITA,14
 Pokemon = LINOONE,15
@@ -3810,7 +3217,6 @@ Pokemon = RALTS,13
 Pokemon = PELIPPER,15
 #-------------------------------
 [TWINS,Luma & Lais,1]
-LoseText = ...
 Pokemon = MINUN,13
 Pokemon = SWABLU,14
 Pokemon = PLUSLE,14
@@ -3819,7 +3225,6 @@ Pokemon = ZIGZAGOON,13
 Pokemon = SPINDA,14
 #-------------------------------
 [SISANDBRO,Karine & Rafael,1]
-LoseText = ...
 Pokemon = CARVANHA,15
 Pokemon = RALTS,15
 Pokemon = CORPHISH,14
@@ -3828,42 +3233,36 @@ Pokemon = POOCHYENA,13
 Pokemon = LOMBRE,15
 #-------------------------------
 [BOYFRIEND,Boy,10]
-LoseText = ...
 Pokemon = MARSHTOMP,21
     Moves = TACKLE,WATERGUN,BIDE
 Pokemon = MIGHTYENA,18
 Pokemon = DUSTOX,15
 #-------------------------------
 [BOYFRIEND,Boy,11]
-LoseText = ...
 Pokemon = COMBUSKEN,21
     Moves = SCRATCH,EMBER,PECK
 Pokemon = MIGHTYENA,18
 Pokemon = DUSTOX,15
 #-------------------------------
 [BOYFRIEND,Boy,12]
-LoseText = ...
 Pokemon = GROVYLE,21
     Moves = POUND,RAZORLEAF,QUICKATTACK
 Pokemon = MIGHTYENA,18
 Pokemon = DUSTOX,15
 #-------------------------------
 [GIRLFRIEND,Girl,10]
-LoseText = ...
 Pokemon = MARSHTOMP,21
     Moves = TACKLE,WATERGUN,BIDE
 Pokemon = ZIGZAGOON,18
 Pokemon = BEAUTIFLY,15
 #-------------------------------
 [GIRLFRIEND,Girl,11]
-LoseText = ...
 Pokemon = COMBUSKEN,21
     Moves = SCRATCH,EMBER,PECK
 Pokemon = ZIGZAGOON,18
 Pokemon = BEAUTIFLY,15
 #-------------------------------
 [GIRLFRIEND,Girl,12]
-LoseText = ...
 Pokemon = GROVYLE,21
     Moves = POUND,RAZORLEAF,QUICKATTACK
 Pokemon = ZIGZAGOON,18
@@ -3871,593 +3270,481 @@ Pokemon = BEAUTIFLY,15
 #-------------------------------
 [LEADER_Wattson,Wattson]
 Items = SUPERPOTION,SUPERPOTION
-LoseText = ...
 Pokemon = VOLTORB,20
 Pokemon = MAGNETON,22
 Pokemon = ELECTRIKE,20
 Pokemon = MANECTRIC,24
 #-------------------------------
 [AROMALADY,Rose]
-LoseText = ...
 Pokemon = ROSELIA,14
 Pokemon = ROSELIA,14
 Pokemon = SHROOMISH,14
 #-------------------------------
 [YOUNGSTER,Deandre]
-LoseText = ...
 Pokemon = ZIGZAGOON,14
 Pokemon = ELECTRIKE,14
 Pokemon = ARON,14
 #-------------------------------
 [GUITARIST,Dalion]
-LoseText = ...
 Pokemon = ELECTRIKE,15
 Pokemon = WHISMUR,15
 #-------------------------------
 [FISHERMAN,Wade]
-LoseText = ...
 Pokemon = TENTACOOL,15
 Pokemon = CARVANHA,15
 #-------------------------------
 [TWINS,Anna & Meg]
-LoseText = ...
 Pokemon = ZIGZAGOON,16
 Pokemon = MAKUHITA,18
 #-------------------------------
 [TRIATHLETE_FemaleCyclist,Dyana]
-LoseText = ...
 Pokemon = TAILLOW,18
 Pokemon = GULPIN,17
 #-------------------------------
 [SCHOOLKID_Boy,Isaac]
-LoseText = ...
 Pokemon = WHISMUR,15
 Pokemon = ARON,16
 Pokemon = POOCHYENA,16
 Pokemon = ZIGZAGOON,16
 #-------------------------------
 [TRIATHLETE_FemaleCyclist,Maria]
-LoseText = ...
 Pokemon = TAILLOW,17
 Pokemon = SEEDOT,18
 #-------------------------------
 [BATTLEGIRL,Aisha]
-LoseText = ...
 Pokemon = MEDITITE,18
 Pokemon = MEDITITE,17
 #-------------------------------
 [PSYCHIC_Female,Brandi]
-LoseText = ...
 Pokemon = RALTS,17
 Pokemon = RALTS,17
 #-------------------------------
 [BUGCATCHER,Derek]
-LoseText = ...
 Pokemon = DUSTOX,17
 Pokemon = BEAUTIFLY,17
 #-------------------------------
 [AROMALADY,Lydia]
-LoseText = ...
 Pokemon = SHROOMISH,17
 Pokemon = NINCADA,18
 Pokemon = ROSELIA,17
 #-------------------------------
 [CAMPER,Tyron]
-LoseText = ...
 Pokemon = SANDSHREW,17
 Pokemon = SANDSHREW,19
 #-------------------------------
 [AROMALADY,Celina]
-LoseText = ...
 Pokemon = ROSELIA,18
 Pokemon = ROSELIA,18
 #-------------------------------
 [PICNICKER,Bianca]
-LoseText = ...
 Pokemon = SHROOMISH,18
 Pokemon = SHROOMISH,18
 #-------------------------------
 [KINDLER,Hayden]
-LoseText = ...
 Pokemon = NUMEL,18
 Pokemon = NUMEL,18
 #-------------------------------
 [CAMPER,Travis]
-LoseText = ...
 Pokemon = MAWILE,18
 Pokemon = MAWILE,18
 #-------------------------------
 [PICNICKER,Irene]
-LoseText = ...
 Pokemon = SHROOMISH,18
 Pokemon = AZURILL,18
 #-------------------------------
 [CAMPER,Larry]
-LoseText = ...
 Pokemon = SEEDOT,18
 Pokemon = NUZLEAF,19
 #-------------------------------
 [PICNICKER,Carol]
-LoseText = ...
 Pokemon = TAILLOW,18
 Pokemon = LOMBRE,19
 #-------------------------------
 [HIKER,Trent]
-LoseText = ...
 Pokemon = ARON,17
 Pokemon = ARON,17
 Pokemon = ARON,17
 #-------------------------------
 [HIKER,Brice]
-LoseText = ...
 Pokemon = NUMEL,18
 Pokemon = MEDITITE,18
 #-------------------------------
 [AROMALADY,Shayla]
-LoseText = ...
 Pokemon = SHROOMISH,18
 Pokemon = ROSELIA,19
 #-------------------------------
 [KINDLER,Bryant]
-LoseText = ...
 Pokemon = NUMEL,18
 Pokemon = TORKOAL,19
 #-------------------------------
 [COOLTRAINER_Male,Wilton]
-LoseText = ...
 Pokemon = ELECTRIKE,18
 Pokemon = WAILMER,18
 Pokemon = MAKUHITA,18
 #-------------------------------
 [COOLTRAINER_Female,Brooke]
-LoseText = ...
 Pokemon = WINGULL,18
 Pokemon = NUMEL,18
 Pokemon = ROSELIA,18
 #-------------------------------
 [YOUNGSTER,Jaylen]
-LoseText = ...
 Pokemon = TRAPINCH,18
 Pokemon = TRAPINCH,19
 #-------------------------------
 [CAMPER,Lawrence]
-LoseText = ...
 Pokemon = BALTOY,18
 Pokemon = NINJASK,19
 #-------------------------------
 [LASS,Lung]
-LoseText = ...
 Pokemon = CACNEA,18
 Pokemon = SPINDA,19
 #-------------------------------
 [SCHOOLKID_Boy,Wyatt]
-LoseText = ...
 Pokemon = ARON,18
 Pokemon = ARON,19
 #-------------------------------
 [PARASOLLADY,Madeline]
-LoseText = ...
 Pokemon = ARON,18
 Pokemon = NUMEL,19
 #-------------------------------
 [TWINS,Tory & Tya]
-LoseText = ...
 Pokemon = SPINDA,19
 Pokemon = SPINDA,19
 #-------------------------------
 [YOUNGSTER,Dillan]
-LoseText = ...
 Pokemon = ARON,19
 Pokemon = TORCHIC,19
 #-------------------------------
 [PICNICKER,Sophie]
-LoseText = ...
 Pokemon = AZURILL,19
 Pokemon = LOMBRE,19
 #-------------------------------
 [BIRDKEEPER,Coby]
-LoseText = ...
 Pokemon = SWELLOW,18
 Pokemon = SWELLOW,19
 #-------------------------------
 [POKeFAN_Male,Victor]
-LoseText = ...
 Pokemon = SWELLOW,19
 Pokemon = SKITTY,18
 Pokemon = MIGHTYENA,19
 Pokemon = KIRLIA,20
 #-------------------------------
 [FISHERMAN,Nolan]
-LoseText = ...
 Pokemon = BARBOACH,20
 Pokemon = BARBOACH,20
 #-------------------------------
 [PICNICKER,Charlotte]
-LoseText = ...
 Pokemon = NUZLEAF,20
 Pokemon = SPINDA,19
 #-------------------------------
 [FISHERMAN,Kai]
-LoseText = ...
 Pokemon = BARBOACH,19
 Pokemon = WAILORD,20
 #-------------------------------
 [FISHERMAN,Claude]
-LoseText = ...
 Pokemon = MAGIKARP,19
 Pokemon = BARBOACH,20
 Pokemon = SPHEAL,19
 #-------------------------------
 [PICNICKER,Nancy]
-LoseText = ...
 Pokemon = AZURILL,19
 Pokemon = LOMBRE,20
 #-------------------------------
 [Dupla_jovem,Ivy & Louis]
-LoseText = ...
 Pokemon = ROSELIA,19
 Pokemon = NOSEPASS,20
 #-------------------------------
 [CAMPER,Shane]
-LoseText = ...
 Pokemon = LOUDRED,20
 Pokemon = NUZLEAF,19
 #-------------------------------
 [POKeMANIAC,Steve]
-LoseText = ...
 Pokemon = ARON,19
 Pokemon = MAKUHITA,18
 #-------------------------------
 [KINDLER,Bernie]
-LoseText = ...
 Pokemon = COMBUSKEN,20
 Pokemon = WINGULL,19
 #-------------------------------
 [HIKER,Luca]
-LoseText = ...
 Pokemon = ARON,19
 Pokemon = NUMEL,20
 #-------------------------------
 [PICNICKER,Angelina]
-LoseText = ...
 Pokemon = LOMBRE,19
 Pokemon = SWABLU,19
 #-------------------------------
 [HIKER,Leny]
-LoseText = ...
 Pokemon = ARON,19
 Pokemon = SLAKOTH,20
 #-------------------------------
 [BLACKBELT,Nobb,1]
-LoseText = ...
 Pokemon = SLAKOTH,20
 Pokemon = MAKUHITA,20
 #-------------------------------
 [BATTLEGIRL,Cyndy,1]
-LoseText = ...
 Pokemon = MEDITITE,20
 Pokemon = MAKUHITA,20
 #-------------------------------
 [COLLECTOR,Hector,1]
-LoseText = ...
 Pokemon = ZANGOOSE,20
 Pokemon = SEVIPER,20
 #-------------------------------
 [PSYCHIC_Female,Marlene,1]
-LoseText = ...
 Pokemon = MEDITITE,20
 Pokemon = SPOINK,20
 #-------------------------------
 [HIKER,Erick]
-LoseText = ...
 Pokemon = ARON,20
 Pokemon = BALTOY,21
 #-------------------------------
 [TEAMMAGMA_Male,Grunt,4]
-LoseText = ...
 Pokemon = POOCHYENA,22
 Pokemon = NUMEL,22
 #-------------------------------
 [PICNICKER,Diana]
-LoseText = ...
 Pokemon = SHROOMISH,20
 Pokemon = SHROOMISH,20
 Pokemon = SWABLU,20
 #-------------------------------
 [PICNICKER,Autumn]
-LoseText = ...
 Pokemon = SHROOMISH,21
 Pokemon = DUSTOX,21
 #-------------------------------
 [HIKER,Julio]
-LoseText = ...
 Pokemon = ARON,21
 Pokemon = LAIRON,21
 #-------------------------------
 [CAMPER,Ethan]
-LoseText = ...
 Pokemon = ZIGZAGOON,21
 Pokemon = TAILLOW,21
 #-------------------------------
 [KINDLER,Jeff]
-LoseText = ...
 Pokemon = SLUGMA,24
 Pokemon = SLUGMA,24
 #-------------------------------
 [HIKER,Eli]
-LoseText = ...
 Pokemon = NUMEL,24
 Pokemon = NUMEL,24
 #-------------------------------
 [KINDLER,Jace]
-LoseText = ...
 Pokemon = SLUGMA,24
 Pokemon = SLUGMA,24
 #-------------------------------
 [KINDLER,Cole]
-LoseText = ...
 Pokemon = COMBUSKEN,23
 Pokemon = NUMEL,24
 #-------------------------------
 [KINDLER,Gerald]
-LoseText = ...
 Pokemon = NUMEL,24
 Pokemon = SLUGMA,24
 #-------------------------------
 [KINDLER,Axle]
-LoseText = ...
 Pokemon = NUMEL,24
 Pokemon = SLUGMA,24
 #-------------------------------
 [BATTLEGIRL,Danielle]
-LoseText = ...
 Pokemon = MEDITITE,24
 Pokemon = MEDITITE,24
 #-------------------------------
 [LEADER_Flannery,Flannery]
 Items = HYPERPOTION,HYPERPOTION
-LoseText = ...
 Pokemon = NUMEL,25
 Pokemon = SLUGMA,25
 Pokemon = CAMERUPT,27
 Pokemon = TORKOAL,30
 #-------------------------------
 [COOLTRAINER_Male,Randall]
-LoseText = ...
 Pokemon = SWELLOW,26
 Pokemon = SWELLOW,26
 #-------------------------------
 [COOLTRAINER_Female,Mary]
-LoseText = ...
 Pokemon = DELCATTY,26
 Pokemon = DELCATTY,26
 #-------------------------------
 [COOLTRAINER_Female,Alexia]
-LoseText = ...
 Pokemon = WIGGLYTUFF,26
 Pokemon = WIGGLYTUFF,26
 #-------------------------------
 [COOLTRAINER_Female,Jody]
-LoseText = ...
 Pokemon = ZANGOOSE,26
 Pokemon = ZANGOOSE,26
 #-------------------------------
 [COOLTRAINER_Male,Berke]
-LoseText = ...
 Pokemon = VIGOROTH,26
 Pokemon = VIGOROTH,26
 #-------------------------------
 [LEADER_Norman,Norman]
-LoseText = ...
 Pokemon = SPINDA,28
 Pokemon = VIGOROTH,28
 Pokemon = LINOONE,30
 Pokemon = SLAKING,32
 #-------------------------------
 [TEAMAQUA_Male,Grunt,8]
-LoseText = ...
 Pokemon = POOCHYENA,22
 #-------------------------------
 [FISHERMAN,Barny]
-LoseText = ...
 Pokemon = TENTACOOL,25
 Pokemon = CARVANHA,26
 #-------------------------------
 [BIRDKEEPER,Chesterr]
-LoseText = ...
 Pokemon = TAILLOW,26
 Pokemon = SWELLOW,26
 #-------------------------------
 [BIRDKEEPER,Pery]
-LoseText = ...
 Pokemon = WINGULL,26
 Pokemon = TAILLOW,25
 #-------------------------------
 [BUGCATCHER,Davis]
-LoseText = ...
 Pokemon = PINSIR,26
 Pokemon = WURMPLE,22
 #-------------------------------
 [COOLTRAINER_Female,Jazmyn]
-LoseText = ...
 Pokemon = ABSOL,28
 Pokemon = TAILLOW,25
 #-------------------------------
 [AROMALADY,Violet]
-LoseText = ...
 Pokemon = ROSELIA,27
 Pokemon = GLOOM,26
 #-------------------------------
 [BUGCATCHER,KENT,2]
-LoseText = ...
 Pokemon = TAILLOW,25
 Pokemon = NINJASK,28
 #-------------------------------
 [BUGCATCHER,Donald]
-LoseText = ...
 Pokemon = WURMPLE,25
 Pokemon = BEAUTIFLY,27
 Pokemon = SILCOON,26
 #-------------------------------
 [BUGCATCHER,Greg,2]
-LoseText = ...
 Pokemon = VOLBEAT,28
 Pokemon = ILLUMISE,28
 #-------------------------------
 [BUGCATCHER,Taylor]
-LoseText = ...
 Pokemon = WURMPLE,27
 Pokemon = DUSTOX,29
 Pokemon = CASCOON,28
 #-------------------------------
 [BUGCATCHER,Doug,2]
-LoseText = ...
 Pokemon = NINCADA,28
 Pokemon = NINJASK,29
 #-------------------------------
 [PICNICKER,Catherine]
-LoseText = ...
 Pokemon = GLOOM,27
 Pokemon = ROSELIA,27
 #-------------------------------
 [COOLTRAINER_Male,Jackson]
-LoseText = ...
 Pokemon = TAILLOW,26
 Pokemon = BRELOOM,28
 #-------------------------------
 [PARASOLLADY,Rachel]
-LoseText = ...
 Pokemon = GOLDEEN,28
 Pokemon = LINOONE,28
 #-------------------------------
 [BIRDKEEPER,Phil]
-LoseText = ...
 Pokemon = TAILLOW,25
 Pokemon = SWELLOW,29
 #-------------------------------
 [KINDLER,Dayton]
-LoseText = ...
 Pokemon = SLUGMA,28
 Pokemon = NUMEL,28
 #-------------------------------
 [BIRDKEEPER,Hugh]
-LoseText = ...
 Pokemon = WINGULL,27
 Pokemon = TROPIUS,29
 #-------------------------------
 [TEAMAQUA_Female,Grunt,1]
-LoseText = ...
 Pokemon = CARVANHA,30
 #-------------------------------
 [TEAMAQUA_Male,Grunt,9]
-LoseText = ...
 Pokemon = ZUBAT,28
 Pokemon = POOCHYENA,28
 #-------------------------------
 [TEAMAQUA_Female,Grunt,2]
-LoseText = ...
 Pokemon = ZUBAT,28
 Pokemon = POOCHYENA,28
 #-------------------------------
 [TEAMAQUA_Male,Grunt,10]
-LoseText = ...
 Pokemon = POOCHYENA,28
 Pokemon = CARVANHA,29
 #-------------------------------
 [TEAMAQUA_Male,Grunt,11]
-LoseText = ...
 Pokemon = POOCHYENA,28
 Pokemon = ZUBAT,28
 Pokemon = CARVANHA,29
 #-------------------------------
 [TEAMAQUA_MaleAlt2,Shelly,1]
-LoseText = ...
 Pokemon = CARVANHA,30
 Pokemon = MIGHTYENA,30
 #-------------------------------
 [BOYFRIEND,Boy,13]
-LoseText = ...
 Pokemon = MARSHTOMP,29
     Moves = TACKLE,WATERGUN,BIDE
 Pokemon = MIGHTYENA,28
 Pokemon = DUSTOX,28
 #-------------------------------
 [BOYFRIEND,Boy,14]
-LoseText = ...
 Pokemon = COMBUSKEN,29
     Moves = SCRATCH,EMBER,PECK
 Pokemon = MIGHTYENA,28
 Pokemon = DUSTOX,28
 #-------------------------------
 [BOYFRIEND,Boy,15]
-LoseText = ...
 Pokemon = GROVYLE,29
     Moves = POUND,RAZORLEAF,QUICKATTACK
 Pokemon = MIGHTYENA,28
 Pokemon = DUSTOX,28
 #-------------------------------
 [GIRLFRIEND,Girl,13]
-LoseText = ...
 Pokemon = MARSHTOMP,29
     Moves = TACKLE,WATERGUN,BIDE
 Pokemon = ZIGZAGOON,28
 Pokemon = BEAUTIFLY,28
 #-------------------------------
 [GIRLFRIEND,Girl,14]
-LoseText = ...
 Pokemon = COMBUSKEN,29
     Moves = SCRATCH,EMBER,PECK
 Pokemon = ZIGZAGOON,28
 Pokemon = BEAUTIFLY,28
 #-------------------------------
 [GIRLFRIEND,Girl,15]
-LoseText = ...
 Pokemon = GROVYLE,29
     Moves = POUND,RAZORLEAF,QUICKATTACK
 Pokemon = ZIGZAGOON,28
 Pokemon = BEAUTIFLY,28
 #-------------------------------
 [BIRDKEEPER,Fabian]
-LoseText = ...
 Pokemon = NINJASK,28
 #-------------------------------
 [PARASOLLADY,Clarissa]
-LoseText = ...
 Pokemon = ROSELIA,29
 Pokemon = WAILMER,29
 #-------------------------------
 [BIRDKEEPER,Humberto]
-LoseText = ...
 Pokemon = SKARMORY,31
 #-------------------------------
 [PICNICKER,Ashley]
-LoseText = ...
 Pokemon = SWABLU,28
 Pokemon = SWABLU,28
 Pokemon = SWABLU,28
 #-------------------------------
 [BIRDKEEPER,Jared]
-LoseText = ...
 Pokemon = DODUO,28
 Pokemon = SKARMORY,28
 Pokemon = TROPIUS,28
 #-------------------------------
 [BIRDKEEPER,Edward]
-LoseText = ...
 Pokemon = DODUO,30
 Pokemon = PELIPPER,30
 #-------------------------------
 [CAMPER,Flintt]
-LoseText = ...
 Pokemon = SWELLOW,30
 Pokemon = XATU,30
 #-------------------------------
 [BIRDKEEPER,Darius]
-LoseText = ...
 Pokemon = TROPIUS,30
 #-------------------------------
 [LEADER_Winona,Winona]
-LoseText = ...
 Pokemon = SWABLU,30
 Pokemon = SKARMORY,32
 Pokemon = TROPIUS,30
@@ -4465,145 +3752,118 @@ Pokemon = PELIPPER,31
 Pokemon = ALTARIA,34
 #-------------------------------
 [BIRDKEEPER,Roberto]
-LoseText = ...
 Pokemon = SWABLU,29
 Pokemon = SWABLU,29
 #-------------------------------
 [BIRDKEEPER,Colin]
-LoseText = ...
 Pokemon = WINGULL,29
 Pokemon = NATU,29
 #-------------------------------
 [PARASOLLADY,Angelica]
-LoseText = ...
 Pokemon = CASTFORM,30
 Pokemon = CASTFORM,30
 #-------------------------------
 [COOLTRAINER_Male,Leonel]
-LoseText = ...
 Pokemon = MANECTRIC,30
 Pokemon = MANECTRIC,30
 #-------------------------------
 [BATTLEGIRL,Callie]
-LoseText = ...
 Pokemon = MEDITITE,29
 Pokemon = MAKUHITA,29
 #-------------------------------
 [NINJABOY,Riley]
-LoseText = ...
 Pokemon = NINCADA,29
 Pokemon = KOFFING,28
 #-------------------------------
 [PARASOLLADY,Jennifer]
-LoseText = ...
 Pokemon = SABLEYE,30
 Pokemon = CASTFORM,29
 #-------------------------------
 [COOLTRAINER_Female,Jena]
-LoseText = ...
 Pokemon = LOTAD,28
 Pokemon = LOMBRE,29
 Pokemon = NUZLEAF,28
 #-------------------------------
 [COOLTRAINER_Male,Lorenzo]
-LoseText = ...
 Pokemon = SEEDOT,28
 Pokemon = NUZLEAF,28
 Pokemon = LOMBRE,29
 #-------------------------------
 [BUGCATCHER,Jeffrey]
-LoseText = ...
 Pokemon = SURSKIT,29
 Pokemon = SURSKIT,28
 Pokemon = SURSKIT,28
 #-------------------------------
 [BUGCATCHER,Cale]
-LoseText = ...
 Pokemon = DUSTOX,30
 Pokemon = BEAUTIFLY,30
 #-------------------------------
 [HEXMANIAC,Tammy]
-LoseText = ...
 Pokemon = DUSKULL,30
 Pokemon = SHUPPET,30
 #-------------------------------
 [BEAUTY,Jessica]
-LoseText = ...
 Pokemon = KECLEON,30
 Pokemon = SEVIPER,30
 #-------------------------------
 [TWINS,Kate & Joy]
-LoseText = ...
 Pokemon = SPINDA,32
 Pokemon = SLAKING,33
 #-------------------------------
 [PkMnBREEDER_Female,Pat]
-LoseText = ...
 Pokemon = POOCHYENA,28
 Pokemon = MARILL,28
 Pokemon = GULPIN,28
 Pokemon = ELECTRIKE,28
 #-------------------------------
 [PkMnBREEDER_Male,Myles]
-LoseText = ...
 Pokemon = MAKUHITA,28
 Pokemon = NUMEL,28
 Pokemon = TROPIUS,30
 Pokemon = ELECTRIKE,28
 #-------------------------------
 [GENTLEMAN,Walter]
-LoseText = ...
 Pokemon = ELECTRIKE,31
 Pokemon = MANECTRIC,32
 #-------------------------------
 [POKeFAN_Female,Vanessa]
-LoseText = ...
 Pokemon = PIKACHU,32
 Pokemon = PIKACHU,32
 #-------------------------------
 [COOLTRAINER_Male,Marcel]
-LoseText = ...
 Pokemon = MANECTRIC,31
 Pokemon = SHIFTRY,32
 #-------------------------------
 [COOLTRAINER_Female,Cristin]
-LoseText = ...
 Pokemon = LOUDRED,31
 Pokemon = VIGOROTH,32
 #-------------------------------
 [HEXMANIAC,Kindra]
-LoseText = ...
 Pokemon = DUSKULL,32
 Pokemon = SHUPPET,32
 #-------------------------------
 [COLLECTOR,Ed]
-LoseText = ...
 Pokemon = ZANGOOSE,32
 Pokemon = SEVIPER,32
 #-------------------------------
 [COOLTRAINER_Female,Wendy]
-LoseText = ...
 Pokemon = MAWILE,31
 Pokemon = PELIPPER,32
 Pokemon = ROSELIA,32
 #-------------------------------
 [GUITARIST,Fernando]
-LoseText = ...
 Pokemon = ELECTRIKE,32
 Pokemon = LOUDRED,33
 #-------------------------------
 [BIRDKEEPER,Alberto]
-LoseText = ...
 Pokemon = PELIPPER,32
 Pokemon = XATU,32
 #-------------------------------
 [PSYCHIC_Female,Jacki]
-LoseText = ...
 Pokemon = KADABRA,32
 Pokemon = LUNATONE,33
 #-------------------------------
 [COOLTRAINER_Male,Braxton]
-LoseText = ...
 Pokemon = SWELLOW,30
 Pokemon = TRAPINCH,30
 Pokemon = WAILMER,30
@@ -4611,268 +3871,217 @@ Pokemon = MAGNETON,30
 Pokemon = SHIFTRY,30
 #-------------------------------
 [TWINS,Miu & Yuki]
-LoseText = ...
 Pokemon = BEAUTIFLY,32
 Pokemon = DUSTOX,32
 #-------------------------------
 [PkMnBREEDER_Male,Mark]
-LoseText = ...
 Pokemon = RHYHORN,32
 Pokemon = RHYHORN,33
 #-------------------------------
 [HEXMANIAC,Leah]
-LoseText = ...
 Pokemon = SPOINK,32
 Pokemon = SPOINK,33
 #-------------------------------
 [BLACKBELT,Zander]
-LoseText = ...
 Pokemon = HARIYAMA,33
 Pokemon = HARIYAMA,32
 #-------------------------------
 [BIRDKEEPER,Luke]
-LoseText = ...
 Pokemon = TAILLOW,33
 Pokemon = SWELLOW,32
 #-------------------------------
 [PSYCHIC_Female,Kayla]
-LoseText = ...
 Pokemon = WOBBUFFET,32
 Pokemon = KADABRA,32
 Pokemon = NATU,32
 #-------------------------------
 [PkMnBREEDER_Female,Gabrielle]
-LoseText = ...
 Pokemon = SKITTY,32
 Pokemon = POOCHYENA,32
 Pokemon = LOTAD,32
 Pokemon = SEEDOT,32
 #-------------------------------
 [PSYCHIC_Male,Willian]
-LoseText = ...
 Pokemon = RALTS,32
 Pokemon = RALTS,32
 Pokemon = KIRLIA,33
 #-------------------------------
 [HEXMANIAC,Tasha]
-LoseText = ...
 Pokemon = SHUPPET,33
 Pokemon = SHUPPET,32
 #-------------------------------
 [BLACKBELT,Atsushi]
-LoseText = ...
 Pokemon = HARIYAMA,33
 Pokemon = HARIYAMA,32
 #-------------------------------
 [HEXMANIAC,Valerie]
-LoseText = ...
 Pokemon = SABLEYE,33
 Pokemon = SABLEYE,32
 #-------------------------------
 [PSYCHIC_Male,Cedric]
-LoseText = ...
 Pokemon = WOBBUFFET,33
 Pokemon = WOBBUFFET,33
 #-------------------------------
 [TEAMMAGMA_Male,Grunt,5]
-LoseText = ...
 Pokemon = ZUBAT,33
 Pokemon = GOLBAT,34
 #-------------------------------
 [TEAMMAGMA_Female,Grunt,1]
-LoseText = ...
 Pokemon = SLUGMA,33
 Pokemon = NUMEL,33
 #-------------------------------
 [TEAMMAGMA_Male,Grunt,6]
-LoseText = ...
 Pokemon = POOCHYENA,33
 Pokemon = ZUBAT,33
 #-------------------------------
 [TEAMMAGMA_Male,Grunt,7]
-LoseText = ...
 Pokemon = POOCHYENA,34
 #-------------------------------
 [TEAMMAGMA_Female,Grunt,2]
-LoseText = ...
 Pokemon = NUMEL,33
 #-------------------------------
 [TEAMMAGMA_Female,Grunt,3]
-LoseText = ...
 Pokemon = POOCHYENA,33
 Pokemon = ZUBAT,33
 #-------------------------------
 [TEAMMAGMA_Male,Grunt,8]
-LoseText = ...
 Pokemon = NUMEL,35
 #-------------------------------
 [BOYFRIEND,Boy,16]
-LoseText = ...
 Pokemon = MARSHTOMP,23
     Moves = TACKLE,WATERGUN,BIDE
 Pokemon = MIGHTYENA,19
 Pokemon = DUSTOX,18
 #-------------------------------
 [BOYFRIEND,Boy,17]
-LoseText = ...
 Pokemon = COMBUSKEN,23
     Moves = SCRATCH,EMBER,PECK
 Pokemon = MIGHTYENA,19
 Pokemon = DUSTOX,18
 #-------------------------------
 [BOYFRIEND,Boy,18]
-LoseText = ...
 Pokemon = GROVYLE,23
     Moves = POUND,RAZORLEAF,QUICKATTACK
 Pokemon = MIGHTYENA,19
 Pokemon = DUSTOX,18
 #-------------------------------
 [GIRLFRIEND,Girl,16]
-LoseText = ...
 Pokemon = MARSHTOMP,23
     Moves = TACKLE,WATERGUN,BIDE
 Pokemon = ZIGZAGOON,19
 Pokemon = BEAUTIFLY,18
 #-------------------------------
 [GIRLFRIEND,Girl,17]
-LoseText = ...
 Pokemon = COMBUSKEN,23
     Moves = SCRATCH,EMBER,PECK
 Pokemon = ZIGZAGOON,19
 Pokemon = BEAUTIFLY,18
 #-------------------------------
 [GIRLFRIEND,Girl,18]
-LoseText = ...
 Pokemon = GROVYLE,23
     Moves = POUND,RAZORLEAF,QUICKATTACK
 Pokemon = ZIGZAGOON,19
 Pokemon = BEAUTIFLY,18
 #-------------------------------
 [TEAMMAGMA_Male,Grunt,9]
-LoseText = ...
 Pokemon = ZUBAT,35
 #-------------------------------
 [TEAMMAGMA_Female,Grunt,4]
-LoseText = ...
 Pokemon = NUMEL,33
 Pokemon = ZUBAT,33
 #-------------------------------
 [SWIMMERmA,Declan]
-LoseText = ...
 Pokemon = GYARADOS,35
 #-------------------------------
 [SWIMMERfE,Grace]
-LoseText = ...
 Pokemon = MARILL,35
 #-------------------------------
 [SWIMMERmA,Spencer]
-LoseText = ...
 Pokemon = TENTACOOL,34
 Pokemon = WINGULL,34
 #-------------------------------
 [SWIMMERfE,Lila]
-LoseText = ...
 Pokemon = CHINCHOU,35
 Pokemon = CARVANHA,34
 #-------------------------------
 [SWIMMERfE,Jenny]
-LoseText = ...
 Pokemon = WAILMER,35
 #-------------------------------
 [SWIMMERfE,Isabella]
-LoseText = ...
 Pokemon = STARYU,35
 #-------------------------------
 [SWIMMERmA,Roland]
-LoseText = ...
 Pokemon = CARVANHA,36
 #-------------------------------
 [PSYCHIC_Male,Preston]
-LoseText = ...
 Pokemon = KADABRA,38
 Pokemon = KIRLIA,37
 #-------------------------------
 [PSYCHIC_Female,Maura]
-LoseText = ...
 Pokemon = KADABRA,37
 Pokemon = KIRLIA,38
 #-------------------------------
 [PSYCHIC_Female,Samantha]
-LoseText = ...
 Pokemon = XATU,38
 Pokemon = KADABRA,36
 #-------------------------------
 [PSYCHIC_Male,Blake]
-LoseText = ...
 Pokemon = GIRAFARIG,38
 Pokemon = XATU,37
 #-------------------------------
 [PSYCHIC_Male,Nicholas]
-LoseText = ...
 Pokemon = WOBBUFFET,38
 Pokemon = XATU,36
 #-------------------------------
 [HEXMANIAC,Kathleen]
-LoseText = ...
 Pokemon = KADABRA,38
 Pokemon = SPOINK,36
 #-------------------------------
 [PSYCHIC_Female,Macey]
-LoseText = ...
 Pokemon = NATU,36
 Pokemon = XATU,38
 #-------------------------------
 [GENTLEMAN,Clifford]
-LoseText = ...
 Pokemon = GIRAFARIG,38
 Pokemon = RALTS,36
 #-------------------------------
 [LEADER_LizaTate,Liza & Tate,1]
-LoseText = ...
 Pokemon = CLAYDOL,42
 Pokemon = XATU,42
 Pokemon = LUNATONE,44
 Pokemon = SOLROCK,44
 #-------------------------------
 [TEAMMAGMA_Male,Grunt,10]
-LoseText = ...
 Pokemon = NUMEL,35
 Pokemon = ZUBAT,35
 #-------------------------------
 [TEAMMAGMA_Female,Grunt,5]
-LoseText = ...
 Pokemon = ZUBAT,35
 Pokemon = POOCHYENA,36
 #-------------------------------
 [TEAMMAGMA_Male,Grunt,11]
-LoseText = ...
 Pokemon = MIGHTYENA,35
 Pokemon = NUMEL,35
 Pokemon = MIGHTYENA,35
 #-------------------------------
 [TEAMMAGMA_Male,Grunt,12]
-LoseText = ...
 Pokemon = ZUBAT,35
 Pokemon = NUMEL,35
 #-------------------------------
 [TEAMMAGMA_Male,Grunt,13]
-LoseText = ...
 Pokemon = MIGHTYENA,35
 Pokemon = NUMEL,35
 #-------------------------------
 [TEAMMAGMA_Male,Grunt,14]
-LoseText = ...
 Pokemon = BALTOY,35
 Pokemon = ZUBAT,35
 #-------------------------------
 [TEAMMAGMA_Leader,Maxie,1]
-LoseText = ...
 Pokemon = MIGHTYENA,38
 Pokemon = CROBAT,39
 Pokemon = CAMERUPT,40
 #-------------------------------
 [Dupla_jovem,Mark & Julia,2]
-LoseText = ...
 Pokemon = POOCHYENA,16
 Pokemon = LINOONE,18
 Pokemon = POOCHYENA,15
@@ -4881,7 +4090,6 @@ Pokemon = LINOONE,16
 Pokemon = WINGULL,15
 #-------------------------------
 [SRANDJR,Maglore & Caio,2]
-LoseText = ...
 Pokemon = DUSTOX,15
 Pokemon = MUDKIP,16
 Pokemon = WINGULL,15
@@ -4890,7 +4098,6 @@ Pokemon = LINOONE,16
 Pokemon = RALTS,17
 #-------------------------------
 [INTERVIEWERS,Mariah & Brad,2]
-LoseText = ...
 Pokemon = SHROOMISH,16
 Pokemon = VOLBEAT,17
 Pokemon = LINOONE,17
@@ -4899,7 +4106,6 @@ Pokemon = PLUSLE,15
 Pokemon = SPHEAL,17
 #-------------------------------
 [OLDCOUPLE,Nevaresca & Carveci,2]
-LoseText = ...
 Pokemon = ELECTRIKE,16
 Pokemon = MAKUHITA,17
 Pokemon = LINOONE,18
@@ -4908,7 +4114,6 @@ Pokemon = RALTS,16
 Pokemon = PELIPPER,18
 #-------------------------------
 [TWINS,Luma & Lais,2]
-LoseText = ...
 Pokemon = MINUN,16
 Pokemon = SWABLU,17
 Pokemon = PLUSLE,17
@@ -4917,7 +4122,6 @@ Pokemon = ZIGZAGOON,16
 Pokemon = SPINDA,17
 #-------------------------------
 [SISANDBRO,Karine & Rafael,2]
-LoseText = ...
 Pokemon = CARVANHA,18
 Pokemon = RALTS,18
 Pokemon = CORPHISH,17
@@ -4926,7 +4130,6 @@ Pokemon = POOCHYENA,16
 Pokemon = LOMBRE,18
 #-------------------------------
 [BOYFRIEND,Boy,19]
-LoseText = ...
 Pokemon = MARSHTOMP,28
     Moves = TACKLE,WATERGUN,BIDE
 Pokemon = MIGHTYENA,23
@@ -4934,7 +4137,6 @@ Pokemon = DUSTOX,21
 Pokemon = RALTS,19
 #-------------------------------
 [BOYFRIEND,Boy,20]
-LoseText = ...
 Pokemon = COMBUSKEN,28
     Moves = SCRATCH,EMBER,PECK
 Pokemon = MIGHTYENA,22
@@ -4942,7 +4144,6 @@ Pokemon = DUSTOX,21
 Pokemon = RALTS,20
 #-------------------------------
 [BOYFRIEND,Boy,21]
-LoseText = ...
 Pokemon = GROVYLE,28
     Moves = POUND,RAZORLEAF,QUICKATTACK
 Pokemon = MIGHTYENA,23
@@ -4950,7 +4151,6 @@ Pokemon = DUSTOX,21
 Pokemon = RALTS,19
 #-------------------------------
 [GIRLFRIEND,Girl,19]
-LoseText = ...
 Pokemon = MARSHTOMP,28
     Moves = TACKLE,WATERGUN,BIDE
 Pokemon = LINOONE,23
@@ -4958,7 +4158,6 @@ Pokemon = BEAUTIFLY,21
 Pokemon = SHROOMISH,19
 #-------------------------------
 [GIRLFRIEND,Girl,20]
-LoseText = ...
 Pokemon = COMBUSKEN,28
     Moves = SCRATCH,EMBER,PECK
 Pokemon = LINOONE,23
@@ -4966,7 +4165,6 @@ Pokemon = BEAUTIFLY,21
 Pokemon = SHROOMISH,19
 #-------------------------------
 [GIRLFRIEND,Girl,21]
-LoseText = ...
 Pokemon = GROVYLE,28
     Moves = POUND,RAZORLEAF,QUICKATTACK
 Pokemon = LINOONE,23
@@ -4974,7 +4172,7 @@ Pokemon = BEAUTIFLY,21
 Pokemon = SHROOMISH,19
 #-------------------------------
 [ELDER,Gygantamax Example]
-LoseText = ...
 Pokemon = GENGAR,21
+    TrainerAce = yes
     DynamaxLvl = 8
     Gigantamax = yes

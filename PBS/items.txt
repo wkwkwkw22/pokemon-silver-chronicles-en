@@ -4601,8 +4601,8 @@ Pocket = 4
 Price = 2000
 FieldUse = TR
 Flags = Fling_50
-Move = CUT
-Description = The target is cut with a scythe or claw.
+Move = NATURALGIFT
+Description = Description = The user draws power to attack by using its held Berry. The Berry determines its type and power.
 #-------------------------------
 [TM94]
 Name = TM94

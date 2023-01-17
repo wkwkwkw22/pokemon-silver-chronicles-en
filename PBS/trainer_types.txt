@@ -1,28 +1,124 @@
 ﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
-0,PkMnTRAINER_Male,PkMn TRAINER,40,,,,Mixed,,
-1,PkMnTRAINER_Female,PkMn TRAINER,30,,,,Mixed,,
-2,LASS,LASS,30,,,SEQ_EYE_GIRL.mid,Mixed,,
-3,YOUNGSTER,YOUNGSTER,30,,,SEQ_EYE_BOY.mid,Mixed,,
-4,HIKER,HIKER,30,,,Encounter-Sailor-Hiker.mid,Mixed,,
-5,BEAUTY,BEAUTY,30,,,,Mixed,,
-6,FISHERMAN,FISHERMAN,30,,,,Mixed,,
-7,LADY,LADY,30,,,SEQ_EYE_LADY.mid,Mixed,,
-8,TRIATHLETE_MaleCyclist,TRIATHLETE,30,,,,Mixed,,
-9,TEAMAQUA_Male,TEAM AQUA,30,,,Encounter-Team_Aqua.mid,Mixed,,
-10,TWINS,TWINS,30,,,,Mixed,,
-11,SWIMMERfE,SWIMMERfE,30,,,Encounter-Swimmer_2.mid,Mixed,,
-12,BUGCATCHER,BUG CATCHER,30,,,,Mixed,,
-13,SCHOOLKID_Boy,SCHOOL KID,30,,,SEQ_EYE_KID.mid,Mixed,,
-14,RICHBOY,RICH BOY,30,,,SEQ_EYE_RICH.mid,Mixed,,
-15,SRANDJR,SR. AND JR.,30,,,,Mixed,,
-16,BLACKBELT,BLACK BELT,30,,,SEQ_EYE_FIGHT.mid,Mixed,,
-17,PkMnTRAINER_Wally,PkMn TRAINER,30,,,,Mixed,,
-18,TEAMAQUA_Female,TEAM AQUA,30,,,,Mixed,,
-19,TUBER_Male,TUBER,30,,,,Mixed,,
-20,HEXMANIAC,HEX MANIAC,30,,,,Mixed,,
-21,PkMnBREEDER_Female,PkMn BREEDER,30,,,,Mixed,,
-#----------22---------------------
+[PkMnTRAINER_Male]
+Name = PkMn TRAINER
+Gender = Unknown
+BaseMoney = 40
+#-------------------------------
+[PkMnTRAINER_Female]
+Name = PkMn TRAINER
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[LASS]
+Name = LASS
+Gender = Unknown
+BaseMoney = 30
+IntroBGM = SEQ_EYE_GIRL.mid
+#-------------------------------
+[YOUNGSTER]
+Name = YOUNGSTER
+Gender = Unknown
+BaseMoney = 30
+IntroBGM = SEQ_EYE_BOY.mid
+#-------------------------------
+[HIKER]
+Name = HIKER
+Gender = Unknown
+BaseMoney = 30
+IntroBGM = Encounter-Sailor-Hiker.mid
+#-------------------------------
+[BEAUTY]
+Name = BEAUTY
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[FISHERMAN]
+Name = FISHERMAN
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[LADY]
+Name = LADY
+Gender = Unknown
+BaseMoney = 30
+IntroBGM = SEQ_EYE_LADY.mid
+#-------------------------------
+[TRIATHLETE_MaleCyclist]
+Name = TRIATHLETE
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[TEAMAQUA_Male]
+Name = TEAM AQUA
+Gender = Unknown
+BaseMoney = 30
+IntroBGM = Encounter-Team_Aqua.mid
+#-------------------------------
+[TWINS]
+Name = TWINS
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[SWIMMERfE]
+Name = SWIMMERfE
+Gender = Unknown
+BaseMoney = 30
+IntroBGM = Encounter-Swimmer_2.mid
+#-------------------------------
+[BUGCATCHER]
+Name = BUG CATCHER
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[SCHOOLKID_Boy]
+Name = SCHOOL KID
+Gender = Unknown
+BaseMoney = 30
+IntroBGM = SEQ_EYE_KID.mid
+#-------------------------------
+[RICHBOY]
+Name = RICH BOY
+Gender = Unknown
+BaseMoney = 30
+IntroBGM = SEQ_EYE_RICH.mid
+#-------------------------------
+[SRANDJR]
+Name = SR. AND JR.
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[BLACKBELT]
+Name = BLACK BELT
+Gender = Unknown
+BaseMoney = 30
+IntroBGM = SEQ_EYE_FIGHT.mid
+#-------------------------------
+[PkMnTRAINER_Wally]
+Name = PkMn TRAINER
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[TEAMAQUA_Female]
+Name = TEAM AQUA
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[TUBER_Male]
+Name = TUBER
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[HEXMANIAC]
+Name = HEX MANIAC
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[PkMnBREEDER_Female]
+Name = PkMn BREEDER
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
 [ROCKET_Male]
 Name = Team Rocket
 Gender = Male
@@ -30,111 +126,624 @@ BaseMoney = 32
 IntroBGM = GSCTeamRocketEncounter
 BattleBGM = team-rocket-battle
 #-------------------------------
-23,ROCKET_Female,ROCKET,30,,,GSCTeamRocketEncounter.mid,Mixed,,
-24,INTERVIEWERS,INTERVIEWERS,30,,,Encounter-Reporter-TV_Theme_2.mid,Mixed,,
-25,TUBER_Female,TUBER,30,,,,Mixed,,
-26,YOUNGCOUPLE,YOUNG COUPLE,30,,,,Mixed,,
-27,GUITARIST,GUITARIST,30,,,,Mixed,,
-28,GENTLEMAN,GENTLEMAN,30,,,,Mixed,,
-29,CHAMPION,CHAMPION,30,,,,Mixed,,
-30,ROCKETLEADER,ROCKET LEADER,30,,,,Mixed,,
-31,TRIATHLETE_FemaleRunner,TRIATHLETE,30,,,,Mixed,,
-32,TRIATHLETE_MaleRunner,TRIATHLETE,30,,,,Mixed,,
-33,BATTLEGIRL,BATTLE GIRL,30,,,,Mixed,,
-34,TRIATHLETE_FemaleCyclist,TRIATHLETE,30,,,,Mixed,,
-35,SWIMMERmA,SWIMMERmA,30,,,Encounter-Swimmer_2.mid,Mixed,,
-36,POKeFAN_Female,POKeFAN,30,,,Encounter-Pokefan.mid,Mixed,,
-37,EXPERT_Male,EXPERT,30,,,,Mixed,,
-38,EXPERT_Female,EXPERT,30,,,,Mixed,,
-39,TRIATHLETE_MaleSwimmer,TRIATHLETE,30,,,SEQ_EYE_SPORT.mid,Mixed,,
-40,TRIATHLETE_FemaleSwimmer,TRIATHLETE,30,,,SEQ_EYE_SPORT.mid,Mixed,,
-41,DRAGONTAMER,DRAGON TAMER,30,,,,Mixed,,
-42,BIRDKEEPER,BIRD KEEPER,30,,,,Mixed,,
-43,NINJABOY,NINJA BOY,30,,,,Mixed,,
-44,PARASOLLADY,PARASOL LADY,30,,,,Mixed,,
-45,BUGMANIAC,BUG MANIAC,30,,,,Mixed,,
-46,SAILOR,SAILOR,30,,,,Mixed,,
-47,COLLECTOR,COLLECTOR,30,,,,Mixed,,
-48,PkMnBREEDER_Male,PkMn BREEDER,30,,,,Mixed,,
-49,PkMnRANGER_Male,PkMn RANGER,30,,,,Mixed,,
-50,PkMnRANGER_Female,PkMn RANGER,30,,,,Mixed,,
-51,TEAMMAGMA_Male,TEAM MAGMA,30,,,Encounter-Team_Magma.mid,Mixed,,
-52,TEAMMAGMA_Female,TEAM MAGMA,30,,,Encounter-Team_Magma.mid,Mixed,,
-53,AROMALADY,AROMA LADY,30,,,,Mixed,,
-54,RUINMANIAC,RUIN MANIAC,30,,,,Mixed,,
-55,COOLTRAINER_Male,COOLTRAINER,30,,,,Mixed,,
-56,COOLTRAINER_Female,COOLTRAINER,30,,,,Mixed,,
-57,POKeMANIAC,POKeMANIAC,30,,,GSCPokemaniacEncounter.mid,Mixed,,
-58,KINDLER,KINDLER,30,,,,Mixed,,
-59,CAMPER,CAMPER,30,,,,Mixed,,
-60,PICNICKER,PICNICKER,30,,,,Mixed,,
-61,PSYCHIC_Male,PSYCHIC,30,,,Encounter-Psychic.mid,Mixed,,
-62,PSYCHIC_Female,PSYCHIC,30,,,Encounter-Psychic.mid,Mixed,,
-63,SCHOOLKID_Female,SCHOOL KID,30,,,,Mixed,,
-64,POKeFAN_Male,POKeFAN,30,,,Encounter-Pokefan.mid,Mixed,,
-65,SISANDBRO,SIS AND BRO,30,,,,Mixed,,
-66,OLDCOUPLE,OLD COUPLE,30,,,,Mixed,,
-67,TEAMAQUA_MaleAlt,TEAM AQUA,30,,,,Mixed,,
-68,TEAMAQUA_MaleAlt2,TEAM AQUA,30,,,,Mixed,,
-69,MONGE,SAGE,30,,,GSCSageEncounter.mid,Mixed,,
-70,Rival,Rival,100,PkmRS-Battle3.mid,Victory - Trainer.mid,GSCRival.mid,Male,,
-71,LEADER_Falkner,LEADER,80,Battle-Gym_Leader.MID,pgs_gymvictory.mid,,Mixed,,
-72,LEADER_Bugsy,LEADER,80,Battle-Gym_Leader.MID,pgs_gymvictory.mid,,Mixed,,
-73,LEADER_Whitney,LEADER,80,Battle-Gym_Leader.MID,pgs_gymvictory.mid,,Mixed,,
-74,LEADER_Morty,LEADER,80,Battle-Gym_Leader.MID,pgs_gymvictory.mid,,Mixed,,
-75,LEADER_Chuck,LEADER,80,Battle-Gym_Leader.MID,pgs_gymvictory.mid,,Mixed,,
-76,LEADER_Jasmine,LEADER,80,Battle-Gym_Leader.MID,pgs_gymvictory.mid,,Mixed,,
-77,LEADER_Pryce,LEADER,80,Battle-Gym_Leader.MID,pgs_gymvictory.mid,,Mixed,,
-78,LEADER_Clair,LEADER,80,Battle-Gym_Leader.MID,pgs_gymvictory.mid,,Mixed,,
-79,ELITEFOUR_Will,ELITE FOUR,100,,,SEQ_EYE_ELITE.mid,Mixed,,
-80,ELITEFOUR_Koga,ELITE FOUR,100,,,SEQ_EYE_ELITE.mid,Mixed,,
-81,ELITEFOUR_Bruno,ELITE FOUR,100,,,SEQ_EYE_ELITE.mid,Mixed,,
-82,ELITEFOUR_Lance,ELITE FOUR,100,GSCChampionBattle.mid,PkmRS_Victory4.mid,SEQ_EYE_CHAMP.mid,Mixed,,
-83,KIMONO_Girl,KIMONO Girl,30,,,GSCKimonoGirlEncounter.mid,Mixed,,
-84,ESQUIADORA,Esquiadora,30,,,,Mixed,,
-85,ALPES_Man,Friorento,30,,,,Mixed,,
-86,ALPES_Girl,Friorenta,30,,,,Mixed,,
-87,ESQUIADOR,Esquiador,30,,,,Mixed,,
-88,ASH,ASH,30,,,,Mixed,,
-89,LEADER_GIOVANNI,LEADER,30,,,GSCTeamRocketEncounter.mid,Mixed,,
-90,ELITEFOUR_Karen,ELITE FOUR,100,,,SEQ_EYE_ELITE.mid,Mixed,,
-91,PkMnTRAINER_Malen,PkMn TRAINER,30,,,Battle-Stadium.mid,Mixed,,
-92,PkMnTRAINER_Femalen,PkMn TRAINER,30,,,Battle-Stadium.mid,Mixed,,
-93,PROFESSOR_Ivy,PkMn PROFESSOR,30,,,,Mixed,,
-94,PAUL,RIVAL,30,,,,Mixed,,
-95,ELITEFOUR_Cynthia,ELITE FOUR,100,,,SEQ_EYE_ELITE.mid,Mixed,,
-96,CYRUS_GIOVANNI,DUPLA,30,,,GSCTeamRocketEncounter.mid,Mixed,,
-97,RIVAL_ROCKET,ROCKET,100,GSCRival.mid,Victory - Trainer.mid,GSCRival.mid,Mixed,,
-98,LEADER_Brock,LEADER,80,Battle-Gym_Leader.MID,pgs_gymvictory.mid,,Mixed,,
-99,RIVAL_YELLOW,RIVAL,100,GSCRival.mid,Victory - Trainer.mid,GSCRival.mid,Mixed,,
-100,LEADER_Misty,LEADER,80,Battle-Gym_Leader.MID,pgs_gymvictory.mid,,Mixed,,
-101,LEADER_Surge,LEADER,80,Battle-Gym_Leader.MID,pgs_gymvictory.mid,,Mixed,,
-102,LEADER_Erika,LEADER,80,Battle-Gym_Leader.MID,pgs_gymvictory.mid,,Mixed,,
-103,LEADER_Janine,LEADER,80,Battle-Gym_Leader.MID,pgs_gymvictory.mid,,Mixed,,
-104,EQUIPE_ROCKET,ROCKETS,30,,,GSCTeamRocketEncounter.mid,Mixed,,
-105,LEADER_BLAINE,LEADER,80,Battle-Gym_Leader.MID,pgs_gymvictory.mid,,Mixed,,
-106,LEADER_GARY,LEADER,80,Battle-Gym_Leader.MID,pgs_gymvictory.mid,,Mixed,,
-107,LEADER_SABRINA,LEADER,80,Battle-Gym_Leader.MID,pgs_gymvictory.mid,,Mixed,,
-108,LEADER_CISSY,LEADER,80,Battle-Gym_Leader.MID,pgs_gymvictory.mid,,Mixed,,
-109,ELITEFOUR_PRIMA,ELITE FOUR,100,,,SEQ_EYE_ELITE.mid,Mixed,,
-110,PkMnTRAINER_Bill,PkMn TRAINER,30,,,Battle-Stadium.mid,Mixed,,
-111,LEADER_RUDY,LEADER,80,Battle-Gym_Leader.MID,pgs_gymvictory.mid,,Mixed,,
-112,LEADER_DANNY,LEADER,80,Battle-Gym_Leader.MID,pgs_gymvictory.mid,,Mixed,,
-113,LEADER_LUANA,LEADER,80,Battle-Gym_Leader.MID,pgs_gymvictory.mid,,Mixed,,
-114,LEADER_DRAKE,LEADER,80,Battle-Gym_Leader.MID,pgs_gymvictory.mid,,Mixed,,
-115,TEAMAGMA_MaleFRACO,TEAM MAGMA,30,,,,Mixed,,
-116,TEAMAGMA_FemaleFRACO,TEAM MAGMA,30,,,,Mixed,,
-117,BOYFRIEND,Treinador,30,,,,Mixed,,
-118,GIRLFRIEND,Treinadora,30,,,,Mixed,,
-119,LEADER_Roxanne,LEADER,100,Battle-Gym_Leader.MID,pgs_gymvictory.mid,,Mixed,,
-120,LEADER_Brawly,LEADER,100,Battle-Gym_Leader.MID,pgs_gymvictory.mid,,Mixed,,
-121,Cerebro_da_fronteira_Brandon,Cérebro da Fronteira,100,Battle-Gym_Leader.MID,pgs_gymvictory.mid,,Mixed,,
-122,LEADER_Wattson,LEADER,100,Battle-Gym_Leader.MID,pgs_gymvictory.mid,,Mixed,,
-123,Dupla_jovem,Dupla,30,,,SEQ_EYE_GIRL.mid,Mixed,,
-124,EUSINE,Homem Misterioso,100,GSCRival.mid,Victory - Trainer.mid,GSCTeamRocketEncounter.mid,Mixed,,
-125,ROCKET_EXECUTIVE2,Rocket Executive,80,GSCRival.mid,Victory - Trainer.mid,GSCTeamRocketEncounter.mid,Mixed,,
-126,ROCKET_EXECUTIVE3,Rocket Executive,80,GSCRival.mid,Victory - Trainer.mid,GSCTeamRocketEncounter.mid,Mixed,,
-#----------127---------------------
+[ROCKET_Female]
+Name = ROCKET
+Gender = Unknown
+BaseMoney = 30
+IntroBGM = GSCTeamRocketEncounter.mid
+#-------------------------------
+[INTERVIEWERS]
+Name = INTERVIEWERS
+Gender = Unknown
+BaseMoney = 30
+IntroBGM = Encounter-Reporter-TV_Theme_2.mid
+#-------------------------------
+[TUBER_Female]
+Name = TUBER
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[YOUNGCOUPLE]
+Name = YOUNG COUPLE
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[GUITARIST]
+Name = GUITARIST
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[GENTLEMAN]
+Name = GENTLEMAN
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[CHAMPION]
+Name = CHAMPION
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[ROCKETLEADER]
+Name = ROCKET LEADER
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[TRIATHLETE_FemaleRunner]
+Name = TRIATHLETE
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[TRIATHLETE_MaleRunner]
+Name = TRIATHLETE
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[BATTLEGIRL]
+Name = BATTLE GIRL
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[TRIATHLETE_FemaleCyclist]
+Name = TRIATHLETE
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[SWIMMERmA]
+Name = SWIMMERmA
+Gender = Unknown
+BaseMoney = 30
+IntroBGM = Encounter-Swimmer_2.mid
+#-------------------------------
+[POKeFAN_Female]
+Name = POKeFAN
+Gender = Unknown
+BaseMoney = 30
+IntroBGM = Encounter-Pokefan.mid
+#-------------------------------
+[EXPERT_Male]
+Name = EXPERT
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[EXPERT_Female]
+Name = EXPERT
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[TRIATHLETE_MaleSwimmer]
+Name = TRIATHLETE
+Gender = Unknown
+BaseMoney = 30
+IntroBGM = SEQ_EYE_SPORT.mid
+#-------------------------------
+[TRIATHLETE_FemaleSwimmer]
+Name = TRIATHLETE
+Gender = Unknown
+BaseMoney = 30
+IntroBGM = SEQ_EYE_SPORT.mid
+#-------------------------------
+[DRAGONTAMER]
+Name = DRAGON TAMER
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[BIRDKEEPER]
+Name = BIRD KEEPER
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[NINJABOY]
+Name = NINJA BOY
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[PARASOLLADY]
+Name = PARASOL LADY
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[BUGMANIAC]
+Name = BUG MANIAC
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[SAILOR]
+Name = SAILOR
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[COLLECTOR]
+Name = COLLECTOR
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[PkMnBREEDER_Male]
+Name = PkMn BREEDER
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[PkMnRANGER_Male]
+Name = PkMn RANGER
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[PkMnRANGER_Female]
+Name = PkMn RANGER
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[TEAMMAGMA_Male]
+Name = TEAM MAGMA
+Gender = Unknown
+BaseMoney = 30
+IntroBGM = Encounter-Team_Magma.mid
+#-------------------------------
+[TEAMMAGMA_Female]
+Name = TEAM MAGMA
+Gender = Unknown
+BaseMoney = 30
+IntroBGM = Encounter-Team_Magma.mid
+#-------------------------------
+[AROMALADY]
+Name = AROMA LADY
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[RUINMANIAC]
+Name = RUIN MANIAC
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[COOLTRAINER_Male]
+Name = COOLTRAINER
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[COOLTRAINER_Female]
+Name = COOLTRAINER
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[POKeMANIAC]
+Name = POKeMANIAC
+Gender = Unknown
+BaseMoney = 30
+IntroBGM = GSCPokemaniacEncounter.mid
+#-------------------------------
+[KINDLER]
+Name = KINDLER
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[CAMPER]
+Name = CAMPER
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[PICNICKER]
+Name = PICNICKER
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[PSYCHIC_Male]
+Name = PSYCHIC
+Gender = Unknown
+BaseMoney = 30
+IntroBGM = Encounter-Psychic.mid
+#-------------------------------
+[PSYCHIC_Female]
+Name = PSYCHIC
+Gender = Unknown
+BaseMoney = 30
+IntroBGM = Encounter-Psychic.mid
+#-------------------------------
+[SCHOOLKID_Female]
+Name = SCHOOL KID
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[POKeFAN_Male]
+Name = POKeFAN
+Gender = Unknown
+BaseMoney = 30
+IntroBGM = Encounter-Pokefan.mid
+#-------------------------------
+[SISANDBRO]
+Name = SIS AND BRO
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[OLDCOUPLE]
+Name = OLD COUPLE
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[TEAMAQUA_MaleAlt]
+Name = TEAM AQUA
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[TEAMAQUA_MaleAlt2]
+Name = TEAM AQUA
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[MONGE]
+Name = SAGE
+Gender = Unknown
+BaseMoney = 30
+IntroBGM = GSCSageEncounter.mid
+#-------------------------------
+[Rival]
+Name = Rival
+Gender = Male
+BaseMoney = 100
+IntroBGM = GSCRival.mid
+BattleBGM = PkmRS-Battle3.mid
+VictoryBGM = Victory - Trainer.mid
+#-------------------------------
+[LEADER_Falkner]
+Name = LEADER
+Gender = Unknown
+BaseMoney = 80
+BattleBGM = Battle-Gym_Leader.MID
+VictoryBGM = pgs_gymvictory.mid
+#-------------------------------
+[LEADER_Bugsy]
+Name = LEADER
+Gender = Unknown
+BaseMoney = 80
+BattleBGM = Battle-Gym_Leader.MID
+VictoryBGM = pgs_gymvictory.mid
+#-------------------------------
+[LEADER_Whitney]
+Name = LEADER
+Gender = Unknown
+BaseMoney = 80
+BattleBGM = Battle-Gym_Leader.MID
+VictoryBGM = pgs_gymvictory.mid
+#-------------------------------
+[LEADER_Morty]
+Name = LEADER
+Gender = Unknown
+BaseMoney = 80
+BattleBGM = Battle-Gym_Leader.MID
+VictoryBGM = pgs_gymvictory.mid
+#-------------------------------
+[LEADER_Chuck]
+Name = LEADER
+Gender = Unknown
+BaseMoney = 80
+BattleBGM = Battle-Gym_Leader.MID
+VictoryBGM = pgs_gymvictory.mid
+#-------------------------------
+[LEADER_Jasmine]
+Name = LEADER
+Gender = Unknown
+BaseMoney = 80
+BattleBGM = Battle-Gym_Leader.MID
+VictoryBGM = pgs_gymvictory.mid
+#-------------------------------
+[LEADER_Pryce]
+Name = LEADER
+Gender = Unknown
+BaseMoney = 80
+BattleBGM = Battle-Gym_Leader.MID
+VictoryBGM = pgs_gymvictory.mid
+#-------------------------------
+[LEADER_Clair]
+Name = LEADER
+Gender = Unknown
+BaseMoney = 80
+BattleBGM = Battle-Gym_Leader.MID
+VictoryBGM = pgs_gymvictory.mid
+#-------------------------------
+[ELITEFOUR_Will]
+Name = ELITE FOUR
+Gender = Unknown
+BaseMoney = 100
+IntroBGM = SEQ_EYE_ELITE.mid
+#-------------------------------
+[ELITEFOUR_Koga]
+Name = ELITE FOUR
+Gender = Unknown
+BaseMoney = 100
+IntroBGM = SEQ_EYE_ELITE.mid
+#-------------------------------
+[ELITEFOUR_Bruno]
+Name = ELITE FOUR
+Gender = Unknown
+BaseMoney = 100
+IntroBGM = SEQ_EYE_ELITE.mid
+#-------------------------------
+[ELITEFOUR_Lance]
+Name = ELITE FOUR
+Gender = Unknown
+BaseMoney = 100
+IntroBGM = SEQ_EYE_CHAMP.mid
+BattleBGM = GSCChampionBattle.mid
+VictoryBGM = PkmRS_Victory4.mid
+#-------------------------------
+[KIMONO_Girl]
+Name = KIMONO Girl
+Gender = Unknown
+BaseMoney = 30
+IntroBGM = GSCKimonoGirlEncounter.mid
+#-------------------------------
+[ESQUIADORA]
+Name = Esquiadora
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[ALPES_Man]
+Name = Friorento
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[ALPES_Girl]
+Name = Friorenta
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[ESQUIADOR]
+Name = Esquiador
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[ASH]
+Name = ASH
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[LEADER_GIOVANNI]
+Name = LEADER
+Gender = Unknown
+BaseMoney = 30
+IntroBGM = GSCTeamRocketEncounter.mid
+#-------------------------------
+[ELITEFOUR_Karen]
+Name = ELITE FOUR
+Gender = Unknown
+BaseMoney = 100
+IntroBGM = SEQ_EYE_ELITE.mid
+#-------------------------------
+[PkMnTRAINER_Malen]
+Name = PkMn TRAINER
+Gender = Unknown
+BaseMoney = 30
+IntroBGM = Battle-Stadium.mid
+#-------------------------------
+[PkMnTRAINER_Femalen]
+Name = PkMn TRAINER
+Gender = Unknown
+BaseMoney = 30
+IntroBGM = Battle-Stadium.mid
+#-------------------------------
+[PROFESSOR_Ivy]
+Name = PkMn PROFESSOR
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[PAUL]
+Name = RIVAL
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[ELITEFOUR_Cynthia]
+Name = ELITE FOUR
+Gender = Unknown
+BaseMoney = 100
+IntroBGM = SEQ_EYE_ELITE.mid
+#-------------------------------
+[CYRUS_GIOVANNI]
+Name = DUPLA
+Gender = Unknown
+BaseMoney = 30
+IntroBGM = GSCTeamRocketEncounter.mid
+#-------------------------------
+[RIVAL_ROCKET]
+Name = ROCKET
+Gender = Unknown
+BaseMoney = 100
+IntroBGM = GSCRival.mid
+BattleBGM = GSCRival.mid
+VictoryBGM = Victory - Trainer.mid
+#-------------------------------
+[LEADER_Brock]
+Name = LEADER
+Gender = Unknown
+BaseMoney = 80
+BattleBGM = Battle-Gym_Leader.MID
+VictoryBGM = pgs_gymvictory.mid
+#-------------------------------
+[RIVAL_YELLOW]
+Name = RIVAL
+Gender = Unknown
+BaseMoney = 100
+IntroBGM = GSCRival.mid
+BattleBGM = GSCRival.mid
+VictoryBGM = Victory - Trainer.mid
+#-------------------------------
+[LEADER_Misty]
+Name = LEADER
+Gender = Unknown
+BaseMoney = 80
+BattleBGM = Battle-Gym_Leader.MID
+VictoryBGM = pgs_gymvictory.mid
+#-------------------------------
+[LEADER_Surge]
+Name = LEADER
+Gender = Unknown
+BaseMoney = 80
+BattleBGM = Battle-Gym_Leader.MID
+VictoryBGM = pgs_gymvictory.mid
+#-------------------------------
+[LEADER_Erika]
+Name = LEADER
+Gender = Unknown
+BaseMoney = 80
+BattleBGM = Battle-Gym_Leader.MID
+VictoryBGM = pgs_gymvictory.mid
+#-------------------------------
+[LEADER_Janine]
+Name = LEADER
+Gender = Unknown
+BaseMoney = 80
+BattleBGM = Battle-Gym_Leader.MID
+VictoryBGM = pgs_gymvictory.mid
+#-------------------------------
+[EQUIPE_ROCKET]
+Name = ROCKETS
+Gender = Unknown
+BaseMoney = 30
+IntroBGM = GSCTeamRocketEncounter.mid
+#-------------------------------
+[LEADER_BLAINE]
+Name = LEADER
+Gender = Unknown
+BaseMoney = 80
+BattleBGM = Battle-Gym_Leader.MID
+VictoryBGM = pgs_gymvictory.mid
+#-------------------------------
+[LEADER_GARY]
+Name = LEADER
+Gender = Unknown
+BaseMoney = 80
+BattleBGM = Battle-Gym_Leader.MID
+VictoryBGM = pgs_gymvictory.mid
+#-------------------------------
+[LEADER_SABRINA]
+Name = LEADER
+Gender = Unknown
+BaseMoney = 80
+BattleBGM = Battle-Gym_Leader.MID
+VictoryBGM = pgs_gymvictory.mid
+#-------------------------------
+[LEADER_CISSY]
+Name = LEADER
+Gender = Unknown
+BaseMoney = 80
+BattleBGM = Battle-Gym_Leader.MID
+VictoryBGM = pgs_gymvictory.mid
+#-------------------------------
+[ELITEFOUR_PRIMA]
+Name = ELITE FOUR
+Gender = Unknown
+BaseMoney = 100
+IntroBGM = SEQ_EYE_ELITE.mid
+#-------------------------------
+[PkMnTRAINER_Bill]
+Name = PkMn TRAINER
+Gender = Unknown
+BaseMoney = 30
+IntroBGM = Battle-Stadium.mid
+#-------------------------------
+[LEADER_RUDY]
+Name = LEADER
+Gender = Unknown
+BaseMoney = 80
+BattleBGM = Battle-Gym_Leader.MID
+VictoryBGM = pgs_gymvictory.mid
+#-------------------------------
+[LEADER_DANNY]
+Name = LEADER
+Gender = Unknown
+BaseMoney = 80
+BattleBGM = Battle-Gym_Leader.MID
+VictoryBGM = pgs_gymvictory.mid
+#-------------------------------
+[LEADER_LUANA]
+Name = LEADER
+Gender = Unknown
+BaseMoney = 80
+BattleBGM = Battle-Gym_Leader.MID
+VictoryBGM = pgs_gymvictory.mid
+#-------------------------------
+[LEADER_DRAKE]
+Name = LEADER
+Gender = Unknown
+BaseMoney = 80
+BattleBGM = Battle-Gym_Leader.MID
+VictoryBGM = pgs_gymvictory.mid
+#-------------------------------
+[TEAMAGMA_MaleFRACO]
+Name = TEAM MAGMA
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[TEAMAGMA_FemaleFRACO]
+Name = TEAM MAGMA
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[BOYFRIEND]
+Name = Treinador
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[GIRLFRIEND]
+Name = Treinadora
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[LEADER_Roxanne]
+Name = LEADER
+Gender = Unknown
+BaseMoney = 100
+BattleBGM = Battle-Gym_Leader.MID
+VictoryBGM = pgs_gymvictory.mid
+#-------------------------------
+[LEADER_Brawly]
+Name = LEADER
+Gender = Unknown
+BaseMoney = 100
+BattleBGM = Battle-Gym_Leader.MID
+VictoryBGM = pgs_gymvictory.mid
+#-------------------------------
+[Cerebro_da_fronteira_Brandon]
+Name = Cérebro da Fronteira
+Gender = Unknown
+BaseMoney = 100
+BattleBGM = Battle-Gym_Leader.MID
+VictoryBGM = pgs_gymvictory.mid
+#-------------------------------
+[LEADER_Wattson]
+Name = LEADER
+Gender = Unknown
+BaseMoney = 100
+BattleBGM = Battle-Gym_Leader.MID
+VictoryBGM = pgs_gymvictory.mid
+#-------------------------------
+[Dupla_jovem]
+Name = Dupla
+Gender = Unknown
+BaseMoney = 30
+IntroBGM = SEQ_EYE_GIRL.mid
+#-------------------------------
+[EUSINE]
+Name = Homem Misterioso
+Gender = Unknown
+BaseMoney = 100
+IntroBGM = GSCTeamRocketEncounter.mid
+BattleBGM = GSCRival.mid
+VictoryBGM = Victory - Trainer.mid
+#-------------------------------
+[ROCKET_EXECUTIVE2]
+Name = Rocket Executive
+Gender = Unknown
+BaseMoney = 80
+IntroBGM = GSCTeamRocketEncounter.mid
+BattleBGM = GSCRival.mid
+VictoryBGM = Victory - Trainer.mid
+#-------------------------------
+[ROCKET_EXECUTIVE3]
+Name = Rocket Executive
+Gender = Unknown
+BaseMoney = 80
+IntroBGM = GSCTeamRocketEncounter.mid
+BattleBGM = GSCRival.mid
+VictoryBGM = Victory - Trainer.mid
+#-------------------------------
 [ROCKET_PROTON]
 Name = Rocket Executive
 Gender = Male
@@ -143,15 +752,83 @@ IntroBGM = GSCTeamRocketEncounter
 BattleBGM = team-rocket-battle
 VictoryBGM = Victory - Trainer
 #-------------------------------
-128,GUARDIAOFOGO,Guardiao,30,,,,Mixed,,
-129,GUARDIAORAIO,Guardiao,30,,,,Mixed,,
-130,GUARDIAOGELO,Guardiao,30,,,,Mixed,,
-131,GUARDIAOLUGIA,Guardiao,30,,,,Mixed,,
-132,LEADER_Flannery,LEADER,100,Battle-Gym_Leader.MID,pgs_gymvictory.mid,,Mixed,,
-133,LEADER_Norman,LEADER,100,Battle-Gym_Leader.MID,pgs_gymvictory.mid,,Mixed,,
-134,LEADER_Winona,LEADER,100,Battle-Gym_Leader.MID,pgs_gymvictory.mid,,Mixed,,
-135,LEADER_LizaTate,LEADER,100,Battle-Gym_Leader.MID,pgs_gymvictory.mid,,Mixed,,
-136,TEAMMAGMA_Leader,TEAM MAGMA,100,,,Encounter-Team_Magma.mid,Mixed,,
-137,ELDER,ELDER,40,,,GSCSageEncounter.mid,Mixed,,
-138,SUPERNERD,Super Nerd,50,,,SEQ_EYE_KID.mid,Mixed,,
-139,ROCKET_EXECUTIVE4,Rocket Executive,80,GSCRival.mid,Victory - Trainer.mid,GSCTeamRocketEncounter.mid,Mixed,,
+[GUARDIAOFOGO]
+Name = Guardiao
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[GUARDIAORAIO]
+Name = Guardiao
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[GUARDIAOGELO]
+Name = Guardiao
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[GUARDIAOLUGIA]
+Name = Guardiao
+Gender = Unknown
+BaseMoney = 30
+#-------------------------------
+[LEADER_Flannery]
+Name = LEADER
+Gender = Unknown
+BaseMoney = 100
+BattleBGM = Battle-Gym_Leader.MID
+VictoryBGM = pgs_gymvictory.mid
+#-------------------------------
+[LEADER_Norman]
+Name = LEADER
+Gender = Unknown
+BaseMoney = 100
+BattleBGM = Battle-Gym_Leader.MID
+VictoryBGM = pgs_gymvictory.mid
+#-------------------------------
+[LEADER_Winona]
+Name = LEADER
+Gender = Unknown
+BaseMoney = 100
+BattleBGM = Battle-Gym_Leader.MID
+VictoryBGM = pgs_gymvictory.mid
+#-------------------------------
+[LEADER_LizaTate]
+Name = LEADER
+Gender = Unknown
+BaseMoney = 100
+BattleBGM = Battle-Gym_Leader.MID
+VictoryBGM = pgs_gymvictory.mid
+#-------------------------------
+[TEAMMAGMA_Leader]
+Name = TEAM MAGMA
+Gender = Unknown
+BaseMoney = 100
+IntroBGM = Encounter-Team_Magma.mid
+#-------------------------------
+[ELDER]
+Name = ELDER
+Gender = Unknown
+BaseMoney = 40
+IntroBGM = GSCSageEncounter.mid
+#-------------------------------
+[SUPERNERD]
+Name = Super Nerd
+Gender = Unknown
+BaseMoney = 50
+IntroBGM = SEQ_EYE_KID.mid
+#-------------------------------
+[ROCKET_EXECUTIVE4]
+Name = Rocket Executive
+Gender = Unknown
+BaseMoney = 80
+IntroBGM = GSCTeamRocketEncounter.mid
+BattleBGM = GSCRival.mid
+VictoryBGM = Victory - Trainer.mid
+#-------------------------------
+[JUGGLER]
+Name = JUGGLER
+Gender = Male
+BaseMoney = 30
+IntroBGM = SEQ_EYE_BOY.mid
+
