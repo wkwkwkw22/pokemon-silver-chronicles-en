@@ -413,20 +413,25 @@ Pokemon = PIDGEY,14
 Pokemon = PIDGEOTTO,15
 #-------------------------------
 [POKeFAN_Female,Beverly]
-LoseText = ...
-Pokemon = SNUBBULL,14
+LoseText = I can't win you proud, but...
+Pokemon = SNUBBULL,15
+#-------------------------------
+[POKeFAN_Female,Beverly,1]
+LoseText = So cute...
+Pokemon = SNUBBULL,23
+Pokemon = JIGGLYPUFF,24
 #-------------------------------
 [POKeFAN_Male,Wilson]
-LoseText = ...
-Pokemon = RAICHU,14
+LoseText = My-my Pokémon!
+Pokemon = RAICHU,16
 #-------------------------------
 [PARASOLLADY,Krise]
-LoseText = ...
-Pokemon = ODDISH,12
-Pokemon = CUBONE,15
+LoseText =  ...Hmmm...
+Pokemon = ODDISH,14
+Pokemon = CUBONE,17
 #-------------------------------
 [SCHOOLKID_Boy,Jack]
-LoseText = ...
+LoseText = Wh-wh-what?
 Pokemon = ODDISH,12
 Pokemon = VOLTORB,15
 #-------------------------------
@@ -464,8 +469,8 @@ Pokemon = CLEFAIRY,18
     Moves = BRICKBREAK,BOUNCE,SNORE,REFLECT
 Pokemon = MILTANK,20
     Moves = ATTRACT,STOMP,ROLLOUT,MILKDRINK
-Pokemon = GIRAFARIG,20
-    Moves = PSYCHIC,SHADOWBALL,BATONPASS,CALMMIND
+Pokemon = GIRAFARIG,19
+    Moves = SHADOWBALL,BATONPASS,CALMMIND,STOMP
 Pokemon = MEOWTH,21
     Ace = yes
     DynamaxLvl = 10
