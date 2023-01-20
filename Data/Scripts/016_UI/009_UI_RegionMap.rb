@@ -125,6 +125,7 @@ class PokemonRegionMap_Scene
     @sprites["mapbottom"].mapname     = pbGetMessage(MessageTypes::RegionNames, mapindex)
     @sprites["mapbottom"].maplocation = pbGetMapLocation(@map_x, @map_y)
     @sprites["mapbottom"].mapdetails  = pbGetMapDetails(@map_x, @map_y)
+    draw_roaming_position(mapindex)
     if playerpos && mapindex == playerpos[0]
       @sprites["player"] = IconSprite.new(0, 0, @viewport)
       @sprites["player"].setBitmap(GameData::TrainerType.player_map_icon_filename($player.trainer_type))

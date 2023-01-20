@@ -436,10 +436,10 @@ Pokemon = ODDISH,12
 Pokemon = VOLTORB,15
 #-------------------------------
 [PSYCHIC_Male,Mark]
-LoseText = ...
-Pokemon = ABRA,13
-Pokemon = ABRA,13
-Pokemon = KADABRA,15
+LoseText = I was wrong.
+Pokemon = ABRA,14
+Pokemon = ABRA,14
+Pokemon = KADABRA,16
 #-------------------------------
 [BEAUTY,Samantha]
 LoseText = No! Oh, MEOWTH, I'm so sorry!
@@ -449,7 +449,7 @@ Pokemon = MEOWTH,16
 [BEAUTY,Victoria]
 LoseText = Let's see... Oops, it's over?
 Pokemon = SENTRET,14
-Pokemon = SENTRET,13
+Pokemon = SENTRET,14
 Pokemon = SENTRET,17
 #-------------------------------
 [LASS,Carrie]
@@ -481,71 +481,111 @@ Pokemon = BIBAREL,18
     Moves = SURF,ICEBEAM,CHARGEBEAM,DOUBLETEAM
 #-------------------------------
 [SCHOOLKID_Boy,Alan]
-LoseText = ...
-Pokemon = TANGELA,16
+LoseText = Huh...? Was my prediction incorrect?
+Pokemon = TANGELA,17
 #-------------------------------
 [PSYCHIC_Male,Greg]
-LoseText = ...
+LoseText = I lost. That's sad...
 Pokemon = DROWZEE,17
+	Moves = HYPNOSIS,DISABLE,CONFUSION,POISONGAS
+Pokemon = HYPNO,17
+	Moves = HYPNOSIS,DISABLE,CONFUSION,PSYBEAM
 #-------------------------------
 [TWINS,Ann & Anne]
-LoseText = ...
+LoseText = We lost...
+Pokemon = MAREEP,16
+Pokemon = MARILL,16
 Pokemon = CLEFAIRY,16
 Pokemon = JIGGLYPUFF,16
 #-------------------------------
 [KIMONO_Girl,Yoki]
-LoseText = ...
-Pokemon = FLAREON,17
+LoseText = Oh, you are strong.
+Pokemon = FLAREON,21
+	Moves = DIG,FLAMETHROWER,REST,BABYDOLLEYES
+	Item = SHELLBELL
 #-------------------------------
 [KIMONO_Girl,Sayo]
-LoseText = ...
-Pokemon = ESPEON,17
+LoseText = Oh, so close. Almost got you.
+Pokemon = ESPEON,21
+	Moves = DREAMEATER,IRONTAIL,REST,BABYDOLLEYES
+	Item = SHELLBELL
 #-------------------------------
 [KIMONO_Girl,Zuki]
-LoseText = ...
-Pokemon = UMBREON,17
+LoseText = I have no more Pokémon...
+Pokemon = UMBREON,21
+	Moves = CRUNCH,DARKPULSE,REST,BABYDOLLEYES
+	Item = SHELLBELL
 #-------------------------------
 [KIMONO_Girl,Kuni]
-LoseText = ...
-Pokemon = VAPOREON,17
+LoseText = You are really strong.
+Pokemon = VAPOREON,21
+	Moves = ICEBEAM,SURF,REST,BABYDOLLEYES
+	Item = SHELLBELL
 #-------------------------------
 [KIMONO_Girl,Miki]
-LoseText = ...
-Pokemon = JOLTEON,17
+LoseText = You are good with Pokémon too.
+Pokemon = JOLTEON,21
+	Moves = HEADBUTT,THUNDERBOLT,REST,BABYDOLLEYES
+	Item = SHELLBELL
 #-------------------------------
-[Rival,reD]
-LoseText = ...
+[Rival,???,7]
+LoseText = ...Humph! I'm not fighting with another weakling ever again. It's just too much playing around.
 Pokemon = HAUNTER,20
-Pokemon = QUILAVA,22
+    Moves = LICK,CURSE,CONFUSERAY,HYPNOSIS
 Pokemon = ZUBAT,20
+    Moves = SUPERSONIC,POISONFANG,AIRCUTTER
 Pokemon = MAGNEMITE,18
+    Moves = THUNDERWAVE,SUPERSONIC,SONICBOOM,SPARK
+Pokemon = QUILAVA,24
+    Moves = FLAMEWHEEL,SWIFT,SMOKESCREEN
+Pokemon = ABRA,16
+	Moves = CHARGEBEAM,CONFUSION,THUNDERPUNCH,ICEPUNCH
+Pokemon = SNEASEL,18
+	Moves = METALCLAW,HYPNOSIS,DOUBLETEAM,ICEPUNCH
 #-------------------------------
-[Rival,blUe]
-LoseText = ...
+[Rival,???,8]
+LoseText = ...Humph! I'm not fighting with another weakling ever again. It's just too much playing around.
 Pokemon = HAUNTER,20
-Pokemon = CROCONAW,22
+    Moves = LICK,CURSE,CONFUSERAY,HYPNOSIS
 Pokemon = ZUBAT,20
+    Moves = SUPERSONIC,POISONFANG,AIRCUTTER
 Pokemon = MAGNEMITE,18
+    Moves = THUNDERWAVE,SUPERSONIC,SONICBOOM,SPARK
+Pokemon = BAYLEEF,24
+    Moves = MAGICALLEAF,POISONPOWDER,SYNTHESIS,FRUSTRATION
+Pokemon = ABRA,16
+	Moves = CHARGEBEAM,CONFUSION,THUNDERPUNCH,ICEPUNCH
+Pokemon = SNEASEL,18
+	Moves = METALCLAW,HYPNOSIS,DOUBLETEAM,ICEPUNCH
 #-------------------------------
-[Rival,grEen]
-LoseText = ...
+[Rival,???,9]
+LoseText = ...Humph! I'm not fighting with another weakling ever again. It's just too much playing around.
 Pokemon = HAUNTER,20
-Pokemon = BAYLEEF,22
+    Moves = LICK,CURSE,CONFUSERAY,HYPNOSIS
 Pokemon = ZUBAT,20
+    Moves = SUPERSONIC,POISONFANG,AIRCUTTER
 Pokemon = MAGNEMITE,18
+    Moves = THUNDERWAVE,SUPERSONIC,SONICBOOM,SPARK
+Pokemon = CROCONAW,24
+    Moves = WATERGUN,BITE,ICEFANG
+Pokemon = ABRA,16
+	Moves = CHARGEBEAM,CONFUSION,THUNDERPUNCH,ICEPUNCH
+Pokemon = SNEASEL,18
+	Moves = METALCLAW,HYPNOSIS,DOUBLETEAM,ICEPUNCH
 #-------------------------------
-[KINDLER,Dick]
-LoseText = ...
-Pokemon = CHARMELEON,17
+[KINDLER,Dirk]
+LoseText = Pfooosh... Pfooosh... Pffffoooom.
+Pokemon = KOFFING,15
+Pokemon = CHARMELEON,18
 #-------------------------------
 [KINDLER,Ned]
-LoseText = ...
+LoseText = Thanks for such a heated battle!
 Pokemon = KOFFING,15
-Pokemon = GROWLITHE,16
+Pokemon = GROWLITHE,17
 Pokemon = KOFFING,15
 #-------------------------------
 [MONGE,Ping]
-LoseText = ...
+LoseText = Ah! Well done!
 Pokemon = GASTLY,16
 Pokemon = GASTLY,16
 Pokemon = GASTLY,16
@@ -553,26 +593,36 @@ Pokemon = GASTLY,16
 Pokemon = GASTLY,16
 #-------------------------------
 [HEXMANIAC,Grace]
-LoseText = ...
+LoseText = Wh-what?
 Pokemon = HAUNTER,20
 Pokemon = HAUNTER,20
 #-------------------------------
 [MONGE,Jeffrey]
-LoseText = ...
+LoseText = Wins and losses--I experienced both.
 Pokemon = HAUNTER,22
 #-------------------------------
 [HEXMANIAC,Martha]
-LoseText = ...
+LoseText = I... I... I lost!
 Pokemon = GASTLY,18
 Pokemon = HAUNTER,20
 Pokemon = GASTLY,20
 #-------------------------------
 [LEADER_Morty,Morty]
-LoseText = ...
-Pokemon = GASTLY,21
-Pokemon = HAUNTER,21
-Pokemon = GENGAR,25
+Items = MEGARING
+LoseText = How is this possible...
+Pokemon = MISDREAVUS,22
+	Moves = CONFUSERAY,PERISHSONG,MEANLOOK,ASTONISH
+Pokemon = GASTLY,23
+	Moves = LICK,CURSE,MEANLOOK,HYPNOSIS
 Pokemon = HAUNTER,23
+	Moves = HYPNOSIS,DREAMEATER,NIGHTMARE,PAYBACK
+Pokemon = GENGAR,25
+	Item = GENGARITE
+	Moves = HYPNOSIS, SHADOWBALL, CONFUSERAY, AURASPHERE
+Pokemon = HAUNTER,23
+	Moves = SUCKERPUNCH, NIGHTSHADE,CONFUSERAY,HYPNOSIS
+Pokemon = MISMAGIUS,24
+	Moves = ASTONISH,SUBSTITUTE,PERISHSONG,CONFUSERAY
 #-------------------------------
 [BIRDKEEPER,Toby]
 LoseText = ...

@@ -148,9 +148,25 @@ ShowArea = true
 HealingSpot = 42,41,9
 MapPosition = 0,14,15
 #-------------------------------
+[043]   # Azalea Town - Kurt's House
+Name = Azalea Town - Kurt's House
+MapPosition = 0,14,15
+#-------------------------------
+[044]   # Azalea Town - Charcoal Kiln
+Name = Azalea Town - Charcoal Kiln
+MapPosition = 0,14,15
+#-------------------------------
+[045]   # Azalea Town - Poké Center
+Name = Azalea Town - Poké Center
+MapPosition = 0,14,15
+#-------------------------------
+[046]   # Azalea Town - Mart
+Name = Azalea Town - Mart
+MapPosition = 0,14,15
+#-------------------------------
 [047]   # Slowpoke Well
 Name = Slowpoke Well
-MapPosition = 0,13,15
+MapPosition = 0,15,14
 BattleBack = cave1
 Environment = Cave
 #-------------------------------
@@ -159,8 +175,15 @@ Name = Azalea Town - Gym
 MapPosition = 0,14,15
 Environment = Grass
 #-------------------------------
+[049]   # Azalea Town - Gate
+Name = Azalea Town - Gate
+Outdoor = false
+Bicycle = false
+MapPosition = 0,14,15
+#-------------------------------
 [050]   # Ilex Forest
 Name = Ilex Forest
+Bicycle = true
 MapPosition = 0,13,15
 BattleBack = ilex
 Environment = Forest
@@ -170,6 +193,14 @@ Name = Route 34
 Outdoor = true
 MapPosition = 0,13,14
 #-------------------------------
+[054]   # Route 34 - Daycare
+Name = Route 34 - Daycare
+MapPosition = 0,13,14
+#-------------------------------
+[055]   # Goldenrod City - Poké Center
+Name = Goldenrod City - Poké Center
+MapPosition = 0,13,11
+#-------------------------------
 [056]   # Goldenrod City
 Name = Goldenrod City
 Outdoor = true
@@ -177,9 +208,79 @@ ShowArea = true
 HealingSpot = 56,34,49
 MapPosition = 0,13,12
 #-------------------------------
+[057]   # Goldenrod City - Bill's House
+Name = Goldenrod City - Bill's House
+MapPosition = 0,13,11
+#-------------------------------
+[058]   # Goldenrod City - Tunnel
+Name = Goldenrod City - Tunnel
+MapPosition = 0,13,11
+#-------------------------------
 [059]   # Goldenrod City - Tunnel
 Name = Goldenrod City - Tunnel
+MapPosition = 0,13,11
 BattleBack = tunnel
+#-------------------------------
+[060]   # Goldenrod City - Tunnel
+Name = Goldenrod City - Tunnel
+MapPosition = 0,13,11
+#-------------------------------
+[061]   # Goldenrod City - Name Rater
+Name = Goldenrod City - Name Rater
+Name = 
+MapPosition = 0,12,11
+#-------------------------------
+[062]   # Goldenrod City - Radio Tower 1F
+Name = Goldenrod City - Radio Tower 1F
+MapPosition = 0,11,11
+#-------------------------------
+[063]   # Goldenrod City - Radio Tower 2F
+Name = Goldenrod City - Radio Tower 2F
+MapPosition = 0,11,11
+#-------------------------------
+[064]   # Goldenrod City - Magnet Train
+Name = Goldenrod City - Magnet Train
+MapPosition = 0,13,11
+#-------------------------------
+[065]   # Goldenrod City - House
+Name = Goldenrod City - House
+MapPosition = 0,13,11
+#-------------------------------
+[066]   # Goldenrod City - Bike Shop
+Name = Goldenrod City - Bike Shop
+MapPosition = 0,13,11
+#-------------------------------
+[067]   # Goldenrod City - House
+Name = Goldenrod City - House
+MapPosition = 0,13,11
+#-------------------------------
+[068]   # Goldenrod City - Flower Shop
+Name = Goldenrod City - Flower Shop
+MapPosition = 0,13,11
+#-------------------------------
+[069]   # Goldenrod City - Mart 2F
+Name = Goldenrod City - Mart 2F
+MapPosition = 0,13,11
+#-------------------------------
+[070]   # Goldenrod City - Mart 3F
+Name = Goldenrod City - Mart 3F
+MapPosition = 0,13,11
+#-------------------------------
+[071]   # Goldenrod City - Mart  1F
+Name = Goldenrod City - Mart  1F
+MapPosition = 0,13,11
+#-------------------------------
+[072]   # Goldenrod City - Mart 4F
+Name = Goldenrod City - Mart 4F
+MapPosition = 0,13,11
+#-------------------------------
+[073]   # Goldenrod City - Mart 5F
+Name = Goldenrod City - Mart 5F
+MapPosition = 0,13,11
+#-------------------------------
+[074]   # Goldenrod City - Mart Elevator
+Name = Goldenrod City - Mart Elevator
+MapPosition = 0,13,11
 #-------------------------------
 [075]   # National Park
 Name = National Park
@@ -187,27 +288,95 @@ Outdoor = true
 ShowArea = true
 MapPosition = 0,13,8
 #-------------------------------
-[078]   # Rota 35
+[076]   # Goldenrod City - Gate
+Name = Goldenrod City - Gate
+MapPosition = 0,13,11
+#-------------------------------
+[077]   # National Park - Gate
+Name = National Park - Gate
+Bicycle = true
+MapPosition = 0,13,11
+#-------------------------------
+[078]   # Route 35
 Name = Rota 35
 Outdoor = true
+Bicycle = true
 MapPosition = 0,13,9
 #-------------------------------
-[082]   # Rota 37
+[079]   # National Park - Gate
+Name = National Park - Gate
+Bicycle = true
+MapPosition = 0,13,8
+#-------------------------------
+[080]   # Goldenrod City - Game Corner
+Name = Goldenrod City - Game Corner
+MapPosition = 0,12,11
+#-------------------------------
+[082]   # Route 37
 Name = Rota 37
 Outdoor = true
+Bicycle = true
 MapPosition = 0,14,7
 #-------------------------------
-[083]   # Ecruteak
+[083]   # Ecruteak City
 Name = Ecruteak
 Outdoor = true
 ShowArea = true
+Bicycle = true
 HealingSpot = 83,26,35
 Weather = Rain,25
 MapPosition = 0,14,6
 #-------------------------------
+[084]   # Ecruteak City - Poké Center
+Name = Ecruteak City - Poké Center
+MapPosition = 0,14,6
+#-------------------------------
+[085]   # Ecruteak City - Mart
+Name = Ecruteak City - Mart
+MapPosition = 0,14,6
+#-------------------------------
+[086]   # Ecruteak City - Dance Theater
+Name = Ecruteak City - Dance Theater
+MapPosition = 0,14,6
+BattleBack = tunnel
+Environment = None
+#-------------------------------
+[087]   # Ecruteak City - House
+Name = Ecruteak City - House
+MapPosition = 0,14,6
+#-------------------------------
+[088]   # Ecruteak City - Tower
+Name = Ecruteak City - Tower
+MapPosition = 0,14,6
+#-------------------------------
+[089]   # Ecruteak City - Burned Tower
+Name = Ecruteak City - Burned Tower
+Name = 
+Outdoor = false
+ShowArea = false
+MapPosition = 0,13,5
+BattleBack = cave4
+Environment = Cave
+#-------------------------------
+[090]   # Ecruteak City - Burned Tower
+Name = Burned Tower
+MapPosition = 0,13,5
+BattleBack = cave4
+#-------------------------------
+[091]   # Ecruteak City - Gym
+Name = Ecruteak City - Gym
+Weather = Fog,100
+MapPosition = 0,13,6
+BattleBack = gym4
+#-------------------------------
+[092]   # Ecruteak City - House
+Name = Ecruteak City - House
+MapPosition = 0,13,6
+#-------------------------------
 [093]   # Rota 38
 Name = Rota 38
 Outdoor = true
+Bicycle = true
 MapPosition = 0,11,6
 #-------------------------------
 [095]   # Rota 39
@@ -293,6 +462,30 @@ ShowArea = true
 HealingSpot = 139,32,46
 Weather = Rain,100
 MapPosition = 0,18,3
+#-------------------------------
+[145]   # Goldenrod City - Radio Tower 3F
+Name = Goldenrod City - Radio Tower 3F
+MapPosition = 0,11,11
+#-------------------------------
+[146]   # Goldenrod City - Radio Tower 4F
+Name = Goldenrod City - Radio Tower 4F
+MapPosition = 0,11,11
+#-------------------------------
+[147]   # Goldenrod City - Radio Tower 5F
+Name = Goldenrod City - Radio Tower 5F
+Name = 
+MapPosition = 0,13,11
+#-------------------------------
+[148]   # Goldenrod City - Tunnel
+Name = Goldenrod City - Tunnel
+MapPosition = 0,13,11
+#-------------------------------
+[149]   # Goldenrod City - Tunnel
+Name = Goldenrod City - Tunnel
+MapPosition = 0,13,11
+#-------------------------------
+[151]   # Porão 3
+Name = Porão 3
 #-------------------------------
 [152]   # Rota 44
 Name = Rota 44
@@ -608,6 +801,10 @@ MapPosition = 1,6,6
 Name = Rota 114
 Outdoor = true
 MapPosition = 2,5,2
+#-------------------------------
+[328]   # Ecruteak City - Poké Center
+Name = Ecruteak City - Poké Center
+MapPosition = 0,14,6
 #-------------------------------
 [329]   # Rota 122
 Name = Rota 122
