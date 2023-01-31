@@ -14,9 +14,9 @@
 10,South,0,11,North,7
 # Violet City (10) - Route 36 (13)
 10,West,7,13,East,0
-# Route 36 (13) - Rota 35 (78)
+# Route 36 (13) - Route 35 (78)
 13,South,0,78,North,19
-# Route 36 (13) - Rota 37 (82)
+# Route 36 (13) - Route 37 (82)
 13,North,0,82,South,0
 # Azalea Town (42) - Route 33 (41)
 42,East,0,41,West,0
@@ -24,13 +24,13 @@
 42,North,0,841,South,0
 # Route 34 (53) - Goldenrod City (56)
 53,North,0,56,South,0
-# Ecruteak (83) - Rota 37 (82)
+# Ecruteak City (83) - Route 37 (82)
 83,South,0,82,North,0
-# Ecruteak complemento (339) - Ecruteak (83)
+# Ecruteak complemento (339) - Ecruteak City (83)
 339,East,0,83,West,0
-# Rota 39 (95) - Rota 38 (93)
+# Route 39 (95) - Route 38 (93)
 95,East,0,93,West,0
-# Olivine City (96) - Rota 39 (95)
+# Olivine City (96) - Route 39 (95)
 96,North,2,95,South,0
 # Olivine City (96) - Rota 40 (101)
 96,West,0,101,East,0
@@ -38,10 +38,6 @@
 102,North,36,101,South,0
 # Rota 41 (102) - Cianwood Town (117)
 102,West,25,117,East,0
-# Rota 42 (124) - Mohogany (126)
-124,East,0,126,West,2
-# Rota 44 (152) - Mohogany (126)
-152,West,1,126,East,0
 # Rota 43 (136) - Lago da Raiva (139)
 136,North,0,139,South,10
 # Ilha Mikan (341) - Rota baixo (154)
@@ -64,6 +60,10 @@
 157,South,0,341,North,61
 # Rota baixo (521) - Rota lado esquerdo (157)
 521,West,0,157,East,30
+# Blacktorn City (158) - Rota 45 (169)
+158,South,0,169,North,1
+# Rota 45 (169) - Route 46 (297)
+169,West,72,297,East,0
 # Rota 23 (299) - Planalto Indigo (171)
 299,North,0,171,South,14
 # Route 27 (175) - Rota 26 (336)
@@ -196,6 +196,8 @@
 673,West,20,292,East,0
 # Rota 111 (673) - rota 113 (293)
 673,West,0,293,East,3
+# Route 46 - Complemento (852) - Route 46 (297)
+852,West,0,297,East,20
 # Rota 122 (329) - Rota 121 (677)
 329,North,0,677,South,8
 # Rota 122 (329) - Rota 123 (686)
@@ -358,9 +360,9 @@
 690,East,0,689,West,0
 # complemento2 (795) - complemento1 (794)
 795,West,0,794,East,15
-# Rota 45 (169) - Route 46 (297)
-169,West,72,297,East,0
-# Route 46 - Complemento (852) - Route 46 (297)
-852,West,0,297,East,20
-# Blacktorn City (158) - Rota 45 (169)
-158,South,0,169,North,1
+# Mohogany (126) - Rota 42 (124)
+126,West,0,124,East,0
+# Route 42 - Complemento (853) - Rota 42 (124)
+853,East,0,124,West,0
+# Rota 44 (152) - Mohogany (126)
+152,West,1,126,East,0

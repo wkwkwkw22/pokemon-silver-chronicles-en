@@ -589,7 +589,7 @@ LoseText = Ah! Well done!
 Pokemon = GASTLY,16
 Pokemon = GASTLY,16
 Pokemon = GASTLY,16
-Pokemon = GASTLY,16
+Pokemon = GASTLY,17
 Pokemon = GASTLY,16
 #-------------------------------
 [HEXMANIAC,Grace]
@@ -625,59 +625,64 @@ Pokemon = MISMAGIUS,24
 	Moves = ASTONISH,SUBSTITUTE,PERISHSONG,CONFUSERAY
 #-------------------------------
 [BIRDKEEPER,Toby]
-LoseText = ...
-Pokemon = DODUO,15
+LoseText = I feel like just flying away now.
 Pokemon = DODUO,16
 Pokemon = DODUO,17
+Pokemon = DODUO,18
 #-------------------------------
 [SAILOR,Harry]
-LoseText = ...
-Pokemon = WOOPER,19
+LoseText = Your skill is world class!
+Pokemon = WOOPER,20
 #-------------------------------
 [LASS,Dana]
-LoseText = ...
-Pokemon = FLAAFFY,18
-Pokemon = PSYDUCK,18
+LoseText = I see. So you can battle way.
+Pokemon = FLAAFFY,19
+Pokemon = PSYDUCK,19
+#-------------------------------
+[LASS,Dana,1]
+LoseText = You're even better now.
+Pokemon = AMPHAROS,32
+Pokemon = GOLDUCK,32
 #-------------------------------
 [SCHOOLKID_Boy,Chad]
-LoseText = ...
-Pokemon = MRMIME,19
+LoseText = I didn't study enough, I guess.
+Pokemon = MRMIME,20
 #-------------------------------
 [BEAUTY,Valerie]
-LoseText = ...
-Pokemon = HOPPIP,17
-Pokemon = SKIPLOOM,17
+LoseText = I'm glad I got to see your Pokémon!
+Pokemon = HOPPIP,18
+Pokemon = SKIPLOOM,18
 #-------------------------------
 [PSYCHIC_Male,Norman]
-LoseText = ...
+LoseText = Oh, your Pokémon have potential.
 Pokemon = SLOWPOKE,17
 Pokemon = SLOWPOKE,20
 #-------------------------------
 [POKeFAN_Male,Derek]
-LoseText = ...
+LoseText = I couldn't brag...
 Pokemon = PIKACHU,17
 #-------------------------------
 [POKeFAN_Female,Ruth]
-LoseText = ...
+LoseText = I don't mind losing.
 Pokemon = PIKACHU,17
 #-------------------------------
 [SAILOR,Eugene]
-LoseText = ...
+LoseText = Awaaargh!
 Pokemon = POLIWHIRL,17
 Pokemon = KRABBY,19
 Pokemon = RATICATE,17
 #-------------------------------
 [GENTLEMAN,Alfred]
-LoseText = ...
-Pokemon = NOCTOWL,20
+LoseCText = Ah! I can see you're serious!
+Pokemon = NOCTOWL,22
 #-------------------------------
 [SAILOR,Huey]
-LoseText = ...
+LoseText = Urf! I lose!
 Pokemon = POLIWAG,18
-Pokemon = POLIWHIRL,18
+Pokemon = POLIWHIRL,20
 #-------------------------------
 [BIRDKEEPER,Theo]
-LoseText = ...
+LoseText = You really are concerned...
 Pokemon = PIDGEY,17
 Pokemon = PIDGEY,15
 Pokemon = PIDGEY,19
@@ -685,12 +690,12 @@ Pokemon = PIDGEY,15
 Pokemon = PIDGEY,15
 #-------------------------------
 [GENTLEMAN,Preston]
-LoseText = ...
+LoseText = ...Aww... I must train some more...
 Pokemon = GROWLITHE,18
 Pokemon = GROWLITHE,18
 #-------------------------------
 [LASS,Connie]
-LoseText = ...
+LoseText = Aaack! My Pokémon!
 Pokemon = MARILL,21
 #-------------------------------
 [SAILOR,Terrell]
@@ -715,27 +720,27 @@ Pokemon = POLIWHIRL,18
 Pokemon = MACHOP,18
 #-------------------------------
 [SWIMMERmA,Simmon]
-LoseText = ...
+LoseText = OK! I give up!
 Pokemon = TENTACOOL,20
 Pokemon = TENTACOOL,20
 #-------------------------------
 [SWIMMERfE,Elaine]
-LoseText = ...
+LoseText = I lost that one!
 Pokemon = STARYU,21
 #-------------------------------
 [SWIMMERfE,Paula]
-LoseText = ...
+LoseText = Ooh, I'm feeling dizzy!
 Pokemon = STARYU,19
 Pokemon = SHELLDER,19
 #-------------------------------
 [SWIMMERmA,Charlie]
-LoseText = ...
+LoseText = Uh-oh. I lost...
 Pokemon = SHELLDER,21
 Pokemon = TENTACOOL,19
 Pokemon = TENTACRUEL,19
 #-------------------------------
 [SWIMMERmA,George]
-LoseText = ...
+LoseText = Yikes! I've got prune skin!
 Pokemon = TENTACOOL,16
 Pokemon = STARYU,19
 Pokemon = REMORAID,19
@@ -743,18 +748,22 @@ Pokemon = TENTACOOL,17
 Pokemon = TENTACOOL,16
 Pokemon = TENTACOOL,17
 #-------------------------------
+[SWIMMERmA,Mateus]
+LoseText = Ooh, you've got great endurance!
+Pokemon = KRABBY,23
+#-------------------------------
 [SWIMMERfE,Kara]
-LoseText = ...
+LoseText = Is that how you do it?
 Pokemon = STARYU,20
 Pokemon = STARMIE,20
 #-------------------------------
 [SWIMMERfE,Wendy]
-LoseText = ...
+LoseText = Oh, dear...
 Pokemon = HORSEA,21
 Pokemon = HORSEA,21
 #-------------------------------
 [SWIMMERmA,Berke]
-LoseText = ...
+LoseText = Pant, pant...
 Pokemon = QWILFISH,23
 #-------------------------------
 [BLACKBELT,Yoshi]
@@ -3717,9 +3726,9 @@ Pokemon = VOLTORB,29
 Pokemon = MAGNETON,34
 #-------------------------------
 [EUSINE,Eusine]
-LoseText = ...
+LoseText = I hate to admit it, but you win.
 Pokemon = DROWZEE,25
-Pokemon = ELECTRODE,27
+Pokemon = ELECTRODE,30
 Pokemon = HAUNTER,25
 #-------------------------------
 [ROCKET_Male,Grunt-Alarme2]

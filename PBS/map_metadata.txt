@@ -373,13 +373,13 @@ BattleBack = gym4
 Name = Ecruteak City - House
 MapPosition = 0,13,6
 #-------------------------------
-[093]   # Rota 38
+[093]   # Route 38
 Name = Rota 38
 Outdoor = true
 Bicycle = true
 MapPosition = 0,11,6
 #-------------------------------
-[095]   # Rota 39
+[095]   # Route 39
 Name = Rota 39
 Outdoor = true
 MapPosition = 0,10,7
@@ -391,15 +391,89 @@ ShowArea = true
 HealingSpot = 96,14,23
 MapPosition = 0,10,8
 #-------------------------------
+[097]   # Olivine City - Poké Center
+Name = Olivine City - Poké Center
+MapPosition = 0,10,9
+#-------------------------------
+[098]   # Olivine City - Mart
+Name = Olivine City - Mart
+MapPosition = 0,10,9
+#-------------------------------
+[099]   # Olivine City - Gym
+Name = Olivine City - Gym
+MapPosition = 0,10,9
+#-------------------------------
+[100]   # Router 39 - Moomoo Farm
+Name = Router 39 - Moomoo Farm
+MapPosition = 0,10,6
+#-------------------------------
 [101]   # Rota 40
 Name = Rota 40
 Outdoor = true
+Weather = Sun,40
 MapPosition = 0,9,9
 #-------------------------------
 [102]   # Rota 41
 Name = Rota 41
 Outdoor = true
 MapPosition = 0,9,12
+#-------------------------------
+[103]   # Router 39 - Moomoo Farm
+Name = Router 39 - Moomoo Farm
+MapPosition = 0,10,6
+#-------------------------------
+[104]   # Olivine City - Fisherman House
+Name = Olivine City - Fisherman House
+MapPosition = 0,10,9
+#-------------------------------
+[105]   # Olivine City - Bar
+Name = Olivine City - Bar
+MapPosition = 0,10,9
+#-------------------------------
+[106]   # Olivine City - House
+Name = Olivine City - House
+MapPosition = 0,10,9
+#-------------------------------
+[107]   # Olivine City - Trade House
+Name = Olivine City - Trade House
+MapPosition = 0,10,9
+#-------------------------------
+[108]   # Cais 1
+Name = Cais 1
+Name = 
+MapPosition = 0,10,9
+#-------------------------------
+[109]   # Cais 2
+Name = Cais 2
+MapPosition = 0,10,9
+#-------------------------------
+[110]   # Cais 3
+Name = Cais 3
+MapPosition = 0,10,9
+#-------------------------------
+[111]   # Olivine City - Lighthouse
+Name = Olivine City - Lighthouse
+MapPosition = 0,11,9
+#-------------------------------
+[112]   # Olivine City - Lighthouse 2nd
+Name = Olivine City - Lighthouse 2nd
+MapPosition = 0,11,9
+#-------------------------------
+[113]   # Olivine City - Lighthouse 3rd
+Name = Olivine City - Lighthouse 3rd
+MapPosition = 0,11,9
+#-------------------------------
+[114]   # Olivine City - Lighthouse 4th
+Name = Olivine City - Lighthouse 4th
+MapPosition = 0,11,9
+#-------------------------------
+[115]   # Olivine City - Lighthouse 5th
+Name = Olivine City - Lighthouse 5th
+MapPosition = 0,11,9
+#-------------------------------
+[116]   # Olivine City - Lighthouse 6th
+Name = Olivine City - Lighthouse 6th
+MapPosition = 0,11,9
 #-------------------------------
 [117]   # Cianwood Town
 Name = Cianwood Town
