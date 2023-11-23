@@ -3771,8 +3771,8 @@ Pocket = 4
 Price = 1500
 FieldUse = TR
 Flags = Fling_10
-Move = WORKUP
-Description = The user is roused, and its Attack and Sp. Atk stats increase.
+Move = HIDDENPOWER
+Description = A unique attack that varies in type and intensity depending on the Pokémon using it.
 #-------------------------------
 [TM11]
 Name = TM11
@@ -6109,19 +6109,13 @@ Price = 0
 Flags = KeyItem
 Description = A mysterious Egg obtained from Mr. Pokémon. What's in the Egg is unknown.
 #-------------------------------
-[POTESQUIRT]
-Name = Pote Squirt
-NamePlural = Pote Squirt
-Pocket = 8
-Price = 0
-Description = Um pote usado para molhar plantas.
-#-------------------------------
 [SECRETPOTION]
 Name = Secret Potion
 NamePlural = Secret Potion
 Pocket = 8
 Price = 0
-Description = Cura totalmente qualquer Pokémon.
+Flags = KeyItem
+Description = A fantastic medicine dispensed by the pharmacy in Cianwood City. It fully heals a Pokémon of any ailment.
 #-------------------------------
 [PRESADODRAGAO]
 Name = Presa do Dragão
@@ -6840,3 +6834,12 @@ Pocket = 1
 Price = 10
 Flags = Fling_30
 Description = Throw one into certain Pokémon Dens, and it may lure a rare wild Dynamaxed Pokémon.
+#-------------------------------
+[REDSCALE]
+Name = Red Scale
+NamePlural = Red Scales
+Pocket = 8
+Price = 0
+FieldUse = Direct
+Flags = KeyItem
+Description = A scale from the red Gyarados. It glows red like a flame.

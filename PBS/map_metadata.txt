@@ -407,13 +407,13 @@ MapPosition = 0,10,9
 Name = Router 39 - Moomoo Farm
 MapPosition = 0,10,6
 #-------------------------------
-[101]   # Rota 40
+[101]   # Route 40
 Name = Rota 40
 Outdoor = true
 Weather = Sun,40
 MapPosition = 0,9,9
 #-------------------------------
-[102]   # Rota 41
+[102]   # Route 41
 Name = Rota 41
 Outdoor = true
 MapPosition = 0,9,12
@@ -454,83 +454,96 @@ MapPosition = 0,10,9
 [111]   # Olivine City - Lighthouse
 Name = Olivine City - Lighthouse
 MapPosition = 0,11,9
+BattleBack = tunnel
 #-------------------------------
 [112]   # Olivine City - Lighthouse 2nd
 Name = Olivine City - Lighthouse 2nd
 MapPosition = 0,11,9
+BattleBack = tunnel
 #-------------------------------
 [113]   # Olivine City - Lighthouse 3rd
 Name = Olivine City - Lighthouse 3rd
 MapPosition = 0,11,9
+BattleBack = tunnel
 #-------------------------------
 [114]   # Olivine City - Lighthouse 4th
 Name = Olivine City - Lighthouse 4th
 MapPosition = 0,11,9
+BattleBack = tunnel
 #-------------------------------
 [115]   # Olivine City - Lighthouse 5th
 Name = Olivine City - Lighthouse 5th
 MapPosition = 0,11,9
+BattleBack = tunnel
 #-------------------------------
 [116]   # Olivine City - Lighthouse 6th
 Name = Olivine City - Lighthouse 6th
 MapPosition = 0,11,9
+BattleBack = tunnel
 #-------------------------------
-[117]   # Cianwood Town
-Name = Cianwood Town
+[117]   # Cianwood City
+Name = Cianwood City
+Name = 
 Outdoor = true
 ShowArea = true
 HealingSpot = 117,22,37
 MapPosition = 0,7,11
+BattleBack = beach
+Environment = Sand
 #-------------------------------
-[124]   # Rota 42
+[123]   # Cianwood City - Gym
+Name = Cianwood City - Gym
+BattleBack = battle4
+#-------------------------------
+[124]   # Route 42
 Name = Rota 42
 Outdoor = true
 MapPosition = 0,16,6
 #-------------------------------
-[126]   # Mohogany
+[126]   # Mohogany Town
 Name = Mohogany
 Outdoor = true
 ShowArea = true
 HealingSpot = 126,15,20
 MapPosition = 0,18,6
 #-------------------------------
-[127]   # Caverna
+[127]   # Mt. Mortar
 Name = Caverna
 Bicycle = true
 DarkMap = true
 #-------------------------------
-[128]   # Cav2
+[128]   # Mt. Mortar
 Name = Cav2
 Bicycle = true
 DarkMap = true
 #-------------------------------
-[129]   # Cav
+[129]   # Mt. Mortar
 Name = Cav
 Bicycle = true
 DarkMap = true
 #-------------------------------
-[130]   # MAP130
+[130]   # Mt. Mortar
 Name = MAP130
 Bicycle = true
 DarkMap = true
 #-------------------------------
-[131]   # MAP131
+[131]   # Mt. Mortar
 Name = MAP131
 Bicycle = true
 DarkMap = true
 #-------------------------------
-[132]   # MAP132
+[132]   # Mt. Mortar
 Name = MAP132
 Bicycle = true
 DarkMap = true
 #-------------------------------
-[136]   # Rota 43
+[136]   # Route 43
 Name = Rota 43
 Outdoor = true
 MapPosition = 0,18,5
 #-------------------------------
-[139]   # Lago da Raiva
-Name = Lago da Raiva
+[139]   # Lake of Rage
+Name = Lake of Rage
 Outdoor = true
 ShowArea = true
 HealingSpot = 139,32,46

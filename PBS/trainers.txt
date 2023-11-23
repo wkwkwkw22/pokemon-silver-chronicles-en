@@ -699,22 +699,22 @@ LoseText = Aaack! My Pokémon!
 Pokemon = MARILL,21
 #-------------------------------
 [SAILOR,Terrell]
-LoseText = ...
+LoseText = Oh, that was overwhelming!
 Pokemon = POLIWHIRL,20
 #-------------------------------
 [SAILOR,Kent]
-LoseText = ...
+LoseText = I can't manage a smile, either...
 Pokemon = KRABBY,18
-Pokemon = KRABBY,18
+Pokemon = KRABBY,20
 #-------------------------------
 [BIRDKEEPER,Denis]
-LoseText = ...
+LoseText = Oops... They crashed...
 Pokemon = SPEAROW,18
 Pokemon = FEAROW,20
 Pokemon = SPEAROW,18
 #-------------------------------
 [SAILOR,Ernest]
-LoseText = ...
+LoseText = You are both kind and strong...
 Pokemon = MACHOP,18
 Pokemon = POLIWHIRL,18
 Pokemon = MACHOP,18
@@ -767,11 +767,11 @@ LoseText = Pant, pant...
 Pokemon = QWILFISH,23
 #-------------------------------
 [BLACKBELT,Yoshi]
-LoseText = ...
+LoseText = This isn't real!
 Pokemon = HITMONLEE,27
 #-------------------------------
 [BLACKBELT,Lao]
-LoseText = ...
+LoseText = That's shocking!
 Pokemon = HITMONCHAN,27
 #-------------------------------
 [BLACKBELT,Nob]
@@ -780,50 +780,72 @@ Pokemon = MACHOP,25
 Pokemon = MACHOKE,25
 #-------------------------------
 [BLACKBELT,Lung]
-LoseText = ...
+LoseText = I got shattered!
 Pokemon = MANKEY,23
 Pokemon = MANKEY,23
 Pokemon = PRIMEAPE,25
 #-------------------------------
 [LEADER_Chuck,Chuck]
-LoseText = ...
-Pokemon = PRIMEAPE,27
-Pokemon = POLIWRATH,30
+LoseText = We...lost...
+Pokemon = HITMONCHAN,28
+	Moves = DOUBLETEAM,MACHPUNCH,SWAGGER,ICEPUNCH
+Pokemon = HITMONLEE,28
+	Moves = FAKEOUT,BULKUP,BLAZEKICK,HIGHJUMPKICK
+Pokemon = HITMONTOP,28
+	Moves = SUCKERPUNCH,ROCKSLIDE,THUNDERPUNCH,THIEF
+Pokemon = PRIMEAPE,28
+	Moves = LEER,DOUBLETEAM,ROCKSLIDE,FOCUSPUNCH
+Pokemon = POLIWRATH,32
+	Moves = HYPNOSIS,BODYSLAM,SURF,FOCUSPUNCH
+Pokemon = MEDICHAM,29
+	Moves = THUNDERPUNCH,PSYCHOCUT,ATTRACT,HIGHJUMPKICK
 #-------------------------------
 [LEADER_Jasmine,Jasmine]
-LoseText = ...
+LoseText = Well done...
+Items = MEGARING
+Pokemon = PERRSERKER,31
+	Moves = RAINDANCE,IRONHEAD,THRASH
+Pokemon = FORRETRESS,30
+	Moves = BUGBITE,SELFDESTRUCT,SPIKES,BUGBITE
 Pokemon = MAGNEMITE,30
+	Moves = THUNDERBOLT,SONICBOOM,SUPERSONIC,THUNDERWAVE
+Pokemon = SKARMORY,31
+	Moves = STEELWING,SPIKES,AIRSLASH,NIGHTSLASH
 Pokemon = STEELIX,35
-Pokemon = MAGNEMITE,30
+    Item = STEELIXITE
+	Moves = IRONTAIL,STONEEDGE,STEALTHROCK,EARTHQUAKE
+Pokemon = MAGNETON,30
+	Moves = THUNDERBOLT,SONICBOOM,SUPERSONIC,THUNDERWAVE
+
 #-------------------------------
 [FISHERMAN,Chris]
-LoseText = ...
-Pokemon = QWILFISH,18
+LoseText = What? That's not right.
+Pokemon = QWILFISH,19
 #-------------------------------
 [POKeMANIAC,Shane]
-LoseText = ...
-Pokemon = NIDORINA,16
-Pokemon = NIDORINO,16
+LoseText = I should have used my Moon Stone...
+Pokemon = NIDORINA,17
+Pokemon = NIDORINO,17
 #-------------------------------
 [HIKER,Benjamin]
-LoseText = ...
-Pokemon = DIGLETT,14
-Pokemon = GEODUDE,14
-Pokemon = DUGTRIO,16
+LoseText = Gwah ha ha! I lost!
+Pokemon = DIGLETT,15
+Pokemon = GEODUDE,15
+Pokemon = DUGTRIO,17
 #-------------------------------
 [CAMPER,Spencer]
-LoseText = ...
-Pokemon = SANDSHREW,17
-Pokemon = SANDSLASH,17
-Pokemon = ZUBAT,19
+LoseText = That was no fun...
+Pokemon = SANDSHREW,18
+Pokemon = SANDSLASH,18
+Pokemon = ZUBAT,20
 #-------------------------------
 [POKeMANIAC,Ron]
-LoseText = ...
-Pokemon = NIDOKING,19
+LoseText = My NIDOKING was outstanding!
+Pokemon = NIDOKING,20
 #-------------------------------
 [POKeMANIAC,Ben]
-LoseText = ...
-Pokemon = SLOWBRO,19
+LoseText = How could you do this to me?
+Pokemon = SLOWBRO,20
 #-------------------------------
 [ROCKET_Male,Grunt]
 LoseText = ...

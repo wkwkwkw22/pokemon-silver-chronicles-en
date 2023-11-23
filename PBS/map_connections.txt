@@ -30,14 +30,22 @@
 339,East,0,83,West,0
 # Route 39 (95) - Route 38 (93)
 95,East,0,93,West,0
+# Route 38 - complemento (855) - Route 38 (93)
+855,South,16,93,North,0
 # Olivine City (96) - Route 39 (95)
 96,North,2,95,South,0
-# Olivine City (96) - Rota 40 (101)
-96,West,0,101,East,0
-# Rota 41 (102) - Rota 40 (101)
+# Route 40 (101) - Route 39 (95)
+101,North,27,95,South,0
+# Route 38 - complemento (855) - Route 39 (95)
+855,South,0,95,North,13
+# Route 40 (101) - Olivine City (96)
+101,East,0,96,West,0
+# Route 41 (102) - Olivine City (96)
+102,North,61,96,South,0
+# Route 41 (102) - Route 40 (101)
 102,North,36,101,South,0
-# Rota 41 (102) - Cianwood Town (117)
-102,West,25,117,East,0
+# Cianwood City (117) - Route 41 (102)
+117,East,0,102,West,25
 # Rota 43 (136) - Lago da Raiva (139)
 136,North,0,139,South,10
 # Ilha Mikan (341) - Rota baixo (154)
@@ -360,9 +368,9 @@
 690,East,0,689,West,0
 # complemento2 (795) - complemento1 (794)
 795,West,0,794,East,15
-# Mohogany (126) - Rota 42 (124)
-126,West,0,124,East,0
-# Route 42 - Complemento (853) - Rota 42 (124)
+# Mohogany Town (126) - Route 42 (124)
+126,West,2,124,East,0
+# Route 42 - Complemento (853) - Route 42 (124)
 853,East,0,124,West,0
-# Rota 44 (152) - Mohogany (126)
+# Rota 44 (152) - Mohogany Town (126)
 152,West,1,126,East,0

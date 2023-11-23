@@ -721,10 +721,10 @@ BaseMoney = 30
 IntroBGM = SEQ_EYE_GIRL.mid
 #-------------------------------
 [EUSINE]
-Name = Homem Misterioso
-Gender = Unknown
+Name = Mistery Man
+Gender = Male
 BaseMoney = 100
-IntroBGM = GSCTeamRocketEncounter.mid
+IntroBGM = Eusine-Encounter.ogg
 BattleBGM = GSCRival.mid
 VictoryBGM = Victory - Trainer.mid
 #-------------------------------
