@@ -550,6 +550,13 @@ HealingSpot = 139,32,46
 Weather = Rain,100
 MapPosition = 0,18,3
 #-------------------------------
+[141]   # Mohogany Town - Souvenir Shop
+Name = Mohogany Town - Souvenir Shop
+Outdoor = false
+Bicycle = false
+MapPosition = 0,18,6
+BattleBack = tunnel
+#-------------------------------
 [145]   # Goldenrod City - Radio Tower 3F
 Name = Goldenrod City - Radio Tower 3F
 MapPosition = 0,11,11
