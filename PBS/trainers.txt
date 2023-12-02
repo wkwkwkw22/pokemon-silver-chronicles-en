@@ -943,11 +943,12 @@ LoseText = I wouldn't lose to you skiing...
 Pokemon = JYNX,29
 #-------------------------------
 [LEADER_Pryce,Pryce]
+Items = MEGARING
 LoseText = Hmm. Seems as if my luck has run out.
 Pokemon = SEEL,32
     Moves = REST,HAIL,ICYWIND,SURF
 Pokemon = PILOSWINE,35
-    Moves = BLIZZARD,ICEFANG,ANCIETPOWER,MUDBOMB
+    Moves = BLIZZARD,ICEFANG,ANCIENTPOWER,MUDBOMB
 Pokemon = LAPRAS,34
     Moves = PERISHSONG,BLIZZARD,SURF,CONFUSERAY
 Pokemon = ABOMASNOW,36
