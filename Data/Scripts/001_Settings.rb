@@ -156,14 +156,15 @@ module Settings
   # second badge, etc.
   #   e.g. To require the second badge, put false and 1.
   #        To require at least 2 badges, put true and 2.
-  BADGE_FOR_CUT            = 2
   BADGE_FOR_FLASH          = 1
+  BADGE_FOR_CUT            = 2
   BADGE_FOR_ROCKSMASH      = 3
+  BADGE_FOR_STRENGTH       = 3
   BADGE_FOR_SURF           = 4
   BADGE_FOR_FLY            = 5
-  BADGE_FOR_STRENGTH       = 4
-  BADGE_FOR_DIVE           = 15
+  BADGE_FOR_WHIRLPOOL      = 7
   BADGE_FOR_WATERFALL      = 8
+  BADGE_FOR_DIVE           = 15
 
   #=============================================================================
 

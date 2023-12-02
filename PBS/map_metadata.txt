@@ -557,6 +557,26 @@ Bicycle = false
 MapPosition = 0,18,6
 BattleBack = tunnel
 #-------------------------------
+[142]   # Mohogany Town - Souvenir Shop
+Name = Mohogany Town - Souvenir Shop
+Outdoor = false
+ShowArea = false
+MapPosition = 0,18,6
+BattleBack = tunnel
+#-------------------------------
+[143]   # Mohogany Town - Souvenir Shop
+Name = Mohogany Town - Souvenir Shop
+Outdoor = false
+MapPosition = 0,18,6
+BattleBack = tunnel
+#-------------------------------
+[144]   # Mahogany Town - Gym
+Name = Mahogany Town - Gym
+Outdoor = false
+MapPosition = 0,18,6
+BattleBack = battle5
+Environment = Ice
+#-------------------------------
 [145]   # Goldenrod City - Radio Tower 3F
 Name = Goldenrod City - Radio Tower 3F
 MapPosition = 0,11,11

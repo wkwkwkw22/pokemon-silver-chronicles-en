@@ -36,3 +36,10 @@ CycleCharset = invisible
 SurfCharset = invisible
 FishCharset = invisible
 #-------------------------------
+[4]
+TrainerType = PkMnTRAINER_Femalen
+WalkCharset = GBC-Char
+RunCharset = GBC-Char
+CycleCharset = invisible
+SurfCharset = invisible
+FishCharset = invisible

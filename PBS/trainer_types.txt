@@ -132,6 +132,11 @@ Gender = Unknown
 BaseMoney = 30
 IntroBGM = GSCTeamRocketEncounter.mid
 #-------------------------------
+[SCIENTIST]
+Name = Scientist
+Gender = Male
+BaseMoney = 40
+#-------------------------------
 [INTERVIEWERS]
 Name = INTERVIEWERS
 Gender = Unknown
@@ -470,11 +475,6 @@ Gender = Unknown
 BaseMoney = 30
 IntroBGM = GSCKimonoGirlEncounter.mid
 #-------------------------------
-[ESQUIADORA]
-Name = Esquiadora
-Gender = Unknown
-BaseMoney = 30
-#-------------------------------
 [ALPES_Man]
 Name = Friorento
 Gender = Unknown
@@ -486,8 +486,13 @@ Gender = Unknown
 BaseMoney = 30
 #-------------------------------
 [ESQUIADOR]
-Name = Esquiador
-Gender = Unknown
+Name = Boarder
+Gender = Male
+BaseMoney = 30
+#-------------------------------
+[ESQUIADORA]
+Name = Skier
+Gender = Female
 BaseMoney = 30
 #-------------------------------
 [ASH]

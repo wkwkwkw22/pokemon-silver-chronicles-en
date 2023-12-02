@@ -852,36 +852,36 @@ LoseText = ...
 Pokemon = DROWZEE,17
 Pokemon = ZUBAT,19
 #-------------------------------
-[ROCKET_Male,Grunt2]
-LoseText = ...
+[ROCKET_Male,Grunt,42]
+LoseText = Kaboom!
 Pokemon = RATTATA,16
 Pokemon = RATTATA,16
 Pokemon = RATTATA,16
 Pokemon = RATTATA,16
 #-------------------------------
-[ROCKET_Male,Jed]
-LoseText = ...
+[SCIENTIST,Jed]
+LoseText = I see...
 Pokemon = MAGNEMITE,20
 Pokemon = MAGNEMITE,20
-Pokemon = MAGNEMITE,20
+Pokemon = MAGNETON,28
 #-------------------------------
-[ROCKET_Male,Grunt3]
-LoseText = ...
+[ROCKET_Male,Grunt,43]
+LoseText = Grrrr...
 Pokemon = VENONAT,18
 Pokemon = VENONAT,18
 #-------------------------------
-[ROCKET_Male,Grunt4]
-LoseText = ...
+[ROCKET_Male,Grunt,44]
+LoseText = What? I lost?
 Pokemon = GOLBAT,18
 #-------------------------------
-[ROCKET_Male,Grunt5]
-LoseText = ...
+[ROCKET_Male,Grunt,46]
+LoseText = I knew I would lost...
 Pokemon = RATTATA,17
 Pokemon = ZUBAT,19
 Pokemon = RATTATA,17
 #-------------------------------
-[ROCKET_Male,Ross]
-LoseText = ...
+[SCIENTIST,Ross]
+LoseText = A mere tactical error cost me...
 Pokemon = KOFFING,22
 Pokemon = KOFFING,22
 #-------------------------------
@@ -890,52 +890,73 @@ LoseText = ...
 Pokemon = EKANS,18
 Pokemon = GLOOM,18
 #-------------------------------
-[ROCKET_Male,Mitch]
-LoseText = ...
+[SCIENTIST,Mitch]
+LoseText = Thinking is my strong suit, not battling.
 Pokemon = DITTO,24
 #-------------------------------
-[ROCKET_Male,Grunt6]
-LoseText = ...
+[ROCKET_Male,Grunt,45]
+LoseText = The password for the boss's door is... RATICATETAIL.
 Pokemon = RATICATE,19
+Pokemon = RATICATE,22
+	Form = 1
 #-------------------------------
-[ROCKET_Male,Chefe]
-LoseText = ...
-Pokemon = ZUBAT,22
-Pokemon = RATICATE,24
-Pokemon = KOFFING,22
+[ROCKET_EXECUTIVE3,Petrel]
+LoseText = I...I couldn't do a thing...Giovanni, please forgive me...
+Pokemon = ZUBAT,23
+Pokemon = RATICATE,25
+Pokemon = GOLBAT,28
+Pokemon = KOFFING,24
+Pokemon = WEEZING,28
 #-------------------------------
-[ROCKET_Female,Chefa]
-LoseText = ...
-Pokemon = ARBOK,23
-Pokemon = MURKROW,25
+[ROCKET_EXECUTIVE2,Ariana, 2]
+LoseText = Tch, you really are strong. It's too bad. If you were to join Team Rocket, you could become an Executive.
+Pokemon = ARBOK,26
+Pokemon = MURKROW,27
 Pokemon = GLOOM,23
 #-------------------------------
-[ESQUIADOR,Brad]
+[ROCKET_Male,Grunt,46]
 LoseText = ...
-Pokemon = SWINUB,26
-Pokemon = SWINUB,26
+Pokemon = DROWZEE,19
+Pokemon = GRIMER,21
+Pokemon = RATICATE,22
+	Form = 1
+#-------------------------------
+[ESQUIADOR,Brad]
+LoseText = Do you see how serious we are?
+Pokemon = SWINUB,27
+Pokemon = SWINUB,27
 #-------------------------------
 [ESQUIADOR,Douglas]
-LoseText = ...
-Pokemon = SHELLDER,24
-Pokemon = CLOYSTER,25
-Pokemon = SHELLDER,24
+LoseText = You're so strong, it's scary!
+Pokemon = SHELLDER,25
+Pokemon = CLOYSTER,28
+Pokemon = SHELLDER,25
 #-------------------------------
-[ESQUIADOR,Ronald]
-LoseText = ...
-Pokemon = SEEL,24
-Pokemon = DEWGONG,25
-Pokemon = SEEL,24
+[ESQUIADORA,Jill]
+LoseText = No! You made me wipe out!
+Pokemon = SEEL,25
+Pokemon = DEWGONG,29
+Pokemon = SEEL,25
 #-------------------------------
-[ESQUIADOR,Class]
-LoseText = ...
-Pokemon = DEWGONG,28
+[ESQUIADORA,Diana]
+LoseText = I wouldn't lose to you skiing...
+Pokemon = JYNX,29
 #-------------------------------
 [LEADER_Pryce,Pryce]
-LoseText = ...
-Pokemon = SEEL,28
-Pokemon = DEWGONG,31
-Pokemon = PILOSWINE,34
+LoseText = Hmm. Seems as if my luck has run out.
+Pokemon = SEEL,32
+    Moves = REST,HAIL,ICYWIND,SURF
+Pokemon = PILOSWINE,35
+    Moves = BLIZZARD,ICEFANG,ANCIETPOWER,MUDBOMB
+Pokemon = LAPRAS,34
+    Moves = PERISHSONG,BLIZZARD,SURF,CONFUSERAY
+Pokemon = ABOMASNOW,36
+    Item = ABOMASITE
+	Moves = ICEBEAM,ENERGYBALL,ICEPUNCH,MAGICALLEAF
+Pokemon = GLALIE,35
+    Moves = PAYBACK,BLIZZARD,BITE,BULLDOZE
+Pokemon = DEWGONG,36
+    Moves = AURORABEAM,REST,SLEEPTALK,DIVE
 #-------------------------------
 [ROCKET_Male,Grunt7]
 LoseText = ...
@@ -2674,6 +2695,11 @@ Pokemon = AERODACTYL,48
 Pokemon = CHARIZARD,48
 Pokemon = DRAGONITE,50
 #-------------------------------
+[ELITEFOUR_Lance,Lance,3]
+LoseText = ...
+Pokemon = DRAGONITE,40
+    Moves = FLY,TWISTER,HYPERBEAM,THUNDER
+#-------------------------------
 [RIVAL_ROCKET,Agente017,3]
 LoseText = ...
 Pokemon = GENGAR,56
@@ -3753,19 +3779,19 @@ Pokemon = DROWZEE,25
 Pokemon = ELECTRODE,30
 Pokemon = HAUNTER,25
 #-------------------------------
-[ROCKET_Male,Grunt-Alarme2]
-LoseText = ...
+[ROCKET_Male,Grunt,41]
+LoseText = Surveillance cams are in the Pokémon statues.
 Pokemon = ZUBAT,16
 Pokemon = GRIMER,17
 Pokemon = RATTATA,18
 #-------------------------------
-[ROCKET_Male,Grunt-Alarme]
-LoseText = ...
+[ROCKET_Male,Grunt,40]
+LoseText = Grr... I failed...
 Pokemon = DROWZEE,19
-Pokemon = ZUBAT,18
+Pokemon = ZUBAT,19
 #-------------------------------
-[ROCKET_Female,Grunt-Pesquisadora]
-LoseText = ...
+[ROCKET_Female,Grunt,2]
+LoseText = The password for the boss's door is... SLOWPOKETAIL
 Pokemon = EKANS,18
 Pokemon = GLOOM,18
 #-------------------------------
