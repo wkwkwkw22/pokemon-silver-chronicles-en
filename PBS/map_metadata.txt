@@ -232,11 +232,15 @@ MapPosition = 0,12,11
 #-------------------------------
 [062]   # Goldenrod City - Radio Tower 1F
 Name = Goldenrod City - Radio Tower 1F
+Outdoor = false
 MapPosition = 0,11,11
+BattleBack = radio
 #-------------------------------
 [063]   # Goldenrod City - Radio Tower 2F
 Name = Goldenrod City - Radio Tower 2F
+Outdoor = false
 MapPosition = 0,11,11
+BattleBack = radio
 #-------------------------------
 [064]   # Goldenrod City - Magnet Train
 Name = Goldenrod City - Magnet Train
@@ -580,15 +584,18 @@ Environment = Ice
 [145]   # Goldenrod City - Radio Tower 3F
 Name = Goldenrod City - Radio Tower 3F
 MapPosition = 0,11,11
+BattleBack = radio
 #-------------------------------
 [146]   # Goldenrod City - Radio Tower 4F
 Name = Goldenrod City - Radio Tower 4F
 MapPosition = 0,11,11
+BattleBack = radio
 #-------------------------------
 [147]   # Goldenrod City - Radio Tower 5F
 Name = Goldenrod City - Radio Tower 5F
 Name = 
 MapPosition = 0,13,11
+BattleBack = radio
 #-------------------------------
 [148]   # Goldenrod City - Tunnel
 Name = Goldenrod City - Tunnel

@@ -6236,12 +6236,12 @@ Pocket = 8
 Price = 0
 Description = Um ticket para viajar de trem da cidade de Goldenrod para Indigo, ou vice-versa.
 #-------------------------------
-[CHAVEDOPORAO]
-Name = CHAVE DO PORaO
-NamePlural = CHAVE DO PORaO
+[BASEMENTKEY]
+Name = Basement Key
+NamePlural = Basement Key's
 Pocket = 8
 Price = 0
-Description = Abre portas.
+Description = A key that opens a door in the Goldenrod Tunnel.
 #-------------------------------
 [TREMTICKETB]
 Name = TremTicket B

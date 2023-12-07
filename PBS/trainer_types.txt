@@ -130,7 +130,8 @@ BattleBGM = team-rocket-battle
 Name = ROCKET
 Gender = Unknown
 BaseMoney = 30
-IntroBGM = GSCTeamRocketEncounter.mid
+IntroBGM = GSCTeamRocketEncounter
+BattleBGM = team-rocket-battle
 #-------------------------------
 [SCIENTIST]
 Name = Scientist

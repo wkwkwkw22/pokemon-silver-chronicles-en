@@ -479,6 +479,15 @@ Pokemon = LICKITUNG,19
     Moves = FLAMETHROWER,THUNDERBOLT,WRINGOUT,ICEBEAM
 Pokemon = BIBAREL,18
     Moves = SURF,ICEBEAM,CHARGEBEAM,DOUBLETEAM
+	#-------------------------------
+[LEADER_Whitney,Whitney,2]
+LoseText = ...
+Pokemon = MILTANK,35
+    Moves = ZENHEADBUTT,STOMP,BODYSLAM,DOUBLEEDGE
+Pokemon = CLEFAIRY,35
+    Moves = BRICKBREAK,BOUNCE,SNORE,REFLECT
+Pokemon = LICKITUNG,35
+    Moves = FLAMETHROWER,THUNDERBOLT,WRINGOUT,ICEBEAM
 #-------------------------------
 [SCHOOLKID_Boy,Alan]
 LoseText = Huh...? Was my prediction incorrect?
@@ -904,6 +913,7 @@ Pokemon = RATICATE,22
 LoseText = I...I couldn't do a thing...Giovanni, please forgive me...
 Pokemon = ZUBAT,23
 Pokemon = RATICATE,25
+    Form = 1
 Pokemon = GOLBAT,28
 Pokemon = KOFFING,24
 Pokemon = WEEZING,28
@@ -959,64 +969,76 @@ Pokemon = GLALIE,35
 Pokemon = DEWGONG,36
     Moves = AURORABEAM,REST,SLEEPTALK,DIVE
 #-------------------------------
-[ROCKET_Male,Grunt7]
-LoseText = ...
+[BLACKBELT,Kiyo]
+LoseText = Waaaarggh! I'm beaten!
+Pokemon = HITMONLEE,34
+Pokemon = HITMONCHAN,34
+#-------------------------------
+[ROCKET_Male,Grunt,47]
+LoseText = Y-you're strong...
 Pokemon = RATICATE,24
 Pokemon = RATICATE,24
 #-------------------------------
-[ROCKET_Female,Grunt2]
-LoseText = ...
+[ROCKET_Female,Grunt,4]
+LoseText = Wh-who are you?
 Pokemon = ARBOK,26
 #-------------------------------
-[ROCKET_Male,Grunt8]
-LoseText = ...
+[ROCKET_Male,Grunt,48]
+LoseText = You think you're a hero?
 Pokemon = RATTATA,21
 Pokemon = RATTATA,21
 Pokemon = RATTATA,23
 Pokemon = RATTATA,23
 Pokemon = RATTATA,23
 #-------------------------------
-[ROCKET_Male,Grunt9]
-LoseText = ...
+[ROCKET_Male,Grunt,49]
+LoseText = Aargh, I give up!
 Pokemon = ZUBAT,26
 Pokemon = ZUBAT,26
 #-------------------------------
-[ROCKET_Male,Grunt10]
-LoseText = ...
+[ROCKET_Male,Grunt,50]
+LoseText = Gwah! Don't get cute!
 Pokemon = GRIMER,23
 Pokemon = GRIMER,23
 Pokemon = MUK,25
 #-------------------------------
-[ROCKET_Male,Grunt11]
-LoseText = ...
+[ROCKET_Male,Grunt,51]
+LoseText = !!
 Pokemon = WEEZING,26
 #-------------------------------
-[ROCKET_Male,Mark]
-LoseText = ...
+[SCIENTIST,Mark]
+LoseText = Tch! I took you too lightly!
 Pokemon = MAGNEMITE,27
 Pokemon = MAGNEMITE,27
 Pokemon = MAGNEMITE,27
 #-------------------------------
-[ROCKET_Male,Grunt12]
-LoseText = ...
+[ROCKET_Male,Grunt,52]
+LoseText = You're kidding!
 Pokemon = ZUBAT,22
 Pokemon = GOLBAT,24
 Pokemon = GRIMER,22
 #-------------------------------
-[ROCKET_Male,Rich]
-LoseText = ...
+[ROCKET_Male,Grunt,53]
+LoseText = No! Unbelievable!
+Pokemon = RATTATA,25
+Pokemon = RATICATE,25
+Pokemon = GOLBAT,25
+#-------------------------------
+[SCIENTIST,Rich]
+LoseText = Hmm... All grand plans come with snags.
 Pokemon = PORYGON,30
 #-------------------------------
-[ROCKET_Male,Executivo]
-LoseText = ...
-Pokemon = KOFFING,30
-Pokemon = KOFFING,30
+[ROCKET_EXECUTIVE3,Petrel,2]
+LoseText = OK, OK. I'll tell you where he is.
 Pokemon = KOFFING,30
 Pokemon = WEEZING,32
-Pokemon = KOFFING,30
-Pokemon = KOFFING,30
+Pokemon = RATTATA,30
+Pokemon = ELECTRODE,32
+Pokemon = RATICATE,32
+    Form = 1
+Pokemon = GOLBAT,32
 #-------------------------------
-[Rival,REd]
+[Rival,???,10]
 LoseText = ...
 Pokemon = GOLBAT,30
 Pokemon = QUILAVA,32
@@ -1024,7 +1046,7 @@ Pokemon = HAUNTER,30
 Pokemon = MAGNEMITE,28
 Pokemon = SNEASEL,32
 #-------------------------------
-[Rival,greEn]
+[Rival,???,11]
 LoseText = ...
 Pokemon = GOLBAT,30
 Pokemon = MEGANIUM,32
@@ -1032,7 +1054,7 @@ Pokemon = HAUNTER,30
 Pokemon = MAGNEMITE,28
 Pokemon = SNEASEL,32
 #-------------------------------
-[Rival,bluE]
+[Rival,???,12]
 LoseText = ...
 Pokemon = GOLBAT,30
 Pokemon = FERALIGATR,32
@@ -1054,8 +1076,8 @@ LoseText = ...
 Pokemon = RATICATE,24
 Pokemon = GOLBAT,24
 #-------------------------------
-[ROCKET_Female,Grunt4]
-LoseText = ...
+[ROCKET_Female,Grunt,5]
+LoseText = Oh, no! They're so useless!
 Pokemon = EKANS,21
 Pokemon = EKANS,21
 Pokemon = ODDISH,23
