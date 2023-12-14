@@ -1039,28 +1039,49 @@ Pokemon = RATICATE,32
 Pokemon = GOLBAT,32
 #-------------------------------
 [Rival,???,10]
-LoseText = ...
-Pokemon = GOLBAT,30
-Pokemon = QUILAVA,32
-Pokemon = HAUNTER,30
-Pokemon = MAGNEMITE,28
+LoseText = ...Why... Why do I lose? I've assembled the toughest Pokémon. I didn't ease up on the gas. So why do I lose?
+Pokemon = GOLBAT,32
+    Moves = SUPERSONIC,POISONFANG,AIRCUTTER,TOXIC
+Pokemon = TYPHLOSION,36
+	Moves = DIG,LAVAPLUME,ROCKSLIDE,THUNDERPUNCH
+Pokemon = HAUNTER,32
+    Moves = LICK,CURSE,CONFUSERAY,HYPNOSIS
+Pokemon = MAGNEMITE,30
+    Moves = THUNDERWAVE,SUPERSONIC,SONICBOOM,THUNDERBOLT
 Pokemon = SNEASEL,32
+	Moves = METALCLAW,HYPNOSIS,DOUBLETEAM,ICEPUNCH
+Pokemon = KADABRA,32
+	Moves = CHARGEBEAM,PSYCHIC,THUNDERPUNCH,ICEPUNCH
 #-------------------------------
 [Rival,???,11]
-LoseText = ...
-Pokemon = GOLBAT,30
-Pokemon = MEGANIUM,32
-Pokemon = HAUNTER,30
-Pokemon = MAGNEMITE,28
+LoseText = ...Why... Why do I lose? I've assembled the toughest Pokémon. I didn't ease up on the gas. So why do I lose?
+Pokemon = GOLBAT,32
+    Moves = SUPERSONIC,POISONFANG,AIRCUTTER,TOXIC
+Pokemon = MEGANIUM,36
+Moves = PETALDANCE,EARTHQUAKE,LIGHTSCREEN,POISONPOWDER
+Pokemon = HAUNTER,32
+    Moves = LICK,CURSE,CONFUSERAY,HYPNOSIS
+Pokemon = MAGNEMITE,30
+    Moves = THUNDERWAVE,SUPERSONIC,SONICBOOM,THUNDERBOLT
 Pokemon = SNEASEL,32
+	Moves = METALCLAW,HYPNOSIS,DOUBLETEAM,ICEPUNCH
+Pokemon = KADABRA,32
+	Moves = CHARGEBEAM,PSYCHIC,THUNDERPUNCH,ICEPUNCH
 #-------------------------------
 [Rival,???,12]
-LoseText = ...
-Pokemon = GOLBAT,30
-Pokemon = FERALIGATR,32
-Pokemon = HAUNTER,30
-Pokemon = MAGNEMITE,28
+LoseText = ...Why... Why do I lose? I've assembled the toughest Pokémon. I didn't ease up on the gas. So why do I lose?
+Pokemon = GOLBAT,32
+    Moves = SUPERSONIC,POISONFANG,AIRCUTTER,TOXIC
+Pokemon = FERALIGATR,36
+    Moves = CRUNCH,WATERFALL,ICEFANG,DIG
+Pokemon = HAUNTER,32
+    Moves = LICK,CURSE,CONFUSERAY,HYPNOSIS
+Pokemon = MAGNEMITE,30
+    Moves = THUNDERWAVE,SUPERSONIC,SONICBOOM,THUNDERBOLT
 Pokemon = SNEASEL,32
+	Moves = METALCLAW,HYPNOSIS,DOUBLETEAM,ICEPUNCH
+Pokemon = KADABRA,32
+	Moves = CHARGEBEAM,PSYCHIC,THUNDERPUNCH,ICEPUNCH
 #-------------------------------
 [ROCKET_Male,Grunt13]
 LoseText = ...
