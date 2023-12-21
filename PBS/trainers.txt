@@ -918,7 +918,7 @@ Pokemon = GOLBAT,28
 Pokemon = KOFFING,24
 Pokemon = WEEZING,28
 #-------------------------------
-[ROCKET_EXECUTIVE2,Ariana, 2]
+[ROCKET_EXECUTIVE2,Ariana, 1]
 LoseText = Tch, you really are strong. It's too bad. If you were to join Team Rocket, you could become an Executive.
 Pokemon = ARBOK,26
 Pokemon = MURKROW,27
@@ -1083,19 +1083,72 @@ Pokemon = SNEASEL,32
 Pokemon = KADABRA,32
 	Moves = CHARGEBEAM,PSYCHIC,THUNDERPUNCH,ICEPUNCH
 #-------------------------------
-[ROCKET_Male,Grunt13]
-LoseText = ...
+[ROCKET_Male,Grunt,54]
+LoseText = Urk! Yeah, think you're cool, huh?
 Pokemon = RATTATA,27
+Pokemon = RATTATA,27
+	Form = 1
 #-------------------------------
-[ROCKET_Female,Grunt3]
-LoseText = ...
+[ROCKET_Male,Grunt,55]
+LoseText = Uh-oh! I was sunk by indecision.
+Pokemon = MUK,25
+Pokemon = KOFFING,25
+Pokemon = RATTATA,25
+#-------------------------------
+[ROCKET_Male,Grunt,56]
+LoseText = Sorry!
+Pokemon = MAGMAR,25
+Pokemon = KOFFING,25
+Pokemon = RATTATA,25
+#-------------------------------
+[ROCKET_Female,Grunt,6]
+LoseText = How could you?
 Pokemon = GLOOM,25
 Pokemon = GLOOM,25
 #-------------------------------
-[ROCKET_Male,Grunt14]
+[ROCKET_Male,Grunt,57]
+LoseText = Blast it!
+Pokemon = RATICATE,25
+Pokemon = GOLBAT,25
+#-------------------------------
+[ROCKET_Male,Grunt,58]
+LoseText = Hyuck-hyuck-hyuck! So that's how you did it!
+Pokemon = GRIMER,26
+Pokemon = WEEZING,26
+#-------------------------------
+[ROCKET_Male,Grunt,59]
+LoseText = Gulp! This is a bleak moment.
+Pokemon = RATICATE,26
+Pokemon = WEEZING,26
+#-------------------------------
+[ROCKET_PROTON,Proton,2]
+LoseText = Phew...
+Pokemon = GOLBAT,30
+    Moves = SUPERSONIC,ABSORB,POISONFANG,AIRCUTTER
+Pokemon = WEEZING,33
+	Form = 1
+    Moves = POISONGAS,SMOKESCREEN,SLUDGEBOMB,THIEF
+Pokemon = EKANS,13
+    Moves = ACID,POISONSTING,BITE
+Pokemon = GOLBAT,16
+    Moves = SUPERSONIC,ABSORB,POISONFANG,SNORE
+Pokemon = RATICATE,15
+    Form = 1
+    Moves = QUICKATTACK,BITE,SUPERFANG
+#-------------------------------
+[ROCKET_EXECUTIVE2,Ariana, 2]
+LoseText = Aaaieeeee! This can't be happening!
+Pokemon = ARBOK,32
+Pokemon = GRAVELER,30
+	Form = 1
+Pokemon = MURKROW,32
+Pokemon = VILEPLUME,33
+#-------------------------------
+[ROCKETLEADER,Archer]
 LoseText = ...
-Pokemon = RATICATE,24
-Pokemon = GOLBAT,24
+Pokemon = HOUNDOUR,34
+Pokemon = KOFFING,34
+Pokemon = HOUNDOOM,38
 #-------------------------------
 [ROCKET_Female,Grunt,5]
 LoseText = Oh, no! They're so useless!
@@ -1103,12 +1156,6 @@ Pokemon = EKANS,21
 Pokemon = EKANS,21
 Pokemon = ODDISH,23
 Pokemon = GLOOM,25
-#-------------------------------
-[ROCKETLEADER,Apollo]
-LoseText = ...
-Pokemon = HOUNDOUR,34
-Pokemon = KOFFING,34
-Pokemon = HOUNDOOM,38
 #-------------------------------
 [PSYCHIC_Male,Phil]
 LoseText = ...

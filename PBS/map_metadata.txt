@@ -604,8 +604,14 @@ MapPosition = 0,13,11
 [149]   # Goldenrod City - Tunnel
 Name = Goldenrod City - Tunnel
 MapPosition = 0,13,11
+BattleBack = tunnel
 #-------------------------------
-[151]   # Porão 3
+[150]   # Goldenrod City - Tunnel
+Name = Goldenrod City - Tunnel
+MapPosition = 0,13,12
+BattleBack = tunnel
+#-------------------------------
+[151]   # Goldenrod City - Mart Warehouse
 Name = Porão 3
 #-------------------------------
 [152]   # Rota 44

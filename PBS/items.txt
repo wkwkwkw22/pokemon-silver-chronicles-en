@@ -6124,12 +6124,12 @@ Pocket = 8
 Price = 0
 Description = Presa de um Pokémon dragão.
 #-------------------------------
-[CARTAODARADIO]
-Name = Cartão da Rádio
-NamePlural = Cartão da Rádio
+[CARDKEY]
+Name = Card Key
+NamePlural = Card Keys
 Pocket = 8
 Price = 0
-Description = Abre persianas na Torre de Rádio.
+Description = A card key that open a shutter in the Radio Tower.
 #-------------------------------
 [PEDRAAZUL]
 Name = Esfera Antiga
