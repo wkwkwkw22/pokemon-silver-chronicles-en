@@ -1125,30 +1125,59 @@ Pokemon = WEEZING,26
 LoseText = Phew...
 Pokemon = GOLBAT,30
     Moves = SUPERSONIC,ABSORB,POISONFANG,AIRCUTTER
+Pokemon = EKANS,31
+    Moves = POISONFANG,BITE,TOXICSPIKES
+Pokemon = DUGTRIO,31
+    Moves = DIG,SUCKERPUNCH,SANDATTACK,SLASH
+Pokemon = RATICATE,31
+    Form = 1
+    Moves = DIG,BITE,SUPERFANG,IRONTAIL
+Pokemon = TAUROS,31
+	Moves = PAYBACK,SURF,ZENHEADBUTT,THRASH
 Pokemon = WEEZING,33
 	Form = 1
-    Moves = POISONGAS,SMOKESCREEN,SLUDGEBOMB,THIEF
-Pokemon = EKANS,13
-    Moves = ACID,POISONSTING,BITE
-Pokemon = GOLBAT,16
-    Moves = SUPERSONIC,ABSORB,POISONFANG,SNORE
-Pokemon = RATICATE,15
-    Form = 1
-    Moves = QUICKATTACK,BITE,SUPERFANG
+    Moves = POISONGAS,PLAYROUGH,SLUDGEBOMB,THIEF
 #-------------------------------
 [ROCKET_EXECUTIVE2,Ariana, 2]
 LoseText = Aaaieeeee! This can't be happening!
+Pokemon = KOFFING,32
+	Moves = TOXICSPIKES,SELFDESTRUCT,BODYSLAM,
 Pokemon = ARBOK,32
-Pokemon = GRAVELER,30
+	Moves = ICEFANG,POISONFANG,FIREFANG,THUNDERFANG
+Pokemon = GRAVELER,32
 	Form = 1
-Pokemon = MURKROW,32
-Pokemon = VILEPLUME,33
+	Moves = EARTHQUAKE,STONEEDGE,THUNDERPUNCH,FIREPUNCH
+	Gender = male
+Pokemon = HONCHKROW,32
+	Moves = FOULPLAY,AIRSLASH,PSYCHIC,CONFUSERAY
+Pokemon = SKUNTANK,32
+	Moves = FLAMETHROWER,GUNKSHOT,TOXICSPIKES,CRUNCH
+Pokemon = VILEPLUME,34
+	Moves = PETALBLIZZARD,SLUDGEBOMB,MOONBLAST,POLLENPUFF
 #-------------------------------
 [ROCKETLEADER,Archer]
-LoseText = ...
-Pokemon = HOUNDOUR,34
-Pokemon = KOFFING,34
+Items = MEGARING
+LoseText = No! Forgive me, Giovanni!
+Pokemon = ELECTRODE,35
+	Moves = EXPLOSION,DISCHARGE,LIGHTSCREEN,FOULPLAY
+	Gender = male
+Pokemon = BOUFFALANT,33
+	Moves = HEADCHARGE,MEGAHORN,REVENGE,BULLDOZE
+	Gender = male
+Pokemon = PERSIAN,35
+	Form = 1
+	Moves = FOULPLAY,THUNDERWAVE,DIG,THIEF
+	Gender = female
+Pokemon = HOUNDOUR,35
+	Moves = SUNNYDAY,WILLOWISP,FLAMETHROWER,THUNDERFANG
+Pokemon = DONPHAN,35
+	Moves = EARTHQUAKE,THUNDERFANG,FIREFANG,ROCKSLIDE
+	Gender = male
 Pokemon = HOUNDOOM,38
+	Item = HOUNDOOMINITE
+	Ball = DUSKBALL
+	Moves = FLAMETHROWER,THUNDERFANG,PSYCHICFANGS,CRUNCH
+	Gender = male
 #-------------------------------
 [ROCKET_Female,Grunt,5]
 LoseText = Oh, no! They're so useless!
@@ -1158,9 +1187,9 @@ Pokemon = ODDISH,23
 Pokemon = GLOOM,25
 #-------------------------------
 [PSYCHIC_Male,Phil]
-LoseText = ...
-Pokemon = NATU,26
-Pokemon = KADABRA,28
+LoseText = Arrgh... That's a shocking loss...
+Pokemon = NATU,27
+Pokemon = KADABRA,29
 #-------------------------------
 [POKeMANIAC,Zach]
 LoseText = ...

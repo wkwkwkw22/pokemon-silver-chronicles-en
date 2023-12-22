@@ -171,8 +171,11 @@ BaseMoney = 30
 #-------------------------------
 [ROCKETLEADER]
 Name = ROCKET LEADER
-Gender = Unknown
-BaseMoney = 30
+Gender = Male
+BaseMoney = 100
+IntroBGM = GSCTeamRocketEncounter
+BattleBGM = team-rocket-battle
+VictoryBGM = Victory - Trainer
 #-------------------------------
 [TRIATHLETE_FemaleRunner]
 Name = TRIATHLETE
@@ -503,7 +506,7 @@ BaseMoney = 30
 #-------------------------------
 [LEADER_GIOVANNI]
 Name = LEADER
-Gender = Unknown
+Gender = Male
 BaseMoney = 30
 IntroBGM = GSCTeamRocketEncounter.mid
 #-------------------------------
@@ -543,13 +546,13 @@ IntroBGM = SEQ_EYE_ELITE.mid
 #-------------------------------
 [CYRUS_GIOVANNI]
 Name = DUPLA
-Gender = Unknown
+Gender = Male
 BaseMoney = 30
 IntroBGM = GSCTeamRocketEncounter.mid
 #-------------------------------
 [RIVAL_ROCKET]
 Name = ROCKET
-Gender = Unknown
+Gender = Male
 BaseMoney = 100
 IntroBGM = GSCRival.mid
 BattleBGM = GSCRival.mid
@@ -736,19 +739,19 @@ VictoryBGM = Victory - Trainer.mid
 #-------------------------------
 [ROCKET_EXECUTIVE2]
 Name = Rocket Executive
-Gender = Unknown
+Gender = Female
 BaseMoney = 80
-IntroBGM = GSCTeamRocketEncounter.mid
-BattleBGM = GSCRival.mid
-VictoryBGM = Victory - Trainer.mid
+IntroBGM = GSCTeamRocketEncounter
+BattleBGM = team-rocket-battle
+VictoryBGM = Victory - Trainer
 #-------------------------------
 [ROCKET_EXECUTIVE3]
 Name = Rocket Executive
-Gender = Unknown
+Gender = Male
 BaseMoney = 80
-IntroBGM = GSCTeamRocketEncounter.mid
-BattleBGM = GSCRival.mid
-VictoryBGM = Victory - Trainer.mid
+IntroBGM = GSCTeamRocketEncounter
+BattleBGM = team-rocket-battle
+VictoryBGM = Victory - Trainer
 #-------------------------------
 [ROCKET_PROTON]
 Name = Rocket Executive
@@ -828,9 +831,9 @@ IntroBGM = SEQ_EYE_KID.mid
 Name = Rocket Executive
 Gender = Unknown
 BaseMoney = 80
-IntroBGM = GSCTeamRocketEncounter.mid
-BattleBGM = GSCRival.mid
-VictoryBGM = Victory - Trainer.mid
+IntroBGM = GSCTeamRocketEncounter
+BattleBGM = team-rocket-battle
+VictoryBGM = Victory - Trainer
 #-------------------------------
 [JUGGLER]
 Name = JUGGLER

@@ -6129,6 +6129,7 @@ Name = Card Key
 NamePlural = Card Keys
 Pocket = 8
 Price = 0
+Flags = KeyItem
 Description = A card key that open a shutter in the Radio Tower.
 #-------------------------------
 [PEDRAAZUL]
@@ -6153,11 +6154,27 @@ Price = 0
 Description = Uma linda pedra vermelha.
 #-------------------------------
 [CLEARBELL]
-Name = CLEARBELL
-NamePlural = CLEARBELL
+Name = Clear Bell
+NamePlural = Clear Bell's
 Pocket = 8
 Price = 0
-Description = Um sino muito antigo que faz um suave toque.
+Description = A very old-fashioned bell that makes a gentle ringing.
+#-------------------------------
+[TIDALBELL]
+Name = Tidar Bell
+NamePlural = Tidar Bell's
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Description = A very old-fashioned bell that makes a gentle ringing.
+#-------------------------------
+[SILVERWING]
+Name = Silver Wing
+NamePlural = Silver Wing's
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Description = A strange, silvery feather that sparkles.
 #-------------------------------
 [MTMOONKEY]
 Name = Chave quadrada
@@ -6241,6 +6258,7 @@ Name = Basement Key
 NamePlural = Basement Key's
 Pocket = 8
 Price = 0
+Flags = KeyItem
 Description = A key that opens a door in the Goldenrod Tunnel.
 #-------------------------------
 [TREMTICKETB]
