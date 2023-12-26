@@ -87,6 +87,14 @@ MapPosition = 0,23,13
 Name = New Bark Town - House
 MapPosition = 0,23,13
 #-------------------------------
+[020]   # Ice Path
+Name = Ice Path
+Bicycle = true
+MapPosition = 0,23,5
+DarkMap = false
+BattleBack = cave3
+Environment = Cave
+#-------------------------------
 [030]   # Violet City - Sprout Tower
 Name = Violet City - Sprout Tower
 MapPosition = 0,17,8
@@ -614,16 +622,15 @@ BattleBack = tunnel
 [151]   # Goldenrod City - Mart Warehouse
 Name = Porão 3
 #-------------------------------
-[152]   # Rota 44
+[152]   # Route 44
 Name = Rota 44
 Outdoor = true
 MapPosition = 0,20,6
 #-------------------------------
-[153]   # Caverna de Gelo
-Name = Caverna de Gelo
+[153]   # Ice Path 2F
+Name = Ice Path
 Bicycle = true
 MapPosition = 0,22,1
-Dungeon = false
 #-------------------------------
 [154]   # Rota baixo
 Name = Rota baixo
@@ -649,15 +656,51 @@ Name = Rota lado esquerdo
 Outdoor = true
 MapPosition = 4,6,8
 #-------------------------------
-[158]   # Blacktorn City
+[158]   # Blackthorn City
 Name = Blacktorn City
 Outdoor = true
 ShowArea = true
 HealingSpot = 158,35,47
+Weather = Snow,90
+MapPosition = 0,22,6
+Environment = Snow
+#-------------------------------
+[159]   # Blackthorn City - House
+Name = Blackthorn City - House
 MapPosition = 0,22,6
 #-------------------------------
-[167]   # Toca do dragão
-Name = Toca do dragão
+[160]   # Blackthorn City - Poké Center
+Name = Blackthorn City - Poké Center
+MapPosition = 0,22,6
+#-------------------------------
+[161]   # Blackthorn City - Mart
+Name = Blackthorn City - Mart
+MapPosition = 0,22,6
+#-------------------------------
+[162]   # Move Deleter House
+Name = Move Deleter House
+MapPosition = 0,22,6
+#-------------------------------
+[163]   # Blackthorn City - House 2
+Name = Blackthorn City - House 2
+MapPosition = 0,22,6
+#-------------------------------
+[164]   # Blackthorn City - Gym
+Name = Blackthorn City - Gym
+MapPosition = 0,22,6
+BattleBack = battle6
+#-------------------------------
+[165]   # Dragon's Den Cave
+Name = Dragon's Den Cave
+MapPosition = 0,22,5
+#-------------------------------
+[166]   # Dragon's Den Cave
+Name = Dragon's Den Cave
+MapPosition = 0,22,6
+#-------------------------------
+[167]   # Dragon's Den
+Name = Dragon's Den
+Name = 
 Outdoor = false
 MapPosition = 0,22,1
 #-------------------------------
@@ -991,6 +1034,9 @@ Outdoor = true
 [344]   # Elm's House
 Name = Elm's House
 MapPosition = 0,23,13
+#-------------------------------
+[345]   # Dragon's Den
+Name = Dragon's Den
 #-------------------------------
 [346]   # Whirl Islands
 Name = Whirl Islands
@@ -1493,3 +1539,7 @@ MapPosition = 2,16,6
 Name = Observatório
 Outdoor = true
 MapPosition = 2,18,5
+#-------------------------------
+[857]
+Name = Ice Path Copy
+Outdoor = false

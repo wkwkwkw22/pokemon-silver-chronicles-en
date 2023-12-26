@@ -1192,60 +1192,96 @@ Pokemon = NATU,27
 Pokemon = KADABRA,29
 #-------------------------------
 [POKeMANIAC,Zach]
-LoseText = ...
-Pokemon = RHYHORN,27
+LoseText = Oooh, your Pokémon are so appealing.
+Pokemon = RHYHORN,30
 #-------------------------------
 [FISHERMAN,Wilton]
-LoseText = ...
-Pokemon = GOLDEEN,25
-Pokemon = GOLDEEN,25
-Pokemon = SEAKING,27
+LoseText = Just forget about it.
+Pokemon = GOLDEEN,26
+	Gender = female
+Pokemon = GOLDEEN,26
+Pokemon = SEAKING,28
 #-------------------------------
-[LASS,Cybil]
-LoseText = ...
-Pokemon = BUTTERFREE,27
-Pokemon = BELLOSSOM,27
+[FISHERMAN,Wilton,1]
+LoseText = Just forget about it.
+Pokemon = GOLDEEN,32
+	Gender = female
+Pokemon = SEAKING,36
+Pokemon = SEAKING,40
+#-------------------------------
+[COOLTRAINER_Female,Cybil]
+LoseText = Nope! This won't do at all.
+Pokemon = MAREEP,29
+Pokemon = BELLOSSOM,29
+Pokemon = BUTTERFREE,29
 #-------------------------------
 [COOLTRAINER_Male,Allen]
-LoseText = ...
+LoseText = Tch! It's a total loss on my part.
 Pokemon = CHARMELEON,29
+Pokemon = MAGNEMITE,29
+Pokemon = MANTINE,29
 #-------------------------------
 [BIRDKEEPER,Vance]
-LoseText = ...
-Pokemon = PIDGEOTTO,27
-Pokemon = PIDGEOTTO,26
+LoseText = Whew! You're hot stuff.
+Pokemon = HOOTHOOT,28
+Pokemon = PIDGEOTTO,28
 #-------------------------------
 [COOLTRAINER_Male,Paul]
-LoseText = ...
-Pokemon = DRATINI,34
-Pokemon = DRATINI,34
-Pokemon = DRATINI,34
+LoseText = That's too bad.
+Pokemon = DRATINI,35
+Pokemon = SEADRA,35
+Pokemon = DRATINI,35
 #-------------------------------
 [COOLTRAINER_Female,Fran]
-LoseText = ...
-Pokemon = SEADRA,37
+LoseText = ...Oh, that's disappointing!
+Pokemon = SEADRA,38
 #-------------------------------
 [COOLTRAINER_Male,Mike]
-LoseText = ...
-Pokemon = DRAGONAIR,37
+LoseText = That's odd.
+Pokemon = DRAGONAIR,38
 #-------------------------------
 [COOLTRAINER_Male,Cody]
-LoseText = ...
-Pokemon = HORSEA,34
-Pokemon = SEADRA,36
+LoseText = Just what I expected.
+Pokemon = HORSEA,35
+Pokemon = SEADRA,37
 #-------------------------------
 [COOLTRAINER_Female,Lola]
-LoseText = ...
-Pokemon = DRATINI,34
-Pokemon = DRAGONAIR,36
+LoseText = Way to go!
+Pokemon = DRATINI,35
+Pokemon = DRAGONAIR,37
 #-------------------------------
 [LEADER_Clair,Clair]
-Items = HYPERPOTION,HYPERPOTION
-LoseText = ...
-Pokemon = DRAGONAIR,37
-Pokemon = GYARADOS,38
+Items = MEGARING
+LoseText = I lost? ...I don't believe it. Must be some mistake...
 Pokemon = DRAGONAIR,38
-Pokemon = KINGDRA,41
+	Moves = THUNDERWAVE,SURF,FLAMETHROWER,DRAGONPULSE
+	Gender = female
+Pokemon = KINGDRA,40
+	Moves = HYDROPUMP,HYPERBEAM,DRAGONPULSE,REST
+	Gender = female
+Pokemon = SLIGGOO,38
+	Moves = DRAGONPULSE,ROCKSLIDE,ICEBEAM,TOXIC
+	Gender = female
+Pokemon = AERODACTYL,38
+		Moves = ROCKSLIDE,EARTHQUAKE,THUNDERFANG,IRONHEAD
+		Gender = male
+Pokemon = DRAGONAIR,38
+	Moves = THUNDERWAVE,DRAGONPULSE,FIREBLAST,SLAM
+	Gender = male
+Pokemon = GYARADOS,41
+	Moves = DRAGONPULSE,BITE,WATERFALL,EARTHQUAKE
+	Item = GYARADOSITE
+	Gender = male
+#-------------------------------
+[COOLTRAINER_Male,Kobe]
+LoseText = S-strong!
+Pokemon = DRAGONAIR,38
+#-------------------------------
+[COOLTRAINER_Female,Piper]
+LoseText = Oh yikes, I lost!
+Pokemon = HORSEA,33
+Pokemon = HORSEA,33
+Pokemon = SEADRA,35
 #-------------------------------
 [HIKER,Erik]
 LoseText = ...
@@ -3922,9 +3958,9 @@ Pokemon = MURKROW,32
 Pokemon = VILEPLUME,32
 #-------------------------------
 [FISHERMAN,Edgar]
-LoseText = ...
-Pokemon = REMORAID,25
-Pokemon = REMORAID,25
+LoseText = Hmmmm... This isn't right.
+Pokemon = REMORAID,28
+Pokemon = REMORAID,28
 #-------------------------------
 [ROCKET_EXECUTIVE4,Lance]
 LoseText = ...
