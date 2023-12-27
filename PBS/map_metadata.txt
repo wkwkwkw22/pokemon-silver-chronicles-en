@@ -631,6 +631,7 @@ MapPosition = 0,20,6
 Name = Ice Path
 Bicycle = true
 MapPosition = 0,22,1
+BattleBack = cave3
 #-------------------------------
 [154]   # Rota baixo
 Name = Rota baixo
@@ -704,7 +705,7 @@ Name =
 Outdoor = false
 MapPosition = 0,22,1
 #-------------------------------
-[169]   # Rota 45
+[169]   # Route 45
 Name = Rota 45
 Outdoor = true
 Weather = Sandstorm,100

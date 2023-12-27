@@ -181,12 +181,14 @@ Cave,5
 #-------------------------------
 [020] # Ice Path
 Cave,15
-    25,GOLBAT,23,25
-    25,SWINUB,23,25
+    20,GOLBAT,23,25
+    20,SWINUB,23,25
     20,ZUBAT,20,24
     10,DELIBIRD,22,24
     10,JYNX,22,25
     10,SNEASEL,20,25
+	5,SANDSHREW_1,20,25
+	5,VULPIX_1,20,25
 #-------------------------------
 [031] # Violet City - Sprout Tower 2F
 Cave,6
@@ -543,10 +545,10 @@ SuperRod
 #-------------------------------
 [102] # Route 41
 Water,2
-    65,TENTACOOL,19
-    30,TENTACRUEL,21
-    4,TENTACOOL,23
-    1,TENTACRUEL,24
+    60,TENTACOOL,19
+    30,TENTACRUEL,21,24
+    5,MANTINE,19,24
+    5,QWILFISH,19,24
 OldRod
     85,MAGIKARP,10
     15,TENTACOOL,10
@@ -570,7 +572,7 @@ Water,20
     10,SHELLDER,15,20
     10,TENTACRUEL,18,25
     5,GOLDEEN,18,25
-    4,SEAKING,20,25
+    4,QWILFISH,20,25
     1,STARMIE,20,25
 RockSmash,50
     60,KRABBY,15,24
@@ -601,10 +603,14 @@ Land,21
     5,MAREEP,19
     5,VULPIX,18
 LandNight,21
-    50,ZUBAT,14,16
-    30,EKANS,14,16
+    20,ZUBAT,14,16
+    20,EKANS,14,16
     10,ARBOK,14,16
-    10,GOLBAT,16
+    10,GOLBAT,16,19
+	10,MEOWTH,18
+	10,HOUNDOUR,16,19
+	10,SLUGMA,16,19
+	10,ODDISH,19
 OldRod
     85,MAGIKARP,10
     15,GOLDEEN,10
@@ -735,8 +741,8 @@ Land,21
     10,PHANPY,20,25
     5,GLIGAR,24
     5,SANDSHREW,21,24
-    4,DONPHAN,25
-    4,GRAVELER,25
+    4,SKARMORY,25
+    4,TEDDIURSA,20,25
     1,DONPHAN,20
     1,SKARMORY,25,27
 #-------------------------------
@@ -1018,7 +1024,7 @@ Land,21
     18,RATTATA,2
     10,RATTATA,3
     6,SPEAROW,3
-    1,RATTATA,4
+    1,PHANPY,4
 LandMorning,21
     25,GEODUDE,3
     20,GEODUDE,2

@@ -293,19 +293,19 @@ Pokemon = KAKUNA,12
 [LEADER_Bugsy,Bugsy]
 Items = MEGARING
 LoseText = Aw, that's the end of it...
-Pokemon = PINSIR,16
-    Moves = ROCKTOMB,STORMTHROW,VITALTHROW,BUGBITE
+Pokemon = SCYTHER,16
+    Moves = WINGATTACK,XSCISSOR,AERIALACE,LIGHTSCREEN
 Pokemon = BEEDRILL,16
     Moves = TOXICSPIKES,FURYATTACK,PURSUIT,ACROBATICS
 Pokemon = BUTTERFREE,16
     Moves = POISONPOWDER,STUNSPORE,PSYBEAM
-Pokemon = SHEDINJA,15
-    Moves = DIG,PROTECT,SANDATTACK,SHADOWSNEAK
-Pokemon = SCIZOR,20
-    Moves = POISONPOWDER,STUNSPORE,PSYBEAM
-    Item = SCIZORITE
-Pokemon = VESPIQUEN,18
-    Moves = CONFUSERAY,PROTECT,STUNSPORE,BUGBITE
+Pokemon = PINECO,15
+    Moves = PAYBACK,BUGBITE,TAKEDOWN,DIG
+Pokemon = LEDIAN,18
+    Moves = MACHPUNCH,STRUGGLEBUG,AERIALACE,LIGHTSCREEN
+Pokemon = HERACROSS,20
+    Moves = HORNATTACK,BRICKBREAK,TAKEDOWN,DIG
+    Item = HERACRONITE
 #-------------------------------
 [CAMPER,Tood]
 LoseText = You don't have to worry about the night when you're with strong Pokémon.
@@ -1226,6 +1226,27 @@ LoseText = Whew! You're hot stuff.
 Pokemon = HOOTHOOT,28
 Pokemon = PIDGEOTTO,28
 #-------------------------------
+[COOLTRAINER_SNOW_Male,Thomas]
+LoseText = Well played! I guess I need to train harder to withstand the heat of your battling spirit. 
+Pokemon = SANDSHREW,30
+	Form = 1
+Pokemon = SANDSLASH,30
+	Form = 1
+#-------------------------------
+[COOLTRAINER_SNOW_Male,Alex]
+LoseText = Your strategy melted through my icy defenses...
+Pokemon = JYNX,30
+	Form = 1
+Pokemon = DELIBIRD,30
+	Form = 1
+#-------------------------------
+[COOLTRAINER_SNOW_Female,Mia]
+LoseText = Your battling style is impressive. 
+Pokemon = VULPIX,28
+	Form = 1
+Pokemon = NINETALES,30
+	Form = 1	
+#-------------------------------
 [COOLTRAINER_Male,Paul]
 LoseText = That's too bad.
 Pokemon = DRATINI,35
@@ -1284,38 +1305,48 @@ Pokemon = HORSEA,33
 Pokemon = SEADRA,35
 #-------------------------------
 [HIKER,Erik]
-LoseText = ...
-Pokemon = MACHOP,24
+LoseText = Oh, I lost that!
+Pokemon = MACHOP,25
 Pokemon = GRAVELER,27
 Pokemon = MACHOP,27
 #-------------------------------
 [COOLTRAINER_Male,Ryan]
-LoseText = ...
-Pokemon = PIDGEOT,25
-Pokemon = ELECTABUZZ,27
+LoseText = You've won my respect.
+Pokemon = PIDGEOT,28
+Pokemon = ELECTABUZZ,28
 #-------------------------------
 [COOLTRAINER_Female,Kelly]
-LoseText = ...
-Pokemon = MARILL,27
-Pokemon = WARTORTLE,24
-Pokemon = WARTORTLE,24
+LoseText = Fine. I lost.
+Pokemon = MARILL,28
+Pokemon = WARTORTLE,28
+Pokemon = CROCONAW,28
 #-------------------------------
 [BLACKBELT,Kenji]
-LoseText = ...
-Pokemon = MACHOKE,28
+LoseText = Waaaaargh!
+Pokemon = MACHOKE,33
 #-------------------------------
 [HIKER,Timothy]
-LoseText = ...
-Pokemon = DIGLETT,27
-Pokemon = DUGTRIO,27
+LoseText = Losses... They're there, too!
+Pokemon = DIGLETT,28
+Pokemon = DUGTRIO,30
+#-------------------------------
+[HIKER,Michael]
+LoseText = My Pokémon weren't tough enough!
+Pokemon = GEODUDE,25
+Pokemon = GRAVELER,28
+Pokemon = GOLEM,30
+#-------------------------------
+[HIKER,Parry]
+LoseText = Wahahah! I'm the big loser!
+Pokemon = ONIX,35
 #-------------------------------
 [HIKER,Bailey]
-LoseText = ...
-Pokemon = GEODUDE,13
-Pokemon = GEODUDE,13
-Pokemon = GEODUDE,13
-Pokemon = GEODUDE,13
-Pokemon = GEODUDE,13
+LoseText = Mercy! You showed me your power!
+Pokemon = GEODUDE,23
+Pokemon = MAGCARGO,23
+Pokemon = GRAVELER,23
+Pokemon = RHYHORN,23
+Pokemon = ONIX,23
 #-------------------------------
 [ASH,Ketchum]
 LoseText = ...

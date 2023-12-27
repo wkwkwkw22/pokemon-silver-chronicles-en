@@ -482,15 +482,17 @@ Gender = Unknown
 BaseMoney = 30
 IntroBGM = GSCKimonoGirlEncounter
 #-------------------------------
-[ALPES_Man]
-Name = Friorento
-Gender = Unknown
-BaseMoney = 30
+[COOLTRAINER_SNOW_Male]
+Name = COOLTRAINER
+Gender = Male
+BaseMoney = 50
+IntroBGM = SEQ_EYE_COOLTRAINER_SNOW
 #-------------------------------
-[ALPES_Girl]
-Name = Friorenta
-Gender = Unknown
-BaseMoney = 30
+[COOLTRAINER_SNOW_Female]
+Name = COOLTRAINER
+Gender = Female
+BaseMoney = 50
+IntroBGM = SEQ_EYE_COOLTRAINER_SNOW
 #-------------------------------
 [ESQUIADOR]
 Name = Boarder
