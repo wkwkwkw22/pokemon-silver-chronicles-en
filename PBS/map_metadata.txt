@@ -708,7 +708,7 @@ MapPosition = 0,22,1
 [169]   # Route 45
 Name = Rota 45
 Outdoor = true
-Weather = Sandstorm,100
+Weather = Snow,10
 MapPosition = 0,22,9
 #-------------------------------
 [171]   # Planalto Indigo

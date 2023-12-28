@@ -470,7 +470,7 @@ IntroBGM = SEQ_EYE_ELITE
 #-------------------------------
 [ELITEFOUR_Lance]
 Name = ELITE FOUR
-Gender = Unknown
+Gender = Male
 BaseMoney = 100
 IntroBGM = SEQ_EYE_CHAMP
 BattleBGM = GSCChampionBattle
@@ -478,9 +478,9 @@ VictoryBGM = PkmRS_Victory4
 #-------------------------------
 [KIMONO_Girl]
 Name = KIMONO Girl
-Gender = Unknown
+Gender = Female
 BaseMoney = 30
-IntroBGM = GSCKimonoGirlEncounter
+IntroBGM = Kimono
 #-------------------------------
 [COOLTRAINER_SNOW_Male]
 Name = COOLTRAINER
