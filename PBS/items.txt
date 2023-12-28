@@ -6318,8 +6318,8 @@ Price = 0
 Description = Conchas necessárias para enfrentar o desafio do marujo no S.S. Anne.
 #-------------------------------
 [SILVER_WING]
-Name = PENA PRATEADA
-NamePlural = PENA PRATEADA
+Name = Silver Wing
+NamePlural = Silver Wing's 
 Pocket = 8
 Price = 0
 Description = A strange, silvery feather that sparkles.
@@ -6861,3 +6861,500 @@ Price = 0
 FieldUse = Direct
 Flags = KeyItem
 Description = A scale from the red Gyarados. It glows red like a flame.
+#-------------------------------
+[BLACKAUGURITE]
+Name = Black Augurite
+NamePlural = Black Augurites
+Pocket = 1
+Price = 2100
+FieldUse = OnPokemon
+Flags = Fling_30,EvolutionStone
+Description = A glassy black stone that produces a sharp cutting edge when split. It’s loved by a certain Pokémon.
+#-------------------------------
+[PEATBLOCK]
+Name = Peat Block
+NamePlural = Peat Blocks
+Pocket = 1
+Price = 2100
+FieldUse = OnPokemon
+Flags = Fling_30,EvolutionStone
+Description = A block of muddy material that is for fuel. It’s loved by a certain Pokémon.
+#-------------------------------
+[LINKINGCORD]
+Name = Linking Cord
+NamePlural = Linking Cords
+Pocket = 1
+Price = 2100
+FieldUse = OnPokemon
+Flags = Fling_30,EvolutionStone
+Description = A string exuding a mysterious energy of connection. It’s loved by certain Pokémon.
+#-------------------------------
+[ADAMANTCRYSTAL]
+Name = Adamant Crystal
+NamePlural = Adamant Crystals
+Pocket = 1
+Price = 20000
+SellPrice = 0
+Flags = Fling_60
+Description = When held by Dialga, this large, glowing gem wells with power and allows the Pokémon to change form.
+#-------------------------------
+[LUSTROUSGLOBE]
+Name = Lustrous Globe
+NamePlural = Lustrous Globes
+Pocket = 1
+Price = 20000
+SellPrice = 0
+Flags = Fling_60
+Description = When held by Palkia, this large, glowing orb wells with power and allows the Pokémon to change form.
+#-------------------------------
+[LEGENDPLATE]
+Name = Legend Plate
+NamePlural = Legend Plates
+Pocket = 1
+Price = 20000
+SellPrice = 0
+Flags = Fling_90,Plate
+Description = A stone tablet to be held by a certain Pokémon. It the holder the power of every type there is.
+#-------------------------------
+[BLANKPLATE]
+Name = Blank Plate
+NamePlural = Blank Plates
+Pocket = 1
+Price = 10000
+SellPrice = 500
+Flags = Fling_90,Plate
+Description = An item to be held by a Pokémon. It is a stone tablet that boosts the power of Normal-type moves.
+#-------------------------------
+[HOPOBERRY]
+Name = Hopo Berry
+NamePlural = Hopo Berries
+Pocket = 5
+Price = 20
+Flags = Berry,Fling_10,NaturalGift_FIGHTING_80
+Description = A Berry that can be fed to a Pokémon to restore its PP.
+#-------------------------------
+[GRISEOUSCORE]
+Name = Griseous Core
+NamePlural = Griseous Cores
+Pocket = 1
+Price = 20000
+SellPrice = 0
+Flags = Fling_60
+Description = When held by Giratina, this large, glowing gem wells with power and allows the Pokémon to change form.
+#-------------------------------
+[HISUIANPOKEBALL]
+Name = Poké Ball
+NamePlural = Poké Balls
+Pocket = 3
+Price = 500
+BattleUse = OnFoe
+Flags = PokeBall
+Description = A mysterious ball that can be thrown at wild Pokémon in order to catch them.
+#-------------------------------
+[HISUIANGREATBALL]
+Name = Great Ball
+NamePlural = Great Balls
+Pocket = 3
+Price = 900
+BattleUse = OnFoe
+Flags = PokeBall
+Description = A mysterious ball that provides a higher success catch rate than a standard Poké Ball.
+#-------------------------------
+[HISUIANULTRABALL]
+Name = Ultra Ball
+NamePlural = Ultra Balls
+Pocket = 3
+Price = 1500
+BattleUse = OnFoe
+Flags = PokeBall
+Description = A mysterious ball that provides an even higher success catch rate than a Great Ball does.
+#-------------------------------
+[FEATHERBALL]
+Name = Feather Ball
+NamePlural = Feather Balls
+Pocket = 3
+Price = 700
+BattleUse = OnFoe
+Flags = PokeBall
+Description = A ball that flies fast and true ideal for catching nimble Pokémon or Pokémon that fly high in the air.
+#-------------------------------
+[WINGBALL]
+Name = Wing Ball
+NamePlural = Wing Balls
+Pocket = 3
+Price = 1000
+BattleUse = OnFoe
+Flags = PokeBall
+Description = An improvement on the original Feather Ball design. It has a higher success rate than the Feather Ball.
+#-------------------------------
+[JETBALL]
+Name = Jet Ball
+NamePlural = Jet Balls
+Pocket = 3
+Price = 1500
+BattleUse = OnFoe
+Flags = PokeBall
+Description = The ultimate iteration of the Feather Ball. It has an even higher success rate than the Wing Ball does.
+#-------------------------------
+[HISUIANHEAVYBALL]
+Name = Heavy Ball
+NamePlural = Heavy Balls
+Pocket = 3
+Price = 700
+BattleUse = OnFoe
+Flags = PokeBall
+Description = A ball that is too heavy to throw, but it is highly effective to an unsuspecting Pokémon.
+#-------------------------------
+[LEADENBALL]
+Name = Leaden Ball
+NamePlural = Leaden Balls
+Pocket = 3
+Price = 1000
+BattleUse = OnFoe
+Flags = PokeBall
+Description = An improvement on the original Heavy Ball design. It has a higher success rate than the Heavy Ball.
+#-------------------------------
+[GIGATONBALL]
+Name = Gigaton Ball
+NamePlural = Gigaton Balls
+Pocket = 3
+Price = 1500
+BattleUse = OnFoe
+Flags = PokeBall
+Description = The ultimate iteration of the Heavy Ball. It has an even higher success rate than the Leaden Ball does.
+#-------------------------------
+[ORIGINBALL]
+Name = Origin Ball
+NamePlural = Origin Balls
+Pocket = 3
+Price = 0
+BattleUse = OnFoe
+Flags = PokeBall
+Description = An irreplicable Poké Ball that was once used to catch the frenzied Pokémon at the Temple of Sinnoh.
+#-------------------------------
+[STRANGEBALL]
+Name = Strange Ball
+NamePlural = Strange Balls
+Pocket = 3
+Price = 0
+BattleUse = OnFoe
+Flags = PokeBall
+Description = A strange looking Poke Ball that arrived from the past Sinnoh.
+#-------------------------------
+[AUSPICIOUSARMOR]
+Name = Auspicious Armor
+NamePlural = Auspicious Armors
+Pocket = 1
+Price = 3000
+FieldUse = OnPokemon
+Flags = EvolutionStone,Fling_30
+Description = A peculiar set of armor that can make a certain Pokémon evolve. Auspicious wishes live within it.
+#-------------------------------
+[MALICIOUSARMOR]
+Name = Malicious Armor
+NamePlural = Malicious Armors
+Pocket = 1
+Price = 3000
+FieldUse = OnPokemon
+Flags = EvolutionStone,Fling_30
+Description = A peculiar set of armor that can make a certain Pokémon evolve. Malicious will lurks within it.
+#-------------------------------
+[SCROLLOFDARKNESS]
+Name = Scroll of Darkness
+NamePlural = Scroll of Darkness
+Pocket = 1
+Price = 0
+FieldUse = OnPokemon
+Flags = EvolutionStone,Fling_30
+Description = A scroll that evolves certain Pokémon. Written on it are the true secrets of the path of darkness.
+#-------------------------------
+[SCROLLOFWATERS]
+Name = Scroll of Waters
+NamePlural = Scroll of Waters
+Pocket = 1
+Price = 0
+FieldUse = OnPokemon
+Flags = EvolutionStone,Fling_30
+Description = A scroll that evolves certain Pokémon. Written on it are the true secrets of the path of water.
+#-------------------------------
+[LEADERSCREST]
+Name = Leader's Crest
+NamePlural = Leader's Crests
+Pocket = 1
+Price = 3000
+Flags = Fling_30
+Description = A shard of what appears to be an old blade of some sort. It is held only by a head of certain Pokémon group.
+#-------------------------------
+[BOOSTERENERGY]
+Name = Booster Energy
+NamePlural = Booster Energies
+Pocket = 1
+Price = 0
+Flags = Fling_30
+Description = An item to be held by Pokémon with certain Abilities. It boosts the strength of the Pokémon.
+#-------------------------------
+[ABILITYSHIELD]
+Name = Ability Shield
+NamePlural = Ability Shields
+Pocket = 1
+Price = 20000
+Flags = Fling_30
+Description = An item to be held by a Pokémon. This  shield protects the holder from having its Ability changed by others.
+#-------------------------------
+[CLEARAMULET]
+Name = Clear Amulet
+NamePlural = Clear Amulets
+Pocket = 1
+Price = 30000
+Flags = Fling_30
+Description = An item to be held by a Pokémon. It protects the holder from having its stats lowered.
+#-------------------------------
+[MIRRORHERB]
+Name = Mirror Herb
+NamePlural = Mirror Herbs
+Pocket = 1
+Price = 30000
+Flags = Fling_30
+Description = An item to be held by a Pokémon. This herb will allow the holder to mirror an opponent's stat increases once.
+#-------------------------------
+[PUNCHINGGLOVE]
+Name = Punching Glove
+NamePlural = Punching Gloves
+Pocket = 1
+Price = 15000
+Flags = Fling_30
+Description = An item to be held by a Pokémon. It boosts the holder's punching moves and prevents direct contact.
+#-------------------------------
+[COVERTCLOAK]
+Name = Covert Cloak
+NamePlural = Covert Cloaks
+Pocket = 1
+Price = 20000
+Flags = Fling_30
+Description = An item to be held by a Pokémon. It conceals the holder, protecting it from move's additional effects.
+#-------------------------------
+[LOADEDDICE]
+Name = Loaded Dice
+NamePlural = Loaded Dices
+Pocket = 1
+Price = 20000
+Flags = Fling_30
+Description = An item to be held by a Pokémon. It ensures the holder's multistrike moves hit more times.
+#-------------------------------
+[GIMMIGHOULCOIN]
+Name = Gimmighoul Coin
+NamePlural = Gimmighoul Coins
+Pocket = 1
+Price = 0
+Flags = Fling_10
+Description = An item that accidentally dropped by a Pokémon. It seems that Gimmighoul treasure and hoard these.
+#-------------------------------
+[TINYBAMBOOSHOOT]
+Name = Tiny Bamboo Shoot
+NamePlural = Tiny Bamboo Shoots
+Pocket = 1
+Price = 1500
+Flags = Fling_30
+Description = A small and rare bamboo shoot. It's quite popular with a certain class of gourmands.
+#-------------------------------
+[BIGBAMBOOSHOOT]
+Name = Big Bamboo Shoot
+NamePlural = Big Bamboo Shoots
+Pocket = 1
+Price = 6000
+Flags = Fling_30
+Description = A large and rare bamboo shoot. It's extremely popular with a certain class of gourmands.
+#-------------------------------
+[ROTOMPHONE]
+Name = Rotom Phone
+NamePlural = Rotom Phones
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Description = The latest model of smartphone. A Rotom lives within it, and it can be used to run all sorts of handy apps.
+#-------------------------------
+[SCARLETBOOK]
+Name = Scarlet Book
+NamePlural = Scarlet Books
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Description = A record of the Heath's expedition on the Great Crater of Paldea. It has the name "Sada" written on it.
+#-------------------------------
+[VIOLETBOOK]
+Name = Violet Book
+NamePlural = Violet Books
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Description = A record of the Heath's expedition on the Great Crater of Paldea. It has the name "Turo" written on it.
+#-------------------------------
+[TERAORB]
+Name = Tera Orb
+NamePlural = Tera Orbs
+Pocket = 8
+Price = 0
+Flags = KeyItem,TeraOrb
+Description = An orb that holds the power to crystallize. When it is charged, it can be used on Pokémon to Terastallize.
+#-------------------------------
+[NORMALTERASHARD]
+Name = Normal Tera Shard
+NamePlural = Normal Tera Shards
+Pocket = 1
+Price = 2000
+FieldUse = OnPokemon
+Flags = Fling_30,TeraShard_NORMAL
+Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+#-------------------------------
+[FIGHTINGTERASHARD]
+Name = Fighting Tera Shard
+NamePlural = Fighting Tera Shards
+Pocket = 1
+Price = 2000
+FieldUse = OnPokemon
+Flags = Fling_30,TeraShard_FIGHTING
+Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+#-------------------------------
+[FLYINGTERASHARD]
+Name = Flying Tera Shard
+NamePlural = Flying Tera Shards
+Pocket = 1
+Price = 2000
+FieldUse = OnPokemon
+Flags = Fling_30,TeraShard_FLYING
+Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+#-------------------------------
+[POISONTERASHARD]
+Name = Poison Tera Shard
+NamePlural = Poison Tera Shards
+Pocket = 1
+Price = 2000
+FieldUse = OnPokemon
+Flags = Fling_30,TeraShard_POISON
+Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+#-------------------------------
+[GROUNDTERASHARD]
+Name = Ground Tera Shard
+NamePlural = Ground Tera Shards
+Pocket = 1
+Price = 2000
+FieldUse = OnPokemon
+Flags = Fling_30,TeraShard_GROUND
+Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+#-------------------------------
+[ROCKTERASHARD]
+Name = Rock Tera Shard
+NamePlural = Rock Tera Shards
+Pocket = 1
+Price = 2000
+FieldUse = OnPokemon
+Flags = Fling_30,TeraShard_ROCK
+Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+#-------------------------------
+[BUGTERASHARD]
+Name = Bug Tera Shard
+NamePlural = Bug Tera Shards
+Pocket = 1
+Price = 2000
+FieldUse = OnPokemon
+Flags = Fling_30,TeraShard_BUG
+Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+#-------------------------------
+[GHOSTTERASHARD]
+Name = Ghost Tera Shard
+NamePlural = Ghost Tera Shards
+Pocket = 1
+Price = 2000
+FieldUse = OnPokemon
+Flags = Fling_30,TeraShard_GHOST
+Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+#-------------------------------
+[STEELTERASHARD]
+Name = Steel Tera Shard
+NamePlural = Steel Tera Shards
+Pocket = 1
+Price = 2000
+FieldUse = OnPokemon
+Flags = Fling_30,TeraShard_STEEL
+Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+#-------------------------------
+[FIRETERASHARD]
+Name = Fire Tera Shard
+NamePlural = Fire Tera Shards
+Pocket = 1
+Price = 2000
+FieldUse = OnPokemon
+Flags = Fling_30,TeraShard_FIRE
+Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+#-------------------------------
+[WATERTERASHARD]
+Name = Water Tera Shard
+NamePlural = Water Tera Shards
+Pocket = 1
+Price = 2000
+FieldUse = OnPokemon
+Flags = Fling_30,TeraShard_WATER
+Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+#-------------------------------
+[GRASSTERASHARD]
+Name = Grass Tera Shard
+NamePlural = Grass Tera Shards
+Pocket = 1
+Price = 2000
+FieldUse = OnPokemon
+Flags = Fling_30,TeraShard_GRASS
+Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+#-------------------------------
+[ELECTRICTERASHARD]
+Name = Electric Tera Shard
+NamePlural = Electric Tera Shards
+Pocket = 1
+Price = 2000
+FieldUse = OnPokemon
+Flags = Fling_30,TeraShard_ELECTRIC
+Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+#-------------------------------
+[PSYCHICTERASHARD]
+Name = Psychic Tera Shard
+NamePlural = Psychic Tera Shards
+Pocket = 1
+Price = 2000
+FieldUse = OnPokemon
+Flags = Fling_30,TeraShard_PSYCHIC
+Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+#-------------------------------
+[ICETERASHARD]
+Name = Ice Tera Shard
+NamePlural = Ice Tera Shards
+Pocket = 1
+Price = 2000
+FieldUse = OnPokemon
+Flags = Fling_30,TeraShard_ICE
+Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+#-------------------------------
+[DRAGONTERASHARD]
+Name = Dragon Tera Shard
+NamePlural = Dragon Tera Shards
+Pocket = 1
+Price = 2000
+FieldUse = OnPokemon
+Flags = Fling_30,TeraShard_DRAGON
+Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+#-------------------------------
+[DARKTERASHARD]
+Name = Dark Tera Shard
+NamePlural = Dark Tera Shards
+Pocket = 1
+Price = 2000
+FieldUse = OnPokemon
+Flags = Fling_30,TeraShard_DARK
+Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+#-------------------------------
+[FAIRYTERASHARD]
+Name = Fairy Tera Shard
+NamePlural = Fairy Tera Shards
+Pocket = 1
+Price = 2000
+FieldUse = OnPokemon
+Flags = Fling_30,TeraShard_FAIRY
+Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
