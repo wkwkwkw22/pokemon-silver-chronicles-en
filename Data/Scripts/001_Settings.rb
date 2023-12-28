@@ -215,11 +215,11 @@ module Settings
   # that Dex list, no matter which region the player is currently in.
   def self.pokedex_names
     return [
-      [_INTL("Kanto Pokédex"),0],
-      [_INTL("Johto Pokédex"),1],
-      [_INTL("Hoenn Pokédex"),2],
-      [_INTL("Sinnoh Pokédex"),3],
-      [_INTL("Unova Pokédex"),4],
+      [_INTL("Johto Pokédex"),0],  
+      [_INTL("Kanto Pokédex"),1],
+      # [_INTL("Hoenn Pokédex"),2],
+     # [_INTL("Sinnoh Pokédex"),3],
+     # [_INTL("Unova Pokédex"),4],
       _INTL("National Pokédex")
     ]
   end

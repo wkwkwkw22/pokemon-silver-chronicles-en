@@ -207,7 +207,7 @@ Point = 19,13,Cidade de Fuchsia,,,,,
 #-------------------------------
 [2]
 Name = Hoenn
-Filename = maphouen.png
+Filename = Map_Hoenn.png
 Point = 3,16,Dewford Town,Granite Cave,207,9,10,
 Point = 4,16,Rota 107,,,,,
 Point = 5,16,Rota 107,,,,,
@@ -366,13 +366,13 @@ Point = 5,13,Littleroot Town,Birch Lab.,200,16,17,
 #-------------------------------
 [3]
 Name = Poketopia
-Filename = Pokeflutemap.png
+Filename = Map_Poketopia.png
 Point = 23,4,Cidade Coliseu,PokeArena,256,20,34,
 Point = 23,6,Rota,Porto,,,,
 #-------------------------------
 [4]
 Name = Ilhas Laranja
-Filename = Ilhas laranja.PNG
+Filename = Map_Orange_Islands.png
 Point = 5,15,Ilha Valencia,,340,11,32,
 Point = 5,10,Ilha Mikan,,341,18,30,
 Point = 8,8,Ilha Mandarim do Norte,,155,29,16,
