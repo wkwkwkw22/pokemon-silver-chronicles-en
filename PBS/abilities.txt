@@ -1194,3 +1194,35 @@ Description = Boosts Attack in Tailwind or when attacked by wind moves.
 [ZEROTOHERO]
 Name = Zero to Hero
 Description = Transforms into its Hero Form when it switches out.
+#-------------------------------
+[SUPERSWEETSYRUP]
+Name = Supersweet Syrup
+Description = Lowers the foe's evasion once per battle.
+#-------------------------------
+[HOSPITALITY]
+Name = Hospitality
+Description = Restores ally's HP a little when entering battle.
+#-------------------------------
+[TOXICCHAIN]
+Name = Toxic Chain
+Description = May badly poison targets when the user attacks.
+#-------------------------------
+[MINDSEYE]
+Name = Mind's Eye
+Description = Prevents accuracy loss. Ignores Ghost immunities.
+#-------------------------------
+[EMBODYASPECT]
+Name = Embody Aspect
+Description = The user's shining mask raises its Speed stat.
+#-------------------------------
+[EMBODYASPECT_1]
+Name = Embody Aspect
+Description = The user's shining mask raises its Sp. Def stat.
+#-------------------------------
+[EMBODYASPECT_2]
+Name = Embody Aspect
+Description = The user's shining mask raises its Attack stat.
+#-------------------------------
+[EMBODYASPECT_3]
+Name = Embody Aspect
+Description = The user's shining mask raises its Defense stat.

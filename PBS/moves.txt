@@ -10565,18 +10565,6 @@ FunctionCode = LowerUserSpeed2
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user inflicts damage on the target with a furious spin. This harshly lowers the user’s Speed.
 #-------------------------------
-[TERABLAST]
-Name = Tera Blast
-Type = NORMAL
-Category = Special
-Power = 80
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-FunctionCode = CategoryDependsOnHigherDamageTera
-Flags = CanProtect,CanMirrorMove,CantMaster
-Description = Move type changes to match a Terastallized user's Tera Type. Deals damage based on user's higher stat.
-#-------------------------------
 [TIDYUP]
 Name = Tidy Up
 Type = NORMAL
@@ -10676,3 +10664,53 @@ FunctionCode = IncreasePowerInElectricTerrain
 Flags = Contact,CanProtect,CanMirrorMove,Slicing
 EffectChance = 10
 Description = The user rends the target with an ethereal blade whose power is boosted on Electric Terrain.
+#-------------------------------
+[BLOODMOON]
+Name = Blood Moon
+Type = NORMAL
+Category = Special
+Power = 140
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = CantSelectConsecutiveTurns
+Flags = CanProtect,CanMirrorMove
+Description = The user unleashes the full brunt of its spirit from a blood moon. This move can't be used twice in a row.
+#-------------------------------
+[MATCHAGOTCHA]
+Name = Matcha Gotcha
+Type = GRASS
+Category = Special
+Power = 80
+Accuracy = 90
+TotalPP = 15
+Target = AllNearFoes
+FunctionCode = HealUserByHalfOfDamageDoneBurnTarget
+Flags = CanProtect,CanMirrorMove,ThawsUser
+EffectChance = 20
+Description = Blasts opponents with hot tea. Heals the user by half the damage dealt and may also burn targets.
+#-------------------------------
+[SYRUPBOMB]
+Name = Syrup Bomb
+Type = GRASS
+Category = Special
+Power = 60
+Accuracy = 85
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetSpeedOverTime
+Flags = CanProtect,CanMirrorMove,Bomb
+EffectChance = 100
+Description = An explosion of sticky candy syrup, which drop the target's Speed stat each turn for three turns.
+#-------------------------------
+[IVYCUDGEL]
+Name = Ivy Cudgel
+Type = GRASS
+Category = Physical
+Power = 100
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TypeIsUserSecondType
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
+Description = An ivy-wrapped cudgel strike with a high critical-hit ratio. Type changes based on the user's Mask.
