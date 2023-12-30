@@ -1,0 +1,4 @@
+﻿Name      = Pokemon Selection Before Battle
+Version   = 1.3.3
+Website   = https://github.com/FL-/Essentials-Selection
+Credits   = FL

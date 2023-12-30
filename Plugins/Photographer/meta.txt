@@ -1,0 +1,4 @@
+﻿Name      = Photographer
+Version   = 1.0
+Website   = https://victorweb.dev
+Credits   = victordevjs
