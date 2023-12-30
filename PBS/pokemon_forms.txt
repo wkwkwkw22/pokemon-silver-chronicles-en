@@ -2376,6 +2376,7 @@ Generation = 8
 Flags = InheritFormWithEverStone
 #-------------------------------
 [QUILAVA,1]
+Generation = 8
 Flags = InheritFormWithEverStone
 #-------------------------------
 [TYPHLOSION,1]
