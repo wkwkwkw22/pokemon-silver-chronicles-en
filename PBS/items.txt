@@ -34,7 +34,7 @@ Pocket = 1
 Price = 20
 FieldUse = Direct
 Consumable = false
-Flags = Fling_30
+Flags = Fling_30,Flute
 Description = A black flute made from blown glass. Its melody makes wild Pokémon less likely to appear.
 #-------------------------------
 [WHITEFLUTE]
@@ -44,7 +44,7 @@ Pocket = 1
 Price = 20
 FieldUse = Direct
 Consumable = false
-Flags = Fling_30
+Flags = Fling_30,Flute
 Description = A white flute made from blown glass. Its melody makes wild Pokémon more likely to appear.
 #-------------------------------
 [HONEY]
@@ -61,7 +61,7 @@ Name = Red Shard
 NamePlural = Red Shards
 Pocket = 1
 Price = 1000
-Flags = Fling_30
+Flags = Fling_30,Shard
 Description = A small red shard. It appears to be from some sort of implement made long ago.
 #-------------------------------
 [YELLOWSHARD]
@@ -69,7 +69,7 @@ Name = Yellow Shard
 NamePlural = Yellow Shards
 Pocket = 1
 Price = 1000
-Flags = Fling_30
+Flags = Fling_30,Shard
 Description = A small yellow shard. It appears to be from some sort of implement made long ago.
 #-------------------------------
 [BLUESHARD]
@@ -77,7 +77,7 @@ Name = Blue Shard
 NamePlural = Blue Shards
 Pocket = 1
 Price = 1000
-Flags = Fling_30
+Flags = Fling_30,Shard
 Description = A small blue shard. It appears to be from some sort of implement made long ago.
 #-------------------------------
 [GREENSHARD]
@@ -85,7 +85,7 @@ Name = Green Shard
 NamePlural = Green Shards
 Pocket = 1
 Price = 1000
-Flags = Fling_30
+Flags = Fling_30,Shard
 Description = A small green shard. It appears to be from some sort of implement made long ago.
 #-------------------------------
 [FIRESTONE]
@@ -383,7 +383,7 @@ Name = Fossilized Bird
 NamePlural = Fossilized Birds
 Pocket = 1
 Price = 5000
-Flags = Fling_100
+Flags = Fling_100,FossilHalf
 Description = The fossil of an ancient Pokémon that once soared through the sky. What it looked like is a mystery.
 #-------------------------------
 [FOSSILIZEDFISH]
@@ -391,7 +391,7 @@ Name = Fossilized Fish
 NamePlural = Fossilized Fishes
 Pocket = 1
 Price = 5000
-Flags = Fling_100
+Flags = Fling_100,FossilHalf
 Description = The fossil of an ancient Pokémon that once lived in the sea. What it looked like is a mystery.
 #-------------------------------
 [FOSSILIZEDDRAKE]
@@ -399,7 +399,7 @@ Name = Fossilized Drake
 NamePlural = Fossilized Drakes
 Pocket = 1
 Price = 5000
-Flags = Fling_100
+Flags = Fling_100,FossilHalf
 Description = The fossil of an ancient Pokémon that once roamed the land. What it looked like is a mystery.
 #-------------------------------
 [FOSSILIZEDDINO]
@@ -407,7 +407,7 @@ Name = Fossilized Dino
 NamePlural = Fossilized Dinos
 Pocket = 1
 Price = 5000
-Flags = Fling_100
+Flags = Fling_100,FossilHalf
 Description = The fossil of an ancient Pokémon that once lived in the sea. What it looked like is a mystery.
 #-------------------------------
 [PRETTYFEATHER]
@@ -647,7 +647,7 @@ NamePlural = Red Nectars
 Pocket = 1
 Price = 300
 FieldUse = OnPokemon
-Flags = Fling_10
+Flags = Fling_10,Nectar
 Description = A flower nectar obtained at Ula'ula Meadow. It changes the form of certain species of Pokémon.
 #-------------------------------
 [YELLOWNECTAR]
@@ -656,7 +656,7 @@ NamePlural = Yellow Nectars
 Pocket = 1
 Price = 300
 FieldUse = OnPokemon
-Flags = Fling_10
+Flags = Fling_10,Nectar
 Description = A flower nectar obtained at Melemele Meadow. It changes the form of certain species of Pokémon.
 #-------------------------------
 [PINKNECTAR]
@@ -665,7 +665,7 @@ NamePlural = Pink Nectars
 Pocket = 1
 Price = 300
 FieldUse = OnPokemon
-Flags = Fling_10
+Flags = Fling_10,Nectar
 Description = A flower nectar obtained from shrubs on Royal Avenue. It changes the form of certain species of Pokémon.
 #-------------------------------
 [PURPLENECTAR]
@@ -674,7 +674,7 @@ NamePlural = Purple Nectars
 Pocket = 1
 Price = 300
 FieldUse = OnPokemon
-Flags = Fling_10
+Flags = Fling_10,Nectar
 Description = A flower nectar obtained at Poni Meadow. It changes the form of certain species of Pokémon.
 #-------------------------------
 [AIRBALLOON]
@@ -1285,7 +1285,7 @@ Name = Macho Brace
 NamePlural = Macho Braces
 Pocket = 1
 Price = 3000
-Flags = Fling_60
+Flags = Fling_60,EVBooster
 Description = An item to be held by a Pokémon. It is a stiff, heavy brace that promotes strong growth but lowers Speed.
 #-------------------------------
 [POWERWEIGHT]
@@ -1293,7 +1293,7 @@ Name = Power Weight
 NamePlural = Power Weights
 Pocket = 1
 Price = 3000
-Flags = Fling_70
+Flags = Fling_70,EVBooster
 Description = A Pokémon held item that promotes HP gain on leveling, but reduces the Speed stat.
 #-------------------------------
 [POWERBRACER]
@@ -1301,7 +1301,7 @@ Name = Power Bracer
 NamePlural = Power Bracers
 Pocket = 1
 Price = 3000
-Flags = Fling_70
+Flags = Fling_70,EVBooster
 Description = A Pokémon held item that promotes Attack gain on leveling, but reduces the Speed stat.
 #-------------------------------
 [POWERBELT]
@@ -1309,7 +1309,7 @@ Name = Power Belt
 NamePlural = Power Belts
 Pocket = 1
 Price = 3000
-Flags = Fling_70
+Flags = Fling_70,EVBooster
 Description = A Pokémon held item that promotes Defense gain on leveling, but reduces the Speed stat.
 #-------------------------------
 [POWERLENS]
@@ -1317,7 +1317,7 @@ Name = Power Lens
 NamePlural = Power Lenses
 Pocket = 1
 Price = 3000
-Flags = Fling_70
+Flags = Fling_70,EVBooster
 Description = A Pokémon held item that promotes Sp. Atk gain on leveling, but reduces the Speed stat.
 #-------------------------------
 [POWERBAND]
@@ -1325,7 +1325,7 @@ Name = Power Band
 NamePlural = Power Bands
 Pocket = 1
 Price = 3000
-Flags = Fling_70
+Flags = Fling_70,EVBooster
 Description = A Pokémon held item that promotes Sp. Def gain on leveling, but reduces the Speed stat.
 #-------------------------------
 [POWERANKLET]
@@ -1333,7 +1333,7 @@ Name = Power Anklet
 NamePlural = Power Anklets
 Pocket = 1
 Price = 3000
-Flags = Fling_70
+Flags = Fling_70,EVBooster
 Description = A Pokémon held item that promotes Speed gain on leveling, but reduces the Speed stat.
 #-------------------------------
 [LAXINCENSE]
@@ -1341,7 +1341,7 @@ Name = Lax Incense
 NamePlural = Lax Incenses
 Pocket = 1
 Price = 5000
-Flags = Fling_10
+Flags = Fling_10,Incense
 Description = An item to be held by a Pokémon. The tricky aroma of this incense may make attacks miss the holder.
 #-------------------------------
 [FULLINCENSE]
@@ -1349,7 +1349,7 @@ Name = Full Incense
 NamePlural = Full Incenses
 Pocket = 1
 Price = 5000
-Flags = Fling_10
+Flags = Fling_10,Incense
 Description = An item to be held by a Pokémon. This exotic-smelling incense makes the holder bloated and slow moving.
 #-------------------------------
 [LUCKINCENSE]
@@ -1357,7 +1357,7 @@ Name = Luck Incense
 NamePlural = Luck Incenses
 Pocket = 1
 Price = 11000
-Flags = Fling_10
+Flags = Fling_10,Incense
 Description = An item to be held by a Pokémon. It doubles a battle's prize money if the holding Pokémon joins in.
 #-------------------------------
 [PUREINCENSE]
@@ -1365,7 +1365,7 @@ Name = Pure Incense
 NamePlural = Pure Incenses
 Pocket = 1
 Price = 6000
-Flags = Fling_10
+Flags = Fling_10,Incense
 Description = An item to be held by a Pokémon. It helps keep wild Pokémon away if the holder is the first one in the party.
 #-------------------------------
 [SEAINCENSE]
@@ -1373,7 +1373,7 @@ Name = Sea Incense
 NamePlural = Sea Incenses
 Pocket = 1
 Price = 2000
-Flags = Fling_10
+Flags = Fling_10,Incense
 Description = An item to be held by a Pokémon. It has a curious aroma that boosts the power of Water-type moves.
 #-------------------------------
 [WAVEINCENSE]
@@ -1381,7 +1381,7 @@ Name = Wave Incense
 NamePlural = Wave Incenses
 Pocket = 1
 Price = 2000
-Flags = Fling_10
+Flags = Fling_10,Incense
 Description = An item to be held by a Pokémon. It has a curious aroma that boosts the power of Water-type moves.
 #-------------------------------
 [ROSEINCENSE]
@@ -1389,7 +1389,7 @@ Name = Rose Incense
 NamePlural = Rose Incenses
 Pocket = 1
 Price = 2000
-Flags = Fling_10
+Flags = Fling_10,Incense
 Description = An item to be held by a Pokémon. This exotic-smelling incense boosts the power of Grass-type moves.
 #-------------------------------
 [ODDINCENSE]
@@ -1397,7 +1397,7 @@ Name = Odd Incense
 NamePlural = Odd Incenses
 Pocket = 1
 Price = 2000
-Flags = Fling_10
+Flags = Fling_10,Incense
 Description = An item to be held by a Pokémon. This exotic-smelling incense boosts the power of Psychic-type moves.
 #-------------------------------
 [ROCKINCENSE]
@@ -1405,7 +1405,7 @@ Name = Rock Incense
 NamePlural = Rock Incenses
 Pocket = 1
 Price = 2000
-Flags = Fling_10
+Flags = Fling_10,Incense
 Description = An item to be held by a Pokémon. This exotic-smelling incense boosts the power of Rock-type moves.
 #-------------------------------
 [CHARCOAL]
@@ -1567,7 +1567,7 @@ NamePlural = Flame Plates
 Pocket = 1
 Price = 10000
 SellPrice = 500
-Flags = Fling_90
+Flags = Fling_90,Plate
 Description = An item to be held by a Pokémon. It is a stone tablet that boosts the power of Fire-type moves.
 #-------------------------------
 [SPLASHPLATE]
@@ -1576,7 +1576,7 @@ NamePlural = Splash Plates
 Pocket = 1
 Price = 10000
 SellPrice = 500
-Flags = Fling_90
+Flags = Fling_90,Plate
 Description = An item to be held by a Pokémon. It is a stone tablet that boosts the power of Water-type moves.
 #-------------------------------
 [ZAPPLATE]
@@ -1585,7 +1585,7 @@ NamePlural = Zap Plates
 Pocket = 1
 Price = 10000
 SellPrice = 500
-Flags = Fling_90
+Flags = Fling_90,Plate
 Description = An item to be held by a Pokémon. It is a stone tablet that boosts the power of Electric-type moves.
 #-------------------------------
 [MEADOWPLATE]
@@ -1594,7 +1594,7 @@ NamePlural = Meadow Plates
 Pocket = 1
 Price = 10000
 SellPrice = 500
-Flags = Fling_90
+Flags = Fling_90,Plate
 Description = An item to be held by a Pokémon. It is a stone tablet that boosts the power of Grass-type moves.
 #-------------------------------
 [ICICLEPLATE]
@@ -1603,7 +1603,7 @@ NamePlural = Icicle Plates
 Pocket = 1
 Price = 10000
 SellPrice = 500
-Flags = Fling_90
+Flags = Fling_90,Plate
 Description = An item to be held by a Pokémon. It is a stone tablet that boosts the power of Ice-type moves.
 #-------------------------------
 [FISTPLATE]
@@ -1612,7 +1612,7 @@ NamePlural = Fist Plates
 Pocket = 1
 Price = 10000
 SellPrice = 500
-Flags = Fling_90
+Flags = Fling_90,Plate
 Description = An item to be held by a Pokémon. It is a stone tablet that boosts the power of Fighting-type moves.
 #-------------------------------
 [TOXICPLATE]
@@ -1621,7 +1621,7 @@ NamePlural = Toxic Plates
 Pocket = 1
 Price = 10000
 SellPrice = 500
-Flags = Fling_90
+Flags = Fling_90,Plate
 Description = An item to be held by a Pokémon. It is a stone tablet that boosts the power of Poison-type moves.
 #-------------------------------
 [EARTHPLATE]
@@ -1630,7 +1630,7 @@ NamePlural = Earth Plates
 Pocket = 1
 Price = 10000
 SellPrice = 500
-Flags = Fling_90
+Flags = Fling_90,Plate
 Description = An item to be held by a Pokémon. It is a stone tablet that boosts the power of Ground-type moves.
 #-------------------------------
 [SKYPLATE]
@@ -1639,7 +1639,7 @@ NamePlural = Sky Plates
 Pocket = 1
 Price = 10000
 SellPrice = 500
-Flags = Fling_90
+Flags = Fling_90,Plate
 Description = An item to be held by a Pokémon. It is a stone tablet that boosts the power of Flying-type moves.
 #-------------------------------
 [MINDPLATE]
@@ -1648,7 +1648,7 @@ NamePlural = Mind Plates
 Pocket = 1
 Price = 10000
 SellPrice = 500
-Flags = Fling_90
+Flags = Fling_90,Plate
 Description = An item to be held by a Pokémon. It is a stone tablet that boosts the power of Psychic-type moves.
 #-------------------------------
 [INSECTPLATE]
@@ -1657,7 +1657,7 @@ NamePlural = Insect Plates
 Pocket = 1
 Price = 10000
 SellPrice = 500
-Flags = Fling_90
+Flags = Fling_90,Plate
 Description = An item to be held by a Pokémon. It is a stone tablet that boosts the power of Bug-type moves.
 #-------------------------------
 [STONEPLATE]
@@ -1666,7 +1666,7 @@ NamePlural = Stone Plates
 Pocket = 1
 Price = 10000
 SellPrice = 500
-Flags = Fling_90
+Flags = Fling_90,Plate
 Description = An item to be held by a Pokémon. It is a stone tablet that boosts the power of Rock-type moves.
 #-------------------------------
 [SPOOKYPLATE]
@@ -1675,7 +1675,7 @@ NamePlural = Spooky Plates
 Pocket = 1
 Price = 10000
 SellPrice = 500
-Flags = Fling_90
+Flags = Fling_90,Plate
 Description = An item to be held by a Pokémon. It is a stone tablet that boosts the power of Ghost-type moves.
 #-------------------------------
 [DRACOPLATE]
@@ -1684,7 +1684,7 @@ NamePlural = Draco Plates
 Pocket = 1
 Price = 10000
 SellPrice = 500
-Flags = Fling_90
+Flags = Fling_90,Plate
 Description = An item to be held by a Pokémon. It is a stone tablet that boosts the power of Dragon-type moves.
 #-------------------------------
 [DREADPLATE]
@@ -1693,7 +1693,7 @@ NamePlural = Dread Plates
 Pocket = 1
 Price = 10000
 SellPrice = 500
-Flags = Fling_90
+Flags = Fling_90,Plate
 Description = An item to be held by a Pokémon. It is a stone tablet that boosts the power of Dark-type moves.
 #-------------------------------
 [IRONPLATE]
@@ -1702,7 +1702,7 @@ NamePlural = Iron Plates
 Pocket = 1
 Price = 10000
 SellPrice = 500
-Flags = Fling_90
+Flags = Fling_90,Plate
 Description = An item to be held by a Pokémon. It is a stone tablet that boosts the power of Steel-type moves.
 #-------------------------------
 [PIXIEPLATE]
@@ -1711,7 +1711,7 @@ NamePlural = Pixie Plates
 Pocket = 1
 Price = 10000
 SellPrice = 500
-Flags = Fling_90
+Flags = Fling_90,Plate
 Description = An item to be held by a Pokémon. It is a stone tablet that boosts the power of Fairy-type moves.
 #-------------------------------
 [FIREGEM]
@@ -1976,7 +1976,7 @@ Name = Douse Drive
 NamePlural = Douse Drives
 Pocket = 1
 Price = 0
-Flags = Fling_70
+Flags = Fling_70,Drive
 Description = A cassette to be held by Genesect. It changes Techno Blast to a Water-type move.
 #-------------------------------
 [SHOCKDRIVE]
@@ -1984,7 +1984,7 @@ Name = Shock Drive
 NamePlural = Shock Drives
 Pocket = 1
 Price = 0
-Flags = Fling_70
+Flags = Fling_70,Drive
 Description = A cassette to be held by Genesect. It changes Techno Blast to an Electric-type move.
 #-------------------------------
 [BURNDRIVE]
@@ -1992,7 +1992,7 @@ Name = Burn Drive
 NamePlural = Burn Drives
 Pocket = 1
 Price = 0
-Flags = Fling_70
+Flags = Fling_70,Drive
 Description = A cassette to be held by Genesect. It changes Techno Blast to a Fire-type move.
 #-------------------------------
 [CHILLDRIVE]
@@ -2000,7 +2000,7 @@ Name = Chill Drive
 NamePlural = Chill Drives
 Pocket = 1
 Price = 0
-Flags = Fling_70
+Flags = Fling_70,Drive
 Description = A cassette to be held by Genesect. It changes Techno Blast to an Ice-type move.
 #-------------------------------
 [FIREMEMORY]
@@ -2008,7 +2008,7 @@ Name = Fire Memory
 NamePlural = Fire Memories
 Pocket = 1
 Price = 1000
-Flags = Fling_50
+Flags = Fling_50,Memory
 Description = A memory disc containing Fire-type data. It changes the holder's type if held by a certain Pokémon.
 #-------------------------------
 [WATERMEMORY]
@@ -2016,7 +2016,7 @@ Name = Water Memory
 NamePlural = Water Memories
 Pocket = 1
 Price = 1000
-Flags = Fling_50
+Flags = Fling_50,Memory
 Description = A memory disc containing Water-type data. It changes the holder's type if held by a certain Pokémon.
 #-------------------------------
 [ELECTRICMEMORY]
@@ -2024,7 +2024,7 @@ Name = Electric Memory
 NamePlural = Electric Memories
 Pocket = 1
 Price = 1000
-Flags = Fling_50
+Flags = Fling_50,Memory
 Description = A memory disc containing Electric-type data. It changes the holder's type if held by a certain Pokémon.
 #-------------------------------
 [GRASSMEMORY]
@@ -2032,7 +2032,7 @@ Name = Grass Memory
 NamePlural = Grass Memories
 Pocket = 1
 Price = 1000
-Flags = Fling_50
+Flags = Fling_50,Memory
 Description = A memory disc containing Grass-type data. It changes the holder's type if held by a certain Pokémon.
 #-------------------------------
 [ICEMEMORY]
@@ -2040,7 +2040,7 @@ Name = Ice Memory
 NamePlural = Ice Memories
 Pocket = 1
 Price = 1000
-Flags = Fling_50
+Flags = Fling_50,Memory
 Description = A memory disc containing Ice-type data. It changes the holder's type if held by a certain Pokémon.
 #-------------------------------
 [FIGHTINGMEMORY]
@@ -2048,7 +2048,7 @@ Name = Fighting Memory
 NamePlural = Fighting Memories
 Pocket = 1
 Price = 1000
-Flags = Fling_50
+Flags = Fling_50,Memory
 Description = A memory disc containing Fighting-type data. It changes the holder's type if held by a certain Pokémon.
 #-------------------------------
 [POISONMEMORY]
@@ -2056,7 +2056,7 @@ Name = Poison Memory
 NamePlural = Poison Memories
 Pocket = 1
 Price = 1000
-Flags = Fling_50
+Flags = Fling_50,Memory
 Description = A memory disc containing Poison-type data. It changes the holder's type if held by a certain Pokémon.
 #-------------------------------
 [GROUNDMEMORY]
@@ -2064,7 +2064,7 @@ Name = Ground Memory
 NamePlural = Ground Memories
 Pocket = 1
 Price = 1000
-Flags = Fling_50
+Flags = Fling_50,Memory
 Description = A memory disc containing Ground-type data. It changes the holder's type if held by a certain Pokémon.
 #-------------------------------
 [FLYINGMEMORY]
@@ -2072,7 +2072,7 @@ Name = Flying Memory
 NamePlural = Flying Memories
 Pocket = 1
 Price = 1000
-Flags = Fling_50
+Flags = Fling_50,Memory
 Description = A memory disc containing Flying-type data. It changes the holder's type if held by a certain Pokémon.
 #-------------------------------
 [PSYCHICMEMORY]
@@ -2080,7 +2080,7 @@ Name = Psychic Memory
 NamePlural = Psychic Memories
 Pocket = 1
 Price = 1000
-Flags = Fling_50
+Flags = Fling_50,Memory
 Description = A memory disc containing Psychic-type data. It changes the holder's type if held by a certain Pokémon.
 #-------------------------------
 [BUGMEMORY]
@@ -2088,7 +2088,7 @@ Name = Bug Memory
 NamePlural = Bug Memories
 Pocket = 1
 Price = 1000
-Flags = Fling_50
+Flags = Fling_50,Memory
 Description = A memory disc containing Bug-type data. It changes the holder's type if held by a certain Pokémon.
 #-------------------------------
 [ROCKMEMORY]
@@ -2096,7 +2096,7 @@ Name = Rock Memory
 NamePlural = Rock Memories
 Pocket = 1
 Price = 1000
-Flags = Fling_50
+Flags = Fling_50,Memory
 Description = A memory disc containing Rock-type data. It changes the holder's type if held by a certain Pokémon.
 #-------------------------------
 [GHOSTMEMORY]
@@ -2104,7 +2104,7 @@ Name = Ghost Memory
 NamePlural = Ghost Memories
 Pocket = 1
 Price = 1000
-Flags = Fling_50
+Flags = Fling_50,Memory
 Description = A memory disc containing Ghost-type data. It changes the holder's type if held by a certain Pokémon.
 #-------------------------------
 [DRAGONMEMORY]
@@ -2112,7 +2112,7 @@ Name = Dragon Memory
 NamePlural = Dragon Memories
 Pocket = 1
 Price = 1000
-Flags = Fling_50
+Flags = Fling_50,Memory
 Description = A memory disc containing Dragon-type data. It changes the holder's type if held by a certain Pokémon.
 #-------------------------------
 [DARKMEMORY]
@@ -2120,7 +2120,7 @@ Name = Dark Memory
 NamePlural = Dark Memories
 Pocket = 1
 Price = 1000
-Flags = Fling_50
+Flags = Fling_50,Memory
 Description = A memory disc containing Dark-type data. It changes the holder's type if held by a certain Pokémon.
 #-------------------------------
 [STEELMEMORY]
@@ -2128,7 +2128,7 @@ Name = Steel Memory
 NamePlural = Steel Memories
 Pocket = 1
 Price = 1000
-Flags = Fling_50
+Flags = Fling_50,Memory
 Description = A memory disc containing Steel-type data. It changes the holder's type if held by a certain Pokémon.
 #-------------------------------
 [FAIRYMEMORY]
@@ -2136,7 +2136,7 @@ Name = Fairy Memory
 NamePlural = Fairy Memories
 Pocket = 1
 Price = 1000
-Flags = Fling_50
+Flags = Fling_50,Memory
 Description = A memory disc containing Fairy-type data. It changes the holder's type if held by a certain Pokémon.
 #-------------------------------
 [EVERSTONE]
@@ -2251,7 +2251,7 @@ Name = Strawberry Sweet
 NamePlural = Strawberry Sweets
 Pocket = 1
 Price = 500
-Flags = Fling_10
+Flags = Fling_10,Sweet
 Description = A strawberry-shaped sweet. When a Milcery holds this, it will spin around happily.
 #-------------------------------
 [LOVESWEET]
@@ -2259,7 +2259,7 @@ Name = Love Sweet
 NamePlural = Love Sweets
 Pocket = 1
 Price = 500
-Flags = Fling_10
+Flags = Fling_10,Sweet
 Description = A heart-shaped sweet. When a Milcery holds this, it spins around happily.
 #-------------------------------
 [BERRYSWEET]
@@ -2267,7 +2267,7 @@ Name = Berry Sweet
 NamePlural = Berry Sweets
 Pocket = 1
 Price = 500
-Flags = Fling_10
+Flags = Fling_10,Sweet
 Description = A berry-shaped sweet. When a Milcery holds this, it spins around happily.
 #-------------------------------
 [CLOVERSWEET]
@@ -2275,7 +2275,7 @@ Name = Clover Sweet
 NamePlural = Clover Sweets
 Pocket = 1
 Price = 500
-Flags = Fling_10
+Flags = Fling_10,Sweet
 Description = A clover-shaped sweet. When a Milcery holds this, it spins around happily.
 #-------------------------------
 [FLOWERSWEET]
@@ -2283,7 +2283,7 @@ Name = Flower Sweet
 NamePlural = Flower Sweets
 Pocket = 1
 Price = 500
-Flags = Fling_10
+Flags = Fling_10,Sweet
 Description = A flower-shaped sweet. When a Milcery holds this, it spins around happily.
 #-------------------------------
 [STARSWEET]
@@ -2291,7 +2291,7 @@ Name = Star Sweet
 NamePlural = Star Sweets
 Pocket = 1
 Price = 500
-Flags = Fling_10
+Flags = Fling_10,Sweet
 Description = A star-shaped sweet. When a Milcery holds this, it spins around happily.
 #-------------------------------
 [RIBBONSWEET]
@@ -2299,7 +2299,7 @@ Name = Ribbon Sweet
 NamePlural = Ribbon Sweets
 Pocket = 1
 Price = 500
-Flags = Fling_10
+Flags = Fling_10,Sweet
 Description = A ribbon-shaped sweet. When a Milcery holds this, it spins around happily.
 #-------------------------------
 [VENUSAURITE]
@@ -2701,7 +2701,7 @@ Pocket = 2
 Price = 200
 FieldUse = OnPokemon
 BattleUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,Medicine
 Description = A spray-type medicine for treating wounds. It can be used to restore 20 HP to a single Pokémon.
 #-------------------------------
 [SUPERPOTION]
@@ -2711,7 +2711,7 @@ Pocket = 2
 Price = 700
 FieldUse = OnPokemon
 BattleUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,Medicine
 Description = A spray-type medicine for treating wounds. It can be used to restore 60 HP to a single Pokémon.
 #-------------------------------
 [HYPERPOTION]
@@ -2721,7 +2721,7 @@ Pocket = 2
 Price = 1500
 FieldUse = OnPokemon
 BattleUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,Medicine
 Description = A spray-type medicine for treating wounds. It can be used to restore 120 HP to a single Pokémon.
 #-------------------------------
 [MAXPOTION]
@@ -2731,7 +2731,7 @@ Pocket = 2
 Price = 2500
 FieldUse = OnPokemon
 BattleUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,Medicine
 Description = A spray-type medicine for treating wounds. It can completely restore the max HP of a single Pokémon.
 #-------------------------------
 [FULLRESTORE]
@@ -2741,7 +2741,7 @@ Pocket = 2
 Price = 3000
 FieldUse = OnPokemon
 BattleUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,Medicine
 Description = A medicine that fully restores the HP and heals any status problems of a single Pokémon.
 #-------------------------------
 [SACREDASH]
@@ -2760,7 +2760,7 @@ Pocket = 2
 Price = 200
 FieldUse = OnPokemon
 BattleUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,Medicine
 Description = A spray-type medicine. It awakens a Pokémon from the clutches of sleep.
 #-------------------------------
 [ANTIDOTE]
@@ -2770,7 +2770,7 @@ Pocket = 2
 Price = 200
 FieldUse = OnPokemon
 BattleUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,Medicine
 Description = A spray-type medicine. It lifts the effect of poison from one Pokémon.
 #-------------------------------
 [BURNHEAL]
@@ -2780,7 +2780,7 @@ Pocket = 2
 Price = 200
 FieldUse = OnPokemon
 BattleUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,Medicine
 Description = A spray-type medicine. It heals a single Pokémon that is suffering from a burn.
 #-------------------------------
 [PARALYZEHEAL]
@@ -2790,7 +2790,7 @@ Pocket = 2
 Price = 200
 FieldUse = OnPokemon
 BattleUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,Medicine
 Description = A spray-type medicine. It eliminates paralysis from a single Pokémon.
 #-------------------------------
 [ICEHEAL]
@@ -2800,7 +2800,7 @@ Pocket = 2
 Price = 200
 FieldUse = OnPokemon
 BattleUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,Medicine
 Description = A spray-type medicine. It defrosts a Pokémon that has been frozen solid.
 #-------------------------------
 [FULLHEAL]
@@ -2810,7 +2810,7 @@ Pocket = 2
 Price = 400
 FieldUse = OnPokemon
 BattleUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,Medicine
 Description = A spray-type medicine. It heals all the status problems of a single Pokémon.
 #-------------------------------
 [PEWTERCRUNCHIES]
@@ -2900,7 +2900,7 @@ Pocket = 2
 Price = 2000
 FieldUse = OnPokemon
 BattleUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,Medicine
 Description = A medicine that revives a fainted Pokémon. It restores half the Pokémon's maximum HP.
 #-------------------------------
 [MAXREVIVE]
@@ -2910,7 +2910,7 @@ Pocket = 2
 Price = 4000
 FieldUse = OnPokemon
 BattleUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,Medicine
 Description = A medicine that revives a fainted Pokémon. It fully restores the Pokémon's HP.
 #-------------------------------
 [BERRYJUICE]
@@ -2981,7 +2981,7 @@ Pocket = 2
 Price = 500
 FieldUse = OnPokemon
 BattleUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,Remedy
 Description = A very bitter medicinal powder. It can be used to restore 60 HP to a single Pokémon.
 #-------------------------------
 [ENERGYROOT]
@@ -2991,7 +2991,7 @@ Pocket = 2
 Price = 1200
 FieldUse = OnPokemon
 BattleUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,Remedy
 Description = An extremely bitter medicinal root. It can be used to restore 120 HP to a single Pokémon.
 #-------------------------------
 [HEALPOWDER]
@@ -3001,7 +3001,7 @@ Pocket = 2
 Price = 300
 FieldUse = OnPokemon
 BattleUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,Remedy
 Description = A very bitter medicine powder. It heals all the status problems of a single Pokémon.
 #-------------------------------
 [REVIVALHERB]
@@ -3011,7 +3011,7 @@ Pocket = 2
 Price = 2800
 FieldUse = OnPokemon
 BattleUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,Remedy
 Description = A very bitter medicinal herb. It revives a fainted Pokémon, fully restoring its HP.
 #-------------------------------
 [ETHER]
@@ -3021,7 +3021,7 @@ Pocket = 2
 Price = 1200
 FieldUse = OnPokemon
 BattleUse = OnMove
-Flags = Fling_30
+Flags = Fling_30,Medicine
 Description = It restores the PP of a Pokémon's selected move by a maximum of 10 points.
 #-------------------------------
 [MAXETHER]
@@ -3031,7 +3031,7 @@ Pocket = 2
 Price = 2000
 FieldUse = OnPokemon
 BattleUse = OnMove
-Flags = Fling_30
+Flags = Fling_30,Medicine
 Description = It fully restores the PP of a single selected move that has been learned by the target Pokémon.
 #-------------------------------
 [ELIXIR]
@@ -3041,7 +3041,7 @@ Pocket = 2
 Price = 3000
 FieldUse = OnPokemon
 BattleUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,Medicine
 Description = It restores the PP of all the moves learned by the targeted Pokémon by 10 points each.
 #-------------------------------
 [MAXELIXIR]
@@ -3051,7 +3051,7 @@ Pocket = 2
 Price = 4500
 FieldUse = OnPokemon
 BattleUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,Medicine
 Description = It fully restores the PP of all the moves learned by the targeted Pokémon.
 #-------------------------------
 [PPUP]
@@ -3060,7 +3060,7 @@ NamePlural = PP Ups
 Pocket = 2
 Price = 10000
 FieldUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,Vitamin
 Description = It slightly raises the maximum PP of a selected move that has been learned by the target Pokémon.
 #-------------------------------
 [PPMAX]
@@ -3069,7 +3069,7 @@ NamePlural = PP Maxes
 Pocket = 2
 Price = 10000
 FieldUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,Vitamin
 Description = It maximally raises the top PP of a selected move that has been learned by the target Pokémon.
 #-------------------------------
 [HPUP]
@@ -3078,7 +3078,7 @@ NamePlural = HP Ups
 Pocket = 2
 Price = 10000
 FieldUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,Vitamin
 Description = A nutritious drink for Pokémon. It raises the base HP of a single Pokémon.
 #-------------------------------
 [PROTEIN]
@@ -3087,7 +3087,7 @@ NamePlural = Proteins
 Pocket = 2
 Price = 10000
 FieldUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,Vitamin
 Description = A nutritious drink for Pokémon. It raises the base Attack stat of a single Pokémon.
 #-------------------------------
 [IRON]
@@ -3096,7 +3096,7 @@ NamePlural = Irons
 Pocket = 2
 Price = 10000
 FieldUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,Vitamin
 Description = A nutritious drink for Pokémon. It raises the base Defense stat of a single Pokémon.
 #-------------------------------
 [CALCIUM]
@@ -3105,7 +3105,7 @@ NamePlural = Calciums
 Pocket = 2
 Price = 10000
 FieldUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,Vitamin
 Description = A nutritious drink for Pokémon. It raises the base Sp. Atk (Special Attack) stat of a single Pokémon.
 #-------------------------------
 [ZINC]
@@ -3114,7 +3114,7 @@ NamePlural = Zincs
 Pocket = 2
 Price = 10000
 FieldUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,Vitamin
 Description = A nutritious drink for Pokémon. It raises the base Sp. Def (Special Defense) stat of a single Pokémon.
 #-------------------------------
 [CARBOS]
@@ -3123,7 +3123,7 @@ NamePlural = Carbos
 Pocket = 2
 Price = 10000
 FieldUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,Vitamin
 Description = A nutritious drink for Pokémon. It raises the base Speed stat of a single Pokémon.
 #-------------------------------
 [HEALTHFEATHER]
@@ -3132,7 +3132,7 @@ NamePlural = Health Feathers
 Pocket = 2
 Price = 300
 FieldUse = OnPokemon
-Flags = Fling_20
+Flags = Fling_20,Feather
 Description = An item for use on a Pokémon. It slightly increases the base HP of a single Pokémon.
 #-------------------------------
 [MUSCLEFEATHER]
@@ -3141,7 +3141,7 @@ NamePlural = Muscle Feathers
 Pocket = 2
 Price = 300
 FieldUse = OnPokemon
-Flags = Fling_20
+Flags = Fling_20,Feather
 Description = An item for use on a Pokémon. It slightly increases the base Attack stat of a single Pokémon.
 #-------------------------------
 [RESISTFEATHER]
@@ -3150,7 +3150,7 @@ NamePlural = Resist Feathers
 Pocket = 2
 Price = 300
 FieldUse = OnPokemon
-Flags = Fling_20
+Flags = Fling_20,Feather
 Description = An item for use on a Pokémon. It slightly increases the base Defense stat of a single Pokémon.
 #-------------------------------
 [GENIUSFEATHER]
@@ -3159,7 +3159,7 @@ NamePlural = Genius Feathers
 Pocket = 2
 Price = 300
 FieldUse = OnPokemon
-Flags = Fling_20
+Flags = Fling_20,Feather
 Description = An item for use on a Pokémon. It slightly increases the base Sp. Atk stat of a single Pokémon.
 #-------------------------------
 [CLEVERFEATHER]
@@ -3168,7 +3168,7 @@ NamePlural = Clever Feathers
 Pocket = 2
 Price = 300
 FieldUse = OnPokemon
-Flags = Fling_20
+Flags = Fling_20,Feather
 Description = An item for use on a Pokémon. It slightly increases the base Sp. Def stat of a single Pokémon.
 #-------------------------------
 [SWIFTFEATHER]
@@ -3177,7 +3177,7 @@ NamePlural = Swift Feathers
 Pocket = 2
 Price = 300
 FieldUse = OnPokemon
-Flags = Fling_20
+Flags = Fling_20,Feather
 Description = An item for use on a Pokémon. It slightly increases the base Speed stat of a single Pokémon.
 #-------------------------------
 [LONELYMINT]
@@ -3186,7 +3186,7 @@ NamePlural = Lonely Mints
 Pocket = 2
 Price = 20
 FieldUse = OnPokemon
-Flags = Fling_10
+Flags = Fling_10,Mint
 Description = When a Pokémon smells this mint, its Attack will grow more easily, but its Defense will grow more slowly.
 #-------------------------------
 [ADAMANTMINT]
@@ -3195,7 +3195,7 @@ NamePlural = Adamant Mints
 Pocket = 2
 Price = 20
 FieldUse = OnPokemon
-Flags = Fling_10
+Flags = Fling_10,Mint
 Description = When a Pokémon smells this mint, its Attack will grow more easily, but its Sp. Atk will grow more slowly.
 #-------------------------------
 [NAUGHTYMINT]
@@ -3204,7 +3204,7 @@ NamePlural = Naughty Mints
 Pocket = 2
 Price = 20
 FieldUse = OnPokemon
-Flags = Fling_10
+Flags = Fling_10,Mint
 Description = When a Pokémon smells this mint, its Attack will grow more easily, but its Sp. Def will grow more slowly.
 #-------------------------------
 [BRAVEMINT]
@@ -3213,7 +3213,7 @@ NamePlural = Brave Mints
 Pocket = 2
 Price = 20
 FieldUse = OnPokemon
-Flags = Fling_10
+Flags = Fling_10,Mint
 Description = When a Pokémon smells this mint, its Attack will grow more easily, but its Speed will grow more slowly.
 #-------------------------------
 [BOLDMINT]
@@ -3222,7 +3222,7 @@ NamePlural = Bold Mints
 Pocket = 2
 Price = 20
 FieldUse = OnPokemon
-Flags = Fling_10
+Flags = Fling_10,Mint
 Description = When a Pokémon smells this mint, its Defense will grow more easily, but its Attack will grow more slowly.
 #-------------------------------
 [IMPISHMINT]
@@ -3231,7 +3231,7 @@ NamePlural = Impish Mints
 Pocket = 2
 Price = 20
 FieldUse = OnPokemon
-Flags = Fling_10
+Flags = Fling_10,Mint
 Description = When a Pokémon smells this mint, its Defense will grow more easily, but its Sp. Atk will grow more slowly.
 #-------------------------------
 [LAXMINT]
@@ -3240,7 +3240,7 @@ NamePlural = Lax Mints
 Pocket = 2
 Price = 20
 FieldUse = OnPokemon
-Flags = Fling_10
+Flags = Fling_10,Mint
 Description = When a Pokémon smells this mint, its Defense will grow more easily, but its Sp. Def will grow more slowly.
 #-------------------------------
 [RELAXEDMINT]
@@ -3249,7 +3249,7 @@ NamePlural = Relaxed Mints
 Pocket = 2
 Price = 20
 FieldUse = OnPokemon
-Flags = Fling_10
+Flags = Fling_10,Mint
 Description = When a Pokémon smells this mint, its Defense will grow more easily, but its Speed will grow more slowly.
 #-------------------------------
 [MODESTMINT]
@@ -3258,7 +3258,7 @@ NamePlural = Modest Mints
 Pocket = 2
 Price = 20
 FieldUse = OnPokemon
-Flags = Fling_10
+Flags = Fling_10,Mint
 Description = When a Pokémon smells this mint, its Sp. Atk will grow more easily, but its Attack will grow more slowly.
 #-------------------------------
 [MILDMINT]
@@ -3267,7 +3267,7 @@ NamePlural = Mild Mints
 Pocket = 2
 Price = 20
 FieldUse = OnPokemon
-Flags = Fling_10
+Flags = Fling_10,Mint
 Description = When a Pokémon smells this mint, its Sp. Atk will grow more easily, but its Defense will grow more slowly.
 #-------------------------------
 [RASHMINT]
@@ -3276,7 +3276,7 @@ NamePlural = Rash Mints
 Pocket = 2
 Price = 20
 FieldUse = OnPokemon
-Flags = Fling_10
+Flags = Fling_10,Mint
 Description = When a Pokémon smells this mint, its Sp. Atk will grow more easily, but its Sp. Def will grow more slowly.
 #-------------------------------
 [QUIETMINT]
@@ -3285,7 +3285,7 @@ NamePlural = Quiet Mints
 Pocket = 2
 Price = 20
 FieldUse = OnPokemon
-Flags = Fling_10
+Flags = Fling_10,Mint
 Description = When a Pokémon smells this mint, its Sp. Atk will grow more easily, but its Speed will grow more slowly.
 #-------------------------------
 [CALMMINT]
@@ -3294,7 +3294,7 @@ NamePlural = Calm Mints
 Pocket = 2
 Price = 20
 FieldUse = OnPokemon
-Flags = Fling_10
+Flags = Fling_10,Mint
 Description = When a Pokémon smells this mint, its Sp. Def will grow more easily, but its Attack will grow more slowly.
 #-------------------------------
 [GENTLEMINT]
@@ -3303,7 +3303,7 @@ NamePlural = Gentle Mints
 Pocket = 2
 Price = 20
 FieldUse = OnPokemon
-Flags = Fling_10
+Flags = Fling_10,Mint
 Description = When a Pokémon smells this mint, its Sp. Def will grow more easily, but its Defense will grow more slowly.
 #-------------------------------
 [CAREFULMINT]
@@ -3312,7 +3312,7 @@ NamePlural = Careful Mints
 Pocket = 2
 Price = 20
 FieldUse = OnPokemon
-Flags = Fling_10
+Flags = Fling_10,Mint
 Description = When a Pokémon smells this mint, its Sp. Def will grow more easily, but its Sp. Atk will grow more slowly.
 #-------------------------------
 [SASSYMINT]
@@ -3321,7 +3321,7 @@ NamePlural = Sassy Mints
 Pocket = 2
 Price = 20
 FieldUse = OnPokemon
-Flags = Fling_10
+Flags = Fling_10,Mint
 Description = When a Pokémon smells this mint, its Sp. Def will grow more easily, but its Speed will grow more slowly.
 #-------------------------------
 [TIMIDMINT]
@@ -3330,7 +3330,7 @@ NamePlural = Timid Mints
 Pocket = 2
 Price = 20
 FieldUse = OnPokemon
-Flags = Fling_10
+Flags = Fling_10,Mint
 Description = When a Pokémon smells this mint, its Speed will grow more easily, but its Attack will grow more slowly.
 #-------------------------------
 [HASTYMINT]
@@ -3339,7 +3339,7 @@ NamePlural = Hasty Mints
 Pocket = 2
 Price = 20
 FieldUse = OnPokemon
-Flags = Fling_10
+Flags = Fling_10,Mint
 Description = When a Pokémon smells this mint, its Speed will grow more easily, but its Defense will grow more slowly.
 #-------------------------------
 [JOLLYMINT]
@@ -3348,7 +3348,7 @@ NamePlural = Jolly Mints
 Pocket = 2
 Price = 20
 FieldUse = OnPokemon
-Flags = Fling_10
+Flags = Fling_10,Mint
 Description = When a Pokémon smells this mint, its Speed will grow more easily, but its Sp. Atk will grow more slowly.
 #-------------------------------
 [NAIVEMINT]
@@ -3357,7 +3357,7 @@ NamePlural = Naive Mints
 Pocket = 2
 Price = 20
 FieldUse = OnPokemon
-Flags = Fling_10
+Flags = Fling_10,Mint
 Description = When a Pokémon smells this mint, its Speed will grow more easily, but its Sp. Def will grow more slowly.
 #-------------------------------
 [SERIOUSMINT]
@@ -3366,7 +3366,7 @@ NamePlural = Serious Mints
 Pocket = 2
 Price = 20
 FieldUse = OnPokemon
-Flags = Fling_10
+Flags = Fling_10,Mint
 Description = When a Pokémon smells this mint, all of its stats will grow at an equal rate.
 #-------------------------------
 [ABILITYCAPSULE]
@@ -3391,7 +3391,7 @@ NamePlural = Exp. Candy XSs
 Pocket = 2
 Price = 20
 FieldUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,ExpCandy
 Description = A candy packed with energy. When consumed, it will grant a Pokémon a very small amount of Exp. Points.
 #-------------------------------
 [EXPCANDYS]
@@ -3400,7 +3400,7 @@ NamePlural = Exp. Candy Ss
 Pocket = 2
 Price = 240
 FieldUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,ExpCandy
 Description = A candy packed with energy. When consumed, it will grant a Pokémon a small amount of Exp. Points.
 #-------------------------------
 [EXPCANDYM]
@@ -3409,7 +3409,7 @@ NamePlural = Exp. Candy Ms
 Pocket = 2
 Price = 1000
 FieldUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,ExpCandy
 Description = A candy packed with energy. When consumed, it will grant a Pokémon a moderate amount of Exp. Points.
 #-------------------------------
 [EXPCANDYL]
@@ -3418,7 +3418,7 @@ NamePlural = Exp. Candy Ls
 Pocket = 2
 Price = 3000
 FieldUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,ExpCandy
 Description = A candy packed with energy. When consumed, it will grant a Pokémon a large amount of Exp. Points.
 #-------------------------------
 [EXPCANDYXL]
@@ -3427,7 +3427,7 @@ NamePlural = Exp. Candy XLs
 Pocket = 2
 Price = 10000
 FieldUse = OnPokemon
-Flags = Fling_30
+Flags = Fling_30,ExpCandy
 Description = A candy packed with energy. When consumed, it will grant a Pokémon a very large amount of Exp. Points.
 #-------------------------------
 [RARECANDY]
@@ -4690,8 +4690,8 @@ NamePlural = TM102s
 Pocket = 4
 Price = 5000
 FieldUse = TR
-Move = GUNKSHOT
 Flags = Fling_120
+Move = GUNKSHOT
 Description = The user shoots filthy garbage at the target to attack. It may also poison the target.
 #-------------------------------
 [TM103]
@@ -4700,8 +4700,8 @@ NamePlural = TM103s
 Pocket = 4
 Price = 5000
 FieldUse = TR
-Move = SUBSTITUTE
 Flags = Fling_10
+Move = SUBSTITUTE
 Description = The user makes a copy of itself using some of its HP. The copy serves as the user's decoy.
 #-------------------------------
 [TM104]
@@ -4710,8 +4710,8 @@ NamePlural = TM104s
 Pocket = 4
 Price = 1500
 FieldUse = TR
-Move = IRONDEFENSE
 Flags = Fling_10
+Move = IRONDEFENSE
 Description = The user hardens its body's surface like iron, sharply raising its Defense stat.
 #-------------------------------
 [TM105]
@@ -4720,8 +4720,8 @@ NamePlural = TM105s
 Pocket = 4
 Price = 5000
 FieldUse = TR
-Move = XSCISSOR
 Flags = Fling_80
+Move = XSCISSOR
 Description = The user slashes at the foe by crossing its scythes or claws as if they were a pair of scissors.
 #-------------------------------
 [TM106]
@@ -4730,8 +4730,8 @@ NamePlural = TM106s
 Pocket = 4
 Price = 8000
 FieldUse = TR
-Move = DRILLRUN
 Flags = Fling_80
+Move = DRILLRUN
 Description = The user crashes into its target while rotating its body like a drill. Critical hits land more easily.
 #-------------------------------
 [TM107]
@@ -4740,8 +4740,8 @@ NamePlural = TM107s
 Pocket = 4
 Price = 3000
 FieldUse = TR
-Move = WILLOWISP
 Flags = Fling_10
+Move = WILLOWISP
 Description = The user shoots a sinister, bluish-white flame at the target to inflict a burn.
 #-------------------------------
 [TM108]
@@ -4750,8 +4750,8 @@ NamePlural = TM108s
 Pocket = 4
 Price = 8000
 FieldUse = TR
-Move = CRUNCH
 Flags = Fling_80
+Move = CRUNCH
 Description = The user crunches up the target with sharp fangs. It may also lower the target's Defense stat.
 #-------------------------------
 [TM109]
@@ -4760,8 +4760,8 @@ NamePlural = TM109s
 Pocket = 4
 Price = 5000
 FieldUse = TR
-Move = TRICK
 Flags = Fling_10
+Move = TRICK
 Description = The user catches the target off guard and swaps its held item with its own.
 #-------------------------------
 [TM110]
@@ -4770,8 +4770,8 @@ NamePlural = TM110s
 Pocket = 4
 Price = 10000
 FieldUse = TR
-Move = LIQUIDATION
 Flags = Fling_85
+Move = LIQUIDATION
 Description = The user slams into the target using a full-force blast of water. May lower the target's Defense.
 #-------------------------------
 [TM111]
@@ -4780,8 +4780,8 @@ NamePlural = TM111s
 Pocket = 4
 Price = 8000
 FieldUse = TR
-Move = GIGADRAIN
 Flags = Fling_75
+Move = GIGADRAIN
 Description = A nutrient-draining attack. The user's HP is restored by half the damage taken by the target.
 #-------------------------------
 [TM112]
@@ -4790,8 +4790,8 @@ NamePlural = TM112s
 Pocket = 4
 Price = 8000
 FieldUse = TR
-Move = AURASPHERE
 Flags = Fling_80
+Move = AURASPHERE
 Description = The user looses a blast of aura power from deep within its body. This move is certain to hit.
 #-------------------------------
 [TM113]
@@ -4800,8 +4800,8 @@ NamePlural = TM113s
 Pocket = 4
 Price = 8000
 FieldUse = TR
-Move = TAILWIND
 Flags = Fling_10
+Move = TAILWIND
 Description = The user whips up a turbulent whirlwind that ups the Speed of all party Pokémon for four turns.
 #-------------------------------
 [TM114]
@@ -4810,8 +4810,8 @@ NamePlural = TM114s
 Pocket = 4
 Price = 5000
 FieldUse = TR
-Move = SHADOWBALL
 Flags = Fling_80
+Move = SHADOWBALL
 Description = The user hurls a shadowy blob at the target. It may also lower the target's Sp. Def stat.
 #-------------------------------
 [TM115]
@@ -4820,8 +4820,8 @@ NamePlural = TM115s
 Pocket = 4
 Price = 8000
 FieldUse = TR
-Move = DRAGONPULSE
 Flags = Fling_85
+Move = DRAGONPULSE
 Description = The target is attacked with a shock wave generated by the user's gaping mouth.
 #-------------------------------
 [TM116]
@@ -4830,8 +4830,8 @@ NamePlural = TM116s
 Pocket = 4
 Price = 5000
 FieldUse = TR
-Move = STEALTHROCK
 Flags = Fling_10
+Move = STEALTHROCK
 Description = The user lays a trap of levitating stones around the foe. The trap hurts foes that switch into battle.
 #-------------------------------
 [TM117]
@@ -4840,8 +4840,8 @@ NamePlural = TM117s
 Pocket = 4
 Price = 8000
 FieldUse = TR
-Move = HYPERVOICE
 Flags = Fling_90
+Move = HYPERVOICE
 Description = The user lets loose a horribly echoing shout with the power to inflict damage.
 #-------------------------------
 [TM118]
@@ -4850,8 +4850,8 @@ NamePlural = TM118s
 Pocket = 4
 Price = 10000
 FieldUse = TR
-Move = HEATWAVE
 Flags = Fling_95
+Move = HEATWAVE
 Description = The user attacks by exhaling hot breath on the opposing team. It may also leave targets with a burn.
 #-------------------------------
 [TM119]
@@ -4860,8 +4860,8 @@ NamePlural = TM119s
 Pocket = 4
 Price = 10000
 FieldUse = TR
-Move = ENERGYBALL
 Flags = Fling_90
+Move = ENERGYBALL
 Description = The user draws power from nature and fires it at the target. It may also lower the target's Sp. Def.
 #-------------------------------
 [TM120]
@@ -4870,8 +4870,8 @@ NamePlural = TM120s
 Pocket = 4
 Price = 10000
 FieldUse = TR
-Move = PSYCHIC
 Flags = Fling_90
+Move = PSYCHIC
 Description = The target is hit by a strong telekinetic force. It may also reduce the target's Sp. Def stat.
 #-------------------------------
 [TM121]
@@ -4880,8 +4880,8 @@ NamePlural = TM121s
 Pocket = 4
 Price = 5000
 FieldUse = TR
-Move = HEAVYSLAM
 Flags = Fling_10
+Move = HEAVYSLAM
 Description = The user slams into the foe with its heavy body. The heavier the user, the greater the damage.
 #-------------------------------
 [TM122]
@@ -4890,8 +4890,8 @@ NamePlural = TM122s
 Pocket = 4
 Price = 3000
 FieldUse = TR
-Move = ENCORE
 Flags = Fling_10
+Move = ENCORE
 Description = The user compels the target to keep using only the move it last used for three turns.
 #-------------------------------
 [TM123]
@@ -4900,8 +4900,8 @@ NamePlural = TM123s
 Pocket = 4
 Price = 10000
 FieldUse = TR
-Move = SURF
 Flags = Fling_90
+Move = SURF
 Description = It swamps the area around the user with a giant wave. It can also be used for crossing water.
 #-------------------------------
 [TM124]
@@ -4910,8 +4910,8 @@ NamePlural = TM124s
 Pocket = 4
 Price = 8000
 FieldUse = TR
-Move = ICESPINNER
 Flags = Fling_80
+Move = ICESPINNER
 Description = The user covers its feet in thin ice and twirls around, slamming into the target. This move's spinning motion also destroys the terrain.
 #-------------------------------
 [TM125]
@@ -4920,8 +4920,8 @@ NamePlural = TM125s
 Pocket = 4
 Price = 10000
 FieldUse = TR
-Move = FLAMETHROWER
 Flags = Fling_90
+Move = FLAMETHROWER
 Description = The target is scorched with an intense blast of fire. It may also leave the target with a burn.
 #-------------------------------
 [TM126]
@@ -4930,8 +4930,8 @@ NamePlural = TM126s
 Pocket = 4
 Price = 10000
 FieldUse = TR
-Move = THUNDERBOLT
 Flags = Fling_90
+Move = THUNDERBOLT
 Description = A strong electric blast is loosed at the target. It may also leave the target with paralysis.
 #-------------------------------
 [TM127]
@@ -4940,8 +4940,8 @@ NamePlural = TM127s
 Pocket = 4
 Price = 10000
 FieldUse = TR
-Move = PLAYROUGH
 Flags = Fling_90
+Move = PLAYROUGH
 Description = The user plays rough with the target and attacks it. This may also lower the target's Attack stat.
 #-------------------------------
 [TM128]
@@ -4950,8 +4950,8 @@ NamePlural = TM128s
 Pocket = 4
 Price = 1500
 FieldUse = TR
-Move = AMNESIA
 Flags = Fling_10
+Move = AMNESIA
 Description = The user temporarily empties its mind to forget its concerns. It sharply raises the user's Sp. Def stat.
 #-------------------------------
 [TM129]
@@ -4960,8 +4960,8 @@ NamePlural = TM129s
 Pocket = 4
 Price = 3000
 FieldUse = TR
-Move = CALMMIND
 Flags = Fling_10
+Move = CALMMIND
 Description = The user quietly focuses its mind and calms its spirit to raise its Sp. Atk and Sp. Def stats.
 #-------------------------------
 [TM130]
@@ -4970,8 +4970,8 @@ NamePlural = TM130s
 Pocket = 4
 Price = 400
 FieldUse = TR
-Move = HELPINGHAND
 Flags = Fling_10
+Move = HELPINGHAND
 Description = The user assists an ally by boosting the power of its attack.
 #-------------------------------
 [TM131]
@@ -4980,8 +4980,8 @@ NamePlural = TM131s
 Pocket = 4
 Price = 10000
 FieldUse = TR
-Move = POLLENPUFF
 Flags = Fling_90
+Move = POLLENPUFF
 Description = Fires an exploding pollen puff at enemies, or a HP-restoring one at allies.
 #-------------------------------
 [TM132]
@@ -4990,8 +4990,8 @@ NamePlural = TM132s
 Pocket = 4
 Price = 3000
 FieldUse = TR
-Move = BATONPASS
 Flags = Fling_10
+Move = BATONPASS
 Description = The user switches places with a party Pokémon in waiting, passing along any stat changes.
 #-------------------------------
 [TM133]
@@ -5000,8 +5000,8 @@ NamePlural = TM133s
 Pocket = 4
 Price = 10000
 FieldUse = TR
-Move = EARTHPOWER
 Flags = Fling_90
+Move = EARTHPOWER
 Description = The user makes the ground under the foe erupt with power. It may also lower the target's Sp. Def.
 #-------------------------------
 [TM134]
@@ -5010,8 +5010,8 @@ NamePlural = TM134s
 Pocket = 4
 Price = 3000
 FieldUse = TR
-Move = REVERSAL
 Flags = Fling_10
+Move = REVERSAL
 Description = An all-out attack that becomes more powerful the less HP the user has.
 #-------------------------------
 [TM135]
@@ -5020,8 +5020,8 @@ NamePlural = TM135s
 Pocket = 4
 Price = 10000
 FieldUse = TR
-Move = ICEBEAM
 Flags = Fling_90
+Move = ICEBEAM
 Description = The target is struck with an icy-cold beam of energy. It may also freeze the target solid.
 #-------------------------------
 [TM136]
@@ -5030,8 +5030,8 @@ NamePlural = TM136s
 Pocket = 4
 Price = 3000
 FieldUse = TR
-Move = ELECTRICTERRAIN
 Flags = Fling_10
+Move = ELECTRICTERRAIN
 Description = The user electrifies the ground for five turns. Pokémon on the ground no longer fall asleep.
 #-------------------------------
 [TM137]
@@ -5040,8 +5040,8 @@ NamePlural = TM137s
 Pocket = 4
 Price = 3000
 FieldUse = TR
-Move = GRASSYTERRAIN
 Flags = Fling_10
+Move = GRASSYTERRAIN
 Description = The user turns the ground to grass for five turns. Grounded Pokémon restore a little HP every turn.
 #-------------------------------
 [TM138]
@@ -5050,8 +5050,8 @@ NamePlural = TM138s
 Pocket = 4
 Price = 3000
 FieldUse = TR
-Move = PSYCHICTERRAIN
 Flags = Fling_10
+Move = PSYCHICTERRAIN
 Description = Protects grounded Pokémon from priority moves and powers up Psychic-type moves for five turns.
 #-------------------------------
 [TM139]
@@ -5060,8 +5060,8 @@ NamePlural = TM139s
 Pocket = 4
 Price = 3000
 FieldUse = TR
-Move = MISTYTERRAIN
 Flags = Fling_10
+Move = MISTYTERRAIN
 Description = The user covers the ground with mist for five turns. Grounded Pokémon can't gain status conditions.
 #-------------------------------
 [TM140]
@@ -5070,8 +5070,8 @@ NamePlural = TM140s
 Pocket = 4
 Price = 5000
 FieldUse = TR
-Move = NASTYPLOT
 Flags = Fling_10
+Move = NASTYPLOT
 Description = The user stimulates its brain by thinking bad thoughts. It sharply raises the user's Sp. Atk.
 #-------------------------------
 [TM141]
@@ -5080,8 +5080,8 @@ NamePlural = TM141s
 Pocket = 4
 Price = 12000
 FieldUse = TR
-Move = FIREBLAST
 Flags = Fling_110
+Move = FIREBLAST
 Description = The foe is attacked with an intense blast of all-consuming fire. It may also leave the target with a burn.
 #-------------------------------
 [TM142]
@@ -5090,8 +5090,8 @@ NamePlural = TM142s
 Pocket = 4
 Price = 12000
 FieldUse = TR
-Move = HYDROPUMP
 Flags = Fling_110
+Move = HYDROPUMP
 Description = The target is blasted by a huge volume of water launched under great pressure.
 #-------------------------------
 [TM143]
@@ -5100,8 +5100,8 @@ NamePlural = TM143s
 Pocket = 4
 Price = 12000
 FieldUse = TR
-Move = BLIZZARD
 Flags = Fling_110
+Move = BLIZZARD
 Description = A howling blizzard is summoned to strike the opposing team. It may also freeze them solid.
 #-------------------------------
 [TM144]
@@ -5110,8 +5110,8 @@ NamePlural = TM144s
 Pocket = 4
 Price = 8000
 FieldUse = TR
-Move = FIREPLEDGE
 Flags = Fling_80
+Move = FIREPLEDGE
 Description = A column of fire hits opposing Pokémon. When used with its Grass equivalent, it makes a sea of fire.
 #-------------------------------
 [TM145]
@@ -5120,8 +5120,8 @@ NamePlural = TM145s
 Pocket = 4
 Price = 8000
 FieldUse = TR
-Move = WATERPLEDGE
 Flags = Fling_80
+Move = WATERPLEDGE
 Description = A column of water strikes the target. When combined with its fire equivalent, it makes a rainbow.
 #-------------------------------
 [TM146]
@@ -5130,8 +5130,8 @@ NamePlural = TM146s
 Pocket = 4
 Price = 8000
 FieldUse = TR
-Move = GRASSPLEDGE
 Flags = Fling_80
+Move = GRASSPLEDGE
 Description = A column of grass hits the foes. When used with its water equivalent, it creates a vast swamp.
 #-------------------------------
 [TM147]
@@ -5140,8 +5140,8 @@ NamePlural = TM147s
 Pocket = 4
 Price = 10000
 FieldUse = TR
-Move = WILDCHARGE
 Flags = Fling_90
+Move = WILDCHARGE
 Description = The user shrouds itself in electricity and smashes into its foe. It also damages the user a little.
 #-------------------------------
 [TM148]
@@ -5150,8 +5150,8 @@ NamePlural = TM148s
 Pocket = 4
 Price = 10000
 FieldUse = TR
-Move = SLUDGEBOMB
 Flags = Fling_90
+Move = SLUDGEBOMB
 Description = Unsanitary sludge is hurled at the target. It may also poison the target.
 #-------------------------------
 [TM149]
@@ -5160,8 +5160,8 @@ NamePlural = TM149s
 Pocket = 4
 Price = 12000
 FieldUse = TR
-Move = EARTHQUAKE
 Flags = Fling_100
+Move = EARTHQUAKE
 Description = The user sets off an earthquake that strikes every Pokémon around it.
 #-------------------------------
 [TM150]
@@ -5170,8 +5170,8 @@ NamePlural = TM150s
 Pocket = 4
 Price = 12000
 FieldUse = TR
-Move = STONEEDGE
 Flags = Fling_100
+Move = STONEEDGE
 Description = The user stabs the foe with sharpened stones from below. It has a high critical-hit ratio.
 #-------------------------------
 [TM151]
@@ -5180,8 +5180,8 @@ NamePlural = TM151s
 Pocket = 4
 Price = 10000
 FieldUse = TR
-Move = PHANTOMFORCE
 Flags = Fling_90
+Move = PHANTOMFORCE
 Description = The user vanishes somewhere, then strikes on the next turn. Hits through protections.
 #-------------------------------
 [TM152]
@@ -5190,8 +5190,8 @@ NamePlural = TM152s
 Pocket = 4
 Price = 14000
 FieldUse = TR
-Move = GIGAIMPACT
 Flags = Fling_150
+Move = GIGAIMPACT
 Description = The user charges at the target using every bit of its power. The user must rest on the next turn.
 #-------------------------------
 [TM153]
@@ -5200,8 +5200,8 @@ NamePlural = TM153s
 Pocket = 4
 Price = 14000
 FieldUse = TR
-Move = BLASTBURN
 Flags = Fling_150
+Move = BLASTBURN
 Description = The target is razed by a fiery explosion. The user must rest on the next turn, however.
 #-------------------------------
 [TM154]
@@ -5210,8 +5210,8 @@ NamePlural = TM154s
 Pocket = 4
 Price = 14000
 FieldUse = TR
-Move = HYDROCANNON
 Flags = Fling_150
+Move = HYDROCANNON
 Description = The target is hit with a watery blast. The user must rest on the next turn, however.
 #-------------------------------
 [TM155]
@@ -5220,8 +5220,8 @@ NamePlural = TM155s
 Pocket = 4
 Price = 14000
 FieldUse = TR
-Move = FRENZYPLANT
 Flags = Fling_150
+Move = FRENZYPLANT
 Description = The user slams the target with an enormous tree. The user can't move on the next turn.
 #-------------------------------
 [TM156]
@@ -5230,8 +5230,8 @@ NamePlural = TM156s
 Pocket = 4
 Price = 12000
 FieldUse = TR
-Move = OUTRAGE
 Flags = Fling_120
+Move = OUTRAGE
 Description = The user rampages and attacks for two to three turns. It then becomes confused, however.
 #-------------------------------
 [TM157]
@@ -5240,8 +5240,8 @@ NamePlural = TM157s
 Pocket = 4
 Price = 12000
 FieldUse = TR
-Move = OVERHEAT
 Flags = Fling_130
+Move = OVERHEAT
 Description = The user attacks the target at full power. The attack's recoil sharply reduces the user's Sp. Atk stat.
 #-------------------------------
 [TM158]
@@ -5250,8 +5250,8 @@ NamePlural = TM158s
 Pocket = 4
 Price = 12000
 FieldUse = TR
-Move = FOCUSBLAST
 Flags = Fling_120
+Move = FOCUSBLAST
 Description = The user heightens its mental focus and unleashes its power. It may also lower the target's Sp. Def.
 #-------------------------------
 [TM159]
@@ -5260,8 +5260,8 @@ NamePlural = TM159s
 Pocket = 4
 Price = 12000
 FieldUse = TR
-Move = LEAFSTORM
 Flags = Fling_130
+Move = LEAFSTORM
 Description = A storm of sharp is whipped up. The attack's recoil harshly reduces the user's Sp. Atk stat.
 #-------------------------------
 [TM160]
@@ -5270,8 +5270,8 @@ NamePlural = TM160s
 Pocket = 4
 Price = 12000
 FieldUse = TR
-Move = HURRICANE
 Flags = Fling_110
+Move = HURRICANE
 Description = The user wraps its foe in a fierce wind that flies up into the sky. It may also confuse the foe.
 #-------------------------------
 [TM161]
@@ -5280,8 +5280,8 @@ NamePlural = TM161s
 Pocket = 4
 Price = 5000
 FieldUse = TR
-Move = TRICKROOM
 Flags = Fling_10
+Move = TRICKROOM
 Description = The user creates a bizarre area in which slower Pokémon get to move first for five turns.
 #-------------------------------
 [TM162]
@@ -5290,8 +5290,8 @@ NamePlural = TM162s
 Pocket = 4
 Price = 10000
 FieldUse = TR
-Move = BUGBUZZ
 Flags = Fling_90
+Move = BUGBUZZ
 Description = The user vibrates its wings to generate a damaging sound wave. It may also lower the target's Sp. Def stat.
 #-------------------------------
 [TM163]
@@ -5300,8 +5300,8 @@ NamePlural = TM163s
 Pocket = 4
 Price = 14000
 FieldUse = TR
-Move = HYPERBEAM
 Flags = Fling_150
+Move = HYPERBEAM
 Description = The foe is attacked with a powerful beam. The user must rest on the next turn to regain its energy.
 #-------------------------------
 [TM164]
@@ -5310,8 +5310,8 @@ NamePlural = TM164s
 Pocket = 4
 Price = 12000
 FieldUse = TR
-Move = BRAVEBIRD
 Flags = Fling_120
+Move = BRAVEBIRD
 Description = The user tucks in its wings and charges from a low altitude. The user also takes serious damage.
 #-------------------------------
 [TM165]
@@ -5320,8 +5320,8 @@ NamePlural = TM165s
 Pocket = 4
 Price = 12000
 FieldUse = TR
-Move = FLAREBLITZ
 Flags = Fling_120
+Move = FLAREBLITZ
 Description = The user cloaks itself in fire and charges at the foe. The user also takes damage and may burn the target.
 #-------------------------------
 [TM166]
@@ -5330,8 +5330,8 @@ NamePlural = TM166s
 Pocket = 4
 Price = 12000
 FieldUse = TR
-Move = THUNDER
 Flags = Fling_110
+Move = THUNDER
 Description = A wicked thunderbolt is dropped on the foe to inflict damage. It may also leave the target paralyzed.
 #-------------------------------
 [TM167]
@@ -5340,8 +5340,8 @@ NamePlural = TM167s
 Pocket = 4
 Price = 12000
 FieldUse = TR
-Move = CLOSECOMBAT
 Flags = Fling_120
+Move = CLOSECOMBAT
 Description = The user fights the foe up close without guarding itself. It also cuts the user's Defense and Sp. Def.
 #-------------------------------
 [TM168]
@@ -5350,8 +5350,8 @@ NamePlural = TM168s
 Pocket = 4
 Price = 12000
 FieldUse = TR
-Move = SOLARBEAM
 Flags = Fling_120
+Move = SOLARBEAM
 Description = A two-turn attack. The user gathers light, then blasts a bundled beam on the second turn.
 #-------------------------------
 [TM169]
@@ -5360,8 +5360,8 @@ NamePlural = TM169s
 Pocket = 4
 Price = 14000
 FieldUse = TR
-Move = DRACOMETEOR
 Flags = Fling_130
+Move = DRACOMETEOR
 Description = Comets are summoned down from the sky. The attack's recoil harshly reduces the user's Sp. Atk stat.
 #-------------------------------
 [TM170]
@@ -5370,8 +5370,8 @@ NamePlural = TM170s
 Pocket = 4
 Price = 14000
 FieldUse = TR
-Move = STEELBEAM
 Flags = Fling_140
+Move = STEELBEAM
 Description = The user fires a beam of steel that it collected from its entire body. This also damages the user.
 #-------------------------------
 [TM172]
@@ -5380,8 +5380,8 @@ NamePlural = TM172s
 Pocket = 4
 Price = 200
 FieldUse = TR
-Move = ROAR
 Flags = Fling_10
+Move = ROAR
 Description = The target is scared off and replaced by another Pokémon in its party. In the wild, the battle ends.
 #-------------------------------
 [TM173]
@@ -5390,8 +5390,8 @@ NamePlural = TM173s
 Pocket = 4
 Price = 400
 FieldUse = TR
-Move = CHARGE
 Flags = Fling_10
+Move = CHARGE
 Description = The user boosts the power of the Electric move it uses next. It also raises the user's Sp. Def stat.
 #-------------------------------
 [TM174]
@@ -5400,8 +5400,8 @@ NamePlural = TM174s
 Pocket = 4
 Price = 400
 FieldUse = TR
-Move = HAZE
 Flags = Fling_10
+Move = HAZE
 Description = The user creates a haze that eliminates every stat change among all the Pokémon engaged in battle.
 #-------------------------------
 [TM175]
@@ -5410,8 +5410,8 @@ NamePlural = TM175s
 Pocket = 4
 Price = 800
 FieldUse = TR
-Move = TOXIC
 Flags = Fling_10
+Move = TOXIC
 Description = A move that leaves the target badly poisoned. Its poison damage worsens every turn.
 #-------------------------------
 [TM176]
@@ -5420,8 +5420,8 @@ NamePlural = TM176s
 Pocket = 4
 Price = 400
 FieldUse = TR
-Move = SANDTOMB
 Flags = Fling_35
+Move = SANDTOMB
 Description = The user traps the target inside a harshly raging sandstorm for four to five turns.
 #-------------------------------
 [TM177]
@@ -5430,8 +5430,8 @@ NamePlural = TM177s
 Pocket = 4
 Price = 200
 FieldUse = TR
-Move = SPITE
 Flags = Fling_10
+Move = SPITE
 Description = The user unleashes its grudge on the move last used by the target by cutting 4 PP from it.
 #-------------------------------
 [TM178]
@@ -5440,8 +5440,8 @@ NamePlural = TM178s
 Pocket = 4
 Price = 400
 FieldUse = TR
-Move = GRAVITY
 Flags = Fling_10
+Move = GRAVITY
 Description = Gravity is intensified for five turns, making moves involving flying unusable and negating Levitation.
 #-------------------------------
 [TM179]
@@ -5450,8 +5450,8 @@ NamePlural = TM179s
 Pocket = 4
 Price = 800
 FieldUse = TR
-Move = SMACKDOWN
 Flags = Fling_50
+Move = SMACKDOWN
 Description = The user throws a stone or projectile to attack. A flying Pokémon will fall to the ground when hit.
 #-------------------------------
 [TM180]
@@ -5460,8 +5460,8 @@ NamePlural = TM180s
 Pocket = 4
 Price = 10000
 FieldUse = TR
-Move = GYROBALL
 Flags = Fling_10
+Move = GYROBALL
 Description = The user tackles the target with a high-speed spin. The slower the user, the greater the damage.
 #-------------------------------
 [TM181]
@@ -5470,8 +5470,8 @@ NamePlural = TM181s
 Pocket = 4
 Price = 14000
 FieldUse = TR
-Move = KNOCKOFF
 Flags = Fling_65
+Move = KNOCKOFF
 Description = The user slaps down the target's held item, preventing that item from being used in the battle.
 #-------------------------------
 [TM182]
@@ -5480,8 +5480,8 @@ NamePlural = TM182s
 Pocket = 4
 Price = 3000
 FieldUse = TR
-Move = BUGBITE
 Flags = Fling_60
+Move = BUGBITE
 Description = The user bites the target. If the target is holding a Berry, the user eats it and gains its effect.
 #-------------------------------
 [TM183]
@@ -5490,8 +5490,8 @@ NamePlural = TM183s
 Pocket = 4
 Price = 5000
 FieldUse = TR
-Move = SUPERFANG
 Flags = Fling_10
+Move = SUPERFANG
 Description = The user chomps hard on the target with its sharp front fangs. It cuts the target's HP to half.
 #-------------------------------
 [TM184]
@@ -5500,8 +5500,8 @@ NamePlural = TM184s
 Pocket = 4
 Price = 3000
 FieldUse = TR
-Move = VACUUMWAVE
 Flags = Fling_40
+Move = VACUUMWAVE
 Description = The user whirls its fists to send a wave of pure vacuum at the target. This move always goes first.
 #-------------------------------
 [TM185]
@@ -5510,8 +5510,8 @@ NamePlural = TM185s
 Pocket = 4
 Price = 5000
 FieldUse = TR
-Move = LUNGE
 Flags = Fling_80
+Move = LUNGE
 Description = The user makes a lunge at the target, attacking with full force. This lowers the target's Attack stat.
 #-------------------------------
 [TM186]
@@ -5520,8 +5520,8 @@ NamePlural = TM186s
 Pocket = 4
 Price = 5000
 FieldUse = TR
-Move = HIGHHORSEPOWER
 Flags = Fling_95
+Move = HIGHHORSEPOWER
 Description = The user fiercely attacks the target using its entire body.
 #-------------------------------
 [TM187]
@@ -5530,8 +5530,8 @@ NamePlural = TM187s
 Pocket = 4
 Price = 10000
 FieldUse = TR
-Move = ICICLESPEAR
 Flags = Fling_25
+Move = ICICLESPEAR
 Description = The user launches sharp icicles at the target. It strikes two to five times in a row.
 #-------------------------------
 [TM188]
@@ -5540,8 +5540,8 @@ NamePlural = TM188s
 Pocket = 4
 Price = 8000
 FieldUse = TR
-Move = SCALD
 Flags = Fling_80
+Move = SCALD
 Description = The user shoots boiling hot water at its target. It may also leave the target with a burn.
 #-------------------------------
 [TM189]
@@ -5550,8 +5550,8 @@ NamePlural = TM189s
 Pocket = 4
 Price = 8000
 FieldUse = TR
-Move = HEATCRASH
 Flags = Fling_10
+Move = HEATCRASH
 Description = The user slams the foe with its flaming body. The heavier the user is, the greater the damage.
 #-------------------------------
 [TM190]
@@ -5560,8 +5560,8 @@ NamePlural = TM190s
 Pocket = 4
 Price = 12000
 FieldUse = TR
-Move = SOLARBLADE
 Flags = Fling_125
+Move = SOLARBLADE
 Description = The user gathers light energy into a blade, attacking the target on the next turn.
 #-------------------------------
 [TM191]
@@ -5570,8 +5570,8 @@ NamePlural = TM191s
 Pocket = 4
 Price = 5000
 FieldUse = TR
-Move = UPROAR
 Flags = Fling_90
+Move = UPROAR
 Description = The user attacks in an uproar for three turns. Over that time, no one can fall asleep.
 #-------------------------------
 [TM192]
@@ -5580,8 +5580,8 @@ NamePlural = TM192s
 Pocket = 4
 Price = 8000
 FieldUse = TR
-Move = FOCUSPUNCH
 Flags = Fling_150
+Move = FOCUSPUNCH
 Description = The user focuses its mind before launching a punch. It will fail if the user is hit before it is used.
 #-------------------------------
 [TM193]
@@ -5590,8 +5590,8 @@ NamePlural = TM193s
 Pocket = 4
 Price = 1500
 FieldUse = TR
-Move = WEATHERBALL
 Flags = Fling_50
+Move = WEATHERBALL
 Description = This move's type and power change depending on the weather at the time the move is used.
 #-------------------------------
 [TM194]
@@ -5600,8 +5600,8 @@ NamePlural = TM194s
 Pocket = 4
 Price = 10000
 FieldUse = TR
-Move = GRASSYGLIDE
 Flags = Fling_55
+Move = GRASSYGLIDE
 Description = Gliding on the ground, the user attacks the target. This move always goes first on Grassy Terrain.
 #-------------------------------
 [TM195]
@@ -5610,8 +5610,8 @@ NamePlural = TM195s
 Pocket = 4
 Price = 8000
 FieldUse = TR
-Move = BURNINGJEALOUSY
 Flags = Fling_70
+Move = BURNINGJEALOUSY
 Description = The user attacks with energy from jealousy. This burns all foes that had their stats boosted this turn.
 #-------------------------------
 [TM196]
@@ -5620,8 +5620,8 @@ NamePlural = TM196s
 Pocket = 4
 Price = 5000
 FieldUse = TR
-Move = FLIPTURN
 Flags = Fling_60
+Move = FLIPTURN
 Description = After making its attack, the user rushes back to switch places with a party Pokémon in waiting.
 #-------------------------------
 [TM197]
@@ -5630,8 +5630,8 @@ NamePlural = TM197s
 Pocket = 4
 Price = 5000
 FieldUse = TR
-Move = DUALWINGBEAT
 Flags = Fling_40
+Move = DUALWINGBEAT
 Description = The user slams the target with its wings. The target is hit twice in a row.
 #-------------------------------
 [TM198]
@@ -5640,8 +5640,8 @@ NamePlural = TM198s
 Pocket = 4
 Price = 14000
 FieldUse = TR
-Move = POLTERGEIST
 Flags = Fling_110
+Move = POLTERGEIST
 Description = Attacks the target by controlling its item. The move fails if the target doesn't have an item.
 #-------------------------------
 [TM199]
@@ -5650,8 +5650,8 @@ NamePlural = TM199s
 Pocket = 4
 Price = 5000
 FieldUse = TR
-Move = LASHOUT
 Flags = Fling_75
+Move = LASHOUT
 Description = The user lashes out to vent its frustration. Power is doubled if its stats dropped this turn.
 #-------------------------------
 [TM200]
@@ -5660,8 +5660,8 @@ NamePlural = TM200s
 Pocket = 4
 Price = 10000
 FieldUse = TR
-Move = SCALESHOT
 Flags = Fling_25
+Move = SCALESHOT
 Description = Attacks by shooting scales two to five times in a row. Boosts the user's Speed but lowers its Defense.
 #-------------------------------
 [TM201]
@@ -5670,10 +5670,9 @@ NamePlural = TM201s
 Pocket = 4
 Price = 14000
 FieldUse = TR
-Move = MISTYEXPLOSION
 Flags = Fling_100
+Move = MISTYEXPLOSION
 Description = The user attacks everything around and faints upon using this move. Power increases on Misty Terrain.
-
 #-------------------------------
 [HM01]
 Name = HM01
@@ -5763,7 +5762,7 @@ Pocket = 5
 Price = 20
 FieldUse = OnPokemon
 BattleUse = OnPokemon
-Flags = Berry,Fling_10,NaturalGift_FIRE_80
+Flags = Berry,Fling_10,NaturalGift_FIRE_80,StatusBerry
 Description = It may be used or held by a Pokémon to recover from paralysis.
 #-------------------------------
 [CHESTOBERRY]
@@ -5773,7 +5772,7 @@ Pocket = 5
 Price = 20
 FieldUse = OnPokemon
 BattleUse = OnPokemon
-Flags = Berry,Fling_10,NaturalGift_WATER_80
+Flags = Berry,Fling_10,NaturalGift_WATER_80,StatusBerry
 Description = It may be used or held by a Pokémon to recover from sleep.
 #-------------------------------
 [PECHABERRY]
@@ -5783,7 +5782,7 @@ Pocket = 5
 Price = 20
 FieldUse = OnPokemon
 BattleUse = OnPokemon
-Flags = Berry,Fling_10,NaturalGift_ELECTRIC_80
+Flags = Berry,Fling_10,NaturalGift_ELECTRIC_80,StatusBerry
 Description = It may be used or held by a Pokémon to recover from poison.
 #-------------------------------
 [RAWSTBERRY]
@@ -5793,7 +5792,7 @@ Pocket = 5
 Price = 20
 FieldUse = OnPokemon
 BattleUse = OnPokemon
-Flags = Berry,Fling_10,NaturalGift_GRASS_80
+Flags = Berry,Fling_10,NaturalGift_GRASS_80,StatusBerry
 Description = It may be used or held by a Pokémon to recover from a burn.
 #-------------------------------
 [ASPEARBERRY]
@@ -5803,7 +5802,7 @@ Pocket = 5
 Price = 20
 FieldUse = OnPokemon
 BattleUse = OnPokemon
-Flags = Berry,Fling_10,NaturalGift_ICE_80
+Flags = Berry,Fling_10,NaturalGift_ICE_80,StatusBerry
 Description = It may be used or held by a Pokémon to defrost it.
 #-------------------------------
 [LEPPABERRY]
@@ -5823,7 +5822,7 @@ Pocket = 5
 Price = 20
 FieldUse = OnPokemon
 BattleUse = OnPokemon
-Flags = Berry,Fling_10,NaturalGift_POISON_80
+Flags = Berry,Fling_10,NaturalGift_POISON_80,HealBerry
 Description = It may be used or held by a Pokémon to heal the user by just 10 HP.
 #-------------------------------
 [PERSIMBERRY]
@@ -5832,7 +5831,7 @@ NamePlural = Persim Berries
 Pocket = 5
 Price = 20
 BattleUse = OnBattler
-Flags = Berry,Fling_10,NaturalGift_GROUND_80
+Flags = Berry,Fling_10,NaturalGift_GROUND_80,StatusBerry
 Description = It may be used or held by a Pokémon to recover from confusion.
 #-------------------------------
 [LUMBERRY]
@@ -5842,7 +5841,7 @@ Pocket = 5
 Price = 20
 FieldUse = OnPokemon
 BattleUse = OnPokemon
-Flags = Berry,Fling_10,NaturalGift_FLYING_80
+Flags = Berry,Fling_10,NaturalGift_FLYING_80,StatusBerry
 Description = It may be used or held by a Pokémon to recover from any status problem.
 #-------------------------------
 [SITRUSBERRY]
@@ -5852,7 +5851,7 @@ Pocket = 5
 Price = 20
 FieldUse = OnPokemon
 BattleUse = OnPokemon
-Flags = Berry,Fling_10,NaturalGift_PSYCHIC_80
+Flags = Berry,Fling_10,NaturalGift_PSYCHIC_80,HealBerry
 Description = It may be used or held by a Pokémon to heal the user's HP a little.
 #-------------------------------
 [FIGYBERRY]
@@ -5860,7 +5859,7 @@ Name = Figy Berry
 NamePlural = Figy Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_BUG_80
+Flags = Berry,Fling_10,NaturalGift_BUG_80,HealBerry,FlavorBerry
 Description = If held by a Pokémon, it restores the user's HP in a pinch, but will cause confusion if it hates the taste.
 #-------------------------------
 [WIKIBERRY]
@@ -5868,7 +5867,7 @@ Name = Wiki Berry
 NamePlural = Wiki Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_ROCK_80
+Flags = Berry,Fling_10,NaturalGift_ROCK_80,HealBerry,FlavorBerry
 Description = If held by a Pokémon, it restores the user's HP in a pinch, but will cause confusion if it hates the taste.
 #-------------------------------
 [MAGOBERRY]
@@ -5876,7 +5875,7 @@ Name = Mago Berry
 NamePlural = Mago Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_GHOST_80
+Flags = Berry,Fling_10,NaturalGift_GHOST_80,HealBerry,FlavorBerry
 Description = If held by a Pokémon, it restores the user's HP in a pinch, but will cause confusion if it hates the taste.
 #-------------------------------
 [AGUAVBERRY]
@@ -5884,7 +5883,7 @@ Name = Aguav Berry
 NamePlural = Aguav Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_DRAGON_80
+Flags = Berry,Fling_10,NaturalGift_DRAGON_80,HealBerry,FlavorBerry
 Description = If held by a Pokémon, it restores the user's HP in a pinch, but will cause confusion if it hates the taste.
 #-------------------------------
 [IAPAPABERRY]
@@ -5892,7 +5891,7 @@ Name = Iapapa Berry
 NamePlural = Iapapa Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_DARK_80
+Flags = Berry,Fling_10,NaturalGift_DARK_80,HealBerry,FlavorBerry
 Description = If held by a Pokémon, it restores the user's HP in a pinch, but will cause confusion if it hates the taste.
 #-------------------------------
 [RAZZBERRY]
@@ -5941,7 +5940,7 @@ NamePlural = Pomeg Berries
 Pocket = 5
 Price = 20
 FieldUse = OnPokemon
-Flags = Berry,Fling_10,NaturalGift_ICE_90
+Flags = Berry,Fling_10,NaturalGift_ICE_90,EVReduceBerry
 Description = Using it on a Pokémon makes it more friendly, but it also lowers its base HP.
 #-------------------------------
 [KELPSYBERRY]
@@ -5950,7 +5949,7 @@ NamePlural = Kelpsy Berries
 Pocket = 5
 Price = 20
 FieldUse = OnPokemon
-Flags = Berry,Fling_10,NaturalGift_FIGHTING_90
+Flags = Berry,Fling_10,NaturalGift_FIGHTING_90,EVReduceBerry
 Description = Using it on a Pokémon makes it more friendly, but it also lowers its base Attack stat.
 #-------------------------------
 [QUALOTBERRY]
@@ -5959,7 +5958,7 @@ NamePlural = Qualot Berries
 Pocket = 5
 Price = 20
 FieldUse = OnPokemon
-Flags = Berry,Fling_10,NaturalGift_POISON_90
+Flags = Berry,Fling_10,NaturalGift_POISON_90,EVReduceBerry
 Description = Using it on a Pokémon makes it more friendly, but it also lowers its base Defense stat.
 #-------------------------------
 [HONDEWBERRY]
@@ -5968,7 +5967,7 @@ NamePlural = Hondew Berries
 Pocket = 5
 Price = 20
 FieldUse = OnPokemon
-Flags = Berry,Fling_10,NaturalGift_GROUND_90
+Flags = Berry,Fling_10,NaturalGift_GROUND_90,EVReduceBerry
 Description = Using it on a Pokémon makes it more friendly, but it also lowers its base Sp. Atk stat.
 #-------------------------------
 [GREPABERRY]
@@ -5977,7 +5976,7 @@ NamePlural = Grepa Berries
 Pocket = 5
 Price = 20
 FieldUse = OnPokemon
-Flags = Berry,Fling_10,NaturalGift_FLYING_90
+Flags = Berry,Fling_10,NaturalGift_FLYING_90,EVReduceBerry
 Description = Using it on a Pokémon makes it more friendly, but it also lowers its base Sp. Def stat.
 #-------------------------------
 [TAMATOBERRY]
@@ -6066,7 +6065,7 @@ Name = Occa Berry
 NamePlural = Occa Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_FIRE_80
+Flags = Berry,Fling_10,NaturalGift_FIRE_80,TypeReduceBerry
 Description = Weakens a supereffective Fire-type attack against the holding Pokémon.
 #-------------------------------
 [PASSHOBERRY]
@@ -6074,7 +6073,7 @@ Name = Passho Berry
 NamePlural = Passho Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_WATER_80
+Flags = Berry,Fling_10,NaturalGift_WATER_80,TypeReduceBerry
 Description = Weakens a supereffective Water-type attack against the holding Pokémon.
 #-------------------------------
 [WACANBERRY]
@@ -6082,7 +6081,7 @@ Name = Wacan Berry
 NamePlural = Wacan Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_ELECTRIC_80
+Flags = Berry,Fling_10,NaturalGift_ELECTRIC_80,TypeReduceBerry
 Description = Weakens a supereffective Electric-type attack against the holding Pokémon.
 #-------------------------------
 [RINDOBERRY]
@@ -6090,7 +6089,7 @@ Name = Rindo Berry
 NamePlural = Rindo Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_GRASS_80
+Flags = Berry,Fling_10,NaturalGift_GRASS_80,TypeReduceBerry
 Description = Weakens a supereffective Grass-type attack against the holding Pokémon.
 #-------------------------------
 [YACHEBERRY]
@@ -6098,7 +6097,7 @@ Name = Yache Berry
 NamePlural = Yache Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_ICE_80
+Flags = Berry,Fling_10,NaturalGift_ICE_80,TypeReduceBerry
 Description = Weakens a supereffective Ice-type attack against the holding Pokémon.
 #-------------------------------
 [CHOPLEBERRY]
@@ -6106,7 +6105,7 @@ Name = Chople Berry
 NamePlural = Chople Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_FIGHTING_80
+Flags = Berry,Fling_10,NaturalGift_FIGHTING_80,TypeReduceBerry
 Description = Weakens a supereffective Fighting-type attack against the holding Pokémon.
 #-------------------------------
 [KEBIABERRY]
@@ -6114,7 +6113,7 @@ Name = Kebia Berry
 NamePlural = Kebia Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_POISON_80
+Flags = Berry,Fling_10,NaturalGift_POISON_80,TypeReduceBerry
 Description = Weakens a supereffective Poison-type attack against the holding Pokémon.
 #-------------------------------
 [SHUCABERRY]
@@ -6122,7 +6121,7 @@ Name = Shuca Berry
 NamePlural = Shuca Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_GROUND_80
+Flags = Berry,Fling_10,NaturalGift_GROUND_80,TypeReduceBerry
 Description = Weakens a supereffective Ground-type attack against the holding Pokémon.
 #-------------------------------
 [COBABERRY]
@@ -6130,7 +6129,7 @@ Name = Coba Berry
 NamePlural = Coba Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_FLYING_80
+Flags = Berry,Fling_10,NaturalGift_FLYING_80,TypeReduceBerry
 Description = Weakens a supereffective Flying-type attack against the holding Pokémon.
 #-------------------------------
 [PAYAPABERRY]
@@ -6138,7 +6137,7 @@ Name = Payapa Berry
 NamePlural = Payapa Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_PSYCHIC_80
+Flags = Berry,Fling_10,NaturalGift_PSYCHIC_80,TypeReduceBerry
 Description = Weakens a supereffective Psychic-type attack against the holding Pokémon.
 #-------------------------------
 [TANGABERRY]
@@ -6146,7 +6145,7 @@ Name = Tanga Berry
 NamePlural = Tanga Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_BUG_80
+Flags = Berry,Fling_10,NaturalGift_BUG_80,TypeReduceBerry
 Description = Weakens a supereffective Bug-type attack against the holding Pokémon.
 #-------------------------------
 [CHARTIBERRY]
@@ -6154,7 +6153,7 @@ Name = Charti Berry
 NamePlural = Charti Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_ROCK_80
+Flags = Berry,Fling_10,NaturalGift_ROCK_80,TypeReduceBerry
 Description = Weakens a supereffective Rock-type attack against the holding Pokémon.
 #-------------------------------
 [KASIBBERRY]
@@ -6162,7 +6161,7 @@ Name = Kasib Berry
 NamePlural = Kasib Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_GHOST_80
+Flags = Berry,Fling_10,NaturalGift_GHOST_80,TypeReduceBerry
 Description = Weakens a supereffective Ghost-type attack against the holding Pokémon.
 #-------------------------------
 [HABANBERRY]
@@ -6170,7 +6169,7 @@ Name = Haban Berry
 NamePlural = Haban Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_DRAGON_80
+Flags = Berry,Fling_10,NaturalGift_DRAGON_80,TypeReduceBerry
 Description = Weakens a supereffective Dragon-type attack against the holding Pokémon.
 #-------------------------------
 [COLBURBERRY]
@@ -6178,7 +6177,7 @@ Name = Colbur Berry
 NamePlural = Colbur Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_DARK_80
+Flags = Berry,Fling_10,NaturalGift_DARK_80,TypeReduceBerry
 Description = Weakens a supereffective Dark-type attack against the holding Pokémon.
 #-------------------------------
 [BABIRIBERRY]
@@ -6186,7 +6185,7 @@ Name = Babiri Berry
 NamePlural = Babiri Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_STEEL_80
+Flags = Berry,Fling_10,NaturalGift_STEEL_80,TypeReduceBerry
 Description = Weakens a supereffective Steel-type attack against the holding Pokémon.
 #-------------------------------
 [ROSELIBERRY]
@@ -6194,7 +6193,7 @@ Name = Roseli Berry
 NamePlural = Roseli Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_FAIRY_80
+Flags = Berry,Fling_10,NaturalGift_FAIRY_80,TypeReduceBerry
 Description = If held by a Pokémon, this Berry will lessen the damage taken from one supereffective Fairy-type attack.
 #-------------------------------
 [CHILANBERRY]
@@ -6202,7 +6201,7 @@ Name = Chilan Berry
 NamePlural = Chilan Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_NORMAL_80
+Flags = Berry,Fling_10,NaturalGift_NORMAL_80,TypeReduceBerry
 Description = Weakens a Normal-type attack against the Pokémon holding this berry.
 #-------------------------------
 [LIECHIBERRY]
@@ -6210,7 +6209,7 @@ Name = Liechi Berry
 NamePlural = Liechi Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_GRASS_100
+Flags = Berry,Fling_10,NaturalGift_GRASS_100,PinchBerry
 Description = If held by a Pokémon, it raises its Attack stat in a pinch.
 #-------------------------------
 [GANLONBERRY]
@@ -6218,7 +6217,7 @@ Name = Ganlon Berry
 NamePlural = Ganlon Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_ICE_100
+Flags = Berry,Fling_10,NaturalGift_ICE_100,PinchBerry
 Description = If held by a Pokémon, it raises its Defense stat in a pinch.
 #-------------------------------
 [SALACBERRY]
@@ -6226,7 +6225,7 @@ Name = Salac Berry
 NamePlural = Salac Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_FIGHTING_100
+Flags = Berry,Fling_10,NaturalGift_FIGHTING_100,PinchBerry
 Description = If held by a Pokémon, it raises its Speed stat in a pinch.
 #-------------------------------
 [PETAYABERRY]
@@ -6234,7 +6233,7 @@ Name = Petaya Berry
 NamePlural = Petaya Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_POISON_100
+Flags = Berry,Fling_10,NaturalGift_POISON_100,PinchBerry
 Description = If held by a Pokémon, it raises its Sp. Atk stat in a pinch.
 #-------------------------------
 [APICOTBERRY]
@@ -6242,7 +6241,7 @@ Name = Apicot Berry
 NamePlural = Apicot Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_GROUND_100
+Flags = Berry,Fling_10,NaturalGift_GROUND_100,PinchBerry
 Description = If held by a Pokémon, it raises its Sp. Def stat in a pinch.
 #-------------------------------
 [LANSATBERRY]
@@ -6250,7 +6249,7 @@ Name = Lansat Berry
 NamePlural = Lansat Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_FLYING_100
+Flags = Berry,Fling_10,NaturalGift_FLYING_100,PinchBerry
 Description = If held by a Pokémon, it raises its critical-hit ratio in a pinch.
 #-------------------------------
 [STARFBERRY]
@@ -6258,7 +6257,7 @@ Name = Starf Berry
 NamePlural = Starf Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_PSYCHIC_100
+Flags = Berry,Fling_10,NaturalGift_PSYCHIC_100,PinchBerry
 Description = If held by a Pokémon, it sharply raises one of its stats in a pinch.
 #-------------------------------
 [ENIGMABERRY]
@@ -6274,7 +6273,7 @@ Name = Micle Berry
 NamePlural = Micle Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_ROCK_100
+Flags = Berry,Fling_10,NaturalGift_ROCK_100,PinchBerry
 Description = If held by a Pokémon, it raises the accuracy of a move just once in a pinch.
 #-------------------------------
 [CUSTAPBERRY]
@@ -6282,7 +6281,7 @@ Name = Custap Berry
 NamePlural = Custap Berries
 Pocket = 5
 Price = 20
-Flags = Berry,Fling_10,NaturalGift_GHOST_100
+Flags = Berry,Fling_10,NaturalGift_GHOST_100,PinchBerry
 Description = If held by a Pokémon, it gets to move first just once in a pinch.
 #-------------------------------
 [JABOCABERRY]
@@ -6419,7 +6418,7 @@ NamePlural = X Attacks
 Pocket = 7
 Price = 1000
 BattleUse = OnBattler
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = An item that sharply boosts the Attack stat of a Pokémon while it remains in battle.
 #-------------------------------
 [XATTACK2]
@@ -6428,7 +6427,7 @@ NamePlural = X Attack 2s
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = It sharply raises the Attack stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.
 #-------------------------------
 [XATTACK3]
@@ -6437,7 +6436,7 @@ NamePlural = X Attack 3s
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = It drastically raises the Attack stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.
 #-------------------------------
 [XATTACK6]
@@ -6446,7 +6445,7 @@ NamePlural = X Attack 6s
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = It raises the Attack stat of a Pokémon in battle immensely. It wears off if the Pokémon is withdrawn.
 #-------------------------------
 [XDEFENSE]
@@ -6455,7 +6454,7 @@ NamePlural = X Defenses
 Pocket = 7
 Price = 2000
 BattleUse = OnBattler
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = An item that sharply boosts the Defense of a Pokémon while it remains in battle.
 #-------------------------------
 [XDEFENSE2]
@@ -6464,7 +6463,7 @@ NamePlural = X Defense 2s
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = It sharply raises the Defense stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.
 #-------------------------------
 [XDEFENSE3]
@@ -6473,7 +6472,7 @@ NamePlural = X Defense 3s
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = It drastically raises the Defense stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.
 #-------------------------------
 [XDEFENSE6]
@@ -6482,7 +6481,7 @@ NamePlural = X Defense 6s
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = It raises the Defense stat of a Pokémon in battle immensely. It wears off if the Pokémon is withdrawn.
 #-------------------------------
 [XSPATK]
@@ -6491,7 +6490,7 @@ NamePlural = X Sp. Atks
 Pocket = 7
 Price = 1000
 BattleUse = OnBattler
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = An item that sharply boosts the Sp. Atk stat of a Pokémon while it remains in battle.
 #-------------------------------
 [XSPATK2]
@@ -6500,7 +6499,7 @@ NamePlural = X Sp. Atk 2s
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = It sharply raises the Sp. Atk stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.
 #-------------------------------
 [XSPATK3]
@@ -6509,7 +6508,7 @@ NamePlural = X Sp. Atk 3s
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = It drastically raises the Sp. Atk stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.
 #-------------------------------
 [XSPATK6]
@@ -6518,7 +6517,7 @@ NamePlural = X Sp. Atk 6s
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = It raises the Sp. Atk stat of a Pokémon in battle immensely. It wears off if the Pokémon is withdrawn.
 #-------------------------------
 [XSPDEF]
@@ -6527,7 +6526,7 @@ NamePlural = X Sp. Defs
 Pocket = 7
 Price = 2000
 BattleUse = OnBattler
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = An item that sharply boosts the Sp. Def stat of a Pokémon while it remains in battle.
 #-------------------------------
 [XSPDEF2]
@@ -6536,7 +6535,7 @@ NamePlural = X Sp. Def 2s
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = It sharply raises the Sp. Def stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.
 #-------------------------------
 [XSPDEF3]
@@ -6545,7 +6544,7 @@ NamePlural = X Sp. Def 3s
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = It drastically raises the Sp. Def stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.
 #-------------------------------
 [XSPDEF6]
@@ -6554,7 +6553,7 @@ NamePlural = X Sp. Def 6s
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = It raises the Sp. Def stat of a Pokémon in battle immensely. It wears off if the Pokémon is withdrawn.
 #-------------------------------
 [XSPEED]
@@ -6563,7 +6562,7 @@ NamePlural = X Speeds
 Pocket = 7
 Price = 1000
 BattleUse = OnBattler
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = An item that sharply boosts the Speed stat of a Pokémon while it remains in battle.
 #-------------------------------
 [XSPEED2]
@@ -6572,7 +6571,7 @@ NamePlural = X Speed 2s
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = It sharply raises the Speed stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.
 #-------------------------------
 [XSPEED3]
@@ -6581,7 +6580,7 @@ NamePlural = X Speed 3s
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = It drastically raises the Speed stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.
 #-------------------------------
 [XSPEED6]
@@ -6590,7 +6589,7 @@ NamePlural = X Speed 6s
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = It raises the Speed stat of a Pokémon in battle immensely. It wears off if the Pokémon is withdrawn.
 #-------------------------------
 [XACCURACY]
@@ -6599,7 +6598,7 @@ NamePlural = X Accuracies
 Pocket = 7
 Price = 1000
 BattleUse = OnBattler
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = An item that sharply boosts the accuracy of a Pokémon while it remains in battle.
 #-------------------------------
 [XACCURACY2]
@@ -6608,7 +6607,7 @@ NamePlural = X Accuracy 2s
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = It sharply raises the accuracy of a Pokémon in battle. It wears off if the Pokémon is withdrawn.
 #-------------------------------
 [XACCURACY3]
@@ -6617,7 +6616,7 @@ NamePlural = X Accuracy 3s
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = It drastically raises the accuracy of a Pokémon in battle. It wears off if the Pokémon is withdrawn.
 #-------------------------------
 [XACCURACY6]
@@ -6626,7 +6625,7 @@ NamePlural = X Accuracy 6s
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = It raises the accuracy of a Pokémon in battle immensely. It wears off if the Pokémon is withdrawn.
 #-------------------------------
 [DIREHIT]
@@ -6635,7 +6634,7 @@ NamePlural = Dire Hits
 Pocket = 7
 Price = 1000
 BattleUse = OnBattler
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = An item that raises the critical-hit ratio greatly. It wears off if the Pokémon is withdrawn.
 #-------------------------------
 [DIREHIT2]
@@ -6644,7 +6643,7 @@ NamePlural = Dire Hit 2s
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = It sharply raises the critical-hit ratio. It wears off if the Pokémon is withdrawn.
 #-------------------------------
 [DIREHIT3]
@@ -6653,7 +6652,7 @@ NamePlural = Dire Hit 3s
 Pocket = 7
 Price = 0
 BattleUse = OnBattler
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = It greatly raises the critical-hit ratio. It wears off if the Pokémon is withdrawn.
 #-------------------------------
 [GUARDSPEC]
@@ -6662,7 +6661,7 @@ NamePlural = Guard Specs.
 Pocket = 7
 Price = 1500
 BattleUse = Direct
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = An item that prevents stat reduction among the Trainer's party Pokémon for five turns after use.
 #-------------------------------
 [RESETURGE]
@@ -6670,7 +6669,7 @@ Name = Reset Urge
 NamePlural = Reset Urges
 Pocket = 7
 Price = 0
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = When used, it restores any stat changes of an ally Pokémon.
 #-------------------------------
 [ABILITYURGE]
@@ -6678,7 +6677,7 @@ Name = Ability Urge
 NamePlural = Ability Urges
 Pocket = 7
 Price = 0
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = When used, it activates the Ability of an ally Pokémon.
 #-------------------------------
 [ITEMURGE]
@@ -6686,7 +6685,7 @@ Name = Item Urge
 NamePlural = Item Urges
 Pocket = 7
 Price = 0
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = When used, it causes an ally Pokémon to use its held item.
 #-------------------------------
 [ITEMDROP]
@@ -6694,7 +6693,7 @@ Name = Item Drop
 NamePlural = Item Drops
 Pocket = 7
 Price = 0
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = When used, it causes an ally Pokémon to drop a held item.
 #-------------------------------
 [BLUEFLUTE]
@@ -6705,7 +6704,7 @@ Price = 20
 FieldUse = OnPokemon
 BattleUse = OnPokemon
 Consumable = false
-Flags = Fling_30
+Flags = Fling_30,Flute
 Description = A blue flute made from blown glass. Its melody awakens a single Pokémon from sleep.
 #-------------------------------
 [YELLOWFLUTE]
@@ -6715,7 +6714,7 @@ Pocket = 7
 Price = 20
 BattleUse = OnBattler
 Consumable = false
-Flags = Fling_30
+Flags = Fling_30,Flute
 Description = A yellow flute made from blown glass. Its melody snaps a single Pokémon out of confusion.
 #-------------------------------
 [REDFLUTE]
@@ -6725,7 +6724,7 @@ Pocket = 7
 Price = 20
 BattleUse = OnBattler
 Consumable = false
-Flags = Fling_30
+Flags = Fling_30,Flute
 Description = A red flute made from blown glass. Its melody snaps a single Pokémon out of infatuation.
 #-------------------------------
 [POKEDOLL]
@@ -7310,7 +7309,7 @@ Description = Conchas necessárias para enfrentar o desafio do marujo no S.S. An
 #-------------------------------
 [SILVER_WING]
 Name = Silver Wing
-NamePlural = Silver Wing's 
+NamePlural = Silver Wing's
 Pocket = 8
 Price = 0
 Description = A strange, silvery feather that sparkles.
@@ -7414,6 +7413,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Normal-type moves to Normal-type Z-Moves.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Normal-type moves to Z-Moves.
 #-------------------------------
 [FIRIUMZ]
 Name = Firium Z
@@ -7423,6 +7423,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Fire-type moves to Fire-type Z-Moves.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Fire-type moves to Z-Moves.
 #-------------------------------
 [WATERIUMZ]
 Name = Waterium Z
@@ -7432,6 +7433,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Water-type moves to Water-type Z-Moves.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Water-type moves to Z-Moves.
 #-------------------------------
 [ELECTRIUMZ]
 Name = Electrium Z
@@ -7441,6 +7443,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Electric-type moves to Electric-type Z-Moves.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Electric-type moves to Z-Moves.
 #-------------------------------
 [GRASSIUMZ]
 Name = Grassium Z
@@ -7450,6 +7453,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Grass-type moves to Grass-type Z-Moves.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Grass-type moves to Z-Moves.
 #-------------------------------
 [ICIUMZ]
 Name = Icium Z
@@ -7459,6 +7463,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Ice-type moves to Ice-type Z-Moves.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Ice-type moves to Z-Moves.
 #-------------------------------
 [FIGHTINIUMZ]
 Name = Fightinium Z
@@ -7468,6 +7473,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Fighting-type moves to Fighting-type Z-Moves.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Fighting-type moves to Z-Moves.
 #-------------------------------
 [POISONIUMZ]
 Name = Poisonium Z
@@ -7477,6 +7483,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Poison-type moves to Poison-type Z-Moves.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Poison-type moves to Z-Moves.
 #-------------------------------
 [GROUNDIUMZ]
 Name = Groundium Z
@@ -7486,6 +7493,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Ground-type moves to Ground-type Z-Moves.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Ground-type moves to Z-Moves.
 #-------------------------------
 [FLYINIUMZ]
 Name = Flyinium Z
@@ -7495,6 +7503,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Flying-type moves to Flying-type Z-Moves.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Flying-type moves to Z-Moves.
 #-------------------------------
 [PSYCHIUMZ]
 Name = Psychium Z
@@ -7504,6 +7513,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Psychic-type moves to Psychic-type Z-Moves.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Psychic-type moves to Z-Moves.
 #-------------------------------
 [BUGINIUMZ]
 Name = Buginium Z
@@ -7513,6 +7523,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Bug-type moves to Bug-type Z-Moves.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Bug-type moves to Z-Moves.
 #-------------------------------
 [ROCKIUMZ]
 Name = Rockium Z
@@ -7522,6 +7533,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Rock-type moves to Rock-type Z-Moves.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Rock-type moves to Z-Moves.
 #-------------------------------
 [GHOSTIUMZ]
 Name = Ghostium Z
@@ -7531,6 +7543,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Ghost-type moves to Ghost-type Z-Moves.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Ghost-type moves to Z-Moves.
 #-------------------------------
 [DRAGONIUMZ]
 Name = Dragonium Z
@@ -7540,6 +7553,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Dragon-type moves to Dragon-type Z-Moves.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Dragon-type moves to Z-Moves.
 #-------------------------------
 [DARKINIUMZ]
 Name = Darkinium Z
@@ -7549,6 +7563,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Dark-type moves to Dark-type Z-Moves.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Dark-type moves to Z-Moves.
 #-------------------------------
 [STEELIUMZ]
 Name = Steelium Z
@@ -7558,6 +7573,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Steel-type moves to Steel-type Z-Moves.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Steel-type moves to Z-Moves.
 #-------------------------------
 [FAIRIUMZ]
 Name = Fairium Z
@@ -7567,6 +7583,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Fairy-type moves to Fairy-type Z-Moves.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Fairy-type moves to Z-Moves.
 #-------------------------------
 [PIKANIUMZ]
 Name = Pikanium Z
@@ -7576,6 +7593,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Pikachu's Volt Tackle to an exclusive Z-Move.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Pikachu's Volt Tackle to a Z-Move.
 #-------------------------------
 [DECIDIUMZ]
 Name = Decidium Z
@@ -7585,6 +7603,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Decidueye's Spirit Shackle to an exclusive Z-Move.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Decidueye's Spirit Shackle to a Z-Move.
 #-------------------------------
 [INCINIUMZ]
 Name = Incinium Z
@@ -7594,6 +7613,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Incineroar's Darkest Lariat to an exclusive Z-Move.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Incineroar's Darkest Lariat to a Z-Move.
 #-------------------------------
 [PRIMARIUMZ]
 Name = Primarium Z
@@ -7603,6 +7623,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Primarina's Sparkling Aria to an exclusive Z-Move.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Primarina's Sparkling Aria to a Z-Move.
 #-------------------------------
 [TAPUNIUMZ]
 Name = Tapunium Z
@@ -7612,6 +7633,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade the tapus' Nature's Madness to an exclusive Z-Move.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades the tapu's Nature's Madness to a Z-Move.
 #-------------------------------
 [MARSHADIUMZ]
 Name = Marshadium Z
@@ -7621,6 +7643,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Marshadow's Spectral Thief to an exclusive Z-Move.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Marshadow's Spectral Thief to a Z-Move.
 #-------------------------------
 [ALORAICHIUMZ]
 Name = Aloraichium Z
@@ -7630,6 +7653,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Alolan Raichu's Thunderbolt to an exclusive Z-Move.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Alolan Raichu's Thunderbolt to a Z-Move.
 #-------------------------------
 [SNORLIUMZ]
 Name = Snorlium Z
@@ -7639,6 +7663,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Snorlax's Giga Impact to an exclusive Z-Move.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Snorlax's Giga Impact to a Z-Move.
 #-------------------------------
 [EEVIUMZ]
 Name = Eevium Z
@@ -7648,6 +7673,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Eevee's Last Resort to an exclusive Z-Move.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Eevee's Last Resort to a Z-Move.
 #-------------------------------
 [MEWNIUMZ]
 Name = Mewnium Z
@@ -7657,6 +7683,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Mew's Psychic to an exclusive Z-Move.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Mew's Psychic to a Z-Move.
 #-------------------------------
 [PIKASHUNIUMZ]
 Name = Pikashunium Z
@@ -7666,6 +7693,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade a capped Pikachu's Thunderbolt to an exclusive Z-Move.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades a capped Pikachu's Thunderbolt to a Z-Move.
 #-------------------------------
 [KOMMONIUMZ]
 Name = Kommonium Z
@@ -7675,6 +7703,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Kommo-o's Clanging Scales to an exclusive Z-Move.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Kommo-o's Clanging Scales to a Z-Move.
 #-------------------------------
 [LYCANIUMZ]
 Name = Lycanium Z
@@ -7684,6 +7713,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Lycanroc's Stone Edge to an exclusive Z-Move.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Lycanroc's Stone Edge to a Z-Move.
 #-------------------------------
 [MIMIKIUMZ]
 Name = Mimikium Z
@@ -7693,6 +7723,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Mimikyu's Play Rough to an exclusive Z-Move.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Mimikyu's Play Rough to a Z-Move.
 #-------------------------------
 [SOLGANIUMZ]
 Name = Solganium Z
@@ -7702,6 +7733,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Solgaleo's Sunsteel Strike to an exclusive Z-Move.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Solgaleo's Sunsteel Strike to a Z-Move.
 #-------------------------------
 [LUNALIUMZ]
 Name = Lunalium Z
@@ -7711,6 +7743,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,KeyItem
 Description = It converts Z-Power into crystals that upgrade Lunala's Moongeist Beam to an exclusive Z-Move.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Lunala's Moongeist Beam to a Z-Move.
 #-------------------------------
 [ULTRANECROZIUMZ]
 Name = Ultranecrozium Z
@@ -7720,6 +7753,7 @@ Price = 0
 FieldUse = OnPokemon
 Flags = ZCrystal,UltraItem,KeyItem
 Description = It's a crystal that turns Necrozma fused with Solgaleo or Lunala into a new form.
+HeldDescription = This is a crystallized form of Z-Power. It upgrades Necrozma's Photon Geyser to a Z-Move.
 #-------------------------------
 [WISHINGPIECE]
 Name = Wishing Piece
@@ -7735,7 +7769,7 @@ NamePlural = clusters of Max Mushrooms
 Pocket = 7
 Price = 8000
 BattleUse = OnBattler
-Flags = Fling_30
+Flags = Fling_30,BattleEnhancer
 Description = Mushrooms that boost all stats of a Pokémon during battle.
 #-------------------------------
 [MAXHONEY]
@@ -7768,7 +7802,7 @@ Description = Maxes out the Dynamax Level of a single Pokémon. A higher level m
 #-------------------------------
 [MAXSOUP]
 Name = Max Soup
-NamePlural = helpings of Max Soup
+NamePlural = Max Soups
 Pocket = 2
 Price = 10000
 FieldUse = OnPokemon
@@ -7777,7 +7811,7 @@ Description = A soup that packs a huge kick. Certain Pokémon that consume it ma
 #-------------------------------
 [MAXEGGS]
 Name = Max Eggs
-NamePlural = clutches of Max Eggs
+NamePlural = Max Eggs
 Pocket = 2
 Price = 20000
 FieldUse = Direct
@@ -7786,7 +7820,7 @@ Description = A bundle of highly nutritious, jumbo-sized eggs. Grants the entire
 #-------------------------------
 [MAXSCALES]
 Name = Max Scales
-NamePlural = sets of Max Scales
+NamePlural = Max Scales
 Pocket = 2
 Price = 4000
 FieldUse = OnPokemon
@@ -7795,7 +7829,7 @@ Description = Reflective scales that act like a mirror. Pokémon are able to rec
 #-------------------------------
 [MAXPLUMAGE]
 Name = Max Plumage
-NamePlural = bundles of Max Plumage
+NamePlural = Max Plumage
 Pocket = 2
 Price = 4000
 FieldUse = OnPokemon
@@ -7808,7 +7842,7 @@ NamePlural = Z-Boosters
 Pocket = 7
 Price = 4000
 BattleUse = Direct
-Flags = Fling_30
+Flags = Fling_30,UsesAllBattleActions
 Description = A crystal brimming with Z-Power. It can fully recharge your Z-Ring in battle.
 #-------------------------------
 [WISHINGSTAR]
@@ -7817,7 +7851,7 @@ NamePlural = Wishing Stars
 Pocket = 7
 Price = 4000
 BattleUse = Direct
-Flags = Fling_50
+Flags = Fling_50,UsesAllBattleActions
 Description = A stone that radiates Dynamax energy. It can fully recharge your Dynamax Band in battle.
 #-------------------------------
 [ARMORITEORE]
@@ -8258,7 +8292,6 @@ NamePlural = Syrupy Apples
 Pocket = 1
 Price = 2200
 SellPrice = 550
-BPPrice = 5
 FieldUse = OnPokemon
 Flags = EvolutionStone,Fling_30
 Description = A peculiar apple that can make a certain species of Pokémon evolve. It's exceptionally syrupy.
@@ -8269,7 +8302,6 @@ NamePlural = Unremarkable Teacups
 Pocket = 1
 Price = 1500
 SellPrice = 400
-BPPrice = 5
 FieldUse = OnPokemon
 Flags = EvolutionStone,Fling_80
 Description = A peculiar cracked teacup that can make a certain species of Pokémon evolve. It makes delicious tea.
@@ -8280,7 +8312,6 @@ NamePlural = Masterpiece Teacups
 Pocket = 1
 Price = 1500
 SellPrice = 9500
-BPPrice = 5
 FieldUse = OnPokemon
 Flags = EvolutionStone,Fling_80
 Description = A peculiar chipped teacup that can make a certain species of Pokémon evolve. It makes delicious tea.

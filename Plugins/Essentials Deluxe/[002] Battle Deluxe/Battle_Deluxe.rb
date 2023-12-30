@@ -7,27 +7,27 @@
 #-------------------------------------------------------------------------------
 class Game_Temp
   attr_accessor :dx_rules
-  attr_accessor :dx_midbattle
   attr_accessor :dx_pokemon
+  attr_accessor :dx_midbattle
   
   def dx_rules;      return @dx_rules;     end
-  def dx_midbattle;  return @dx_midbattle; end
   def dx_pokemon;    return @dx_pokemon;   end
+  def dx_midbattle;  return @dx_midbattle; end
   
   def dx_rules?;     return @dx_rules     && !@dx_rules.empty?;     end
-  def dx_midbattle?; return @dx_midbattle && !@dx_midbattle.empty?; end
   def dx_pokemon?;   return @dx_pokemon   && !@dx_pokemon.empty?;   end
+  def dx_midbattle?; return @dx_midbattle && !@dx_midbattle.empty?; end
   
   def dx_rules=(value)
     @dx_rules = value || {}
   end
   
-  def dx_midbattle=(value)
-    @dx_midbattle = value || {}
-  end
-  
   def dx_pokemon=(value)
     @dx_pokemon = value || {}
+  end
+  
+  def dx_midbattle=(value)
+    @dx_midbattle = value || {}
   end
   
   def dx_clear
@@ -40,24 +40,24 @@ class Game_Temp
           $game_switches[Settings::NO_Z_MOVE]      = false if key == :nozmove
           $game_switches[Settings::NO_ULTRA_BURST] = false if key == :noultra
           $game_switches[Settings::NO_DYNAMAX]     = false if key == :nodynamax
+        when :nostyles
+          next if !PluginManager.installed?("PLA Battle Styles")
+          $game_switches[Settings::NO_STYLE_MOVES] = false
+        when :notera
+          next if !PluginManager.installed?("Terastal Phenomenon")
+          $game_switches[Settings::NO_TERASTALLIZE] = false
         when :nozodiac
           next if !PluginManager.installed?("Pokemon Birthsigns")
           $game_switches[Settings::NO_ZODIAC_POWER] = false
         when :nofocus
           next if !PluginManager.installed?("Focus Meter System")
           $game_switches[Settings::NO_FOCUS_MECHANIC] = false
-        when :nostyles
-          next if !PluginManager.installed?("PLA Battle Styles")
-          $game_switches[Settings::NO_STYLE_MOVES] = false
-        when :notera
-          next if !PluginManager.installed?("ScarletVioletGimmick_TDW")
-          $game_switches[TDWSettings::TERA_ITEM_ENABLED_SWITCH] = true
         end
       end
       @dx_rules.clear
     end
-    @dx_midbattle.clear if dx_midbattle?
     @dx_pokemon.clear if dx_pokemon?
+    @dx_midbattle.clear if dx_midbattle?
     $PokemonGlobal.nextBattleBGM = nil
     pbDeregisterPartner
     clear_battle_rules
@@ -76,12 +76,20 @@ class TrainerBattle
     rules[:outcome] = 1 if !rules[:outcome]
     foe_size = 0
     foes.each { |f| foe_size += 1 if f.is_a?(Array) || f.is_a?(Symbol) || f.is_a?(NPCTrainer)}
+    oldTrainer = [$player.name, $player.outfit, $player.party]
     pbApplyBattleRules(foe_size)
     if $game_temp.dx_midbattle.is_a?(Symbol) && hasConst?(EssentialsDeluxe, $game_temp.dx_midbattle)
       hash = getConst(EssentialsDeluxe, $game_temp.dx_midbattle).clone
       $game_temp.dx_midbattle = hash
     end
     outcome = TrainerBattle.start(*foes)
+    if rules[:player]
+      $player.name = oldTrainer[0]
+      $player.outfit = oldTrainer[1]
+    end
+    if rules[:party]
+      $player.party = oldTrainer[2]
+    end
     $game_temp.dx_clear
     return outcome
   end
@@ -96,12 +104,22 @@ class WildBattle
     rules[:outcome] = 1 if !rules[:outcome]
     foe_size = 0
     foes.each { |f| foe_size += 1 if f.is_a?(Array) || f.is_a?(Symbol) || f.is_a?(Pokemon) }
+    oldTrainer = [$player.name, $player.outfit, $player.party]
     pbApplyBattleRules(foe_size, true)
     pkmn = []
-    for i in 0...foes.length / 2
-      species, level = foes[i * 2], foes[i * 2 + 1]
-      next if !GameData::Species.exists?(species)
-      pkmn.push(Pokemon.new(species, level))
+    species = level = nil
+    foes.each do |foe|
+      case foe
+      when Pokemon then pkmn.push(foe)
+      when Symbol  then species = foe
+      when Integer then level = foe
+      end
+      if species && level
+        next if !GameData::Species.exists?(species)
+        next if !(1..Settings::MAXIMUM_LEVEL).include?(level)
+        pkmn.push(Pokemon.new(species, level))
+        species = level = nil
+      end
     end
     pbApplyWildAttributes(pkmn)
     if $game_temp.dx_midbattle.is_a?(Symbol) && hasConst?(EssentialsDeluxe, $game_temp.dx_midbattle)
@@ -109,6 +127,13 @@ class WildBattle
       $game_temp.dx_midbattle = hash
     end
     outcome = WildBattle.start(*pkmn, can_override: false)
+    if rules[:player]
+      $player.name = oldTrainer[0]
+      $player.outfit = oldTrainer[1]
+    end
+    if rules[:party]
+      $player.party = oldTrainer[2]
+    end	  
     $game_temp.dx_clear
     return outcome
   end
@@ -123,7 +148,7 @@ def pbApplyBattleRules(foeside, wildbattle = false)
   #-----------------------------------------------------------------------------
   # General rules.
   #-----------------------------------------------------------------------------
-  setBattleRule("setStyle")            if rules[:setstyle]
+  setBattleRule("setStyle")            if rules[:setmode]
   setBattleRule("canLose")             if rules[:canlose]
   setBattleRule("noexp")               if rules[:noexp]
   setBattleRule("nomoney")             if rules[:nomoney]
@@ -135,6 +160,43 @@ def pbApplyBattleRules(foeside, wildbattle = false)
   setBattleRule("cannotRun")           if wildbattle && rules[:noflee]
   setBattleRule("disablePokeBalls")    if wildbattle && rules[:nocapture]
   setBattleRule("forceCatchIntoParty") if wildbattle && rules[:catchtoparty]
+  #-----------------------------------------------------------------------------
+  # Temporarily changes the player character's name and/or outfit.
+  #-----------------------------------------------------------------------------
+  if rules[:player]
+    case rules[:player]
+    when String  then $player.name = rules[:player]
+    when Integer then $player.outfit = rules[:player]
+    when Array
+      rules[:player].each do |tr|
+        case tr
+        when String  then $player.name = tr
+        when Integer then $player.outfit = tr
+        end
+      end
+    end
+  end
+  #-----------------------------------------------------------------------------
+  # Sets the player's temporary party.
+  #-----------------------------------------------------------------------------
+  if rules[:party]
+    newparty = []
+    species = nil
+    rules[:party].each do |data|
+      case data
+      when Pokemon
+        newparty.push(data)
+      when Symbol
+        next if !GameData::Species.exists?(data)
+        species = data
+      when Integer
+        next if !species
+        newparty.push(Pokemon.new(species, data))
+        species = nil
+      end
+    end
+    $player.party = newparty if !newparty.empty?
+  end
   #-----------------------------------------------------------------------------
   # Sets partner trainer.
   #-----------------------------------------------------------------------------
@@ -148,14 +210,8 @@ def pbApplyBattleRules(foeside, wildbattle = false)
   # Pokemon to meet the set size.
   #-----------------------------------------------------------------------------
   case rules[:size]
-  when "double"
-    if foeside == 2 || !wildbattle && foeside == 1
-      setBattleRule("double")
-    end
-  when "triple"
-    if foeside == 3 || !wildbattle && foeside == 1
-      setBattleRule("triple")
-    end
+  when String
+    setBattleRule(rules[:size])
   when Numeric
     rules[:size] = 1 if rules[:size] < 1
     rules[:size] = 3 if rules[:size] > 3
@@ -249,15 +305,28 @@ def pbApplyBattleRules(foeside, wildbattle = false)
     rules[:fairness_bonus] = true
   end
   rules[:hard] = nil if rules[:hard] && !rules[:rank]
+  #-----------------------------------------------------------------------------
+  # Sets battle music.
+  #-----------------------------------------------------------------------------
+  case rules[:victory]
+  when :None  then $PokemonGlobal.nextBattleVictoryBGM = ""
+  when String then $PokemonGlobal.nextBattleVictoryBGM = rules[:victory]
+  end
   $PokemonGlobal.nextBattleBGM = rules[:bgm] if rules[:bgm].is_a?(String)
   #-----------------------------------------------------------------------------
   # Sets rules for special battle mechanics.
   #-----------------------------------------------------------------------------
-  $game_switches[Settings::NO_MEGA_EVOLUTION] = true if rules[:nomega]
+  $game_switches[Settings::NO_MEGA_EVOLUTION]   = true if rules[:nomega]
   if PluginManager.installed?("ZUD Mechanics")
-    $game_switches[Settings::NO_Z_MOVE]      = true if rules[:nozmove]
-    $game_switches[Settings::NO_ULTRA_BURST] = true if rules[:noultra]
-    $game_switches[Settings::NO_DYNAMAX]     = true if rules[:nodynamax]
+    $game_switches[Settings::NO_Z_MOVE]         = true if rules[:nozmove]
+    $game_switches[Settings::NO_ULTRA_BURST]    = true if rules[:noultra]
+    $game_switches[Settings::NO_DYNAMAX]        = true if rules[:nodynamax]
+  end
+  if PluginManager.installed?("PLA Battle Styles") && rules[:nostyles]
+    $game_switches[Settings::NO_STYLE_MOVES]    = true
+  end
+  if PluginManager.installed?("Terastal Phenomenon") && rules[:notera]
+    $game_switches[Settings::NO_TERASTALLIZE]   = true
   end
   if PluginManager.installed?("Pokemon Birthsigns") && rules[:nozodiac]
     $game_switches[Settings::NO_ZODIAC_POWER]   = true
@@ -265,17 +334,164 @@ def pbApplyBattleRules(foeside, wildbattle = false)
   if PluginManager.installed?("Focus Meter System") && rules[:nofocus]
     $game_switches[Settings::NO_FOCUS_MECHANIC] = true
   end
-  if PluginManager.installed?("PLA Battle Styles") && rules[:nostyles]
-    $game_switches[Settings::NO_STYLE_MOVES]    = true
-  end
-  if PluginManager.installed?("ScarletVioletGimmick_TDW") && rules[:notera]
-    $game_switches[TDWSettings::TERA_ITEM_ENABLED_SWITCH] = false
+end
+
+
+#-------------------------------------------------------------------------------
+# Edits battle start text with the [:introtext] rule.
+#-------------------------------------------------------------------------------
+class Battle
+  def pbStartBattleSendOut(sendOuts)
+    foes = @opponent || pbParty(1)
+    if $game_temp.dx_rules? && $game_temp.dx_rules[:introtext]
+      foe_names = []
+      foes.each do |foe|
+        name = (wildBattle?) ? foe.name : foe.full_name
+        foe_names.push(name)
+      end
+      pbDisplayPaused(_INTL("#{$game_temp.dx_rules[:introtext]}", *foe_names))
+    else
+      msg = (wildBattle?) ? "Oh! A wild " : "You are challenged by "
+      foes.each_with_index do |foe, i|
+        if i > 0
+          msg += (i == foes.length - 1) ? " and " : ", "
+        end
+        msg += (wildBattle?) ? foe.name : foe.full_name
+      end
+      msg += (wildBattle?) ? " appeared!" : "!"
+      pbDisplayPaused(_INTL("{1}", msg))
+    end
+    [1, 0].each do |side|
+      next if side == 1 && wildBattle?
+      msg = ""
+      toSendOut = []
+      trainers = (side == 0) ? @player.reverse : @opponent
+      trainers.each_with_index do |t, i|
+        msg += "\r\n" if msg.length > 0
+        if side == 0 && i == trainers.length - 1
+          msg += "Go! "
+          sent = sendOuts[side][0]
+        else
+          msg += "#{t.full_name} sent out "
+          sent = (side == 0) ? sendOuts[0][1] : sendOuts[1][i]
+        end
+        sent.each_with_index do |idxBattler, j|
+          if j > 0
+            msg += (j == sent.length - 1) ? " and " : ", "
+          end
+          msg += @battlers[idxBattler].name_title
+        end
+        msg += "!"
+        toSendOut.concat(sent)
+      end
+      pbDisplayBrief(_INTL("{1}", msg)) if msg.length > 0
+      animSendOuts = []
+      toSendOut.each do |idxBattler|
+        animSendOuts.push([idxBattler, @battlers[idxBattler].pokemon])
+      end
+      pbSendOut(animSendOuts, true)
+    end
   end
 end
 
 
 #-------------------------------------------------------------------------------
-# Applies environment and background settings from the [:environ] rule.
+# Edits capture outcomes with the [:setcapture] rule.
+#-------------------------------------------------------------------------------
+module Battle::CatchAndStoreMixin
+  alias dx_pbCaptureCalc pbCaptureCalc
+  def pbCaptureCalc(*args)
+    if $game_temp.dx_rules? && !$game_temp.dx_rules[:setcapture].nil?
+      ret = ($game_temp.dx_rules[:setcapture]) ? 4 : 0
+    else
+      ret = dx_pbCaptureCalc(*args)
+    end
+    @poke_ball_failed = false if ret == 4
+    return ret
+  end
+  
+  alias dx_pbRecordAndStoreCaughtPokemon pbRecordAndStoreCaughtPokemon
+  def pbRecordAndStoreCaughtPokemon
+    return if $game_temp.dx_rules? && $game_temp.dx_rules[:setcapture] == :Demo
+    dx_pbRecordAndStoreCaughtPokemon
+  end
+end
+
+
+#-------------------------------------------------------------------------------
+# Edits capture mechanics with the [:raidcapture] rule.
+#-------------------------------------------------------------------------------
+class Battle::Battler
+  def pbRaidStyleCapture(target, chance = 0, msg = nil, bgm = nil)
+    return if @battle.pbAllFainted?
+    return if @battle.raid_battle && target.effects[PBEffects::KnockOutCount] <= 0
+    fainted_count = 0
+    @battle.battlers.each do |b|
+      next if !b || !b.opposes?(target) || b.hp > 0
+      fainted_count += 1
+    end
+    return if fainted_count >= @battle.pbSideSize(0)
+    if pbResolveAudioFile(bgm)
+      pbBGMFade(0.2)
+      pbWait((0.2 * 60).round)
+      pbBGMPlay(bgm)
+    end
+    @battle.pbDisplayPaused(_INTL("{1} is weak!\nThrow a Poké Ball now!", target.name))
+    pbWait(30)
+    cmd = 0
+    cmd = @battle.pbShowCommands("", ["Catch", "Don't Catch"], 1)
+    case cmd
+    when 0
+      pbPlayDecisionSE
+      @battle.sendToBoxes = 1
+      if $PokemonStorage.full?
+        @battle.pbDisplay(_INTL("But there is no room left in the PC!"))
+        target.wild_boss_flee(msg)
+      else
+        ball = nil
+        pbFadeOutIn {
+          scene  = PokemonBag_Scene.new
+          screen = PokemonBagScreen.new(scene, $bag)
+          ball   = screen.pbChooseItemScreen(Proc.new{ |item| GameData::Item.get(item).is_poke_ball? })
+        }
+        if ball
+          $bag.remove(ball, 1)
+          if chance > 0
+            r = rand(100)
+            capture = r < chance || ball == :MASTERBALL || ($DEBUG && Input.press?(Input::CTRL))
+            $game_temp.dx_rules[:setcapture] = capture
+          end
+          @battle.pbThrowPokeBall(target.index, ball)
+          target.wild_boss_flee(msg) if @battle.poke_ball_failed
+        else
+          target.wild_boss_flee(msg)
+        end
+      end
+    else
+      pbPlayDecisionSE
+      target.wild_boss_flee(msg)
+    end
+  end
+  
+  def wild_boss_flee(msg = nil)
+    @battle.scene.pbBattlerFlee(self, msg)
+    @hp = 0
+    pbInitEffects(false)
+    @status = :NONE
+    @statusCount = 0
+    @battle.pbClearChoice(@index)
+    if @battle.pbAbleCount(@index) > 1
+      @battle.pbEndPrimordialWeather
+      @battle.pbRemoveFromParty(@index, @pokemonIndex)
+    else
+      @battle.decision = 1
+    end
+  end
+end
+
+
+#-------------------------------------------------------------------------------
+# Edits environment and background settings with the [:environ] rule.
 #-------------------------------------------------------------------------------
 def pbSetBackdrop(environment)
   return if !GameData::Environment.exists?(environment)
@@ -315,9 +531,6 @@ def pbApplyWildAttributes(pkmn)
   settings = $game_temp.dx_pokemon
   settings.keys.each do |order|
     if multiple
-      break if !settings.has_key?(:first)
-      break if !settings.has_key?(:second) && pkmn.length == 2
-      break if !settings.has_key?(:third)  && pkmn.length == 3
       case order
       when :first  then pokemon = pkmn[0]
       when :second then pokemon = pkmn[1]
@@ -345,90 +558,96 @@ def pbApplyWildAttributes(pkmn)
       # Sets status.
       #-------------------------------------------------------------------------
       when :status
-        pokemon.status = pkmn_hash[:status]
-        pokemon.statusCount = 3 if pkmn_hash[:status] == :SLEEP
+        pokemon.status = pkmn_hash[attribute]
+        pokemon.statusCount = 3 if pkmn_hash[attribute] == :SLEEP
       #-------------------------------------------------------------------------
       # Sets owner info.
       #-------------------------------------------------------------------------  
       when :owner
-        case pkmn_hash[:owner]
-        when Pokemon::Owner then pokemon.owner = pkmn_hash[:owner]
-        when NPCTrainer     then pokemon.owner = Pokemon::Owner.new_from_trainer(pkmn_hash[:owner])
-        when Array          then pokemon.owner = Pokemon::Owner.new(*pkmn_hash[:owner])
+        case pkmn_hash[attribute]
+        when Pokemon::Owner then pokemon.owner = pkmn_hash[attribute]
+        when NPCTrainer     then pokemon.owner = Pokemon::Owner.new_from_trainer(pkmn_hash[attribute])
+        when Array          then pokemon.owner = Pokemon::Owner.new(*pkmn_hash[attribute])
         end
       #-------------------------------------------------------------------------
       # Sets general attributes.
       #-------------------------------------------------------------------------
-      when :name       then pokemon.name        = pkmn_hash[:name]
-      when :level      then pokemon.level       = pkmn_hash[:level]
-      when :gender     then pokemon.gender      = pkmn_hash[:gender]
-      when :nature     then pokemon.nature      = pkmn_hash[:nature]
-      when :item       then pokemon.item        = pkmn_hash[:item]
-      when :shiny      then pokemon.shiny       = pkmn_hash[:shiny]
-      when :supershiny then pokemon.super_shiny = pkmn_hash[:supershiny]
-      when :happiness  then pokemon.happiness   = pkmn_hash[:happiness]
-      when :obtaintext then pokemon.obtain_text = pkmn_hash[:obtaintext]
-      when :pokerus    then pokemon.givePokerus if pkmn_hash[:pokerus]
+      when :name       then pokemon.name         = pkmn_hash[attribute]
+      when :level      then pokemon.level        = pkmn_hash[attribute]
+      when :gender     then pokemon.gender       = pkmn_hash[attribute]
+      when :nature     then pokemon.nature       = pkmn_hash[attribute]
+      when :item       then pokemon.item         = pkmn_hash[attribute]
+      when :shiny      then pokemon.shiny        = pkmn_hash[attribute]
+      when :supershiny then pokemon.super_shiny  = pkmn_hash[attribute]
+      when :happiness  then pokemon.happiness    = pkmn_hash[attribute]
+      when :obtaintext then pokemon.obtain_text  = pkmn_hash[attribute]
+      when :pokerus    then pokemon.givePokerus if pkmn_hash[attribute]
+      when :shadow     then pokemon.makeShadow  if pkmn_hash[attribute]
       #-------------------------------------------------------------------------
       # Sets an Ability or an Ability Index.
       #-------------------------------------------------------------------------
       when :ability
-        if pkmn_hash[:ability].is_a?(Symbol)
-          pokemon.ability = pkmn_hash[:ability]
+        if pkmn_hash[attribute].is_a?(Symbol)
+          pokemon.ability = pkmn_hash[attribute]
         else
-          pokemon.ability_index = pkmn_hash[:ability]
+          pokemon.ability_index = pkmn_hash[attribute]
         end
       #-------------------------------------------------------------------------
       # Sets a move, or an array of moves.
       #-------------------------------------------------------------------------
-      when :moves
-        if pkmn_hash[:moves].is_a?(Array)
-          pkmn_hash[:moves].each do |m| 
+      when :move, :moves
+        if pkmn_hash[attribute].is_a?(Array)
+          pkmn_hash[attribute].each do |m| 
             m = m.id if m.is_a?(Pokemon::Move)
             pokemon.learn_move(m)
           end
         else
-          pokemon.learn_move(pkmn_hash[:moves])
+          pokemon.learn_move(pkmn_hash[attribute])
         end
       #-------------------------------------------------------------------------
       # Sets all IV's to a number, or an array of numbers.
       #-------------------------------------------------------------------------
-      when :ivs
-        if pkmn_hash[:ivs].is_a?(Array)
-          GameData::Stat.each_main { |s| pokemon.iv[s.id] = pkmn_hash[:ivs][s.pbs_order] }
+      when :iv, :ivs
+        if pkmn_hash[attribute].is_a?(Array)
+          GameData::Stat.each_main { |s| pokemon.iv[s.id] = pkmn_hash[attribute][s.pbs_order] }
         else
-          GameData::Stat.each_main { |s| pokemon.iv[s.id] = pkmn_hash[:ivs] }
+          GameData::Stat.each_main { |s| pokemon.iv[s.id] = pkmn_hash[attribute] }
         end
         pokemon.calc_stats
       #-------------------------------------------------------------------------
       # Sets all EV's to a number, or an array of numbers.
       #-------------------------------------------------------------------------
-      when :evs
-        if pkmn_hash[:evs].is_a?(Array)
-          GameData::Stat.each_main { |s| pokemon.ev[s.id] = pkmn_hash[:evs][s.pbs_order] }
+      when :ev, :evs
+        if pkmn_hash[attribute].is_a?(Array)
+          GameData::Stat.each_main { |s| pokemon.ev[s.id] = pkmn_hash[attribute][s.pbs_order] }
         else
-          GameData::Stat.each_main { |s| pokemon.ev[s.id] = pkmn_hash[:evs] }
+          GameData::Stat.each_main { |s| pokemon.ev[s.id] = pkmn_hash[attribute] }
         end
         pokemon.calc_stats
       #-------------------------------------------------------------------------
       # Sets a particular ribbon, or an array of ribbons.
       #-------------------------------------------------------------------------
-      when :ribbons
-        if pkmn_hash[:ribbons].is_a?(Array)
-          pkmn_hash[:ribbons].each { |r| pokemon.giveRibbon(r) }
+      when :ribbon, :ribbons, :mark, :marks
+        if pkmn_hash[attribute].is_a?(Array)
+          pkmn_hash[attribute].each { |r| pokemon.giveRibbon(r) }
         else
-          pokemon.giveRibbon(pkmn_hash[:ribbons])
+          pokemon.giveRibbon(pkmn_hash[attribute])
         end
       #-------------------------------------------------------------------------
       # Sets plugin-specific attributes.
       #-------------------------------------------------------------------------
-      when :focus      then pokemon.focus_style   = pkmn_hash[:focus]      if PluginManager.installed?("Focus Meter System")
-      when :birthsign  then pokemon.birthsign     = pkmn_hash[:birthsign]  if PluginManager.installed?("Pokémon Birthsigns")
-      when :blessed    then pokemon.blessing      = pkmn_hash[:blessed]    if PluginManager.installed?("Pokémon Birthsigns")
-      when :celestial  then pokemon.celestial     = pkmn_hash[:celestial]  if PluginManager.installed?("Pokémon Birthsigns")
-      when :dynamaxlvl then pokemon.raid_dmax_lvl = pkmn_hash[:dynamaxlvl] if PluginManager.installed?("ZUD Mechanics")
-      when :gmaxfactor then pokemon.gmax_factor   = pkmn_hash[:gmaxfactor] if PluginManager.installed?("ZUD Mechanics")
-      when :mastery    then pokemon.master_moveset                         if PluginManager.installed?("PLA Battle Styles")
+      when :size       then pokemon.scale         = pkmn_hash[attribute]
+      when :ace        then pokemon.ace           = pkmn_hash[attribute]
+      when :memento    then pokemon.memento       = pkmn_hash[attribute] if PluginManager.installed?("Improved Mementos")
+      when :focus      then pokemon.focus_style   = pkmn_hash[attribute] if PluginManager.installed?("Focus Meter System")
+      when :birthsign  then pokemon.birthsign     = pkmn_hash[attribute] if PluginManager.installed?("Pokémon Birthsigns")
+      when :blessed    then pokemon.blessing      = pkmn_hash[attribute] if PluginManager.installed?("Pokémon Birthsigns")
+      when :celestial  then pokemon.celestial     = pkmn_hash[attribute] if PluginManager.installed?("Pokémon Birthsigns")
+      when :dynamaxlvl then pokemon.raid_dmax_lvl = pkmn_hash[attribute] if PluginManager.installed?("ZUD Mechanics")
+      when :gmaxfactor then pokemon.gmax_factor   = pkmn_hash[attribute] if PluginManager.installed?("ZUD Mechanics")
+      when :nodynamax  then pokemon.dynamax_able  = false                if PluginManager.installed?("ZUD Mechanics")
+      when :teratype   then pokemon.tera_type     = pkmn_hash[attribute] if PluginManager.installed?("Terastal Phenomenon")
+      when :mastery    then pokemon.master_moveset                       if PluginManager.installed?("PLA Battle Styles")
       end
     end
     #---------------------------------------------------------------------------

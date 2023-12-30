@@ -7,8 +7,7 @@ class Battle::Battler
   #-----------------------------------------------------------------------------
   alias zud_pbInitEffects pbInitEffects  
   def pbInitEffects(batonPass)
-    @power_index                       = -1             
-    @power_trigger                     = false          
+    @power_index                       = -1                       
     @ignore_dynamax                    = false 
     @selectedMoveIsZMove               = false
     @lastMoveUsedIsZMove               = false
@@ -148,20 +147,14 @@ class Battle::Battler
   # Aliased for fainting.
   #-----------------------------------------------------------------------------
   # KO'd Pokemon properly un-Dynamax and un-Ultra Burst.
-  # Also allows for proper Max Raid capture/KO sequences.
   #-----------------------------------------------------------------------------
   alias zud_pbFaint pbFaint
-  def pbFaint(showMessage = true)
-    if @battle.decision == 0 && !pbOwnedByPlayer? && @effects[PBEffects::MaxRaidBoss]
-      self.hp += 1
-      raid_CatchPokemon(self)
-    else
-	  return if @fainted
-      self.unmax if dynamax?
-      zud_pbFaint(showMessage)
-      @pokemon.makeUnUltra if ultra?
-      raid_KOCounter(self.pbDirectOpposing) if @battle.raid_battle
-    end
+  def pbFaint(*args)
+    return if @fainted || !fainted?
+    self.unmax if dynamax?
+    zud_pbFaint(*args)
+    @pokemon.makeUnUltra if ultra?
+    raid_KOCounter(self.pbDirectOpposing) if @battle.raid_battle
   end
   
   #-----------------------------------------------------------------------------
@@ -182,7 +175,6 @@ class Battle::Battler
       end
     end
     display_base_moves if dynamax?
-    @effects[PBEffects::TransformPokemon] = target.pokemon
     @battle.scene.pbRefreshOne(@index)
   end
   

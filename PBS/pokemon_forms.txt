@@ -546,6 +546,7 @@ Moves = 1,GUST,5,CONFUSION,10,REFLECT,15,HYPNOSIS,20,AGILITY,25,ANCIENTPOWER,30,
 TutorMoves = AGILITY,AIRCUTTER,AIRSLASH,BRAVEBIRD,CALMMIND,ENDURE,FACADE,FLY,GIGAIMPACT,HELPINGHAND,HURRICANE,HYPERBEAM,HYPERVOICE,IMPRISON,LIGHTSCREEN,PROTECT,PSYBEAM,PSYCHIC,PSYSHOCK,RAINDANCE,REFLECT,REST,SCARYFACE,SHADOWBALL,SKILLSWAP,SLEEPTALK,SNOWSCAPE,STOREDPOWER,SUBSTITUTE,SUNNYDAY,SWIFT,TAILWIND,TAKEDOWN,TRICK,TRICKROOM,UTURN
 Weight = 50.9
 Color = Purple
+Habitat = Grassland
 Category = Cruel
 Pokedex = Its feather-like blades are composed of psychic energy and can shear through thick iron sheets as if they were paper.
 Generation = 8
@@ -560,6 +561,7 @@ HiddenAbilities = DEFIANT
 Moves = 1,PECK,1,FOCUSENERGY,5,ROCKSMASH,10,LIGHTSCREEN,15,PLUCK,20,AGILITY,25,ANCIENTPOWER,30,BRICKBREAK,35,DRILLPECK,40,QUICKGUARD,45,THUNDEROUSKICK,50,BULKUP,55,COUNTER,60,DETECT,65,CLOSECOMBAT,70,REVERSAL
 TutorMoves = ACROBATICS,AERIALACE,AGILITY,BRAVEBIRD,BRICKBREAK,BULKUP,CLOSECOMBAT,ENDURE,FACADE,FLY,GIGAIMPACT,HELPINGHAND,HURRICANE,HYPERBEAM,LIGHTSCREEN,LOWKICK,LOWSWEEP,PROTECT,RAINDANCE,REST,REVERSAL,SANDSTORM,SCARYFACE,SLEEPTALK,STOMPINGTANTRUM,SUBSTITUTE,SUNNYDAY,SWIFT,TAILWIND,TAKEDOWN,TAUNT,TRAILBLAZE,UTURN
 Weight = 58.2
+Habitat = Grassland
 Category = Strong Legs
 Pokedex = When its feathers rub together, they produce a crackling sound like the zapping of electricity. That's why this Pokémon is called Zapdos.
 Generation = 8
@@ -575,6 +577,7 @@ Moves = 1,GUST,1,LEER,5,PAYBACK,10,SAFEGUARD,15,WINGATTACK,20,AGILITY,25,ANCIENT
 TutorMoves = ACROBATICS,AERIALACE,AGILITY,AIRSLASH,BRAVEBIRD,DARKPULSE,ENDURE,FACADE,FLY,FOULPLAY,GIGAIMPACT,HELPINGHAND,HEX,HURRICANE,HYPERBEAM,HYPERVOICE,IMPRISON,NASTYPLOT,PROTECT,RAINDANCE,REST,SANDSTORM,SCARYFACE,SHADOWBALL,SLEEPTALK,SNARL,SUBSTITUTE,SUNNYDAY,SWIFT,TAILWIND,TAKEDOWN,TAUNT,THIEF,UTURN
 Weight = 66.0
 Color = Red
+Habitat = Grassland
 Category = Malevolent
 Pokedex = This Pokémon's sinister, flame-like aura will consume the spirit of any creature it hits. Victims become burned-out shadows of themselves.
 Generation = 8
@@ -589,6 +592,7 @@ Abilities = STEADFAST
 HiddenAbilities = STEADFAST
 Height = 2.3
 Weight = 127.0
+Habitat = Rare
 Pokedex = Psychic power has augmented its muscles. It has a grip strength of one ton and can sprint a hundred meters in two seconds flat!
 Generation = 6
 #-------------------------------
@@ -601,6 +605,7 @@ Abilities = INSOMNIA
 HiddenAbilities = INSOMNIA
 Height = 1.5
 Weight = 33.0
+Habitat = Rare
 Pokedex = Despite its diminished size, its mental power has grown phenomenally. With a mere thought, it can smash a skyscraper to smithereens.
 Generation = 6
 #-------------------------------
@@ -943,18 +948,21 @@ Generation = 6
 FormName = Sunny Form
 Types = FIRE
 Color = Red
+Habitat = Grassland
 Pokedex = This is the form Castform takes on the brightest of days. Its skin is unexpectedly hot to the touch, so approach with care.
 #-------------------------------
 [CASTFORM,2]
 FormName = Rainy Form
 Types = WATER
 Color = Blue
+Habitat = Grassland
 Pokedex = This is the form Castform takes when soaked with rain. When its body is compressed, water will seep out as if from a sponge.
 #-------------------------------
 [CASTFORM,3]
 FormName = Snowy Form
 Types = ICE
 Color = White
+Habitat = Grassland
 Pokedex = This is the form Castform takes when covered in snow. Its body becomes an ice-like material, with a temperature near -5 degrees Celsius.
 #-------------------------------
 [BANETTE,1]
@@ -2001,6 +2009,7 @@ Height = 3.8
 Weight = 460.0
 Color = Yellow
 Shape = Quadruped
+Habitat = Rare
 Pokedex = This is Necrozma's form while it's absorbing the power of Solgaleo, making it extremely ferocious and impossible to control.
 #-------------------------------
 [NECROZMA,2]
@@ -2012,6 +2021,7 @@ EVs = SPECIAL_ATTACK,3
 Height = 4.2
 Weight = 350.0
 Color = Blue
+Habitat = Rare
 Pokedex = Lunala no longer has a will of its own. Now under the control of Necrozma, it continuously expels all of its energy.
 #-------------------------------
 [NECROZMA,3]
@@ -2023,6 +2033,7 @@ EVs = ATTACK,1,SPECIAL_ATTACK,1,SPEED,1
 Abilities = NEUROFORCE
 Height = 7.5
 Color = Yellow
+Habitat = Rare
 Pokedex = The light pouring out from all over its body affects living things and nature, impacting them in various ways.
 #-------------------------------
 [NECROZMA,4]
@@ -2034,6 +2045,7 @@ EVs = ATTACK,1,SPECIAL_ATTACK,1,SPEED,1
 Abilities = NEUROFORCE
 Height = 7.5
 Color = Yellow
+Habitat = Rare
 #-------------------------------
 [MAGEARNA,1]
 FormName = Original Color
@@ -2779,26 +2791,26 @@ Pokedex = This form has excellent defenses, absorbing impacts solidly like the c
 Flags = Legendary,TeraType_ROCK
 #-------------------------------
 [OGERPON,4]
-PokedexForm = 0
 FormName = Teal Mask
+PokedexForm = 0
 #-------------------------------
 [OGERPON,5]
-PokedexForm = 1
 FormName = Wellspring Mask
+PokedexForm = 1
 Types = GRASS,WATER
 Abilities = WATERABSORB
 Flags = Legendary,TeraType_WATER
 #-------------------------------
 [OGERPON,6]
-PokedexForm = 2
 FormName = Hearthflame Mask
+PokedexForm = 2
 Types = GRASS,FIRE
 Abilities = MOLDBREAKER
 Flags = Legendary,TeraType_FIRE
 #-------------------------------
 [OGERPON,7]
-PokedexForm = 3
 FormName = Cornerstone Mask
+PokedexForm = 3
 Types = GRASS,ROCK
 Abilities = STURDY
 Flags = Legendary,TeraType_ROCK
@@ -2806,7 +2818,6 @@ Flags = Legendary,TeraType_ROCK
 [OGERPON,8]
 FormName = Terastal Teal Mask
 Abilities = EMBODYASPECT
-Flags = Legendary,TeraType_GRASS
 #-------------------------------
 [OGERPON,9]
 FormName = Terastal Wellspring Mask

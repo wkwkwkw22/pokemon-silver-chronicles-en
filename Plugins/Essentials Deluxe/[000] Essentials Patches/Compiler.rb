@@ -17,8 +17,13 @@ module GameData
   class Item
     attr_accessor :real_name
     attr_accessor :real_name_plural
+    attr_accessor :real_portion_name
+    attr_accessor :real_portion_name_plural
     attr_accessor :pocket
     attr_accessor :real_description
+    attr_accessor :real_held_description
+    attr_accessor :field_use
+    attr_accessor :battle_use
     attr_accessor :flags
   end
 
@@ -54,7 +59,7 @@ end
 module Compiler
   module_function
   
-  PLUGIN_FILES = []
+  PLUGIN_FILES = ["Essentials Deluxe"]
   
   #-----------------------------------------------------------------------------
   # Writing data
@@ -79,6 +84,38 @@ module Compiler
       echoln ""
       Console.echo_h2("Successfully compiled all additional PBS/Plugin files", text: :green)
     end
+  end
+  
+  def write_items(path = "PBS/items.txt")
+    write_pbs_file_message_start(path)
+    File.open(path, "wb") { |f|
+      idx = 0
+      add_PBS_header_to_file(f)
+      GameData::Item.each do |item|
+        echo "." if idx % 50 == 0
+        idx += 1
+        Graphics.update if idx % 250 == 0
+        f.write("\#-------------------------------\r\n")
+        f.write(sprintf("[%s]\r\n", item.id))
+        f.write(sprintf("Name = %s\r\n", item.real_name))
+        f.write(sprintf("NamePlural = %s\r\n", item.real_name_plural))
+        f.write(sprintf("PortionName = %s\r\n", item.real_portion_name)) if item.real_portion_name
+        f.write(sprintf("PortionNamePlural = %s\r\n", item.real_portion_name_plural)) if item.real_portion_name_plural
+        f.write(sprintf("Pocket = %d\r\n", item.pocket))
+        f.write(sprintf("Price = %d\r\n", item.price))
+        f.write(sprintf("SellPrice = %d\r\n", item.sell_price)) if item.sell_price != item.price / 2
+        field_use = GameData::Item::SCHEMA["FieldUse"][2].key(item.field_use)
+        f.write(sprintf("FieldUse = %s\r\n", field_use)) if field_use
+        battle_use = GameData::Item::SCHEMA["BattleUse"][2].key(item.battle_use)
+        f.write(sprintf("BattleUse = %s\r\n", battle_use)) if battle_use
+        f.write(sprintf("Consumable = false\r\n")) if !item.is_important? && !item.consumable
+        f.write(sprintf("Flags = %s\r\n", item.flags.join(","))) if item.flags.length > 0
+        f.write(sprintf("Move = %s\r\n", item.move)) if item.move
+        f.write(sprintf("Description = %s\r\n", item.real_description))
+        f.write(sprintf("HeldDescription = %s\r\n", item.real_held_description)) if item.real_held_description
+      end
+    }
+    process_pbs_file_message_end
   end
   
   def write_trainers(path = "PBS/trainers.txt")
@@ -124,12 +161,18 @@ module Compiler
           f.write(sprintf("    EV = %s\r\n", evs_array.join(","))) if pkmn[:ev]
           f.write(sprintf("    Happiness = %d\r\n", pkmn[:happiness])) if pkmn[:happiness]
           f.write(sprintf("    Ball = %s\r\n", pkmn[:poke_ball])) if pkmn[:poke_ball]
+          f.write(sprintf("    Size = %d\r\n", pkmn[:size])) if pkmn[:size]
           f.write("    Ace = yes\r\n") if pkmn[:trainer_ace]
+          f.write(sprintf("    Memento = %s\r\n", pkmn[:memento])) if PluginManager.installed?("Improved Mementos") && pkmn[:memento]
           f.write(sprintf("    Focus = %s\r\n", pkmn[:focus])) if PluginManager.installed?("Focus Meter System") && pkmn[:focus]
           f.write(sprintf("    Birthsign = %s\r\n", pkmn[:birthsign])) if PluginManager.installed?("Pokémon Birthsigns") && pkmn[:birthsign]
-          f.write(sprintf("    DynamaxLvl = %d\r\n", pkmn[:dynamax_lvl])) if PluginManager.installed?("ZUD Mechanics") && pkmn[:dynamax_lvl]
-          f.write("    Gigantamax = yes\r\n") if PluginManager.installed?("ZUD Mechanics") && pkmn[:gmaxfactor]
-		  f.write("    Mastery = yes\r\n") if PluginManager.installed?("PLA Battle Styles") && pkmn[:mastery] 
+          if PluginManager.installed?("ZUD Mechanics")
+            f.write(sprintf("    DynamaxLvl = %d\r\n", pkmn[:dynamax_lvl])) if pkmn[:dynamax_lvl]
+            f.write("    Gigantamax = yes\r\n") if pkmn[:gmaxfactor]
+            f.write("    NoDynamax = yes\r\n") if pkmn[:nodynamax]
+          end
+          f.write("    Mastery = yes\r\n") if PluginManager.installed?("PLA Battle Styles") && pkmn[:mastery]
+          f.write(sprintf("    TeraType = %s\r\n", pkmn[:teratype])) if PluginManager.installed?("Terastal Phenomenon") && pkmn[:teratype]
         end
       end
     }
@@ -261,9 +304,12 @@ module Compiler
     compiled = false
     return if PLUGIN_FILES.empty?
     schema = GameData::Item::SCHEMA
-    item_names        = []
-    item_names_plural = []
-    item_descriptions = []
+    item_names                = []
+    item_names_plural         = []
+    item_portion_names        = []
+    item_portion_names_plural = []
+    item_descriptions         = []
+    item_held_descriptions    = []
     PLUGIN_FILES.each do |plugin|
       path = "PBS/Plugins/#{plugin}/items.txt"
       next if !safeExists?(path)
@@ -304,10 +350,28 @@ module Compiler
                 item_names_plural.push(contents[key])
                 compiled = true
               end
+            when "PortionName"
+              if item.real_portion_name != contents[key]
+                item.real_portion_name = contents[key]
+                item_portion_names.push(contents[key])
+                compiled = true
+              end
+            when "PortionNamePlural"
+              if item.real_portion_name_plural != contents[key]
+                item.real_portion_name_plural = contents[key]
+                item_portion_names_plural.push(contents[key])
+                compiled = true
+              end
             when "Description"
               if item.real_description != contents[key]
                 item.real_description = contents[key]
                 item_descriptions.push(contents[key])
+                compiled = true
+              end
+            when "HeldDescription"
+              if item.real_held_description != contents[key]
+                item.real_held_description = contents[key]
+                item_held_descriptions.push(contents[key])
                 compiled = true
               end
             when "Flags"
@@ -326,6 +390,16 @@ module Compiler
             when "Pocket"
               if item.pocket != contents[key]
                 item.pocket = contents[key]
+                compiled = true
+              end
+            when "FieldUse"
+              if item.field_use != contents[key]
+                item.field_use = contents[key]
+                compiled = true
+              end
+            when "BattleUse"
+              if item.battle_use != contents[key]
+                item.battle_use = contents[key]
                 compiled = true
               end
             end
@@ -363,8 +437,14 @@ module Compiler
             item_names.push(item_hash[:name])
           when "NamePlural"
             item_names_plural.push(item_hash[:name_plural])
+          when "PortionName"
+            item_portion_names.push(item_hash[:portion_name])
+          when "PortionNamePlural"
+            item_portion_names_plural.push(item_hash[:portion_name_plural])
           when "Description"
             item_descriptions.push(item_hash[:description])
+          when "HeldDescription"
+            item_held_descriptions.push(item_hash[:held_description])
           end
         end
       }
@@ -383,7 +463,10 @@ module Compiler
       Compiler.write_items
       MessageTypes.setMessagesAsHash(MessageTypes::Items, item_names)
       MessageTypes.setMessagesAsHash(MessageTypes::ItemPlurals, item_names_plural)
+      MessageTypes.setMessagesAsHash(MessageTypes::ItemPortionNames, item_portion_names)
+      MessageTypes.setMessagesAsHash(MessageTypes::ItemPortionNamePlurals, item_portion_names_plural)
       MessageTypes.setMessagesAsHash(MessageTypes::ItemDescriptions, item_descriptions)
+      MessageTypes.setMessagesAsHash(MessageTypes::ItemHeldDescriptions, item_held_descriptions)
     end
   end
   
@@ -592,6 +675,7 @@ module Compiler
                 end
               end
             when "EggMoves", "Offspring"
+			  next if contents[key].nil?
               contents[key] = [contents[key]] if !contents[key].is_a?(Array)
               contents[key].compact!
               species.egg_moves  = contents[key] if key == "EggMoves"
@@ -875,14 +959,17 @@ module PluginManager
   end
   
   # Used to ensure all plugins that rely on Essentials Deluxe are up to date.
-  def self.dx_plugin_check(version = "1.1.8")
+  def self.dx_plugin_check(version = "1.2.8")
     if self.installed?("Essentials Deluxe", version, true)
-      {"ZUD Mechanics"         => "1.1.3",
-       "PLA Battle Styles"     => "1.0.4",
+      {"ZUD Mechanics"         => "1.2.5",
+       "Enhanced UI"           => "1.1.3",
+       "Focus Meter System"    => "1.1.2",
+       "PLA Battle Styles"     => "1.0.9",
        "Improved Field Skills" => "1.0.4",
-       "Focus Meter System"    => "1.0.6",
-       "Enhanced UI"           => "1.0.7",
-       "Legendary Breeding"    => "1.0",
+       "Legendary Breeding"    => "1.0.3",
+       "Terastal Phenomenon"   => "1.0.3",
+       "Improved Item Text"    => "1.0.2",
+       "Improved Mementos"     => "1.0",
        "Pokémon Birthsigns"    => "1.0"
       }.each do |p_name, v_num|
         next if !self.installed?(p_name)
@@ -895,19 +982,3 @@ module PluginManager
     end
   end
 end
-
-
-#-------------------------------------------------------------------------------
-# Debug menus.
-#-------------------------------------------------------------------------------
-MenuHandlers.add(:debug_menu, :dx_menu, {
-  "name"        => _INTL("Deluxe Plugins..."),
-  "parent"      => :main,
-  "description" => _INTL("Edit settings related to various plugins that utilize Essentials Deluxe.")
-})
-
-
-MenuHandlers.add(:pokemon_debug_menu, :dx_pokemon_menu, {
-  "name"        => _INTL("Deluxe Options..."),
-  "parent"      => :main
-})

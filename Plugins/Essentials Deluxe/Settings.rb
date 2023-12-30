@@ -3,6 +3,16 @@
 #===============================================================================
 module Settings
   #-----------------------------------------------------------------------------
+  # When true, plays the Mega Evolution animation whenever triggered.
+  #-----------------------------------------------------------------------------
+  SHOW_MEGA_ANIM = true
+  
+  #-----------------------------------------------------------------------------
+  # When true, plays the Primal Reversion animation whenever triggered.
+  #-----------------------------------------------------------------------------
+  SHOW_PRIMAL_ANIM = true
+
+  #-----------------------------------------------------------------------------
   # Toggles whether or not long move names should be shortned in the fight menu.
   #-----------------------------------------------------------------------------
   SHORTEN_MOVES = true
@@ -20,6 +30,7 @@ module Settings
   #-----------------------------------------------------------------------------
   # Switch numbers used for a variety of supported plugins.
   #-----------------------------------------------------------------------------
+  NO_TERASTALLIZE   = 39 # TODO: MODIFY THAT SWITCH
   NO_Z_MOVE         = 974
   NO_ULTRA_BURST    = 973
   NO_DYNAMAX        = 972

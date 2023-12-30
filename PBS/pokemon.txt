@@ -1470,7 +1470,7 @@ Height = 0.5
 Weight = 28.0
 Color = Brown
 Shape = BipedalTail
-Habitat = Mountain
+Habitat = Forest
 Category = Pig Monkey
 Pokedex = When it starts shaking and its nasal breathing turns rough, it's a sure sign of anger. However, since this happens instantly, there is no time to flee.
 Generation = 1
@@ -1496,7 +1496,7 @@ Height = 1.0
 Weight = 32.0
 Color = Brown
 Shape = BipedalTail
-Habitat = Mountain
+Habitat = Forest
 Category = Pig Monkey
 Pokedex = When it becomes furious, its blood circulation becomes more robust, and its muscles are made stronger. But it also becomes much less intelligent.
 Generation = 1
@@ -2135,7 +2135,7 @@ Height = 0.3
 Weight = 6.0
 Color = Gray
 Shape = HeadArms
-Habitat = RoughTerrain
+Habitat = Urban
 Category = Magnet
 Pokedex = The units at its sides are extremely powerful magnets. They generate enough magnetism to draw in iron objects from over 300 feet away.
 Generation = 1
@@ -2162,7 +2162,7 @@ Height = 1.0
 Weight = 60.0
 Color = Gray
 Shape = MultiBody
-Habitat = RoughTerrain
+Habitat = Urban
 Category = Magnet
 Pokedex = It is actually three Magnemite linked by magnetism. It generates powerful radio waves that raise temperatures by 3.6 degrees F within a 3,300-foot radius.
 Generation = 1
@@ -3803,7 +3803,7 @@ Height = 1.7
 Weight = 55.4
 Color = Blue
 Shape = Winged
-Habitat = Rare
+Habitat = Cave
 Category = Freeze
 Pokedex = Articuno is a legendary bird Pokémon that can control ice. The flapping of its wings chills the air. As a result, it is said that when this Pokémon flies, snow will fall.
 Generation = 1
@@ -3829,7 +3829,7 @@ Height = 1.6
 Weight = 52.6
 Color = Yellow
 Shape = Winged
-Habitat = Rare
+Habitat = Urban
 Category = Electric
 Pokedex = Zapdos is a legendary bird Pokémon that has the ability to control electricity. It usually lives in thunderclouds. It gains power if it is stricken by lightning bolts.
 Generation = 1
@@ -3855,7 +3855,7 @@ Height = 2.0
 Weight = 60.0
 Color = Yellow
 Shape = Winged
-Habitat = Rare
+Habitat = Mountain
 Category = Flame
 Pokedex = Moltres is a legendary bird Pokémon that can control fire. If injured, it is said to dip its body in the molten magma of a volcano to burn and heal itself.
 Generation = 1
@@ -3962,7 +3962,7 @@ Height = 2.0
 Weight = 122.0
 Color = Purple
 Shape = BipedalTail
-Habitat = Rare
+Habitat = Urban
 Category = Genetic
 Pokedex = A Pokémon that was created by genetic manipulation. However, even though the scientific power of humans made its body, they failed to give it a warm heart.
 Generation = 1
@@ -5280,7 +5280,6 @@ Evolutions = MISMAGIUS,Item,DUSKSTONE
 #-------------------------------
 [UNOWN]
 Name = Unown
-FormName = A
 Types = PSYCHIC
 BaseStats = 48,72,48,48,72,48
 GenderRatio = Genderless
@@ -5300,6 +5299,7 @@ Shape = Head
 Habitat = Rare
 Category = Symbol
 Pokedex = This Pokémon is shaped like ancient text characters. Although research is ongoing, it is a mystery as to which came first, the ancient writings or the various Unown.
+FormName = A
 Generation = 2
 #-------------------------------
 [WOBBUFFET]
@@ -6565,7 +6565,7 @@ Height = 5.2
 Weight = 216.0
 Color = White
 Shape = Winged
-Habitat = Rare
+Habitat = Sea
 Category = Diving
 Pokedex = Lugia is so powerful even a light fluttering of its wings can blow apart houses. As a result, it chooses to live out of sight deep under the sea.
 Generation = 2
@@ -7915,7 +7915,7 @@ Height = 0.6
 Weight = 11.0
 Color = Pink
 Shape = Quadruped
-Habitat = Forest
+Habitat = Urban
 Category = Kitten
 Pokedex = A Skitty's adorably cute behavior makes it highly popular. In battle, it makes its tail puff out. It threatens foes with a sharp growl.
 Generation = 3
@@ -7941,7 +7941,7 @@ Height = 1.1
 Weight = 32.6
 Color = Purple
 Shape = Quadruped
-Habitat = Forest
+Habitat = Urban
 Category = Prim
 Pokedex = Rather than keeping a permanent lair, it habitually seeks comfortable spots and sleeps there. It is nocturnal and becomes active at dusk.
 Generation = 3
@@ -9244,7 +9244,6 @@ Generation = 3
 #-------------------------------
 [CASTFORM]
 Name = Castform
-FormName = Normal Form
 Types = NORMAL
 BaseStats = 70,70,70,70,70,70
 GenderRatio = Female50Percent
@@ -9263,9 +9262,10 @@ Height = 0.3
 Weight = 0.8
 Color = Gray
 Shape = Head
-Habitat = Grassland
+Habitat = Mountain
 Category = Weather
 Pokedex = It alters its form depending on the weather. Changes in the climate such as the temperature and humidity appear to affect its cellular structure.
+FormName = Normal Form
 Generation = 3
 WildItemCommon = MYSTICWATER
 WildItemUncommon = MYSTICWATER
@@ -9452,7 +9452,7 @@ Height = 0.6
 Weight = 1.0
 Color = Blue
 Shape = HeadArms
-Habitat = Grassland
+Habitat = Urban
 Category = Wind Chime
 Pokedex = They fly about very actively when the hot season arrives. They communicate among themselves using seven different and distinguishing cries.
 Generation = 3
@@ -10170,7 +10170,6 @@ WildItemRare = STARPIECE
 #-------------------------------
 [DEOXYS]
 Name = Deoxys
-FormName = Normal Forme
 Types = PSYCHIC
 BaseStats = 50,150,50,150,150,50
 GenderRatio = Genderless
@@ -10191,6 +10190,7 @@ Shape = Bipedal
 Habitat = Rare
 Category = DNA
 Pokedex = A Pokémon that mutated from an extraterrestrial virus exposed to a laser beam. Its body is configured for superior agility and speed.
+FormName = Normal Forme
 Generation = 3
 Flags = Mythical
 #-------------------------------
@@ -10850,7 +10850,6 @@ Generation = 4
 #-------------------------------
 [BURMY]
 Name = Burmy
-FormName = Plant Cloak
 Types = BUG
 BaseStats = 40,29,45,36,29,45
 GenderRatio = Female50Percent
@@ -10872,13 +10871,13 @@ Shape = HeadBase
 Habitat = Forest
 Category = Bagworm
 Pokedex = To shelter itself from cold, wintry winds, it covers itself with a cloak made of twigs and leaves.
+FormName = Plant Cloak
 Generation = 4
 Flags = InheritFormFromMother
 Evolutions = WORMADAM,LevelFemale,20,MOTHIM,LevelMale,20
 #-------------------------------
 [WORMADAM]
 Name = Wormadam
-FormName = Plant Cloak
 Types = BUG,GRASS
 BaseStats = 60,59,85,36,79,105
 GenderRatio = AlwaysFemale
@@ -10900,6 +10899,7 @@ Shape = HeadBase
 Habitat = Forest
 Category = Bagworm
 Pokedex = When Burmy evolved, its cloak became a part of this Pokémon's body. The cloak is never shed.
+FormName = Plant Cloak
 Generation = 4
 Flags = InheritFormFromMother
 WildItemUncommon = SILVERPOWDER
@@ -11091,7 +11091,6 @@ Evolutions = CHERRIM,Level,25
 #-------------------------------
 [CHERRIM]
 Name = Cherrim
-FormName = Overcast Form
 Types = GRASS
 BaseStats = 70,60,70,85,87,78
 GenderRatio = Female50Percent
@@ -11112,12 +11111,12 @@ Shape = HeadLegs
 Habitat = Forest
 Category = Blossom
 Pokedex = Its folded petals are pretty tough. Bird Pokémon can peck at them all they want, and Cherrim won't be bothered at all.
+FormName = Overcast Form
 Generation = 4
 WildItemUncommon = MIRACLESEED
 #-------------------------------
 [SHELLOS]
 Name = Shellos
-FormName = West Sea
 Types = WATER
 BaseStats = 76,48,48,34,57,62
 GenderRatio = Female50Percent
@@ -11140,13 +11139,13 @@ Shape = Serpentine
 Habitat = Sea
 Category = Sea Slug
 Pokedex = This Pokémon's habitat shapes its physique. According to some theories, life in warm ocean waters causes this variation to develop.
+FormName = West Sea
 Generation = 4
 Flags = InheritFormFromMother
 Evolutions = GASTRODON,Level,30
 #-------------------------------
 [GASTRODON]
 Name = Gastrodon
-FormName = West Sea
 Types = WATER,GROUND
 BaseStats = 111,83,68,39,92,82
 GenderRatio = Female50Percent
@@ -11168,6 +11167,7 @@ Shape = Serpentine
 Habitat = Sea
 Category = Sea Slug
 Pokedex = Its search for food sometimes leads it onto land, where it leaves behind a sticky trail of slime as it passes through.
+FormName = West Sea
 Generation = 4
 Flags = InheritFormFromMother
 #-------------------------------
@@ -12612,7 +12612,6 @@ Generation = 4
 #-------------------------------
 [ROTOM]
 Name = Rotom
-FormName = Rotom
 Types = ELECTRIC,GHOST
 BaseStats = 50,50,77,91,95,77
 GenderRatio = Genderless
@@ -12633,6 +12632,7 @@ Shape = Head
 Habitat = Urban
 Category = Plasma
 Pokedex = Its body is composed of plasma. It is known to infiltrate electronic devices and wreak havoc.
+FormName = Rotom
 Generation = 4
 #-------------------------------
 [UXIE]
@@ -12815,7 +12815,6 @@ Flags = Legendary
 #-------------------------------
 [GIRATINA]
 Name = Giratina
-FormName = Altered Forme
 Types = GHOST,DRAGON
 BaseStats = 150,100,120,90,100,120
 GenderRatio = Genderless
@@ -12837,6 +12836,7 @@ Shape = Multiped
 Habitat = Rare
 Category = Renegade
 Pokedex = A Pokémon that is said to live in a world on the reverse side of ours. It appears in an ancient cemetery.
+FormName = Altered Forme
 Generation = 4
 Flags = Legendary
 #-------------------------------
@@ -12943,7 +12943,6 @@ Flags = Mythical
 #-------------------------------
 [SHAYMIN]
 Name = Shaymin
-FormName = Land Forme
 Types = GRASS
 BaseStats = 100,100,100,100,100,100
 GenderRatio = Genderless
@@ -12964,6 +12963,7 @@ Shape = Quadruped
 Habitat = Grassland
 Category = Gratitude
 Pokedex = It lives in flower patches and avoids detection by curling up to look like a flowering plant.
+FormName = Land Forme
 Generation = 4
 Flags = Mythical
 WildItemCommon = LUMBERRY
@@ -12972,7 +12972,6 @@ WildItemRare = LUMBERRY
 #-------------------------------
 [ARCEUS]
 Name = Arceus
-FormName = Normal Type
 Types = NORMAL
 BaseStats = 120,120,120,120,120,120
 GenderRatio = Genderless
@@ -12993,6 +12992,7 @@ Shape = Quadruped
 Habitat = Rare
 Category = Alpha
 Pokedex = It is described in mythology as the Pokémon that shaped the universe with its 1,000 arms.
+FormName = Normal Type
 Generation = 4
 Flags = Mythical
 #-------------------------------
@@ -14471,7 +14471,6 @@ WildItemUncommon = ABSORBBULB
 #-------------------------------
 [BASCULIN]
 Name = Basculin
-FormName = Red-Striped
 Types = WATER
 BaseStats = 70,92,65,98,80,55
 GenderRatio = Female50Percent
@@ -14494,6 +14493,7 @@ Shape = Finned
 Habitat = Sea
 Category = Hostile
 Pokedex = Savage, violent Pokémon, red and blue Basculin are always fighting each other over territory.
+FormName = Red-Striped
 Generation = 5
 Flags = InheritFormFromMother
 WildItemUncommon = DEEPSEATOOTH
@@ -14609,7 +14609,6 @@ Evolutions = DARMANITAN,Level,35
 #-------------------------------
 [DARMANITAN]
 Name = Darmanitan
-FormName = Standard Mode
 Types = FIRE
 BaseStats = 105,140,55,95,30,55
 GenderRatio = Female50Percent
@@ -14631,6 +14630,7 @@ Shape = Quadruped
 Habitat = Forest
 Category = Blazing
 Pokedex = When weakened in battle, it transforms into a stone statue. Then it sharpens its mind and fights on mentally.
+FormName = Standard Mode
 Generation = 5
 #-------------------------------
 [MARACTUS]
@@ -15396,7 +15396,6 @@ WildItemCommon = NEVERMELTICE
 #-------------------------------
 [DEERLING]
 Name = Deerling
-FormName = Spring Form
 Types = NORMAL,GRASS
 BaseStats = 60,60,50,75,40,50
 GenderRatio = Female50Percent
@@ -15419,12 +15418,12 @@ Shape = Quadruped
 Habitat = Forest
 Category = Season
 Pokedex = The turning of the seasons changes the color and scent of this Pokémon's fur. People use it to mark the seasons.
+FormName = Spring Form
 Generation = 5
 Evolutions = SAWSBUCK,Level,34
 #-------------------------------
 [SAWSBUCK]
 Name = Sawsbuck
-FormName = Spring Form
 Types = NORMAL,GRASS
 BaseStats = 80,100,70,95,60,70
 GenderRatio = Female50Percent
@@ -15446,6 +15445,7 @@ Shape = Quadruped
 Habitat = Forest
 Category = Season
 Pokedex = The plants growing on its horns change according to the season. The leaders of the herd possess magnificent horns.
+FormName = Spring Form
 Generation = 5
 #-------------------------------
 [EMOLGA]
@@ -16854,7 +16854,6 @@ Flags = Legendary
 #-------------------------------
 [TORNADUS]
 Name = Tornadus
-FormName = Incarnate Forme
 Types = FLYING
 BaseStats = 79,115,70,111,125,80
 GenderRatio = AlwaysMale
@@ -16876,11 +16875,11 @@ Shape = HeadArms
 Habitat = Mountain
 Category = Cyclone
 Pokedex = Tornadus expels massive energy from its tail, causing severe storms. Its power is great enough to blow houses away.
+FormName = Incarnate Forme
 Generation = 5
 #-------------------------------
 [THUNDURUS]
 Name = Thundurus
-FormName = Incarnate Forme
 Types = ELECTRIC,FLYING
 BaseStats = 79,115,70,111,125,80
 GenderRatio = AlwaysMale
@@ -16902,6 +16901,7 @@ Shape = HeadArms
 Habitat = Mountain
 Category = Bolt Strike
 Pokedex = The spikes on its tail discharge immense bolts of lightning. It flies around the Unova region firing off lightning bolts.
+FormName = Incarnate Forme
 Generation = 5
 Flags = Legendary
 #-------------------------------
@@ -16957,7 +16957,6 @@ Flags = Legendary
 #-------------------------------
 [LANDORUS]
 Name = Landorus
-FormName = Incarnate Forme
 Types = GROUND,FLYING
 BaseStats = 89,125,90,101,115,80
 GenderRatio = AlwaysMale
@@ -16979,6 +16978,7 @@ Shape = HeadArms
 Habitat = RoughTerrain
 Category = Abundance
 Pokedex = The energy that comes pouring from its tail increases the nutrition in the soil, making crops grow to great size.
+FormName = Incarnate Forme
 Generation = 5
 Flags = Legendary
 #-------------------------------
@@ -17009,7 +17009,6 @@ Flags = Legendary
 #-------------------------------
 [KELDEO]
 Name = Keldeo
-FormName = Ordinary Form
 Types = WATER,FIGHTING
 BaseStats = 91,72,90,108,129,90
 GenderRatio = Genderless
@@ -17030,12 +17029,12 @@ Shape = Quadruped
 Habitat = WatersEdge
 Category = Colt
 Pokedex = It crosses the world, running over the surfaces of oceans and rivers. It appears at scenic waterfronts.
+FormName = Ordinary Form
 Generation = 5
 Flags = Mythical
 #-------------------------------
 [MELOETTA]
 Name = Meloetta
-FormName = Aria Forme
 Types = NORMAL,PSYCHIC
 BaseStats = 100,77,77,90,128,128
 GenderRatio = Genderless
@@ -17056,6 +17055,7 @@ Shape = Bipedal
 Habitat = Urban
 Category = Melody
 Pokedex = Many famous songs have been inspired by the melodies that Meloetta plays.
+FormName = Aria Forme
 Generation = 5
 Flags = Mythical
 WildItemCommon = STARPIECE
@@ -17064,7 +17064,6 @@ WildItemRare = STARPIECE
 #-------------------------------
 [GENESECT]
 Name = Genesect
-FormName = Normal
 Types = BUG,STEEL
 BaseStats = 71,120,95,99,120,95
 GenderRatio = Genderless
@@ -17085,6 +17084,7 @@ Shape = Bipedal
 Habitat = Urban
 Category = Paleozoic
 Pokedex = This ancient bug Pokémon was altered by Team Plasma. They upgraded the cannon on its back.
+FormName = Normal
 Generation = 5
 Flags = Mythical
 #-------------------------------
@@ -17507,7 +17507,6 @@ Evolutions = VIVILLON,Level,12
 #-------------------------------
 [VIVILLON]
 Name = Vivillon
-FormName = Archipelago Pattern
 Types = BUG,FLYING
 BaseStats = 80,52,50,89,90,50
 GenderRatio = Female50Percent
@@ -17529,6 +17528,7 @@ Shape = MultiWinged
 Habitat = Forest
 Category = Scale
 Pokedex = Vivillon with many different patterns are found all over the world. These patterns are affected by the climate of their habitat.
+FormName = Archipelago Pattern
 Generation = 6
 #-------------------------------
 [LITLEO]
@@ -17585,7 +17585,6 @@ Generation = 6
 #-------------------------------
 [FLABEBE]
 Name = Flabébé
-FormName = Red Flower
 Types = FAIRY
 BaseStats = 44,38,39,42,61,79
 GenderRatio = AlwaysFemale
@@ -17608,13 +17607,13 @@ Shape = HeadArms
 Habitat = Grassland
 Category = Single Bloom
 Pokedex = When it finds a flower it likes, it dwells on that flower its whole life long. It floats in the wind's embrace with an untroubled heart.
+FormName = Red Flower
 Generation = 6
 Flags = InheritFormFromMother
 Evolutions = FLOETTE,Level,19
 #-------------------------------
 [FLOETTE]
 Name = Floette
-FormName = Red Flower
 Types = FAIRY
 BaseStats = 54,45,47,52,75,98
 GenderRatio = AlwaysFemale
@@ -17636,13 +17635,13 @@ Shape = HeadArms
 Habitat = Grassland
 Category = Single Bloom
 Pokedex = It flutters around fields of flowers and cares for flowers that are starting to wilt. It draws out the power of flowers to battle.
+FormName = Red Flower
 Generation = 6
 Flags = InheritFormFromMother
 Evolutions = FLORGES,Item,SHINYSTONE
 #-------------------------------
 [FLORGES]
 Name = Florges
-FormName = Red Flower
 Types = FAIRY
 BaseStats = 78,65,68,75,112,154
 GenderRatio = AlwaysFemale
@@ -17664,6 +17663,7 @@ Shape = HeadArms
 Habitat = Grassland
 Category = Garden
 Pokedex = It claims exquisite flower gardens as its territory, and it obtains power from basking in the energy emitted by flowering plants.
+FormName = Red Flower
 Generation = 6
 Flags = InheritFormFromMother
 #-------------------------------
@@ -17775,7 +17775,6 @@ WildItemUncommon = MENTALHERB
 #-------------------------------
 [FURFROU]
 Name = Furfrou
-FormName = Natural Form
 Types = NORMAL
 BaseStats = 75,80,60,102,65,90
 GenderRatio = Female50Percent
@@ -17797,6 +17796,7 @@ Shape = Quadruped
 Habitat = Urban
 Category = Poodle
 Pokedex = Trimming its fluffy fur not only makes it more elegant but also increases the swiftness of its movements.
+FormName = Natural Form
 Generation = 6
 #-------------------------------
 [ESPURR]
@@ -17828,7 +17828,6 @@ Evolutions = MEOWSTIC,Level,25
 #-------------------------------
 [MEOWSTIC]
 Name = Meowstic
-FormName = Male
 Types = PSYCHIC
 BaseStats = 74,48,76,104,83,81
 GenderRatio = Female50Percent
@@ -17850,6 +17849,7 @@ Shape = BipedalTail
 Habitat = Urban
 Category = Constraint
 Pokedex = Revealing the eyelike patterns on the insides of its ears will unleash its psychic powers. It normally keeps the patterns hidden, however.
+FormName = Male
 Generation = 6
 #-------------------------------
 [HONEDGE]
@@ -17905,7 +17905,6 @@ Evolutions = AEGISLASH,Item,DUSKSTONE
 #-------------------------------
 [AEGISLASH]
 Name = Aegislash
-FormName = Shield Forme
 Types = STEEL,GHOST
 BaseStats = 60,50,140,60,50,140
 GenderRatio = Female50Percent
@@ -17926,6 +17925,7 @@ Shape = HeadBase
 Habitat = Urban
 Category = Royal Sword
 Pokedex = In this defensive stance, Aegislash uses its steel body and a force field of spectral power to reduce the damage of any attack.
+FormName = Shield Forme
 Generation = 6
 #-------------------------------
 [SPRITZEE]
@@ -18685,7 +18685,6 @@ Evolutions = GOURGEIST,Trade,
 #-------------------------------
 [GOURGEIST]
 Name = Gourgeist
-FormName = Small Size
 Types = GHOST,GRASS
 BaseStats = 55,85,122,99,58,75
 GenderRatio = Female50Percent
@@ -18706,6 +18705,7 @@ Shape = HeadBase
 Habitat = Forest
 Category = Pumpkin
 Pokedex = Small Gourgeist pretend to be children to fool adults. Anyone who falls for the act gets carried away to the hereafter.
+FormName = Small Size
 Generation = 6
 Flags = InheritFormFromMother
 #-------------------------------
@@ -18815,7 +18815,6 @@ Generation = 6
 #-------------------------------
 [XERNEAS]
 Name = Xerneas
-FormName = Neutral Mode
 Types = FAIRY
 BaseStats = 126,131,95,99,131,98
 GenderRatio = Genderless
@@ -18836,6 +18835,7 @@ Shape = Quadruped
 Habitat = Forest
 Category = Life
 Pokedex = Legends say it can share eternal life. It slept for a thousand years in the form of a tree before its revival.
+FormName = Neutral Mode
 Generation = 6
 #-------------------------------
 [YVELTAL]
@@ -18865,7 +18865,6 @@ Flags = Legendary
 #-------------------------------
 [ZYGARDE]
 Name = Zygarde
-FormName = 50% Forme
 Types = DRAGON,GROUND
 BaseStats = 108,100,121,95,81,95
 GenderRatio = Genderless
@@ -18886,6 +18885,7 @@ Shape = Serpentine
 Habitat = Cave
 Category = Order
 Pokedex = It's thought to be monitoring the ecosystem. There are rumors that even greater power lies hidden within it.
+FormName = 50% Forme
 Generation = 6
 Flags = Legendary
 #-------------------------------
@@ -18916,7 +18916,6 @@ Flags = Mythical
 #-------------------------------
 [HOOPA]
 Name = Hoopa
-FormName = Hoopa Confined
 Types = PSYCHIC,GHOST
 BaseStats = 80,110,60,70,150,130
 GenderRatio = Genderless
@@ -18937,6 +18936,7 @@ Shape = HeadArms
 Habitat = Rare
 Category = Mischief
 Pokedex = This troublemaker sends anything and everything to faraway places using its loop, which can warp space.
+FormName = Hoopa Confined
 Generation = 6
 Flags = Mythical
 #-------------------------------
@@ -19466,7 +19466,6 @@ WildItemUncommon = CHERIBERRY
 #-------------------------------
 [ORICORIO]
 Name = Oricorio
-FormName = Baile Style
 Types = FIRE,FLYING
 BaseStats = 75,70,70,93,98,70
 GenderRatio = Female75Percent
@@ -19488,6 +19487,7 @@ Shape = Winged
 Habitat = Grassland
 Category = Dancing
 Pokedex = It beats its wings together to create fire. As it moves in the steps of its beautiful dance, it bathes opponents in intense flames.
+FormName = Baile Style
 Generation = 7
 Flags = InheritFormFromMother
 WildItemUncommon = REDNECTAR
@@ -19575,7 +19575,6 @@ Evolutions = LYCANROC,Level,25
 #-------------------------------
 [LYCANROC]
 Name = Lycanroc
-FormName = Midday Form
 Types = ROCK
 BaseStats = 75,115,65,112,55,65
 GenderRatio = Female50Percent
@@ -19597,11 +19596,11 @@ Shape = Quadruped
 Habitat = Mountain
 Category = Wolf
 Pokedex = Its quick movements confuse its enemies. Well equipped with claws and fangs, it also uses the sharp rocks in its mane as weapons.
+FormName = Midday Form
 Generation = 7
 #-------------------------------
 [WISHIWASHI]
 Name = Wishiwashi
-FormName = Solo Form
 Types = WATER
 BaseStats = 45,20,20,40,25,25
 GenderRatio = Female50Percent
@@ -19623,6 +19622,7 @@ Shape = Finned
 Habitat = Sea
 Category = Small Fry
 Pokedex = It's awfully weak and notably tasty, so everyone is always out to get it. As it happens, anyone trying to bully it receives a painful lesson.
+FormName = Solo Form
 Generation = 7
 #-------------------------------
 [MAREANIE]
@@ -20321,7 +20321,6 @@ Evolutions = SILVALLY,Happiness,
 #-------------------------------
 [SILVALLY]
 Name = Silvally
-FormName = Type: Normal
 Types = NORMAL
 BaseStats = 95,95,95,95,95,95
 GenderRatio = Genderless
@@ -20342,12 +20341,12 @@ Shape = Quadruped
 Habitat = Urban
 Category = Synthetic
 Pokedex = Its trust in its partner is what awakens it. This Pokémon is capable of changing its type, a flexibility that is well displayed in battle.
+FormName = Type: Normal
 Generation = 7
 Flags = Legendary
 #-------------------------------
 [MINIOR]
 Name = Minior
-FormName = Meteor Form
 Types = ROCK,FLYING
 BaseStats = 60,60,100,60,60,100
 GenderRatio = Genderless
@@ -20368,6 +20367,7 @@ Shape = Head
 Habitat = Mountain
 Category = Meteor
 Pokedex = Originally making its home in the ozone layer, it hurtles to the ground when the shell enclosing its body grows too heavy.
+FormName = Meteor Form
 Generation = 7
 WildItemUncommon = STARPIECE
 #-------------------------------
@@ -20451,7 +20451,6 @@ WildItemUncommon = ELECTRICSEED
 #-------------------------------
 [MIMIKYU]
 Name = Mimikyu
-FormName = Disguised Form
 Types = GHOST,FAIRY
 BaseStats = 55,90,80,96,50,105
 GenderRatio = Female50Percent
@@ -20473,6 +20472,7 @@ Shape = Serpentine
 Habitat = Forest
 Category = Disguise
 Pokedex = A lonely Pokémon, it conceals its terrifying appearance beneath an old rag so it can get closer to people and other Pokémon.
+FormName = Disguised Form
 Generation = 7
 WildItemUncommon = CHESTOBERRY
 #-------------------------------
@@ -20757,7 +20757,7 @@ Height = 0.2
 Weight = 0.1
 Color = Blue
 Shape = Head
-Habitat = Rare
+Habitat = UltraSpace
 Category = Nebula
 Pokedex = Whether or not it's a Pokémon from this world is a mystery. When it's in a jam, it warps away to a safe place to hide.
 Generation = 7
@@ -20783,7 +20783,7 @@ Height = 0.1
 Weight = 999.9
 Color = Blue
 Shape = Head
-Habitat = Rare
+Habitat = UltraSpace
 Category = Protostar
 Pokedex = Motionless as if dead, its body is faintly warm to the touch. In the distant past, it was called the cocoon of the stars.
 Generation = 7
@@ -20809,7 +20809,7 @@ Height = 3.4
 Weight = 230.0
 Color = White
 Shape = Quadruped
-Habitat = Rare
+Habitat = UltraSpace
 Category = Sunne
 Pokedex = It is said to live in another world. The intense light it radiates from the surface of its body can make the darkest of nights light up like midday.
 Generation = 7
@@ -20834,7 +20834,7 @@ Height = 4.0
 Weight = 120.0
 Color = Purple
 Shape = Winged
-Habitat = Rare
+Habitat = UltraSpace
 Category = Moone
 Pokedex = Said to live in another world, this Pokémon devours light, drawing the moonless dark veil of night over the brightness of day.
 Generation = 7
@@ -20859,7 +20859,7 @@ Height = 1.2
 Weight = 55.5
 Color = White
 Shape = Multiped
-Habitat = Rare
+Habitat = UltraSpace
 Category = Parasite
 Pokedex = One of several mysterious Ultra Beasts. People on the street report observing those infested by it suddenly becoming violent.
 Generation = 7
@@ -20884,7 +20884,7 @@ Height = 2.4
 Weight = 333.6
 Color = Red
 Shape = Multiped
-Habitat = Rare
+Habitat = UltraSpace
 Category = Swollen
 Pokedex = This Ultra Beast appeared from another world. It shows off its body, but whether that display is a boast or a threat remains unclear.
 Generation = 7
@@ -20909,7 +20909,7 @@ Height = 1.8
 Weight = 25.0
 Color = White
 Shape = Bipedal
-Habitat = Rare
+Habitat = UltraSpace
 Category = Lissome
 Pokedex = One of the Ultra Beasts. It refuses to touch anything, perhaps because it senses some uncleanness in this world.
 Generation = 7
@@ -20934,7 +20934,7 @@ Height = 3.8
 Weight = 100.0
 Color = Black
 Shape = BipedalTail
-Habitat = Rare
+Habitat = UltraSpace
 Category = Glowing
 Pokedex = One of the mysterious life-forms known as Ultra Beasts. Astonishing electric shocks emanate from its entire body, according to witnesses.
 Generation = 7
@@ -20959,7 +20959,7 @@ Height = 9.2
 Weight = 999.9
 Color = Green
 Shape = Bipedal
-Habitat = Rare
+Habitat = UltraSpace
 Category = Launch
 Pokedex = One kind of Ultra Beast. Witnesses have seen it burn down a forest by expelling gas from its two arms.
 Generation = 7
@@ -20984,7 +20984,7 @@ Height = 0.3
 Weight = 0.1
 Color = White
 Shape = Bipedal
-Habitat = Rare
+Habitat = UltraSpace
 Category = Drawn Sword
 Pokedex = One of the Ultra Beast life-forms, it was observed cutting down a gigantic steel tower with one stroke of its blade.
 Generation = 7
@@ -21009,7 +21009,7 @@ Height = 5.5
 Weight = 888.0
 Color = Black
 Shape = BipedalTail
-Habitat = Rare
+Habitat = UltraSpace
 Category = Junkivore
 Pokedex = A dangerous Ultra Beast, it appears to be eating constantly, but for some reason its droppings have never been found.
 Generation = 7
@@ -21034,7 +21034,7 @@ Height = 2.4
 Weight = 230.0
 Color = Black
 Shape = HeadArms
-Habitat = Rare
+Habitat = UltraSpace
 Category = Prism
 Pokedex = Light is apparently the source of its energy. It has an extraordinarily vicious disposition and is constantly firing off laser beams.
 Generation = 7
@@ -21109,7 +21109,7 @@ Height = 0.6
 Weight = 1.8
 Color = Purple
 Shape = BipedalTail
-Habitat = Rare
+Habitat = UltraSpace
 Category = Poison Pin
 Pokedex = An Ultra Beast that lives in a different world, it cackles wildly as it sprays its opponents with poison from the needles on its head.
 Generation = 7
@@ -21135,7 +21135,7 @@ Height = 3.6
 Weight = 150.0
 Color = Purple
 Shape = Winged
-Habitat = Rare
+Habitat = UltraSpace
 Category = Poison Pin
 Pokedex = One kind of Ultra Beast, it fires a glowing, venomous liquid from its needles. This liquid is also immensely adhesive.
 Generation = 7
@@ -21160,7 +21160,7 @@ Height = 5.5
 Weight = 820.0
 Color = Gray
 Shape = Quadruped
-Habitat = Rare
+Habitat = UltraSpace
 Category = Rampart
 Pokedex = When stone walls started moving and attacking, the brute's true identity was this mysterious life-form, which brings to mind an Ultra Beast.
 Generation = 7
@@ -21185,7 +21185,7 @@ Height = 1.8
 Weight = 13.0
 Color = White
 Shape = Bipedal
-Habitat = Rare
+Habitat = UltraSpace
 Category = Fireworks
 Pokedex = It slithers toward people. Then, without warning, it triggers the explosion of its own head. It's apparently one kind of Ultra Beast.
 Generation = 7
@@ -22285,7 +22285,6 @@ Evolutions = TOXTRICITY,Level,30
 #-------------------------------
 [TOXTRICITY]
 Name = Toxtricity
-FormName = Amped Form
 Types = ELECTRIC,POISON
 BaseStats = 75,98,70,75,114,70
 GenderRatio = Female50Percent
@@ -22307,6 +22306,7 @@ Shape = BipedalTail
 Habitat = Urban
 Category = Punk
 Pokedex = When this Pokémon sounds as if it's strumming a guitar, it's actually clawing at the protrusions on its chest to generate electricity.
+FormName = Amped Form
 Generation = 8
 #-------------------------------
 [SIZZLIPEDE]
@@ -22415,7 +22415,6 @@ Generation = 8
 #-------------------------------
 [SINISTEA]
 Name = Sinistea
-FormName = Phony Form
 Types = GHOST
 BaseStats = 40,45,45,50,74,54
 GenderRatio = Genderless
@@ -22437,12 +22436,12 @@ Shape = Head
 Habitat = Urban
 Category = Black Tea
 Pokedex = The teacup in which this Pokémon makes its home is a famous piece of antique tableware. Many forgeries are in circulation.
+FormName = Phony Form
 Generation = 8
 Evolutions = POLTEAGEIST,Item,CRACKEDPOT
 #-------------------------------
 [POLTEAGEIST]
 Name = Polteageist
-FormName = Phony Form
 Types = GHOST
 BaseStats = 60,65,65,70,134,114
 GenderRatio = Genderless
@@ -22464,6 +22463,7 @@ Shape = Head
 Habitat = Urban
 Category = Black Tea
 Pokedex = This species lives in antique teapots. Most pots are forgeries, but on rare occasions, an authentic work is found.
+FormName = Phony Form
 Generation = 8
 #-------------------------------
 [HATENNA]
@@ -22812,7 +22812,6 @@ Evolutions = ALCREMIE,HoldItem,STRAWBERRYSWEET,ALCREMIE,HoldItem,BERRYSWEET,ALCR
 #-------------------------------
 [ALCREMIE]
 Name = Alcremie
-FormName = Vanilla Cream
 Types = FAIRY
 BaseStats = 65,60,75,64,110,121
 GenderRatio = AlwaysFemale
@@ -22834,6 +22833,7 @@ Shape = HeadBase
 Habitat = Urban
 Category = Cream
 Pokedex = When Alcremie is content, the cream it secretes from its hands becomes sweeter and richer.
+FormName = Vanilla Cream
 Generation = 8
 #-------------------------------
 [FALINKS]
@@ -22967,7 +22967,6 @@ Generation = 8
 #-------------------------------
 [EISCUE]
 Name = Eiscue
-FormName = Ice Face
 Types = ICE
 BaseStats = 75,80,110,50,65,90
 GenderRatio = Female50Percent
@@ -22989,11 +22988,11 @@ Shape = BipedalTail
 Habitat = WatersEdge
 Category = Penguin
 Pokedex = It drifted in on the flow of ocean waters from a frigid place. It keeps its head iced constantly to make sure it stays nice and cold.
+FormName = Ice Face
 Generation = 8
 #-------------------------------
 [INDEEDEE]
 Name = Indeedee
-FormName = Male
 Types = PSYCHIC,NORMAL
 BaseStats = 60,65,55,95,105,95
 GenderRatio = Female50Percent
@@ -23016,11 +23015,11 @@ Shape = BipedalTail
 Habitat = Urban
 Category = Emotion
 Pokedex = It uses the horns on its head to sense the emotions of others. Males will act as valets for those they serve, looking after their every need.
+FormName = Male
 Generation = 8
 #-------------------------------
 [MORPEKO]
 Name = Morpeko
-FormName = Full Belly Mode
 Types = ELECTRIC,DARK
 BaseStats = 58,95,58,97,70,58
 GenderRatio = Female50Percent
@@ -23042,6 +23041,7 @@ Shape = Bipedal
 Habitat = Forest
 Category = Two-Sided
 Pokedex = As it eats the seeds stored up in its pocket-like pouches, this Pokémon is not just satisfying its constant hunger. It's also generating electricity.
+FormName = Full Belly Mode
 Generation = 8
 #-------------------------------
 [CUFANT]
@@ -23300,7 +23300,6 @@ Generation = 8
 #-------------------------------
 [ZACIAN]
 Name = Zacian
-FormName = Hero of Many Battles
 Types = FAIRY
 BaseStats = 92,120,115,138,80,115
 GenderRatio = Genderless
@@ -23321,6 +23320,7 @@ Shape = Quadruped
 Habitat = Forest
 Category = Warrior
 Pokedex = Known as a legendary hero, this Pokémon absorbs metal particles, transforming them into a weapon it uses to battle.
+FormName = Hero of Many Battles
 Generation = 8
 Flags = Legendary
 WildItemCommon = RUSTEDSWORD
@@ -23329,7 +23329,6 @@ WildItemRare = RUSTEDSWORD
 #-------------------------------
 [ZAMAZENTA]
 Name = Zamazenta
-FormName = Hero of Many Battles
 Types = FIGHTING
 BaseStats = 92,120,115,138,80,115
 GenderRatio = Genderless
@@ -23350,6 +23349,7 @@ Shape = Quadruped
 Habitat = Forest
 Category = Warrior
 Pokedex = This Pokémon slept for aeons while in the form of a statue. It was asleep for so long, people forgot that it ever existed.
+FormName = Hero of Many Battles
 Generation = 8
 Flags = Legendary
 WildItemCommon = RUSTEDSHIELD
@@ -23410,7 +23410,6 @@ Evolutions = URSHIFU,Event,1,URSHIFU,Item,SCROLLOFDARKNESS,URSHIFU,Item,SCROLLOF
 #-------------------------------
 [URSHIFU]
 Name = Urshifu
-FormName = Single Strike Style
 Types = FIGHTING,DARK
 BaseStats = 100,130,100,97,63,60
 GenderRatio = FemaleOneEighth
@@ -23431,6 +23430,7 @@ Shape = Bipedal
 Habitat = Mountain
 Category = Wushu
 Pokedex = Inhabiting the mountains of a distant region, this Pokémon races across sheer cliffs, training its legs and refining its moves.
+FormName = Single Strike Style
 Generation = 8
 Flags = Legendary
 #-------------------------------
@@ -23661,7 +23661,6 @@ Generation = 8
 #-------------------------------
 [BASCULEGION]
 Name = Basculegion
-FormName = Male
 Types = WATER,GHOST
 BaseStats = 120,112,65,78,80,75
 GenderRatio = Female50Percent
@@ -23683,6 +23682,7 @@ Shape = Finned
 Habitat = Sea
 Category = Big Fish
 Pokedex = Clads itself in the souls of comrades that perished before fulfilling their goals of journeying upstream. No other species throughout other aquatic environments is Basculegion’s equal.
+FormName = Male
 Generation = 8
 WildItemUncommon = DEEPSEATOOTH
 #-------------------------------
@@ -23738,7 +23738,6 @@ Generation = 8
 #-------------------------------
 [ENAMORUS]
 Name = Enamorus
-FormName = Incarnate Forme
 Types = FAIRY,FLYING
 BaseStats = 74,115,70,106,135,80
 GenderRatio = AlwaysFemale
@@ -23760,6 +23759,7 @@ Shape = HeadArms
 Habitat = RoughTerrain
 Category = Abundance
 Pokedex = When it flies to this land from across the sea, the bitter winter comes to an end. According to legend, this Pokémon's love gives rise to the budding of fresh life across Hisui.
+FormName = Incarnate Forme
 Generation = 8
 Flags = Legendary
 #-------------------------------
@@ -24032,7 +24032,6 @@ Evolutions = OINKOLOGNE,Level,18
 #-------------------------------
 [OINKOLOGNE]
 Name = Oinkologne
-FormName = Male
 Types = NORMAL
 BaseStats = 110,100,75,65,59,80
 GenderRatio = Female50Percent
@@ -24055,6 +24054,7 @@ Shape = Quadruped
 Habitat = Grassland
 Category = Hog
 Pokedex = It entrances female Pokémon with the sweet, alluring scent that wafts from all over its body.
+FormName = Male
 Generation = 9
 #-------------------------------
 [TAROUNTULA]
@@ -24272,7 +24272,6 @@ Evolutions = MAUSHOLD,Level,25
 #-------------------------------
 [MAUSHOLD]
 Name = Maushold
-FormName = Family of Four
 Types = NORMAL
 BaseStats = 74,75,70,111,65,75
 GenderRatio = Genderless
@@ -24295,6 +24294,7 @@ Shape = Bipedal
 Habitat = Urban
 Category = Family
 Pokedex = They build huge nests with many rooms that are used for different purposes, such as eating and sleeping.
+FormName = Family of Four
 Generation = 9
 #-------------------------------
 [FIDOUGH]
@@ -24432,7 +24432,6 @@ Generation = 9
 #-------------------------------
 [SQUAWKABILLY]
 Name = Squawkabilly
-FormName = Green Plumage
 Types = NORMAL,FLYING
 BaseStats = 82,96,51,92,45,51
 GenderRatio = Female50Percent
@@ -24455,6 +24454,7 @@ Shape = Winged
 Habitat = Urban
 Category = Parrot
 Pokedex = These Pokémon prefer to live in cities. They form flocks based on the color of their feathers, and they fight over territory.
+FormName = Green Plumage
 Generation = 9
 #-------------------------------
 [NACLI]
@@ -25306,7 +25306,6 @@ Evolutions = PALAFIN,LevelWithPartner,38
 #-------------------------------
 [PALAFIN]
 Name = Palafin
-FormName = Zero Form
 Types = WATER
 BaseStats = 100,70,72,100,53,62
 GenderRatio = Female50Percent
@@ -25328,6 +25327,7 @@ Shape = Finned
 Habitat = Sea
 Category = Dolphin
 Pokedex = This Pokémon changes its appearance if it hears its allies calling for help. Palafin will never show anybody its moment of transformation.
+FormName = Zero Form
 Generation = 9
 #-------------------------------
 [VAROOM]
@@ -25674,7 +25674,6 @@ Generation = 9
 #-------------------------------
 [TATSUGIRI]
 Name = Tatsugiri
-FormName = Curly Form
 Types = DRAGON,WATER
 BaseStats = 68,50,60,82,120,95
 GenderRatio = Female50Percent
@@ -25697,6 +25696,7 @@ Shape = Finned
 Habitat = Sea
 Category = Mimicry
 Pokedex = This is a small dragon Pokémon. It lives inside the mouth of Dondozo to protect itself from enemies on the outside.
+FormName = Curly Form
 Generation = 9
 #-------------------------------
 [ANNIHILAPE]
@@ -25780,7 +25780,6 @@ Generation = 9
 #-------------------------------
 [DUDUNSPARCE]
 Name = Dudunsparce
-FormName = Two-Segment Form
 Types = NORMAL
 BaseStats = 125,100,80,55,85,75
 GenderRatio = Female50Percent
@@ -25803,6 +25802,7 @@ Shape = Serpentine
 Habitat = Cave
 Category = Land Snake
 Pokedex = This Pokémon uses its hard tail to make its nest by boring holes into bedrock deep underground. The nest can reach lengths of over six miles.
+FormName = Two-Segment Form
 Generation = 9
 #-------------------------------
 [KINGAMBIT]
@@ -26225,7 +26225,6 @@ Generation = 9
 #-------------------------------
 [GIMMIGHOUL]
 Name = Gimmighoul
-FormName = Chest Form
 Types = GHOST
 BaseStats = 45,30,70,10,75,70
 GenderRatio = Genderless
@@ -26246,6 +26245,7 @@ Shape = HeadBase
 Habitat = Urban
 Category = Coin Chest
 Pokedex = This Pokémon was born inside a treasure chest about 1,500 years ago. It sucks the life-force out of scoundrels who try to steal the treasure.
+FormName = Chest Form
 Generation = 9
 Evolutions = GHOLDENGO,CollectItems,GIMMIGHOULCOIN
 #-------------------------------
@@ -26552,7 +26552,6 @@ Generation = 9
 #-------------------------------
 [POLTCHAGEIST]
 Name = Poltchageist
-FormName = Counterfeit Form
 Types = GRASS,GHOST
 BaseStats = 40,45,45,50,74,54
 GenderRatio = Genderless
@@ -26574,12 +26573,12 @@ Shape = Head
 Habitat = Urban
 Category = Matcha
 Pokedex = Supposedly, the regrets of a tea ceremony master who died before perfecting his craft lingered in some matcha and became a Pokémon.
+FormName = Counterfeit Form
 Generation = 9
 Evolutions = SINISTCHA,Item,UNREMARKABLETEACUP
 #-------------------------------
 [SINISTCHA]
 Name = Sinistcha
-FormName = Unremarkable Form
 Types = GRASS,GHOST
 BaseStats = 71,60,106,70,121,80
 GenderRatio = Genderless
@@ -26601,6 +26600,7 @@ Shape = Head
 Habitat = Urban
 Category = Matcha
 Pokedex = It pretends to be tea, trying to fool people into drinking it so it can drain their life-force. Its ruse is generally unsuccessful.
+FormName = Unremarkable Form
 Generation = 9
 #-------------------------------
 [OKIDOGI]
@@ -26683,7 +26683,6 @@ Flags = Legendary
 #-------------------------------
 [OGERPON]
 Name = Ogerpon
-FormName = Teal Mask
 Types = GRASS
 BaseStats = 80,120,84,110,60,96
 GenderRatio = AlwaysFemale
@@ -26704,5 +26703,6 @@ Shape = Bipedal
 Habitat = Rare
 Category = Mask
 Pokedex = This Pokémon's type changes based on which mask it's wearing. It confounds its enemies with nimble movements and kicks.
+FormName = Teal Mask
 Generation = 9
 Flags = Legendary,TeraType_GRASS

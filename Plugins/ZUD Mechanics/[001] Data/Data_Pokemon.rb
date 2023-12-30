@@ -39,10 +39,14 @@ class Pokemon
   end
     
   def dynamax=(value)
-    @gmax_factor = value if species_data.id == :ETERNATUS
-    @dynamax  = (dynamax_able?) ? value  : false
-    @reverted = (dynamax_able?) ? !value : false
-    $player&.pokedex&.register(self)
+    if tera?
+      self.unmax
+    else
+      @gmax_factor = value if species_data.id == :ETERNATUS
+      @dynamax  = (dynamax_able?) ? value  : false
+      @reverted = (dynamax_able?) ? !value : false
+      $player&.pokedex&.register(self)
+    end
   end
   
   def reverted?
@@ -63,12 +67,25 @@ class Pokemon
   end
   
   def dynamax_able?
-    return false if egg? || shadowPokemon? || celestial?
+    return false if egg? || shadowPokemon? || tera? || celestial?
     return (!@dynamax_able.nil?) ? @dynamax_able : !species_data.no_dynamax
   end
   
   def dynamax_able=(value)
-    @dynamax_able = (species_data.no_dynamax) ? false : value
+    if species_data.no_dynamax
+      @dynamax_able = false
+    else
+      @dynamax_able = value
+    end
+  end
+  
+  def should_force_revert?
+    return true if shadowPokemon? || celestial?
+    return true if !@dynamax_able && !@dynamax_able.nil?
+    in_battle_form = (mega? || primal? || ultra? || tera?)
+    return true if (dynamax? || reverted?) && in_battle_form
+    return true if species_data.no_dynamax && !in_battle_form
+    return false
   end
   
   #-----------------------------------------------------------------------------
@@ -216,7 +233,7 @@ class Pokemon
   
   def calc_stats
     # Forces an ineligible Pokemon to un-Dynamax.
-    if species_data.no_dynamax || !dynamax_able?
+    if should_force_revert?
       @reverted = true if dynamax?
       @dynamax = false
       @gmax_factor = false
@@ -259,10 +276,10 @@ class Pokemon
     @spdef   = stats[:SPECIAL_DEFENSE]
     @speed   = stats[:SPEED]
     # Resets remaining Dynamax attributes for ineligible Pokemon.
-    if species_data.no_dynamax || !dynamax_able?
+    if should_force_revert?
       @dynamax_lvl = 0
       @reverted = false
-      @dynamax_able = nil
+      @dynamax_able = false
     end
   end
   
@@ -318,7 +335,7 @@ end
 MultipleForms.register(:ETERNATUS,{
   "baseStats" => proc { |pkmn|
     next if !pkmn.gmax?
-    base_stats = {
+    next {
       :HP              => 255,
       :ATTACK          => 115,
       :DEFENSE         => 250,
@@ -326,6 +343,5 @@ MultipleForms.register(:ETERNATUS,{
       :SPECIAL_ATTACK  => 125,
       :SPECIAL_DEFENSE => 250
     }
-    next base_stats
   }
 })

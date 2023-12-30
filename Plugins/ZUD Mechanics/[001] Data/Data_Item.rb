@@ -10,9 +10,9 @@ module GameData
     def is_z_crystal?; return has_flag?("ZCrystal"); end
     def is_ultra_item?; return has_flag?("UltraItem"); end
       
+    alias zud_is_important? is_important? 
     def is_important?
-      return true if is_key_item? || is_HM? || is_TM? || is_z_crystal?
-      return false
+      return zud_is_important? || is_z_crystal?
     end
 	
     alias zud_unlosable? unlosable?
@@ -21,27 +21,23 @@ module GameData
       zud_unlosable?(*args)
     end
     
+	Item.singleton_class.alias_method :zud_held_icon_filename, :held_icon_filename
     def self.held_icon_filename(item)
       item_data = self.try_get(item)
       return nil if !item_data
-      name_base = "item"
-      name_base = "mail"     if item_data.is_mail?
-      name_base = "mega"     if item_data.is_mega_stone?
       name_base = "zcrystal" if item_data.is_z_crystal?
-      paths = ["Graphics/Plugins/ZUD/UI/icon_",
-               "Graphics/Pictures/Party/icon_"]
-      paths.each do |p|
+      ["Graphics/Plugins/ZUD/UI/icon_",
+       "Graphics/Pictures/Party/icon_"].each do |p|
         ret = sprintf(p + "%s_%s", name_base, item_data.id)
         return ret if pbResolveBitmap(ret)
-      end
-      paths.each do |p|
         ret = sprintf(p + "%s", name_base)
         return ret if pbResolveBitmap(ret)
       end
+      return self.zud_held_icon_filename(item)
     end
 	
-	# Used for getting TR's based on the inputted types.
-	def self.get_TR_from_type(types)
+    # Used for getting TR's based on the inputted types.
+    def self.get_TR_from_type(types)
       trList = []
       self.each do |i|
         next if !i.is_TR?
@@ -54,23 +50,22 @@ module GameData
   end
 end
 
+
 #-------------------------------------------------------------------------------
 # Adds Z-Crystal pocket to the bag.
 #-------------------------------------------------------------------------------
 module Settings
-  class << Settings
-    alias bag_pocket_names_zud bag_pocket_names
-  end
-  
+  Settings.singleton_class.alias_method :zud_bag_pocket_names, :bag_pocket_names
   def self.bag_pocket_names
-    names = self.bag_pocket_names_zud
-    names += [_INTL("Z-Crystals")]
+    names = self.zud_bag_pocket_names
+    names.push(_INTL("Z-Crystals"))
     return names
   end
    
-  BAG_MAX_POCKET_SIZE  += [-1]
-  BAG_POCKET_AUTO_SORT += [true]
+  BAG_MAX_POCKET_SIZE.push(-1)
+  BAG_POCKET_AUTO_SORT.push(true)
 end
+
 
 #-------------------------------------------------------------------------------
 # Fix to prevent Z-Crystals from duplicating in the bag.
@@ -101,21 +96,21 @@ end
 #-------------------------------------------------------------------------------
 ItemHandlers::UseOnPokemon.addIf(proc { |item| GameData::Item.get(item).is_z_crystal? },
   proc { |item, qty, pkmn, scene|
-    crystal    = GameData::Item.get(item).name
+    crystal    = GameData::Item.get(item).portion_name
     compatible = pkmn.compat_zmove?(pkmn.moves, item) || pkmn.compat_ultra?(item)
     if pkmn.shadowPokemon? || pkmn.egg?
       scene.pbDisplay(_INTL("It won't have any effect."))
       next false
     elsif pkmn.item == item
-      scene.pbDisplay(_INTL("{1} is already holding {2}.", pkmn.name, crystal))
+      scene.pbDisplay(_INTL("{1} is already holding a {2}.", pkmn.name, crystal))
       next false
     elsif !compatible && !scene.pbConfirm(_INTL("This Pokémon currently can't use this crystal's Z-Power. Is that OK?"))
       next false
     end
     scene.pbDisplay(_INTL("The {1} will be given to the Pokémon so that the Pokémon can use its Z-Power!", crystal))
     if pkmn.item
-      itemname = GameData::Item.get(pkmn.item).name
-      text = (pkmn.item == :LEFTOVERS) ? "some" : (itemname.starts_with_vowel?) ? "an" : "a"
+      itemname = GameData::Item.get(pkmn.item).portion_name
+      text = (itemname.starts_with_vowel?) ? "an" : "a"
       scene.pbDisplay(_INTL("{1} is already holding {2} {3}.\1", pkmn.name, text, itemname))
       if scene.pbConfirm(_INTL("Would you like to switch the two items?"))
         if !$bag.can_add?(pkmn.item)
@@ -131,7 +126,7 @@ ItemHandlers::UseOnPokemon.addIf(proc { |item| GameData::Item.get(item).is_z_cry
     end
     pkmn.item = item
     pbSEPlay("Pkmn move learnt")
-    scene.pbDisplay(_INTL("Your Pokémon is now holding {1}!", crystal))
+    scene.pbDisplay(_INTL("Your Pokémon is now holding a {1}!", crystal))
     next true
   }
 )
@@ -153,9 +148,11 @@ ItemHandlers::UseOnPokemon.add(:DYNAMAXCANDY, proc { |item, qty, pkmn, scene|
     pbSEPlay("Pkmn move learnt")
     if item == :DYNAMAXCANDYXL
       scene.pbDisplay(_INTL("{1}'s Dynamax level was increased to 10!", pkmn.name))
+      $stats.total_dynamax_lvls_gained += (10 - pkmn.dynamax_lvl)
       pkmn.dynamax_lvl = 10
     else
       scene.pbDisplay(_INTL("{1}'s Dynamax level was increased by 1!", pkmn.name))
+      $stats.total_dynamax_lvls_gained += 1
       pkmn.dynamax_lvl += 1
     end
     scene.pbHardRefresh
@@ -187,6 +184,7 @@ ItemHandlers::UseOnPokemon.add(:MAXSOUP, proc { |item, qty, pkmn, scene|
     else
       pbSEPlay("Pkmn move learnt")
       pkmn.gmax_factor = true
+      $stats.total_gmax_factors_given += 1
       scene.pbDisplay(_INTL("{1} is now bursting with Gigantamax energy!", pkmn.name))
     end
     scene.pbHardRefresh
@@ -297,15 +295,10 @@ ItemHandlers::UseInField.add(:MAXEGGS, proc { |item|
       maxexp     = pkmn.growth_rate.maximum_exp
       newexp     = pkmn.growth_rate.add_exp(pkmn.exp, experience)
       newlevel   = pkmn.growth_rate.level_from_exp(newexp)
-      curlevel   = pkmn.level
-      leveldif   = newlevel - curlevel
       experience = (maxexp - pkmn.exp) if maxexp < (pkmn.exp + experience)
       screen.pbDisplay(_INTL("{1} gained {2} Exp. Points!", pkmn.name, experience.to_s_formatted))
-      leveldif.times do
-        pbSEPlay("Pkmn move learnt")
-        pbChangeLevel(pkmn, pkmn.level + 1, screen)
-        screen.pbRefreshSingle(i)
-      end
+      pbSEPlay("Pkmn move learnt")
+      pbChangeLevel(pkmn, newlevel, screen)
       pkmn.exp = newexp
       screen.pbRefreshSingle(i)
     end
@@ -339,7 +332,7 @@ ItemHandlers::CanUseInBattle.add(:ZBOOSTER, proc { |item, pokemon, battler, move
     next false
   elsif battle.zMove[side][owner] == -1
     if showMessages
-      scene.pbDisplay(_INTL("Your {1} doesn't require recharging!", ring))
+      scene.pbDisplay(_INTL("You don't need to recharge your {1} yet!", ring))
     end
     next false
   end
@@ -349,9 +342,10 @@ ItemHandlers::CanUseInBattle.add(:ZBOOSTER, proc { |item, pokemon, battler, move
 ItemHandlers::UseInBattle.add(:ZBOOSTER, proc { |item, battler, battle|
   ring    = battle.pbGetZRingName(battler.index)
   trainer = battle.pbGetOwnerName(battler.index)
+  item    = GameData::Item.get(item).portion_name
   battle.pbSetBattleMechanicUsage(battler.index, "Z-Move", -1)
   pbSEPlay(sprintf("Anim/Lucky Chant"))
-  battle.pbDisplayPaused(_INTL("{1}'s {2} was fully recharged!\nZ-Moves are now usable again!", trainer, ring))
+  battle.pbDisplayPaused(_INTL("The {1} fully recharged {2}'s {3}!\n{2} can use Z-Moves again!", item, trainer, ring))
 })
 
 
@@ -377,7 +371,7 @@ ItemHandlers::CanUseInBattle.add(:WISHINGSTAR, proc { |item, pokemon, battler, m
     next false
   elsif dmax || battle.dynamax[side][owner] == -1
     if showMessages
-      scene.pbDisplay(_INTL("Your {1} doesn't require recharging!", band))
+      scene.pbDisplay(_INTL("You don't need to recharge your {1} yet!", band))
     end
     next false
   end
@@ -387,7 +381,8 @@ ItemHandlers::CanUseInBattle.add(:WISHINGSTAR, proc { |item, pokemon, battler, m
 ItemHandlers::UseInBattle.add(:WISHINGSTAR, proc { |item, battler, battle|
   band    = battle.pbGetDynamaxBandName(battler.index)
   trainer = battle.pbGetOwnerName(battler.index)
+  item    = GameData::Item.get(item).portion_name
   battle.pbSetBattleMechanicUsage(battler.index, "Dynamax", -1)
   pbSEPlay(sprintf("Anim/Lucky Chant"))
-  battle.pbDisplayPaused(_INTL("{1}'s {2} was fully recharged!\nDynamax is now usable again!", trainer, band))
+  battle.pbDisplayPaused(_INTL("The {1} fully recharged {2}'s {3}!\n{2} can use Dynamax again!", item, trainer, band))
 })

@@ -12,59 +12,6 @@ class RaidBattle < Battle
     @hard_mode = $game_temp.dx_rules[:hard]
   end
   
-  #-----------------------------------------------------------------------------
-  # Encounter text vs raid Pokemon.
-  #-----------------------------------------------------------------------------
-  def pbStartBattleSendOut(sendOuts)
-    foe = pbParty(1)[0]
-    text = (foe.gmax_factor?) ? "Gigantamax" : "Dynamaxed"
-    text = "Eternamax" if foe.species == :ETERNATUS
-    location = (inMaxLair?) ? "lair" : "den"
-    pbDisplayPaused(_INTL("Oh! A {1} {2} lurks in the {3}!", text, foe.name, location))
-    msg = ""
-    names = []
-    toSendOut = []
-    sent = sendOuts[0][0]
-    for i in sent; names.push(@battlers[i].name); end
-    case sent.length
-    when 1; msg = _INTL("Go! {1}!", *names)
-    when 2; msg = _INTL("Go! {1} and {2}!", *names)
-    when 3; msg = _INTL("Go! {1}, {2} and {3}!", *names)
-    when 4; msg = _INTL("Go! {1}, {2}, {3} and {4}!", *names)
-    when 5; msg = _INTL("Go! {1}, {2}, {3}, {4} and {5}!", *names)
-    end
-    toSendOut.concat(sent)
-    pbDisplayBrief(msg) if names.length > 0
-    animSendOuts = []
-    toSendOut.each do |idxBattler|
-      animSendOuts.push([idxBattler, @battlers[idxBattler].pokemon])
-    end
-    pbSendOut(animSendOuts, true)
-  end
-  
-  #-----------------------------------------------------------------------------
-  # Capturing and storing raid Pokemon.
-  #-----------------------------------------------------------------------------
-  def pbCaptureCalc(*args)
-    return 4 if !@hard_mode
-    super
-  end
-  
-  def pbStorePokemon(pkmn)
-    raid_ResetPokemon(pkmn)
-    pkmn.heal
-    if inMaxLair?
-      pbDynamaxAdventure.add_prize(pkmn)
-      pbDisplay(_INTL("Caught {1}!", pkmn.name))
-      pbDynamaxAdventure.swap_pokemon
-    else
-      pkmn.reset_moves
-      stored_box = $PokemonStorage.pbStoreCaught(pkmn)
-      box_name = @peer.pbBoxName(stored_box)
-      pbDisplayPaused(_INTL("{1} has been sent to Box \"{2}\"!", pkmn.name, box_name))
-    end
-  end
-  
   def pbRecordAndStoreCaughtPokemon
     @caughtPokemon.each do |pkmn|
       pbSetSeen(pkmn)
@@ -192,13 +139,13 @@ class RaidBattle < Battle
     #---------------------------------------------------------------------------
     # Builds hash of possible Cheer effects for a single Cheer.
     #---------------------------------------------------------------------------
-    #	:reflect     => No Reflect and party size is 1 or Pokemon fainted.
-    #	:lightscreen => No Light Screen and party size is 1 or Pokemon fainted.
-    #	:shieldbreak => Raid Shield active and party size is 1 and turn count < 5.
-    #	:dynamax     => Dynamax used and party size is 1 and turn count < 5.
-    #	:heal        => Party Pokemon have low HP and party size is 1 and turn count < 5.
+    # :reflect     => No Reflect and party size is 1 or Pokemon fainted.
+    # :lightscreen => No Light Screen and party size is 1 or Pokemon fainted.
+    # :shieldbreak => Raid Shield active and party size is 1 and turn count < 5.
+    # :dynamax     => Dynamax used and party size is 1 and turn count < 5.
+    # :heal        => Party Pokemon have low HP and party size is 1 and turn count < 5.
     # :none        => No above effects qualify and party size > 1.
-    #	:boost       => Always available.
+    # :boost       => Always available.
     #---------------------------------------------------------------------------
     when 1
       if rules[:size] == 1 
@@ -228,11 +175,11 @@ class RaidBattle < Battle
     #---------------------------------------------------------------------------
     # Builds hash of possible Cheer effects for a double Cheer.
     #---------------------------------------------------------------------------
-    #	:heal        => Party Pokemon have low HP and Pokemon fainted or turn count < 5.
+    # :heal        => Party Pokemon have low HP and Pokemon fainted or turn count < 5.
     # :timer       => Party size > 2 and turn count is 1.
-    #	:shieldbreak => Raid Shield active and party size is 2 and Pokemon fainted or turn count < 5.
-    #	:dynamax     => Dynamax used and party size is 2 and Pokemon fainted or turn count < 5.
-    #	:boost       => No above effects qualify.
+    # :shieldbreak => Raid Shield active and party size is 2 and Pokemon fainted or turn count < 5.
+    # :dynamax     => Dynamax used and party size is 2 and Pokemon fainted or turn count < 5.
+    # :boost       => No above effects qualify.
     #---------------------------------------------------------------------------
     when 2
       if !rules[:perfect_bonus] || boss.effects[PBEffects::Dynamax] < 5
@@ -252,11 +199,11 @@ class RaidBattle < Battle
     #---------------------------------------------------------------------------
     # Builds hash of possible Cheer effects for a triple+ Cheer.
     #---------------------------------------------------------------------------
-    #	:shieldbreak => Raid Shield active and Pokemon fainted.
-    #	:dynamax     => Dynamax used and Pokemon fainted.
+    # :shieldbreak => Raid Shield active and Pokemon fainted.
+    # :dynamax     => Dynamax used and Pokemon fainted.
     # :kocount     => KO count is 1.
-    #	:heal        => No above effects qualify and party Pokemon have low HP.
-    #	:boost       => No above effects qualify.
+    # :heal        => No above effects qualify and party Pokemon have low HP.
+    # :boost       => No above effects qualify.
     #---------------------------------------------------------------------------
     else
       if !rules[:perfect_bonus] || boss.effects[PBEffects::Dynamax] < 5
@@ -400,7 +347,7 @@ class RaidBattle < Battle
       when partyPriority.last
         pbSetBattleMechanicUsage(battler.index, "Dynamax", -1)
         pbSEPlay(sprintf("Anim/Lucky Chant"))
-        pbDisplayPaused(_INTL("{1}'s {2} was fully recharged!\nDynamax is now usable again!", trainerName, item))
+        pbDisplayPaused(_INTL("The absorbed Dynamax energy fully recharged {1}'s {2}!\n{1} can use Dynamax again!", trainerName, item))
       # First Cheer user.
       when partyPriority.first
         pbDisplay(_INTL("{1}'s {2} absorbed a little of the surrounding Dynamax Energy!", trainerName, item))
@@ -517,13 +464,14 @@ class Battle
     if pkmn.dynamax_lvl > 10
       pkmn.dynamax_lvl /= 10
       pkmn.dynamax_lvl += rand(5)
+      pkmn.dynamax_lvl = 10 if pkmn.dynamax_lvl > 10
     end
   end
 end
 
 
 #===============================================================================
-# Resets Dynamax attributes on captured Pokemon.
+# Upon capturing a Dynamaxed Pokemon.
 #===============================================================================
 module Battle::CatchAndStoreMixin
   alias zud_pbStorePokemon pbStorePokemon
@@ -532,7 +480,21 @@ module Battle::CatchAndStoreMixin
       pkmn.gmax_factor = false
       pkmn.dynamax_lvl = 0
     end
-    raid_ResetPokemon(pkmn) if pkmn.dynamax?
-    zud_pbStorePokemon(pkmn)
+    if inMaxLair?
+	  raid_ResetPokemon(pkmn)
+      pkmn.heal
+      pbDynamaxAdventure.add_prize(pkmn)
+      pbDisplay(_INTL("Caught {1}!", pkmn.name))
+      pbDynamaxAdventure.swap_pokemon
+    elsif @raid_battle
+	  raid_ResetPokemon(pkmn)
+      pkmn.heal
+      pkmn.reset_moves
+      stored_box = $PokemonStorage.pbStoreCaught(pkmn)
+      box_name = @peer.pbBoxName(stored_box)
+      pbDisplayPaused(_INTL("{1} has been sent to Box \"{2}\"!", pkmn.name, box_name))
+    else
+      zud_pbStorePokemon(pkmn)
+    end
   end
 end

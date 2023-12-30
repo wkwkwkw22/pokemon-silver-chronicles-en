@@ -56,6 +56,7 @@ Name = Violet City
 Outdoor = true
 ShowArea = true
 MapPosition = 0,17,9
+Flags = PowerSpot
 #-------------------------------
 [011]   # Route 32
 Name = Route 32
@@ -215,6 +216,7 @@ Outdoor = true
 ShowArea = true
 HealingSpot = 56,34,49
 MapPosition = 0,13,12
+Flags = PowerSpot
 #-------------------------------
 [057]   # Goldenrod City - Bill's House
 Name = Goldenrod City - Bill's House
@@ -228,6 +230,7 @@ MapPosition = 0,13,11
 Name = Goldenrod City - Tunnel
 MapPosition = 0,13,11
 BattleBack = tunnel
+Flags = PowerSpot
 #-------------------------------
 [060]   # Goldenrod City - Tunnel
 Name = Goldenrod City - Tunnel
@@ -237,6 +240,7 @@ MapPosition = 0,13,11
 Name = Goldenrod City - Name Rater
 Name = 
 MapPosition = 0,12,11
+Flags = PowerSpot
 #-------------------------------
 [062]   # Goldenrod City - Radio Tower 1F
 Name = Goldenrod City - Radio Tower 1F
@@ -253,6 +257,7 @@ BattleBack = radio
 [064]   # Goldenrod City - Magnet Train
 Name = Goldenrod City - Magnet Train
 MapPosition = 0,13,11
+Flags = PowerSpot
 #-------------------------------
 [065]   # Goldenrod City - House
 Name = Goldenrod City - House
