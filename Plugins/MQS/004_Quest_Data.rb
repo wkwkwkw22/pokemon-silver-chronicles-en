@@ -7,32 +7,45 @@ module QuestModule
   }
   
   # Here's the simplest example of a single-stage quest with everything specified
-  Quest1 = {
+  # Quest1 = {
+  #   :ID => "1",
+  #   :Name => "Introductions",
+  #   :QuestGiver => "Little Boy",
+  #   :Stage1 => "Look for clues.",
+  #   :Location1 => "Lappet Town",
+  #   :QuestDescription => "Some wild Pokémon stole a little boy's favourite toy. Find those troublemakers and help him get it back.",
+  #   :RewardString => "Something shiny!"
+  # }
+
+  # Here's an extension of the above that includes multiple stages
+  MysteryEgg = {
     :ID => "1",
-    :Name => "Introductions",
-    :QuestGiver => "Little Boy",
-    :Stage1 => "Look for clues.",
-    :Location1 => "Lappet Town",
-    :QuestDescription => "Some wild Pokémon stole a little boy's favourite toy. Find those troublemakers and help him get it back.",
-    :RewardString => "Something shiny!"
+    :Name => "Mr. Pokémon Delivery",
+    :QuestGiver => "Professor Elm",
+    :Stage1 => "Get package with Mr. Pokémon",
+    :Stage2 => "Return Mystery Egg.",
+    :Stage3 => "Catch the troublemakers!",
+    :Location1 => "Past Cherrygrove City",
+    :Location2 => "New Bark Town",
+    :QuestDescription => "Professor Elm asked you to get something with Mr. Pokémon. It's probably an Egg.",
   }
   
   # Here's an extension of the above that includes multiple stages
-  Quest2 = {
-    :ID => "2",
-    :Name => "Introductions",
-    :QuestGiver => "Little Boy",
-    :Stage1 => "Look for clues.",
-    :Stage2 => "Follow the trail.",
-    :Stage3 => "Catch the troublemakers!",
-    :Location1 => "Lappet Town",
-    :Location2 => "Viridian Forest",
-    :Location3 => "Route 3",
-	:StageLabel1 => "1",
-	:StageLabel2 => "2",
-    :QuestDescription => "Some wild Pokémon stole a little boy's favourite toy. Find those troublemakers and help him get it back.",
-    :RewardString => "Something shiny!"
-  }
+  # Quest2 = {
+  #   :ID => "2",
+  #   :Name => "Introductions",
+  #   :QuestGiver => "Little Boy",
+  #   :Stage1 => "Look for clues.",
+  #   :Stage2 => "Follow the trail.",
+  #   :Stage3 => "Catch the troublemakers!",
+  #   :Location1 => "Lappet Town",
+  #   :Location2 => "Viridian Forest",
+  #   :Location3 => "Route 3",
+	# :StageLabel1 => "1",
+	# :StageLabel2 => "2",
+  #   :QuestDescription => "Some wild Pokémon stole a little boy's favourite toy. Find those troublemakers and help him get it back.",
+  #   :RewardString => "Something shiny!"
+  # }
   
   # Here's an example of a quest with lots of stages that also doesn't have a stage location defined for every stage
   Quest3 = {
