@@ -148,7 +148,7 @@ module Settings
   REGIONAL_FORMS = [
     ["Alolan",   1],
     ["Galarian", 1],
-    ["Hisuian",  1],
+    ["Hisuian",  0],
     ["Paldean",  1]
   ]
 end
