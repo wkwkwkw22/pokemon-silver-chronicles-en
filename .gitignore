@@ -2,6 +2,7 @@
 Audio/
 Graphics/
 Plugins/
+rgss-compiler.json
 
 # Data folder, but not Data/Scripts folder
 Data/*
