@@ -14,7 +14,7 @@ module Settings
   # Note that this isn't perfect. Essentials doesn't accurately replicate every
   # single generation's mechanics. It's considered to be good enough. Only
   # generations 5 and later are reasonably supported.
-  MECHANICS_GENERATION = 9
+  MECHANICS_GENERATION = 8
 
   #=============================================================================
 
@@ -244,8 +244,8 @@ module Settings
   #   * Name of the graphic, found in the Graphics/Pictures folder.
   #   * The graphic will always (true) or never (false) be shown on a wall map.
   REGION_MAP_EXTRAS = [
-    [0, 51, 16, 15, "mapHiddenBerth", false],
-    [0, 52, 20, 14, "mapHiddenFaraday", false]
+    # [0, 51, 16, 15, "mapHiddenBerth", false],
+    # [0, 52, 20, 14, "mapHiddenFaraday", false]
   ]
 
   # Whether the player can use Fly while looking at the Town Map. This is only

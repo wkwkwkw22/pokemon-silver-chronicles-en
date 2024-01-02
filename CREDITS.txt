@@ -1,2 +1,3 @@
 Some tilesets - DescendedFromUllr
 mid117 - Whitney back sprite
+Gregarlink10 - female character sprites
