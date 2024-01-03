@@ -35,8 +35,8 @@ class PokemonEggHatch_Scene
     # Create egg cracks sprite
     @sprites["hatch"] = Sprite.new(@viewport)
     @sprites["hatch"].x = @sprites["pokemon"].x
-    @sprites["hatch"].y = @sprites["pokemon"].y
-    @sprites["hatch"].ox = @sprites["pokemon"].ox
+    @sprites["hatch"].y = @sprites["pokemon"].y-16 # Added -16 to fix the hatch sprite being too low
+    @sprites["hatch"].ox = @sprites["pokemon"].ox+16 # Added +16 to fix the hatch sprite being too on the right
     @sprites["hatch"].oy = @sprites["pokemon"].oy
     @sprites["hatch"].bitmap = @hatchSheet.bitmap
     @sprites["hatch"].src_rect = Rect.new(0, 0, @hatchSheet.width / 5, @hatchSheet.height)
@@ -103,6 +103,7 @@ class PokemonEggHatch_Scene
     pbMEPlay("Evolution success")
     @pokemon.name = nil
     pbMessage(_INTL("\\se[]{1} hatched from the Egg!\\wt[80]", @pokemon.name)) { update }
+
     # Record the Pokémon's species as owned in the Pokédex
     was_owned = $player.owned?(@pokemon.species)
     $player.pokedex.register(@pokemon)
@@ -128,7 +129,17 @@ class PokemonEggHatch_Scene
       @pokemon.name = nickname
       @nicknamed = true
     end
+
+    pbCustomEventsAfterHatch(@pokemon)
   end
+
+  def pbCustomEventsAfterHatch(pokemon)
+    # After Professor Elm Togepi hatches, set switch 715 to true
+    # This switch is used on Common Event 059 to trigger a custom call from Professor Elm
+    if(pokemon.obtain_text == "Professor Elm" && pokemon.species == :TOGEPI)
+      $game_switches[715] = true
+    end
+  end  
 
   def pbEndScene
     pbFadeOutAndHide(@sprites) { update } if !@nicknamed
@@ -221,6 +232,7 @@ def pbHatch(pokemon)
     pbMessage(_INTL("...\1"))
     pbMessage(_INTL("... .... .....\1"))
     pbMessage(_INTL("{1} hatched from the Egg!", speciesname))
+
     was_owned = $player.owned?(pokemon.species)
     $player.pokedex.register(pokemon)
     $player.pokedex.set_owned(pokemon.species)
@@ -235,6 +247,7 @@ def pbHatch(pokemon)
         screen.pbDexEntry(pokemon.species)
       }
     end
+
     # Nickname the Pokémon
     if $PokemonSystem.givenicknames == 0 &&
        pbConfirmMessage(_INTL("Would you like to nickname the newly hatched {1}?", speciesname))
@@ -242,6 +255,9 @@ def pbHatch(pokemon)
                                     0, Pokemon::MAX_NAME_SIZE, "", pokemon)
       pokemon.name = nickname
     end
+
+    pbCustomEventsAfterHatch(pokemon)
+    
   end
 end
 
