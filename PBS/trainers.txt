@@ -121,11 +121,12 @@ Pokemon = RATTATA,15
 [BIRDKEEPER,Abe]
 LoseText = It can't be real!
 Pokemon = SPEAROW,9
+Pokemon = HOOTHOOT,9
 #-------------------------------
 [BIRDKEEPER,Rod]
 LoseText = Gaaah!
-Pokemon = PIDGEY,7
-Pokemon = PIDGEY,7
+Pokemon = PIDGEY,9
+Pokemon = PIDGEY,9
 #-------------------------------
 [LEADER_Falkner,Falkner]
 Items = MEGARING

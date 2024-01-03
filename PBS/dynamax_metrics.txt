@@ -979,7 +979,7 @@ DmaxShadowX     = 0
 DmaxShadowSize  = 3
 #-------------------------------
 [QUILAVA]
-DmaxBackSprite  = 0,0
+DmaxBackSprite  = -11,10
 DmaxFrontSprite = 0,33
 DmaxShadowX     = 0
 DmaxShadowSize  = 3

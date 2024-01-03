@@ -20,15 +20,68 @@ module QuestModule
   # Here's an extension of the above that includes multiple stages
   MysteryEgg = {
     :ID => "1",
-    :Name => "Mr. Pokémon Delivery",
+    :Name => "The journey begins",
     :QuestGiver => "Professor Elm",
-    :Stage1 => "Get package with Mr. Pokémon",
+    :Stage1 => "Get package with Mr. Pokémon.",
     :Stage2 => "Return Mystery Egg.",
-    :Stage3 => "Catch the troublemakers!",
     :Location1 => "Past Cherrygrove City",
     :Location2 => "New Bark Town",
-    :QuestDescription => "Professor Elm asked you to get something with Mr. Pokémon. It's probably an Egg.",
+    :QuestDescription => "Professor Elm asked you to get something with Mr. Pokémon for him. It's probably an Egg.",
   }
+
+  # @todo: Still need to add code to complete it in the game
+  JohtoPokedex = {
+    :ID => "2",
+    :Name => "Gotta catch ‘em all!",
+    :QuestGiver => "Professor Oak",
+    :Stage1 => "Complete the Johto Pokédex.",
+    :Location1 => "nil",
+    :QuestDescription => "Go meet many kinds of Pokémon and complete that Pokédex!",
+  }
+
+  JohtoGymChallenge = {
+    :ID => "3",
+    :Name => "Pokémon Gym challenge",
+    :QuestGiver => "Professor Elm",
+    :Stage1 => "Challenge Violet City's Gym.",
+    :Stage2 => "Challenge Azalea Town's Gym.",
+    :Stage3 => "Challenge Goldenrod City's Gym.",
+    :Stage4 => "Challenge Ecruteak City's Gym.",
+    :Stage5 => "Challenge Cianwood City's Gym.",
+    :Stage6 => "Challenge Olivine City's Gym.",
+    :Stage7 => "Challenge Mohogany Town's Gym.",
+    :Stage8 => "Challenge Blackthorn City's Gym.",
+    :Location1 => "Violet City",
+    :Location2 => "Azalea Town",
+    :Location3 => "Goldenrod City",
+    :Location4 => "Ecruteak City",
+    :Location5 => "Cianwood City",
+    :Location6 => "Olivine City",
+    :Location7 => "Mohogany Town",
+    :Location8 => "Blackthorn City",
+    :QuestDescription => "Collect all 8 Gym Badges in Johto. If you manage to defeat all the Gym Leaders, you'll eventually challenge the Pokémon League Champion!",
+  }
+
+  StudentInDarkCave = {
+    :ID => "4",
+    :Name => "Playing in a Dark Cave...",
+    :QuestGiver => "Teacher Earl",
+    :Stage1 => "Search for the missing student.",
+    :Stage2 => "Go back to Violet School.",
+    :Location1 => "Dark Cave",
+    :Location2 => "Violet City",
+    :QuestDescription => "A student lef for recess and didn't return yet! He was saying something about playing in a Dark Cave...",
+  }
+
+  SproutTower = {
+    :ID => "4",
+    :Name => "Sprout Tower challenge",
+    :QuestGiver => "nil",
+    :Stage1 => "Train in the Sprout Tower.",
+    :Location1 => "Violet City",
+    :QuestDescription => "Facing Falkner must be very difficult for you, better train in the Sprout Tower before.",
+  }
+
   
   # Here's an extension of the above that includes multiple stages
   # Quest2 = {

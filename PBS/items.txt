@@ -4901,8 +4901,8 @@ Pocket = 4
 Price = 10000
 FieldUse = TR
 Flags = Fling_90
-Move = SURF
-Description = It swamps the area around the user with a giant wave. It can also be used for crossing water.
+Move = WATERFALL
+Description = The user charges at the target and may make it flinch. It can also be used to climb a waterfall.
 #-------------------------------
 [TM124]
 Name = TM124
@@ -8347,3 +8347,75 @@ Pocket = 8
 Price = 0
 Flags = KeyItem,Fling_60
 Description = A teal mask patterned after the face of an ogre. Dropped by Ogerpon after visiting the Festival of Masks.
+#-------------------------------
+[LICENSE_CUT]
+Name = Cut License
+NamePlural = Cut License's
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Description = A letter of authorization that you'll need in order to use your Pokémon to cut down thin trees.
+#-------------------------------
+[LICENSE_FLY]
+Name = Fly License
+NamePlural = Fly License's
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Description = A letter of authorization that you'll need in order to use your Pokémon to fly to any familiar town.
+#-------------------------------
+[LICENSE_SURF]
+Name = Surf License
+NamePlural = Surf License's
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Description = A letter of authorization that you'll need in order to use your Pokémon to cross water.
+#-------------------------------
+[LICENSE_STRENGTH]
+Name = Strength License
+NamePlural = Strength License's
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Description = A letter of authorization that you'll need in order to use your Pokémon to move heavy boulders.
+#-------------------------------
+[LICENSE_FLASH]
+Name = Flash License
+NamePlural = Flash License's
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Description = A letter of authorization that you'll need in order to use your Pokémon to illuminates caves.
+#-------------------------------
+[LICENSE_ROCKSMASH]
+Name = Rock Smash License
+NamePlural = Rock Smash License's
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Description = A letter of authorization that you'll need in order to use your Pokémon to smash cracked boulders.
+#-------------------------------
+[LICENSE_WHIRLPOOL]
+Name = Whirlpool License
+NamePlural = Whirlpool License's
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Description = A letter of authorization that you'll need in order to use your Pokémon to traverse whirlpools.
+#-------------------------------
+[LICENSE_WATERFALL]
+Name = Waterfall License
+NamePlural = Waterfall License's
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Description = A letter of authorization that you'll need in order to use your Pokémon to climb a waterfall.
+#-------------------------------
+[LICENSE_DIVE]
+Name = Dive License
+NamePlural = Dive License's
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Description = A letter of authorization that you'll need in order to use your Pokémon to dive underwater.

@@ -10,7 +10,7 @@ module Settings
                   :DIVE,        # HM06
                   :FLASH,       # Legacy HM
                   :ROCKSMASH,   # Legacy HM
-                  :WHIRLPOOL,   # Legacy HM (Not implemented in Essentials by defaul - I added my own plugin for it - TODO: Need to check compatibility)
+                  :WHIRLPOOL,   # Legacy HM (Not implemented in Essentials by defaul - I added my own plugin for it)
                  ]
                  
   #-----------------------------------------------------------------------------
@@ -65,7 +65,7 @@ module Settings
   # in the party menu if the appropriate badges for unlocking that Field Skill
   # have not yet been acquired.
   #-----------------------------------------------------------------------------
-  HM_SKILLS_REQUIRE_BADGE = false
+  HM_SKILLS_REQUIRE_BADGE = true
   
   #-----------------------------------------------------------------------------
   # Toggles whether or not MISC_SKILLS require the Pokemon to know the move for

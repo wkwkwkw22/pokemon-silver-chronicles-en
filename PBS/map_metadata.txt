@@ -122,6 +122,7 @@ HealingSpot = 10,44,43
 [036]   # Violet City - Gym
 Name = Violet City - Gym
 BattleBack = battle2
+Flags = PowerSpot
 #-------------------------------
 [039]   # Union Cave
 Name = Union Cave

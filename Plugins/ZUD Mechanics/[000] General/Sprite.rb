@@ -5,7 +5,7 @@ class Sprite
   def applyDynamax(pokemon = nil)
     self.unTera
     if Settings::SHOW_DYNAMAX_SIZE
-      self.zoom_x = self.zoom_y = 1.5
+      self.zoom_x = self.zoom_y = 1.8 # Change Dynamax zoom here
     end
     if Settings::SHOW_DYNAMAX_COLOR
       calyrex = false
