@@ -82,6 +82,26 @@ module QuestModule
     :QuestDescription => "Facing Falkner must be very difficult for you, better train in the Sprout Tower before.",
   }
 
+  TogepiEgg = {
+    :ID => "5",
+    :Name => "Caring for the Mystery Egg",
+    :QuestGiver => "Professor Elm",
+    :Stage1 => "Get Egg with the assistant.",
+    :Stage2 => "Hatch the egg.",
+    :Location1 => "Violet City Poké Center",
+    :Location2 => "???",
+    :QuestDescription => "Professor Elm wants you to take care of an Egg. It seems that a Pokémon will hatch from it only when you keep it in your party of Pokémon.",
+  }
+
+  BellsproutTrade = {
+    :ID => "6",
+    :Name => "Rocky Trade",
+    :QuestGiver => "Youngster Joey",
+    :Stage1 => "Trade Pokémon.",
+    :Location1 => "Violet City",
+    :QuestDescription => "This youngster in Violet City wants to trade a Bellsprout for his Onix. Do you think it's a good trade?",
+  }
+
   
   # Here's an extension of the above that includes multiple stages
   # Quest2 = {

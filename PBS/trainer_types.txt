@@ -382,7 +382,7 @@ BaseMoney = 30
 #-------------------------------
 [MONGE]
 Name = SAGE
-Gender = Unknown
+Gender = Male
 BaseMoney = 30
 IntroBGM = GSCSageEncounter
 #-------------------------------
@@ -396,75 +396,75 @@ VictoryBGM = Victory - Trainer
 #-------------------------------
 [LEADER_Falkner]
 Name = LEADER
-Gender = Unknown
+Gender = Male
 BaseMoney = 80
 BattleBGM = Battle-Gym_Leader
 VictoryBGM = pgs_gymvictory
 #-------------------------------
 [LEADER_Bugsy]
 Name = LEADER
-Gender = Unknown
+Gender = Male
 BaseMoney = 80
 BattleBGM = Battle-Gym_Leader
 VictoryBGM = pgs_gymvictory
 #-------------------------------
 [LEADER_Whitney]
 Name = LEADER
-Gender = Unknown
+Gender = Female
 BaseMoney = 80
 BattleBGM = Battle-Gym_Leader
 VictoryBGM = pgs_gymvictory
 #-------------------------------
 [LEADER_Morty]
 Name = LEADER
-Gender = Unknown
+Gender = Male
 BaseMoney = 80
 BattleBGM = Battle-Gym_Leader
 VictoryBGM = pgs_gymvictory
 #-------------------------------
 [LEADER_Chuck]
 Name = LEADER
-Gender = Unknown
+Gender = Male
 BaseMoney = 80
 BattleBGM = Battle-Gym_Leader
 VictoryBGM = pgs_gymvictory
 #-------------------------------
 [LEADER_Jasmine]
 Name = LEADER
-Gender = Unknown
+Gender = Female
 BaseMoney = 80
 BattleBGM = Battle-Gym_Leader
 VictoryBGM = pgs_gymvictory
 #-------------------------------
 [LEADER_Pryce]
 Name = LEADER
-Gender = Unknown
+Gender = Male
 BaseMoney = 80
 BattleBGM = Battle-Gym_Leader
 VictoryBGM = pgs_gymvictory
 #-------------------------------
 [LEADER_Clair]
 Name = LEADER
-Gender = Unknown
+Gender = Female
 BaseMoney = 80
 BattleBGM = Battle-Gym_Leader
 VictoryBGM = pgs_gymvictory
 #-------------------------------
 [ELITEFOUR_Will]
 Name = ELITE FOUR
-Gender = Unknown
+Gender = Male
 BaseMoney = 100
 IntroBGM = SEQ_EYE_ELITE
 #-------------------------------
 [ELITEFOUR_Koga]
 Name = ELITE FOUR
-Gender = Unknown
+Gender = Male
 BaseMoney = 100
 IntroBGM = SEQ_EYE_ELITE
 #-------------------------------
 [ELITEFOUR_Bruno]
 Name = ELITE FOUR
-Gender = Unknown
+Gender = Male
 BaseMoney = 100
 IntroBGM = SEQ_EYE_ELITE
 #-------------------------------

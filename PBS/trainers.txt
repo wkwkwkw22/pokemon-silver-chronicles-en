@@ -132,14 +132,20 @@ Pokemon = PIDGEY,9
 Items = MEGARING
 LoseText = I understand...I'll blow out gracefully...
 Pokemon = PIDGEY,10
+	Moves = SANDATTACK,QUICKATTACK,GUST,MUDSLAP
+Pokemon = SPEAROW,13
+	Moves = FURYATTACK,LEER,AERIALACE,ROOST
+Pokemon = HOOTHOOT,12
+	Moves = REFLECT,CONFUSION,THIEF,PECK
 Pokemon = PIDGEOTTO,13
     Moves = SANDATTACK,QUICKATTACK,GUST,MIRRORMOVE
-Pokemon = TAILLOW,12
+Pokemon = NATU,12
+	Moves = PECK,CONFUSION,LEER
+	Gender = female
 Pokemon = PIDGEOT,16
-    Moves = SANDATTACK,QUICKATTACK,GUST,MIRRORMOVE
+    Moves = SANDATTACK,QUICKATTACK,GUST,TWISTER
     Item = PIDGEOTITE
-Pokemon = STARLY,12
-Pokemon = WINGULL,13
+	Gender = male
 #-------------------------------
 [YOUNGSTER,Albert]
 LoseText = You're strong!
