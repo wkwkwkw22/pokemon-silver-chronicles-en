@@ -735,7 +735,6 @@ def pbUseItemOnPokemon(item, pkmn, scene)
     scene.scene.pbSetHelpText("") if scene.is_a?(PokemonPartyScreen)
   end
   return false if qty <= 0
-  Console.echo_li("Arrived here 1")
   ret = ItemHandlers.triggerUseOnPokemon(item, qty, pkmn, scene)
   scene.pbClearAnnotations
   scene.pbHardRefresh
