@@ -1,6 +1,7 @@
 # Mega Evolution
 # Credit: bo4p5687
-
+# With latest ZUD plugin, this is not working anymore. They added an animation for the mega evolution already
+# so just need to think if I really want to add this back at some point, if not, then remove it.
 class SceneMegaEvolution
   def initialize
     @sprites={}
