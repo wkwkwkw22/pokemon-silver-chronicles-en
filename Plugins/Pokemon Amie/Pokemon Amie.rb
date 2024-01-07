@@ -288,10 +288,10 @@ class Game_Mouse
   end
 end
 #Gets First NonEgg Pokemon
-def pbFirstNonEggPokemon
+def pbFirstNonEggPokemonOrFaintedPokemon
   for i in 0...$player.party.length
     p = $player.party[i]
-    if p && !p.egg?
+    if p && !p.egg? && !p.fainted?
       return $player.party[i]
     end
   end
@@ -320,13 +320,13 @@ end
 def setAmiePokemon(pkmn)
   if pkmn.nil?
 	#if pkmn is not specified, get the first non-egg mon in the party
-	ret = pbFirstNonEggPokemon
+	ret = pbFirstNonEggPokemonOrFaintedPokemon
 	return ret
   else
 	#if pkmn is specified, make sure it's not an egg
 	#if it's an egg, just get the first non-egg instead
 	if $player.party[pkmn].egg?
-		ret = pbFirstNonEggPokemon
+		ret = pbFirstNonEggPokemonOrFaintedPokemon
 		return ret
 	else
 		#if pkmn is specified and it's not an egg, go with it!
@@ -377,14 +377,65 @@ end
 #  Adapted by rigbycwts for use with Pokemon-Amie for Essentials, Edited by Pizza Sun
 #===============================================================================
 
-class PokeAmie_Essentials_Scene
+class PokeAmie_Scene
+  attr_accessor :animation_state
 
 #-----------------------------------------------------------------------------
 # * Frame Update
 #-----------------------------------------------------------------------------
+def updateWalkAnimation
+  if(@sprites["pokemon"].disposed?)
+    @animation_state = 0
+    return
+  end
+
+  if  (Mouse.over_pixel?(@sprites["pokemon"]) && Mouse.press?(@sprites["pokemon"], :left))
+    return
+  end 
+
+  # Calculate the new x-coordinate for the walking animation
+  if @animation_state == 0
+    # Store the initial y-coordinate of the sprite
+    @initial_y = @sprites["pokemon"].y
+  end
+
+  if @animation_state < 100
+    # Walk to the left
+    @sprites["pokemon"].x -= 2
+    if(animation_state == 99)
+      @sprites["pokemon"] = create_mirrored_sprite(@sprites["pokemon"])
+      end
+  elsif @animation_state < 300
+    # Walk to the right
+    @sprites["pokemon"].x += 2
+    # @sprites["pokemon"].mirror = true
+    if(animation_state == 299)
+    @sprites["pokemon"] = create_mirrored_sprite(@sprites["pokemon"])
+    end
+  else
+    # Reset the walking state and mirror property
+    @animation_state = -100
+    # @sprites["pokemon"].mirror = false
+    # @sprites["pokemon"] = create_mirrored_sprite(@sprites["pokemon"])
+
+  end
+
+  # Just move y a little bit to simulate a walking animation
+  @sprites["pokemon"].y = @initial_y + 5 * Math.sin(@animation_state * Math::PI / 5)
+
+  # Increment the animation state
+  @animation_state += 1
+
+  # Update the sprite and refresh the graphics
+  pbUpdateSpriteHash(@sprites)
+  Graphics.update
+end
+
+
   def update
     # Update windows
     pbUpdateSpriteHash(@sprites)
+    updateWalkAnimation
     if @custom
       updateCustom
     else
@@ -687,16 +738,17 @@ class PokeAmie_Essentials_Scene
       @sprites["pokemon"].z = 3
       @pokemon.amie_enjoyment=(@pokemon.amie_enjoyment-2)
       if(POKEMON_ZOOM != 1)
-        # We can't just zoom the image, we need to create a new sprite with the correct size
-        # otherwise the Mouse.over_pixel doesn't work as intended, as it still hover above the original image.
         @sprites["pokemon"] = create_zoomed_sprite(@sprites["pokemon"])
-      end  
+      end 
+      playPokemonInitialIteration()
       @custom = false            
     end
 
-    def create_zoomed_sprite(original)
+    # We can't just zoom the image, we need to create a new sprite with the correct size
+    # otherwise the Mouse.over_pixel doesn't work as intended, as it still hover above the original image.
+    def create_zoomed_sprite(original, zoom_factor = POKEMON_ZOOM)
       zoomed = Sprite.new
-      zoomed.bitmap = Bitmap.new(original.bitmap.width * POKEMON_ZOOM, original.bitmap.height * POKEMON_ZOOM)
+      zoomed.bitmap = Bitmap.new(original.bitmap.width * zoom_factor, original.bitmap.height * zoom_factor)
       # Corrected blt call
       zoomed.bitmap.stretch_blt(zoomed.bitmap.rect, original.bitmap, original.bitmap.rect)
       zoomed.x = original.x
@@ -710,40 +762,95 @@ class PokeAmie_Essentials_Scene
       return zoomed
     end
 
+    # We can't just use .mirror because the mouse.over_pixel?? method doesn't take into account the mirrored properties
+    def create_mirrored_sprite(original)
+      mirrored = Sprite.new
+      mirrored.bitmap = Bitmap.new(original.bitmap.width, original.bitmap.height)
+      # This seems quite heavy, there's probably a better way to do this
+      for y in 0...original.bitmap.height
+          for x in 0...original.bitmap.width
+              mirrored.bitmap.set_pixel(original.bitmap.width - x - 1, y, original.bitmap.get_pixel(x, y))
+          end
+      end
+      mirrored.x = original.x
+      mirrored.y = original.y
+      mirrored.z = 3
+      mirrored.ox = mirrored.bitmap.width / 2
+      mirrored.oy = mirrored.bitmap.height / 2
+      mirrored.color = original.color
+      mirrored.viewport = original.viewport
+      original.dispose
+      return mirrored
+    end  
+
+    def playPokemonInitialIteration()
+      @pokemon.play_cry(90,110)
+      
+      # Custom text example
+      # pbDisplay(_INTL("{1} is looking at you!",@pokemon.name))
+      if defined?(FollowingPkmn)
+        # If we have FollowingPkmnEx, let's trigger the talk event
+        random_val = rand(6)
+        EventHandlers.trigger_2(:following_pkmn_talk, @pokemon, random_val, true)
+      end
+      # Here we could do all sorts of logic
+      # The commented code below is an example of an animation that looks like the Pokémon is excited
+      # 15.times do
+      #   # Rotate to the right
+      #   5.times do
+      #     @sprites["pokemon"].angle += 1
+      #     pbUpdateSpriteHash(@sprites)
+      #     Graphics.update
+      #   end
+      #   # Rotate to the left
+      #   5.times do
+      #     @sprites["pokemon"].angle -= 1
+      #     pbUpdateSpriteHash(@sprites)
+      #     Graphics.update
+      #   end
+      # end
+    end  
+
+    def playHeartAnimation()
+        @pokemon.play_cry(90,110)
+        for i in 0...4 #creates the hearts
+          @sprites["#{i}"] = IconSprite.new(0,0)
+          @sprites["#{i}"].setBitmap("Graphics/Pictures/Pokemon Amie/heart")
+          @sprites["#{i}"].viewport = @viewport
+          @sprites["#{i}"].z=4
+          @sprites["#{i}"].x=@sprites["pokemon"].x+rand(70)-40#SCREEN_WIDTH/2+rand(70)-40
+          @sprites["#{i}"].y=Graphics.height/2-rand(40)+30#SCREEN_HEIGHT/2-rand(40)+30
+        end
+        15.times do
+          for i in 0...4 #moves hearts
+            @sprites["#{i}"].x+=rand(100)/10-rand(100)/10
+            @sprites["#{i}"].y-=(rand(4)/3+1)*3
+          end
+          pbUpdateSpriteHash(@sprites)
+          Graphics.update
+        end
+        for i in 0...4
+          @sprites["#{i}"].dispose
+        end
+    end  
+
   
     def pbAmieMouse
       if !(@sprites["pokemon"].disposed?)&&(@feeding!=true)
         if Mouse.over_pixel?(@sprites["pokemon"]) && Mouse.press?(@sprites["pokemon"], :left) #Pressing mouse while over Pokemon?
           @sprites["mouse"].setBitmap("Graphics/Pictures/Pokemon Amie/hand1")
           pbWait(1)
+          
           if !Mouse.static? #Is the mouse moving?
             @counter=@counter+1
             if (Time.now.to_f-@time2.to_f)>(getPlayTime("Audio/SE/pet.ogg")) #Audio doesn't overlap
               pbSEPlay("pet.ogg",90,100)
               @time2= Time.now
+                
             end
             if @counter>=50 #after counter reaches number, hearts appear
-			  @pokemon.changeAmieStats("pet")
-              @pokemon.play_cry(90,110)
-              for i in 0...4 #creates the hearts
-                @sprites["#{i}"] = IconSprite.new(0,0)
-                @sprites["#{i}"].setBitmap("Graphics/Pictures/Pokemon Amie/heart")
-                @sprites["#{i}"].viewport = @viewport
-                @sprites["#{i}"].z=4
-                @sprites["#{i}"].x=Graphics.width/2+rand(70)-40#SCREEN_WIDTH/2+rand(70)-40
-                @sprites["#{i}"].y=Graphics.height/2-rand(40)+30#SCREEN_HEIGHT/2-rand(40)+30
-              end
-              15.times do
-                for i in 0...4 #moves hearts
-                  @sprites["#{i}"].x+=rand(100)/10-rand(100)/10
-                  @sprites["#{i}"].y-=(rand(4)/3+1)*3
-                end
-                pbUpdateSpriteHash(@sprites)
-                Graphics.update
-              end
-              for i in 0...4
-                @sprites["#{i}"].dispose
-              end
+			        @pokemon.changeAmieStats("pet")
+              playHeartAnimation()
               Graphics.update
               @counter=0
             end
@@ -754,12 +861,12 @@ class PokeAmie_Essentials_Scene
       end
       if !(@sprites["pokemon"].disposed?)&&(@feeding==true)
 	  #holding food on the pokemon
-		if Mouse.over_pixel?(@sprites["pokemon"]) && Mouse.press?(@sprites["pokemon"], :left)&&(@food!=nil)
-		@nibbleCooldown += 1
-		if @nibbleCooldown >= (Graphics.frame_rate*1)/2
-			@foodcounter+=1
-			@nibbleCooldown = 0
-		end
+		  if Mouse.over_pixel?(@sprites["pokemon"]) && Mouse.press?(@sprites["pokemon"], :left)&&(@food!=nil)
+          @nibbleCooldown += 1
+          if @nibbleCooldown >= (Graphics.frame_rate*1)/2
+            @foodcounter+=1
+            @nibbleCooldown = 0
+          end
           @time1=Time.now
           if @foodcounter==1
             pbSEPlay("eat.ogg",90,100)
@@ -774,45 +881,26 @@ class PokeAmie_Essentials_Scene
           if @foodcounter==5
             pbSEPlay("eat.ogg",90,100)
             @sprites["mouse"].setBitmap("Graphics/Pictures/Pokemon Amie/eaten3.png")
-			pk = @pokemon.species
-			@pokemon.feedAmie(@food, @pokemon, self)
-			if pk!=@pokemon.species
-			  @sprites["pokemon"].setPokemonBitmap(@pokemon)
+			      pk = @pokemon.species
+			      @pokemon.feedAmie(@food, @pokemon, self)
+            if pk!=@pokemon.species
+              @sprites["pokemon"].setPokemonBitmap(@pokemon)
             end
             @feeding=false
             @foodcounter=0
             @time1=0
-            @pokemon.play_cry(90,110)
-            for i in 0...4 #creates the hearts
-              @sprites["#{i}"] = IconSprite.new(0,0)
-              @sprites["#{i}"].setBitmap("Graphics/Pictures/Pokemon Amie/heart")
-              @sprites["#{i}"].viewport = @viewport
-              @sprites["#{i}"].z=4
-              @sprites["#{i}"].x=Graphics.width/2+rand(70)-40#SCREEN_WIDTH/2+rand(70)-40
-              @sprites["#{i}"].y=Graphics.height/2-rand(40)+30#SCREEN_HEIGHT/2-rand(40)+30
-            end
-            15.times do
-              for i in 0...4 #moves hearts
-                @sprites["#{i}"].x+=rand(100)/10-rand(100)/10
-                @sprites["#{i}"].y-=(rand(4)/3+1)*3
-              end
-              pbUpdateSpriteHash(@sprites)
-              Graphics.update
-            end
-            for i in 0...4
-              @sprites["#{i}"].dispose
-            end
+            playHeartAnimation()
             @sprites["mouse"].setBitmap("Graphics/Pictures/Pokemon Amie/hand2")
             @sprites["mouse"].ox=@sprites["mouse"].bitmap.width/2
             @sprites["mouse"].oy=@sprites["mouse"].bitmap.height/2
             @mask=nil
             Graphics.update
           end
-		else
+		  else
 			#not holding food on the pokemon
 			@nibbleCooldown = 0
         end
-		@sprites["mouse"].maskOLD(@mask)
+		  @sprites["mouse"].maskOLD(@mask)
       end
       #moves hand picture to mouse position
       @sprites["mouse"].x=Mouse.x if defined?(Mouse.x)
@@ -1103,12 +1191,14 @@ class PokeAmie_Essentials_Scene
 end
   
 
-class PokeAmie_EssentialsScreen
+class PokeAmieScreen
+  
   def initialize(scene)
     @scene=scene
+    @animation_state = 0
+    scene.animation_state = @animation_state
   end
 
-  
   def pbStartAmie(pokemon)
     @scene.pbStartScene(pokemon)
     # Main loop
@@ -1136,8 +1226,8 @@ end
 def pokemonAmieRefresh(pkmn = nil)
   pokemon = setAmiePokemon(pkmn)
   pbFadeOutIn(99999) { 
-    scene = PokeAmie_Essentials_Scene.new
-    screen = PokeAmie_EssentialsScreen.new(scene)
+    scene = PokeAmie_Scene.new
+    screen = PokeAmieScreen.new(scene)
     screen.pbStartAmie(pokemon)
   }
 end

@@ -1,0 +1,3 @@
+﻿Name      = Experiment with Scene
+Version   = 1.0
+Credits   = victorweb.dev
