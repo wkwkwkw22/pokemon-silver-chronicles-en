@@ -8419,3 +8419,13 @@ Pocket = 8
 Price = 0
 Flags = KeyItem
 Description = A letter of authorization that you'll need in order to use your Pokémon to dive underwater.
+#-------------------------------
+[UNOWNREPORT]
+Name = Unown Report
+NamePlural = Unown Reports
+Pocket = 8
+Price = 0
+FieldUse = Direct
+Flags = KeyItem
+Description = A report of all the discovered kinds of UNOWN.
+#-------------------------------

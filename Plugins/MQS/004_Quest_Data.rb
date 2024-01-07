@@ -103,6 +103,16 @@ module QuestModule
   }
 
   
+  RuinsOfAlphPuzzleOne = {
+    :ID => "7",
+    :Name => "Mysterious Ruins",
+    :QuestGiver => "nil",
+    :Stage1 => "Check the Ruins Misteries.",
+    :Location1 => "Ruins of Alph",
+    :QuestDescription => "There are odd patterns drawn on the walls of the ruins. They must be the keys for unraveling it's misteries.",
+  }
+
+  
   # Here's an extension of the above that includes multiple stages
   # Quest2 = {
   #   :ID => "2",

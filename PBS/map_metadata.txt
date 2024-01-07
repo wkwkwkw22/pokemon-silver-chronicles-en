@@ -960,6 +960,7 @@ MapPosition = 2,8,2
 #-------------------------------
 [294]   # Unown Cave
 Name = Unown Cave
+MapPosition = 0,15,9
 BattleBack = unown
 Environment = Cave
 #-------------------------------

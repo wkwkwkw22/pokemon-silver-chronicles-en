@@ -1,0 +1,6 @@
+ALWAYS CHECK IF QUEST IS ACTIVE FIRST!!
+isQuestActive?(:BellsproutTrade)
+
+activateQuest(:MysteryEgg,colorQuest("blue"))
+advanceQuestToStage(:MysteryEgg, 2)
+completeQuest(:RuinsOfAlphPuzzleOne)
