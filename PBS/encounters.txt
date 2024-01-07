@@ -1018,23 +1018,17 @@ Cave,5
 #-------------------------------
 [297] # Route 46
 Land,21
-    25,GEODUDE,3
-    20,GEODUDE,2
-    20,SPEAROW,2
-    18,RATTATA,2
-    10,RATTATA,3
-    6,SPEAROW,3
-    1,PHANPY,4
-LandMorning,21
-    25,GEODUDE,3
-    20,GEODUDE,2
-    20,SPEAROW,2
-    14,RATTATA,2
-    10,RATTATA,3
-    5,SPEAROW,3
-    4,PHANPY,2
-    1,PHANPY,3
-    1,RATTATA,4
+    40,GEODUDE,2,3
+    20,SPEAROW,2,3
+    25,RATTATA,2,3
+    14,PHANPY,3,4
+    1,PHANPY,5
+LandNight,21
+    40,GEODUDE,2,3
+    20,SPEAROW,2,3
+    25,RATTATA,2,3
+    10,TEDDIURSA,3,4
+    5,HOUNDOUR,3,4
 #-------------------------------
 [302] # Victory Road saida
 Cave,5

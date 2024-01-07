@@ -112,6 +112,16 @@ module QuestModule
     :QuestDescription => "There are odd patterns drawn on the walls of the ruins. They must be the keys for unraveling it's misteries.",
   }
 
+  SchoolKidPhanpy = {
+    :ID => "8",
+    :Name => "Phanpy's fan",
+    :QuestGiver => "School Kid Henry",
+    :Stage1 => "Check the Ruins Misteries.",
+    :Location1 => "Route 46",
+    :RewardString => "Berries!",
+    :QuestDescription => "This kid near Route 46 is yearning to witness the presence of a Phanpy. If you can make this happen, he's excited to reciprocate your effort with a special thank-you gift.",
+  }
+
   
   # Here's an extension of the above that includes multiple stages
   # Quest2 = {

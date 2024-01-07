@@ -1,5 +1,5 @@
 ALWAYS CHECK IF QUEST IS ACTIVE FIRST!!
-isQuestActive?(:BellsproutTrade)
+!isQuestActive?(:BellsproutTrade)
 
 activateQuest(:MysteryEgg,colorQuest("blue"))
 advanceQuestToStage(:MysteryEgg, 2)
