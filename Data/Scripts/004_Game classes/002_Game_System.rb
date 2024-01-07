@@ -39,7 +39,7 @@ class Game_System
     @bgs_position       = 0
   end
 
-################################################################################
+  ################################################################################
 
   def bgm_play(bgm)
     old_pos = @bgm_position
@@ -79,8 +79,12 @@ class Game_System
   end
 
   def bgm_pause(fadetime = 0.0) # :nodoc:
-    pos = Audio.bgm_pos rescue 0
-    self.bgm_fade(fadetime) if fadetime > 0.0
+    pos = begin
+      Audio.bgm_pos
+    rescue StandardError
+      0
+    end
+    bgm_fade(fadetime) if fadetime > 0.0
     @bgm_position = pos
     @bgm_paused   = true
   end
@@ -91,11 +95,10 @@ class Game_System
   end
 
   def bgm_resume(bgm) # :nodoc:
-    if @bgm_paused
-      self.bgm_play_internal(bgm, @bgm_position)
-      @bgm_position = 0
-      @bgm_paused   = false
-    end
+    return unless @bgm_paused
+    bgm_play_internal(bgm, @bgm_position)
+    @bgm_position = 0
+    @bgm_paused   = false
   end
 
   def bgm_stop # :nodoc:
@@ -133,14 +136,14 @@ class Game_System
     bgm = RPG::AudioFile.new(bgm, volume, pitch) if bgm.is_a?(String)
     @defaultBGM = nil
     if bgm && bgm.name != ""
-      self.bgm_play(bgm)
+      bgm_play(bgm)
       @defaultBGM = bgm.clone
     else
-      self.bgm_play(@playing_bgm)
+      bgm_play(@playing_bgm)
     end
   end
 
-################################################################################
+  ################################################################################
 
   def me_play(me)
     me = RPG::AudioFile.new(me) if me.is_a?(String)
@@ -157,10 +160,10 @@ class Game_System
     Graphics.frame_reset
   end
 
-################################################################################
+  ################################################################################
 
   def bgs_play(bgs)
-    @playing_bgs = (bgs.nil?) ? nil : bgs.clone
+    (bgs.nil?) ? @playing_bgs = nil : @playing_bgs = bgs.clone
     if bgs && bgs.name != ""
       if FileTest.audio_exist?("Audio/BGS/" + bgs.name)
         vol = bgs.volume
@@ -178,9 +181,9 @@ class Game_System
 
   def bgs_pause(fadetime = 0.0) # :nodoc:
     if fadetime > 0.0
-      self.bgs_fade(fadetime)
+      bgs_fade(fadetime)
     else
-      self.bgs_stop
+      bgs_stop
     end
     @bgs_paused = true
   end
@@ -190,10 +193,9 @@ class Game_System
   end
 
   def bgs_resume(bgs) # :nodoc:
-    if @bgs_paused
-      self.bgs_play(bgs)
-      @bgs_paused = false
-    end
+    return unless @bgs_paused
+    bgs_play(bgs)
+    @bgs_paused = false
   end
 
   def bgs_stop
@@ -224,23 +226,22 @@ class Game_System
     return (@playing_bgs) ? @playing_bgs.clone : nil
   end
 
-################################################################################
+  ################################################################################
 
   def se_play(se)
     se = RPG::AudioFile.new(se) if se.is_a?(String)
-    if se && se.name != "" && FileTest.audio_exist?("Audio/SE/" + se.name)
-      vol = se.volume
-      vol *= $PokemonSystem.sevolume / 100.0
-      vol = vol.to_i
-      Audio.se_play("Audio/SE/" + se.name, vol, se.pitch)
-    end
+    return unless se && se.name != "" && FileTest.audio_exist?("Audio/SE/" + se.name)
+    vol = se.volume
+    vol *= $PokemonSystem.sevolume / 100.0
+    vol = vol.to_i
+    Audio.se_play("Audio/SE/" + se.name, vol, se.pitch)
   end
 
   def se_stop
     Audio.se_stop
   end
 
-################################################################################
+  ################################################################################
 
   def battle_bgm
     return (@battle_bgm) ? @battle_bgm : $data_system.battle_bgm
@@ -254,25 +255,22 @@ class Game_System
 
   attr_writer :battle_end_me
 
-################################################################################
+  ################################################################################
 
   def windowskin_name
-    if @windowskin_name.nil?
-      return $data_system.windowskin_name
-    else
-      return @windowskin_name
-    end
+    return $data_system.windowskin_name if @windowskin_name.nil?
+
+    return @windowskin_name
   end
 
   attr_writer :windowskin_name
 
   def update
     @timer -= 1 if @timer_working && @timer > 0
-    if Input.trigger?(Input::SPECIAL) && pbCurrentEventCommentInput(1, "Cut Scene")
-      event = @map_interpreter.get_self
-      @map_interpreter.pbSetSelfSwitch(event.id, "A", true)
-      @map_interpreter.command_end
-      event.start
-    end
+    return unless Input.trigger?(Input::SPECIAL) && pbCurrentEventCommentInput(1, "Cut Scene")
+    event = @map_interpreter.get_self
+    @map_interpreter.pbSetSelfSwitch(event.id, "A", true)
+    @map_interpreter.command_end
+    event.start
   end
 end

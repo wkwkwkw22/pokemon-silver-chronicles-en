@@ -7,18 +7,18 @@
 # Amie Compatibility
 #-------------------------------------------------------------------------------
 if defined?(PokeAmieScreen)
-    EventHandlers.add(:following_pkmn_talk, :amie, proc { |_pkmn, _random_val, _skipAmie = false|
-    if(!_skipAmie)
-    cmd = pbMessage(_INTL("What would you like to do?"), [
-      _INTL("Play"),
-      _INTL("Talk"),
-      _INTL("Cancel")
-    ])
-      pokemonAmieRefresh if cmd == 0
-    end
-    cmd = 1 if _skipAmie
-    next true if [0, 2].include?(cmd)
-  })
+  EventHandlers.add(:following_pkmn_talk, :amie, proc { |_pkmn, _random_val, _skipAmie = false|
+                                                   if !_skipAmie
+                                                     cmd = pbMessage(_INTL("What would you like to do?"), [
+                                                                       _INTL("Play"),
+                                                                       _INTL("Talk"),
+                                                                       _INTL("Cancel")
+                                                                     ])
+                                                     pokemonAmieRefresh if cmd == 0
+                                                   end
+                                                   cmd = 1 if _skipAmie
+                                                   next true if [0, 2].include?(cmd)
+                                                 })
 end
 #-------------------------------------------------------------------------------
 # Special Dialogue when statused

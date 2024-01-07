@@ -21,9 +21,9 @@ EventHandlers.add(:on_enter_map, :erase_following_pkmn, proc { |_old_map_id|
   event = FollowingPkmn.get_data
   next if !event
   FollowingPkmn.refresh(false)
-  $map_factory.maps.each { |map|
+  $map_factory.maps.each do |map|
     map.events[event.event_id]&.erase if event.original_map_id == event.current_map_id
-  }
+  end
 })
 
 class FollowerSprites
@@ -41,9 +41,9 @@ class FollowerSprites
       spr.set_reflection(@viewport, event)
     end
     data = FollowingPkmn.get_data
-    $map_factory.maps.each { |map|
-      map&.events[data.event_id]&.erase if data && data.original_map_id == data.current_map_id
-    }
+    $map_factory.maps.each do |map|
+      map&.events&.[](data.event_id)&.erase if data && data.original_map_id == data.current_map_id
+    end
     FollowingPkmn.refresh(false)
   end
   #-----------------------------------------------------------------------------
@@ -60,18 +60,21 @@ class FollowerSprites
       next if !first_pkmn
       if first_pkmn.status == :NONE || !FollowingPkmn::APPLY_STATUS_TONES
         sprite.color.set(0, 0, 0, 0)
-        $game_temp.status_pulse = [50.0, 50.0, 150.0, (100/(Graphics.frame_rate * 2.0))]
+        $game_temp.status_pulse = [50.0, 50.0, 150.0, (100 / (Graphics.frame_rate * 2.0))]
         next
       end
       status_tone = nil
-      status_tone = FollowingPkmn.const_get("TONE_#{first_pkmn.status}") if FollowingPkmn.const_defined?("TONE_#{first_pkmn.status}")
-      next if !status_tone || !status_tone.all? {|s| s > 0}
+      if FollowingPkmn.const_defined?("TONE_#{first_pkmn.status}")
+        status_tone = FollowingPkmn.const_get("TONE_#{first_pkmn.status}")
+      end
+      next if !status_tone || !status_tone.all? { |s| s > 0 }
       $game_temp.status_pulse[0] += $game_temp.status_pulse[3]
       $game_temp.status_pulse[3] *= -1 if $game_temp.status_pulse[0] < $game_temp.status_pulse[1] ||
-                                            $game_temp.status_pulse[0] > $game_temp.status_pulse[2]
+                                          $game_temp.status_pulse[0] > $game_temp.status_pulse[2]
       sprite.color.set(status_tone[0], status_tone[1], status_tone[2], $game_temp.status_pulse[0])
     end
   end
+
   #-----------------------------------------------------------------------------
   # Add emote animation to Following Pokemon
   #-----------------------------------------------------------------------------
