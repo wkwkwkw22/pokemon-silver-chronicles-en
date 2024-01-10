@@ -36,3 +36,43 @@ def transferPlayer(map, x, y, direction = 0)
   end
 end
 
+
+
+def is_first_pokemon_species?(species, form = -1)
+  pkmn = $player.party[0]
+    if(pkmn.able? && pkmn.species == species && (form < 0 || pkmn.form == form))
+      return true
+    end  
+  return false
+end
+
+ # Returns the correct index of the Pokemon in the party, or -1 if not found.
+  def has_species_index?(species, form = -1)
+    $player.party.each_with_index do |pkmn, index|
+      if(pkmn.species == species && (form < 0 || pkmn.form == form))
+        return index
+      end  
+    end
+    return -1
+  end
+
+  #This is used to show Pokemon that NPCs want to see in quests
+  # Returns 1 if the Pokemon is in the party and health
+  # Returns 0 if has Pokemon, but is fainted
+  # Return -1 if does not have Pokemon
+  def switchPositionIfHasPokemon(species, form = -1)
+    index = has_species_index?(species, form)
+    if(index >= 0)
+      return 0 if !$player.party[index].able?
+      return 1 if index == 0 # Pokemon is already in the first position
+      FollowingPkmn.toggle_off
+      tmp = $player.party[0]
+      $player.party[0] = $player.party[index]
+      $player.party[index] = tmp
+      FollowingPkmn.toggle_on
+     
+      return 1
+    end
+    return -1
+  end   
+

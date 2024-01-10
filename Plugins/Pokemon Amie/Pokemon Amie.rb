@@ -888,7 +888,9 @@ class PokeAmie_Scene
       elsif !$game_map || !$game_map.metadata
         backdrop = "IndoorA"
       end
-      if $game_map
+      Console.echo_li "MY MESSAGE #{$game_map.metadata}"
+      if $game_map && $game_map.metadata
+        Console.echo_li("#{$game_map.metadata}")
         back = $game_map.metadata.battle_background
         backdrop = back if back && back != ""
       end

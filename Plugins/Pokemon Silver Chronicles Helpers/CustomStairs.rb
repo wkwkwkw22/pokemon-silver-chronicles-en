@@ -66,6 +66,7 @@ module CustomStairs
                 ])
 
     pbWait(Graphics.frame_rate)
+    Followers.put_followers_on_player
     FollowingPkmn.toggle_on(false)
     $game_switches[STAIRCASE_DOWN_ANIMATION_ACTIVE] = false
     $game_map.refresh
@@ -81,6 +82,7 @@ module CustomStairs
     # backwards and the Pokemon is on left or right.
     FollowingPkmn.move_route([PBMoveRoute::Wait, Graphics.frame_rate])
     $game_switches[STAIRCASE_DOWN_ANIMATION_ACTIVE] = true
+    $game_switches[STAIRCASE_UP_FROM_BEHIND] = false # Just a safety-check
     $game_map.refresh
 
     pbMoveRoute($game_player,
@@ -121,7 +123,7 @@ module CustomStairs
 
     pbWait(Graphics.frame_rate)
     FollowingPkmn.toggle_on(false)
-    FollowingPkmn.move_route([PBMoveRoute::Down])
+    Followers.put_followers_on_player
 
 
     $game_switches[STAIRCASE_DOWN_ANIMATION_ACTIVE] = false

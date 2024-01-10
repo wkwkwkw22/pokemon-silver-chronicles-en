@@ -31,7 +31,7 @@ def pbHiddenMoveAnimation(pokemon, field_move = false)
     pbWait(Graphics.frame_rate / 5)
   end
   pbSEPlay("Player jump")
-  FollowingPkmn.move_route([PBMoveRoute::JUMP, 0, 0])
+  FollowingPkmn.move_route([PBMoveRoute::Jump, 0, 0])
   pbWait(Graphics.frame_rate / 5)
   return ret
 end

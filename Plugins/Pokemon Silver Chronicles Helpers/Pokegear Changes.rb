@@ -3,8 +3,8 @@
 # Deluxe Settings.
 #===============================================================================
 module PokegearSettings 
-    MISSIONS_ON_SWITCH = 965
-    DEXNAV_ON_SWITCH = 966
+    MISSIONS_ON_SWITCH = 963
+    DEXNAV_ON_SWITCH = 964
 end
 
 MenuHandlers.add(:pokegear_menu, :missions, {

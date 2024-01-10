@@ -119,7 +119,7 @@ module QuestModule
     :Stage1 => "Check the Ruins Misteries.",
     :Location1 => "Route 46",
     :RewardString => "Berries!",
-    :QuestDescription => "This kid near Route 46 is yearning to witness the presence of a Phanpy. If you can make this happen, he's excited to reciprocate your effort with a special thank-you gift.",
+    :QuestDescription => "This kid near Route 46 really wants to see a Phanpy. If you can help with that, he's happy to thank you with some berries as a thank-you gift.",
   }
 
   
