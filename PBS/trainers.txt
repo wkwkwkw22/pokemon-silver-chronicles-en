@@ -37,7 +37,7 @@ Pokemon = RATICATE,26
 Pokemon = RATICATE,26
 #-------------------------------
 [YOUNGSTER,Mario]
-LoseText = That's strange.\nI won before.
+LoseText = That's strange. I won before.
 Pokemon = PIDGEY,2
 Pokemon = RATTATA,4
 #-------------------------------

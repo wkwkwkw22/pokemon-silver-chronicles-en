@@ -58,19 +58,20 @@ IntroBGM = Encounter-Team_Aqua
 #-------------------------------
 [TWINS]
 Name = TWINS
-Gender = Unknown
+Gender = Female
 BaseMoney = 30
 #-------------------------------
 [SWIMMERfE]
 Name = SWIMMERfE
-Gender = Unknown
+Gender = Female
 BaseMoney = 30
 IntroBGM = Encounter-Swimmer_2
 #-------------------------------
 [BUGCATCHER]
 Name = BUG CATCHER
-Gender = Unknown
+Gender = Male
 BaseMoney = 30
+IntroBGM = SEQ_EYE_KID
 #-------------------------------
 [SCHOOLKID_Boy]
 Name = SCHOOL KID
