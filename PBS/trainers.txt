@@ -96,11 +96,13 @@ Items = DYNAMAXBAND
 LoseText = Ah, excellent!
 Pokemon = BELLSPROUT,12
     Moves = VINEWHIP,STUNSPORE
+    Gender = female
 Pokemon = HOOTHOOT,12
 Pokemon = BELLSPROUT,12
     Moves = VINEWHIP,POISONPOWDER
     Ace = yes
     DynamaxLvl = 5
+    Gender = male
 Pokemon = BELLSPROUT,12
     Moves = VINEWHIP,SLEEPPOWDER
 #-------------------------------

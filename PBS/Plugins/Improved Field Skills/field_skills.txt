@@ -444,13 +444,13 @@ Skills = CUT,STRENGTH,FLASH,ROCKSMASH,SWEETSCENT,SUNNYDAY,HEALPULSE,AROMATHERAPY
 Skills = CUT,STRENGTH,FLASH,ROCKSMASH,ROCKCLIMB,SWEETSCENT,SUNNYDAY,HEALPULSE,AROMATHERAPY
 #-------------------------------
 [CYNDAQUIL]
-Skills = DIG,SUNNYDAY
+Skills = FLASH,DIG,SUNNYDAY
 #-------------------------------
 [QUILAVA]
-Skills = DIG,SUNNYDAY
+Skills = FLASH,DIG,SUNNYDAY
 #-------------------------------
 [TYPHLOSION]
-Skills = DIG,SUNNYDAY
+Skills = FLASH,DIG,SUNNYDAY
 #-------------------------------
 [TOTODILE]
 Skills = CUT,SURF,WATERFALL,WHIRLPOOL,DIG,RAINDANCE,HAIL
@@ -3867,7 +3867,7 @@ Skills = RAINDANCE
 Skills = RAINDANCE
 #-------------------------------
 [QUILAVA_1]
-Skills = DIG,SUNNYDAY
+Skills = FLASH,DIG,SUNNYDAY
 #-------------------------------
 [TYPHLOSION_1]
 Skills = DIG,SUNNYDAY

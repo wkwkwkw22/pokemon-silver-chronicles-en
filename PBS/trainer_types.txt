@@ -240,7 +240,7 @@ BaseMoney = 30
 #-------------------------------
 [BIRDKEEPER]
 Name = BIRD KEEPER
-Gender = Unknown
+Gender = Male
 BaseMoney = 30
 #-------------------------------
 [NINJABOY]
@@ -823,13 +823,13 @@ IntroBGM = Encounter-Team_Magma
 #-------------------------------
 [ELDER]
 Name = ELDER
-Gender = Unknown
+Gender = Male
 BaseMoney = 40
 IntroBGM = GSCSageEncounter
 #-------------------------------
 [SUPERNERD]
 Name = Super Nerd
-Gender = Unknown
+Gender = Male
 BaseMoney = 50
 IntroBGM = SEQ_EYE_KID
 #-------------------------------

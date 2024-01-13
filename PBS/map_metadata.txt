@@ -6,11 +6,11 @@ Outdoor = true
 ShowArea = true
 MapPosition = 0,23,13
 #-------------------------------
-[002]   # My House 2nd floor
+[002]   # \PN's House
 Name = My House 2nd floor
 MapPosition = 0,23,13
 #-------------------------------
-[003]   # My House
+[003]   # \PN's House
 Name = My House
 MapPosition = 0,23,13
 #-------------------------------
@@ -72,6 +72,7 @@ MapPosition = 0,14,8
 Name = Ruins of Alph
 Outdoor = true
 ShowArea = true
+Weather = Sandstorm,5
 MapPosition = 0,15,9
 #-------------------------------
 [017]   # Dark Cave
