@@ -22,8 +22,6 @@ MenuHandlers.add(:pokegear_menu, :missions, {
   }
 })
 
-
-
 MenuHandlers.add(:pokegear_menu, :dexnav, {
   "name"      => _INTL("DexNav"),
   "icon_name" => "dexnav",
