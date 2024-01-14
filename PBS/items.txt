@@ -8429,3 +8429,21 @@ FieldUse = Direct
 Flags = KeyItem
 Description = A report of all the discovered kinds of UNOWN.
 #-------------------------------
+[BOOSTERPACK]
+ Name = Booster Pack
+ NamePlural = Booster Packs
+ Pocket = 1
+ Price = 1000
+ FieldUse = Direct
+ Flags = Fling_30
+ Description = A booster pack for Triple Triad game. Contains 5 cards.
+ #-------------------------------
+ [STARTERPACK]
+ Name = Starter Pack
+ NamePlural = Starter Packs
+ Pocket = 1
+ Price = 500
+ FieldUse = Direct
+ Flags = Fling_30
+ Description = A booster pack for Triple Triad game. Contains 3 starter cards.
+ #-------------------------------
