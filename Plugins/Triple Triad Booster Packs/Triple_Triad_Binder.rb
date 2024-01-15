@@ -133,40 +133,6 @@ class TripleTriadBinder_Scene
     return ret
   end
 
-
-  # def drawPage(page)
-    
-  #   overlay = @sprites["overlay"].bitmap
-  #   overlay.clear
-  #   # Set background image
-  #   @sprites["background"].setBitmap("Graphics/Pictures/Summary/bg_#{page}")
-  #   imagepos = []
-    
-  #   # Draw all images
-  #   pbDrawImagePositions(overlay, imagepos)
-  #   # Write various bits of text
-  #   # pagename = [_INTL("INFO"),
-  #   #             _INTL("TRAINER MEMO"),
-  #   #             _INTL("SKILLS"),
-  #   #             _INTL("MOVES"),
-  #   #             _INTL("RIBBONS")][page - 1]
-  #   # textpos = [
-  #   #   [pagename, 26, 22, 0, base, shadow],
-  #   #   [@pokemon.name, 46, 68, 0, base, shadow],
-  #   #   [@pokemon.level.to_s, 46, 98, 0, Color.new(64, 64, 64), Color.new(176, 176, 176)],
-  #   #   [_INTL("Item"), 66, 324, 0, base, shadow]
-  #   # Write the held item's name
-    
-  #   # Draw all text
-  #   # pbDrawTextPositions(overlay, textpos)
-  #   # Draw the Pokémon's markings
-  #   # drawMarkings(overlay, 84, 292)
-  #   # Draw page-specific information
-  #   drawPageFive
-    
-  # end
-
-
   def drawPage
     overlay = @sprites["overlay"].bitmap
     overlay.clear
