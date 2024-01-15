@@ -856,7 +856,7 @@ class PokemonSummary_Scene
     pbDrawImagePositions(overlay, imagepos)
   end
 
-  def drawSelectedRibbon(ribbonid)
+  def drawSelectedRibbon(cardIndex)
     # Draw all of page five
     drawPage(5)
     # Set various values
@@ -866,8 +866,8 @@ class PokemonSummary_Scene
     nameBase   = Color.new(248, 248, 248)
     nameShadow = Color.new(104, 104, 104)
     # Get data for selected ribbon
-    name = ribbonid ? GameData::Ribbon.get(ribbonid).name : ""
-    desc = ribbonid ? GameData::Ribbon.get(ribbonid).description : ""
+    name = cardIndex ? GameData::Ribbon.get(cardIndex).name : ""
+    desc = cardIndex ? GameData::Ribbon.get(cardIndex).description : ""
     # Draw the description box
     imagepos = [
       ["Graphics/Pictures/Summary/overlay_ribbon", 8, 280]
