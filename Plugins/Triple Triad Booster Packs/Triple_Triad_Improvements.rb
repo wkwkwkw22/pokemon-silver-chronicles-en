@@ -110,3 +110,55 @@ def pbBuyTriads(species = [])
     # Scroll right before showing screen
     pbScrollMap(6, 3, 5)
 end
+
+
+#===============================================================================
+# New Triad List simulating a TCG binder
+#===============================================================================
+def pbTriadList
+    scene = TripleTriadBinder_Scene.new
+    screen = TripleTriadBinderScreen.new(scene)
+    screen.pbStartScreen()
+    # total_cards = 0
+    # commands = []
+    # $PokemonGlobal.triads.length.times do |i|
+    #   item = $PokemonGlobal.triads[i]
+    #   speciesname = GameData::Species.get(item[0]).name
+    #   commands.push(_INTL("{1} x{2}", speciesname, item[1]))
+    #   total_cards += item[1]
+    # end
+    # commands.push(_INTL("CANCEL"))
+    # if total_cards == 0
+    #   pbMessage(_INTL("You have no cards."))
+    #   return
+    # end
+    # cmdwindow = Window_CommandPokemonEx.newWithSize(commands, 0, 0, Graphics.width / 2, Graphics.height)
+    # cmdwindow.z = 99999
+    # sprite = Sprite.new
+    # sprite.x = (Graphics.width / 2) + 40
+    # sprite.y = 48
+    # sprite.z = 99999
+    # done = false
+    # lastIndex = -1
+    # until done
+    #   loop do
+    #     Graphics.update
+    #     Input.update
+    #     cmdwindow.update
+    #     if lastIndex != cmdwindow.index
+    #       sprite.bitmap&.dispose
+    #       if cmdwindow.index < $PokemonGlobal.triads.length
+    #         sprite.bitmap = TriadCard.new($PokemonGlobal.triads.get_item(cmdwindow.index)).createBitmap(1)
+    #       end
+    #       lastIndex = cmdwindow.index
+    #     end
+    #     if Input.trigger?(Input::BACK) ||
+    #        (Input.trigger?(Input::USE) && cmdwindow.index >= $PokemonGlobal.triads.length)
+    #       done = true
+    #       break
+    #     end
+    #   end
+    # end
+    # cmdwindow.dispose
+    # sprite.dispose
+end

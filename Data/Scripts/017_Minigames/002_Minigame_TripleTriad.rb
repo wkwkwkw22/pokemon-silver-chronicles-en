@@ -419,7 +419,7 @@ class TriadScene
           @sprites["player#{@cardIndexes[i]}"].bitmap = @cardBitmaps[@cardIndexes[i]]
           @sprites["player#{@cardIndexes[i]}"].x      = (i == choice) ? Graphics.width - 108 : Graphics.width - 92
           @sprites["player#{@cardIndexes[i]}"].y      = y
-          @sprites["player#{@cardIndexes[i]}"].z      = 2
+          @sprites["player#{@cardIndexes[i]}"].z      = (i == choice) ? 3 : 2
           y += 44
         end
         lastChoice = choice

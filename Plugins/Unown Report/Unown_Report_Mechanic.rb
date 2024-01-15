@@ -65,8 +65,8 @@ class Scene_Unownreport
 
 	def seen_unown_form_any_gender?(form)
 		ret = false
-		if $player.pokedex.caught_form?(:UNOWN, 0, form) ||
-		  $player.pokedex.caught_form?(:UNOWN, 1, form)
+		if $player.pokedex.seen_form?(:UNOWN, 0, form) ||
+		  $player.pokedex.seen_form?(:UNOWN, 1, form)
 		  ret = true
 		end
 		return ret
@@ -144,16 +144,16 @@ class Scene_Unownreport
 		
 		@viewport=Viewport.new(0,0,Graphics.width,Graphics.height)
 		@viewport.z=99999
-    borderSize=80
-    viewport2=Viewport.new(0,borderSize,Graphics.width,Graphics.height-borderSize*4)
-    viewport2.z=99999
+    	borderSize=80
+    	viewport2=Viewport.new(0,borderSize,Graphics.width,Graphics.height-borderSize*4)
+    	viewport2.z=99999
 		@button=AnimatedBitmap.new("Graphics/Pictures/UnownReport/unownreportButton")
 		@sprites={}
 		@sprites["background"] = IconSprite.new(0,0)
 		femback=pbResolveBitmap(sprintf("Graphics/Pictures/UnownReport/unownreportbgf"))
 		if $Trainer.gender==1 && femback
 			@sprites["background"].setBitmap("Graphics/Pictures/UnownReport/unownreportbgf")
-			else
+		else
 			@sprites["background"].setBitmap("Graphics/Pictures/UnownReport/unownreportbg")
 		end
 		@sprites["command_window"] = Window_CommandPokemon.new(commands,160)
