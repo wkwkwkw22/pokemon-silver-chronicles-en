@@ -4002,7 +4002,7 @@ LoseText = Hmmmm... This isn't right.
 Pokemon = REMORAID,28
 Pokemon = REMORAID,28
 #-------------------------------
-[ROCKET_EXECUTIVE4,Lance]
+[ROCKETLEADER,Lance]
 LoseText = ...
 Pokemon = GOLBAT,36
 Pokemon = MUK,36

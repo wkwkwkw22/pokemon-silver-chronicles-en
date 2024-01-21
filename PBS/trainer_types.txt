@@ -4,11 +4,13 @@
 Name = PkMn TRAINER
 Gender = Unknown
 BaseMoney = 40
+IntroBGM = SEQ_EYE_ETHAN
 #-------------------------------
 [PkMnTRAINER_Female]
 Name = PkMn TRAINER
 Gender = Unknown
 BaseMoney = 30
+IntroBGM = SEQ_EYE_LYRA
 #-------------------------------
 [LASS]
 Name = LASS
@@ -832,14 +834,6 @@ Name = Super Nerd
 Gender = Male
 BaseMoney = 50
 IntroBGM = SEQ_EYE_KID
-#-------------------------------
-[ROCKET_EXECUTIVE4]
-Name = Rocket Executive
-Gender = Unknown
-BaseMoney = 80
-IntroBGM = GSCTeamRocketEncounter
-BattleBGM = team-rocket-battle
-VictoryBGM = Victory - Trainer
 #-------------------------------
 [JUGGLER]
 Name = JUGGLER

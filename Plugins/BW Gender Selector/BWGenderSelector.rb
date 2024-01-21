@@ -205,6 +205,8 @@ Graphics.update
 end
 else
   pbChangePlayer(1)
+  $game_switches[BOY_SELECTED_SWITCH] = true
+  $game_switches[GIRL_SELECTED_SWITCH] = false
   @sprites["msgwindow"].visible = false
   pbMessage("I'd like to know your name.\nPlease tell me.")
   selectName
@@ -236,6 +238,8 @@ Graphics.update
 end
 else
 pbChangePlayer(2)
+$game_switches[GIRL_SELECTED_SWITCH] = true
+$game_switches[BOY_SELECTED_SWITCH] = false
 @sprites["msgwindow"].visible = false
 pbMessage("I'd like to know your name.\nPlease tell me.")
 selectName

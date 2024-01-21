@@ -28,3 +28,5 @@
 WRITETRAINERNAME  = true
 TRAINERMALE       = "Graphics/Pictures/introBoy"
 TRAINERFEMALE     = "Graphics/Pictures/introGirl"
+BOY_SELECTED_SWITCH = 140
+GIRL_SELECTED_SWITCH = 141

@@ -35,7 +35,10 @@ module QuestModule
     :Name => "Gotta catch ‘em all!",
     :QuestGiver => "Professor Oak",
     :Stage1 => "Complete the Johto Pokédex.",
+    :Stage2 => "Register at least 6 Pokémon.",
+    :Stage3 => "Register at least 20 Pokémon.",
     :Location1 => "nil",
+    :Location2 => "Route 31",
     :QuestDescription => "Go meet many kinds of Pokémon and complete that Pokédex!",
   }
 
