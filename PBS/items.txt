@@ -8447,3 +8447,11 @@ Description = A report of all the discovered kinds of UNOWN.
  Flags = Fling_30
  Description = A booster pack for Triple Triad game. Contains 3 starter cards.
  #-------------------------------
+[TCGBINDER]
+Name = TCG Binder
+NamePlural = TCG Binder's
+Pocket = 8
+Price = 0
+FieldUse = Direct
+Flags = KeyItem
+Description = A binder to keep your cards.

@@ -1,3 +1,9 @@
+TOTAL_COLUMNS = 6
+TOTAL_VISIBLE_ROWS = 3
+CARD_WIDTH = 82 # Extra 2px for spacing
+CARD_HEIGHT = 98 # Extra 2px for spacing
+START_X_POS = 10
+START_Y_POS = 24
 class TripleTriadBinder_Scene
   def pbUpdate
     pbUpdateSpriteHash(@sprites)
@@ -38,11 +44,11 @@ class TripleTriadBinder_Scene
     @sprites["messagebox"].letterbyletter = true
     pbBottomLeftLines(@sprites["messagebox"], 2)
 
-    @selCard    = @cardOffset * 4
+    @selCard    = @cardOffset * TOTAL_COLUMNS
     @oldselribbon = @selCard
     @switching = false
     @numCards = @cards.length
-    @numRows    = [((@numCards + 3) / 4).floor, 3].max
+    @numRows    = [((@numCards + TOTAL_VISIBLE_ROWS) / TOTAL_COLUMNS).floor, TOTAL_VISIBLE_ROWS].max
 
     drawPage()
     pbFadeInAndShow(@sprites) { pbUpdate }
@@ -76,103 +82,90 @@ class TripleTriadBinder_Scene
 
   def drawPage
     overlay = @sprites["overlay"].bitmap
-    overlay.clear
-    # Set background image
-    
-    imagepos = []
-    
-    # Draw all images
-    pbDrawImagePositions(overlay, imagepos)
-    overlay = @sprites["overlay"].bitmap
     @sprites["uparrow"].visible   = false
     @sprites["downarrow"].visible = false
     # Write various bits of text
     textpos = [
-      [_INTL("No. of Cards:"), 234, 10, 0, Color.new(64, 64, 64), Color.new(176, 176, 176)],
-      [@numCards.to_s, 450, 10, 1, Color.new(64, 64, 64), Color.new(176, 176, 176)]
+      [_INTL("No. of Cards:"), 234, 2, 0, Color.new(64, 64, 64), Color.new(176, 176, 176)],
+      [@numCards.to_s, 450, 2, 1, Color.new(64, 64, 64), Color.new(176, 176, 176)]
     ]
     # Draw all text
     pbDrawTextPositions(overlay, textpos)
     # Show all ribbons
     imagepos = []
     coord = 0
-    Console.echo_li("Arrived here #{@cardOffset}")
-    (@cardOffset * 4...(@cardOffset * 4) + 12).each do |i|
-      break if !@cards[i]
-      # ribbon_data = GameData::Ribbon.get($player.party[0].ribbons[i])
-      # ribbon_data = GameData::Ribbon.get($player.party[0].ribbons[i])
-      # ribn = ribbon_data.icon_position
-      # imagepos.push(["Graphics/Pictures/ribbons",
-      #                230 + (68 * (coord % 4)), 78 + (68 * (coord / 4).floor),
-      #                64 * (ribn % 8), 64 * (ribn / 8).floor, 64, 64])
+    (@cardOffset * TOTAL_COLUMNS...(@cardOffset * TOTAL_COLUMNS) + (TOTAL_COLUMNS * TOTAL_VISIBLE_ROWS)).each do |i|
+      Console.echo_li("WILL BREAK -- #{!@cards[i]}")
+      # break if !@cards[i]
 
-      sprite = Sprite.new(@viewport)
-      sprite.x = 230 + (68 * (coord % 4))
-      sprite.y = 78 + (68 * (coord / 4).floor)
-      sprite.z = 0
-      # sprite.bitmap = Bitmap.new("Graphics/Pictures/Triple Triad/triad_card_player")
-      sprite.bitmap = TriadCard.new($PokemonGlobal.triads.get_item(i)).createBitmap(1)
-      sprite.visible = true
-      @sprites["card_#{coord}"] = sprite
-
-      # sprite.bitmap = BitmapWrapper.new(@bgbitmap.width, 222)
-
-      # pbDisposeSpriteHash(@sprites)
-
-
-      Console.echo_li("Arrived here #{sprite.bitmap}")
-
-      # srcbitmap = AnimatedBitmap.new(pbBitmapName(i[0]))
-      # x = i[1]
-      # y = i[2]
-      # srcx = i[3] || 0
-      # srcy = i[4] || 0
-      # width = (i[5] && i[5] >= 0) ? i[5] : srcbitmap.width
-      # height = (i[6] && i[6] >= 0) ? i[6] : srcbitmap.height
-      # srcrect = Rect.new(0, 0, sprite.bitmap.width, sprite.bitmap.height)
-      # sprite.bitmap.blt(0, 0, sprite.bitmap, srcrect)
-      # srcbitmap.dispose
-
-      # imagepos.push([bitmapCard, 
-      #               230 + (68 * (coord % 4)), 78 + (68 * (coord / 4).floor)])
-
-      # imagepos.push(["Graphics/Pictures/Triple Triad/triad_card_player", 
-      #               230 + (68 * (coord % 4)), 78 + (68 * (coord / 4).floor)])
-      coord += 1
+      if !@cards[i]
+        # There's some bug on how I'm displaying the cards, so I can't break here, as it adds repeated cards somehow
+        # To overcome this, I'm then displaying the first card of the deck, but with createModifiedBitmap(0)
+        # which generates a flipped card
+        # @todo: improve this!!
+        bitmapCard = TriadCard.new(@cards[0][0]).createModifiedBitmap(0)
+      else  
+        bitmapCard = TriadCard.new(@cards[i][0]).createModifiedBitmap(1)
+      end
+    imagepos.push([bitmapCard, 
+    START_X_POS + (CARD_WIDTH * (coord % TOTAL_COLUMNS)), START_Y_POS + (CARD_HEIGHT * (coord / TOTAL_COLUMNS).floor)])
+    coord += 1
     end
     # Draw all images
-    pbDrawImagePositions(overlay, imagepos)
+    pbDrawImagePositionsModified(overlay, imagepos)
   end
 
+
+  def pbDrawImagePositionsModified(bitmap, textpos)
+    textpos.each do |i|
+      srcbitmap = i[0]
+      x = i[1]
+      y = i[2]
+      srcx = i[3] || 0
+      srcy = i[4] || 0
+      width = (i[5] && i[5] >= 0) ? i[5] : srcbitmap.width
+      height = (i[6] && i[6] >= 0) ? i[6] : srcbitmap.height
+      srcrect = Rect.new(srcx, srcy, width, height)
+      bitmap.blt(x, y, srcbitmap, srcrect)
+      srcbitmap.dispose
+    end
+  end
+
+
+  
+
   def drawSelectedRibbon(cardIndex)
+    # Draw all of page
+    drawPage
+
     overlay = @sprites["overlay"].bitmap
     base   = Color.new(64, 64, 64)
     shadow = Color.new(176, 176, 176)
     nameBase   = Color.new(248, 248, 248)
     nameShadow = Color.new(104, 104, 104)
     # Get data for selected ribbon
-    # name = ribbonid ? GameData::Ribbon.get(ribbonid).name : ""
-    # desc = ribbonid ? GameData::Ribbon.get(ribbonid).description : ""
-    Console.echo_li("Arrived here #{cardIndex}")
     if(cardIndex < @numCards)
-      item = $PokemonGlobal.triads[cardIndex]
-      species = GameData::Species.get(item[0])
+      # item = $PokemonGlobal.triads[cardIndex]
+      # species = GameData::Species.get(item[0])
   
+      item = @cards[cardIndex]
+      species = GameData::Species.get(@cards[cardIndex][0])
+
       name = cardIndex ? species.name : ""
       Console.echo_li("Write something here #{item[1]}")
       desc = "X #{item[1]}"
       # Draw the description box
       imagepos = [
-        ["Graphics/Pictures/Triple Triad/overlay", 8, 280]
+        ["Graphics/Pictures/Triple Triad/overlay", 8, 320]
       ]
       pbDrawImagePositions(overlay, imagepos)
       # Draw name of selected ribbon
       textpos = [
-        [name, 18, 292, 0, nameBase, nameShadow]
+        [name, 18, 323, 0, nameBase, nameShadow]
       ]
       pbDrawTextPositions(overlay, textpos)
       # Draw selected ribbon's description
-      drawTextEx(overlay, 18, 324, 480, 2, desc, base, shadow)
+      drawTextEx(overlay, 18, 332, 480, 2, desc, base, shadow)
     end  
     
   end
@@ -182,18 +175,12 @@ class TripleTriadBinder_Scene
     switching = false
     @sprites["cardsel"].visible = true
     @sprites["cardsel"].index   = 0
-    Console.echo_li("Arrived here pbScene")
-    Console.echo_li("Arrived here @selCard #{@selCard}")
-    Console.echo_li("Arrived here @cards #{@cards}")
-    Console.echo_li("Arrived here @cards[@selCard] #{@cards[@selCard]}")
-
     
     drawSelectedRibbon(0)
-    # drawSelectedRibbon(@cards[@selCard])
 
     loop do
       @sprites["uparrow"].visible   = (@cardOffset > 0)
-      @sprites["downarrow"].visible = (@cardOffset < @numRows - 3)
+      @sprites["downarrow"].visible = (@cardOffset < @numRows - TOTAL_VISIBLE_ROWS)
       Graphics.update
       Input.update
       pbUpdate
@@ -256,33 +243,33 @@ class TripleTriadBinder_Scene
           #   end
           # end
       elsif Input.trigger?(Input::UP)
-          @selCard -= 4
-          @selCard += @numRows * 4 if @selCard < 0
+          @selCard -= TOTAL_COLUMNS
+          @selCard += @numRows * TOTAL_COLUMNS if @selCard < 0
           hasMovedCursor = true
           pbPlayCursorSE
       elsif Input.trigger?(Input::DOWN)
-          @selCard += 4
-          @selCard -= @numRows * 4 if @selCard >= @numRows * 4
+          @selCard += TOTAL_COLUMNS
+          @selCard -= @numRows * TOTAL_COLUMNS if @selCard >= @numRows * TOTAL_COLUMNS
           hasMovedCursor = true
           pbPlayCursorSE
       elsif Input.trigger?(Input::LEFT)
           @selCard -= 1
-          @selCard += 4 if @selCard % 4 == 3
+          @selCard += TOTAL_COLUMNS if @selCard % TOTAL_COLUMNS == TOTAL_COLUMNS-1
           hasMovedCursor = true
           pbPlayCursorSE
       elsif Input.trigger?(Input::RIGHT)
           @selCard += 1
-          @selCard -= 4 if @selCard % 4 == 0
+          @selCard -= TOTAL_COLUMNS if @selCard % TOTAL_COLUMNS == 0
           hasMovedCursor = true
           pbPlayCursorSE
       end    
         next if !hasMovedCursor
-        @cardOffset = (@selCard / 4).floor if @selCard < @cardOffset * 4
-        @cardOffset = (@selCard / 4).floor - 2 if @selCard >= (@cardOffset + 3) * 4
+        @cardOffset = (@selCard / TOTAL_COLUMNS).floor if @selCard < @cardOffset * TOTAL_COLUMNS
+        @cardOffset = (@selCard / TOTAL_COLUMNS).floor - (TOTAL_VISIBLE_ROWS - 1) if @selCard >= (@cardOffset + TOTAL_VISIBLE_ROWS) * TOTAL_COLUMNS
         @cardOffset = 0 if @cardOffset < 0
-        @cardOffset = @numRows - 3 if @cardOffset > @numRows - 3
-        @sprites["cardsel"].index    = @selCard - (@cardOffset * 4)
-        @sprites["cardpresel"].index = @oldselribbon - (@cardOffset * 4)
+        @cardOffset = @numRows - (TOTAL_VISIBLE_ROWS) if @cardOffset > @numRows - (TOTAL_VISIBLE_ROWS)
+        @sprites["cardsel"].index    = @selCard - (@cardOffset * TOTAL_COLUMNS)
+        @sprites["cardpresel"].index = @oldselribbon - (@cardOffset * TOTAL_COLUMNS)
         drawSelectedRibbon(@selCard)
       if dorefresh
         drawPage()
@@ -366,8 +353,8 @@ class CardSelectionSprite < MoveSelectionSprite
     w = @movesel.width
     h = @movesel.height / 2
     self.z = 2
-    self.x = 228 + ((self.index % 4) * 68)
-    self.y = 76 + ((self.index / 4).floor * 68)
+    self.x = (START_X_POS-2) + ((self.index % TOTAL_COLUMNS) * CARD_WIDTH)
+    self.y = (START_Y_POS-2) + ((self.index / TOTAL_COLUMNS).floor * CARD_HEIGHT)
     self.bitmap = @movesel.bitmap
     if self.preselected
       self.src_rect.set(0, h, w, h)
@@ -379,7 +366,7 @@ class CardSelectionSprite < MoveSelectionSprite
   def update
     @updating = true
     super
-    self.visible = @spriteVisible && @index >= 0 && @index < 12
+    self.visible = @spriteVisible && @index >= 0 && @index < (TOTAL_COLUMNS * TOTAL_VISIBLE_ROWS)
     @movesel.update
     @updating = false
     refresh

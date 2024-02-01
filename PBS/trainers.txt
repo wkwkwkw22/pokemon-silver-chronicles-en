@@ -131,23 +131,26 @@ Pokemon = PIDGEY,9
 Pokemon = PIDGEY,9
 #-------------------------------
 [LEADER_Falkner,Falkner]
-Items = MEGARING
+Items = DYNAMAXBAND
 LoseText = I understand...I'll blow out gracefully...
 Pokemon = PIDGEY,10
 	Moves = SANDATTACK,QUICKATTACK,GUST,MUDSLAP
 Pokemon = SPEAROW,13
 	Moves = FURYATTACK,LEER,AERIALACE,ROOST
-Pokemon = HOOTHOOT,12
-	Moves = REFLECT,CONFUSION,THIEF,PECK
-Pokemon = PIDGEOTTO,13
+Pokemon = SKARMORY,13
+	Moves = METALCLAW,SANDATTACK,WINGATTACK,PAYBACK
+    Gender = male
+Pokemon = PIDGEOTTO,12
     Moves = SANDATTACK,QUICKATTACK,GUST,MIRRORMOVE
 Pokemon = NATU,12
 	Moves = PECK,CONFUSION,LEER
 	Gender = female
-Pokemon = PIDGEOT,16
-    Moves = SANDATTACK,QUICKATTACK,GUST,TWISTER
-    Item = PIDGEOTITE
+Pokemon = NOCTOWL,16
+    Moves = THIEF,PECK,HYPNOSIS,CONFUSION
 	Gender = male
+    Ace = yes
+    DynamaxLvl = 10
+    Gigantamax = yes
 #-------------------------------
 [YOUNGSTER,Albert]
 LoseText = You're strong!

@@ -128,6 +128,41 @@ class TriadCard
     numbersbitmap.dispose
     return bitmap
   end
+
+
+
+  # def createModifiedBitmap(owner)
+  #   return TriadCard.createBack if owner == 0
+  #   bitmap = BitmapWrapper.new(80, 96)
+  #   if owner == 2   # Opponent
+  #     cardbitmap = AnimatedBitmap.new("Graphics/Pictures/triad_card_opponent")
+  #   else            # Player
+  #     cardbitmap = AnimatedBitmap.new("Graphics/Pictures/triad_card_player")
+  #   end
+  #   typebitmap = AnimatedBitmap.new(_INTL("Graphics/Pictures/types"))
+  #   filename = @form > 0 ? "#{@species}_#{@form}" : @species
+  #   iconbitmap = AnimatedBitmap.new("Graphics/Pictures/Triple Triad/Cards/#{filename}")
+  #   # iconbitmap = AnimatedBitmap.new(GameData::Species.icon_filename(@species, @form))
+  #   numbersbitmap = AnimatedBitmap.new("Graphics/Pictures/triad_numbers")
+  #   # Draw card background
+  #   bitmap.blt(0, 0, cardbitmap.bitmap, Rect.new(0, 0, cardbitmap.width, cardbitmap.height))
+  #   # Draw type icon
+  #   type_number = GameData::Type.get(@type).icon_position
+  #   typerect = Rect.new(0, type_number * 28, 64, 28)
+  #   bitmap.blt(8, 50, typebitmap.bitmap, typerect, 192)
+  #   # Draw Pokémon icon
+  #   bitmap.blt(8, 24, iconbitmap.bitmap, Rect.new(0, 0, 64, 64))
+  #   # Draw numbers
+  #   bitmap.blt(8, 16, numbersbitmap.bitmap, Rect.new(@west * 16, 0, 16, 16))
+  #   bitmap.blt(22, 6, numbersbitmap.bitmap, Rect.new(@north * 16, 0, 16, 16))
+  #   bitmap.blt(36, 16, numbersbitmap.bitmap, Rect.new(@east * 16, 0, 16, 16))
+  #   bitmap.blt(22, 26, numbersbitmap.bitmap, Rect.new(@south * 16, 0, 16, 16))
+  #   cardbitmap.dispose
+  #   typebitmap.dispose
+  #   iconbitmap.dispose
+  #   numbersbitmap.dispose
+  #   return bitmap
+  # end
 end
 
 

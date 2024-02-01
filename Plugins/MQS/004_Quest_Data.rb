@@ -125,6 +125,16 @@ module QuestModule
     :QuestDescription => "This kid near Route 46 really wants to see a Phanpy. If you can help with that, he's happy to thank you with some berries as a thank-you gift.",
   }
 
+  TCGInitiation = {
+    :ID => "9",
+    :Name => "Pokémon Cards",
+    :QuestGiver => "TCG Fan Pedro",
+    :Stage1 => "Open the Booster Pack",
+    :Location1 => "Violet City Mart",
+    :RewardString => "A nice Pokémon Card",
+    :QuestDescription => "This kid gave you a nice binder and a booster pack of Pokémon cards. He's really excited to see what you got! Open the pack and show him your new cards and learn how to play Pokémon TCG.",
+  }
+
   
   # Here's an extension of the above that includes multiple stages
   # Quest2 = {

@@ -1,6 +1,62 @@
 #==========================
 # Triple Triad changes made by victordevjs
 #==========================
+class TriadCard
+
+  def self.createImprovedBack(type = nil, noback = false)
+    bitmap = BitmapWrapper.new(80, 96)
+    if !noback
+      cardbitmap = AnimatedBitmap.new("Graphics/Pictures/Triple Triad/triad_card_back")
+      bitmap.blt(0, 0, cardbitmap.bitmap, Rect.new(0, 0, cardbitmap.width, cardbitmap.height))
+      cardbitmap.dispose
+    end
+    if type
+      typebitmap = AnimatedBitmap.new(_INTL("Graphics/Pictures/types"))
+      type_number = GameData::Type.get(type).icon_position
+      typerect = Rect.new(0, type_number * 28, 64, 28)
+      bitmap.blt(8, 50, typebitmap.bitmap, typerect, 192)
+      typebitmap.dispose
+    end
+    return bitmap
+  end
+
+  def createModifiedBitmap(owner)
+    return TriadCard.createImprovedBack if owner == 0
+    bitmap = BitmapWrapper.new(80, 96)
+    if owner == 2   # Opponent
+      cardbitmap = AnimatedBitmap.new("Graphics/Pictures/Triple Triad/triad_card_back")
+    else            # Player
+      cardbitmap = AnimatedBitmap.new("Graphics/Pictures/Triple Triad/types/card_#{@type}")
+    end
+    filename = @form > 0 ? "#{@species}_#{@form}" : @species
+    iconbitmap = AnimatedBitmap.new("Graphics/Pictures/Triple Triad/Cards/#{filename}")
+    # iconbitmap = AnimatedBitmap.new(GameData::Species.icon_filename(@species, @form))
+    numbersbitmap = AnimatedBitmap.new("Graphics/Pictures/triad_numbers")
+    # Draw card background
+    bitmap.blt(0, 0, cardbitmap.bitmap, Rect.new(0, 0, cardbitmap.width, cardbitmap.height))
+    # typebitmap = AnimatedBitmap.new(_INTL("Graphics/Pictures/types"))
+    # type_number = GameData::Type.get(@type).icon_position
+    # typerect = Rect.new(0, type_number * 28, 64, 28)
+    typebitmap = AnimatedBitmap.new("Graphics/Pictures/Triple Triad/types/#{@type}")
+    
+    # Draw Pokémon icon
+    bitmap.blt(0, 0, iconbitmap.bitmap, Rect.new(0, 0, 80, 96))
+    # Draw type icon
+    # bitmap.blt(57, 7, typebitmap.bitmap, Rect.new(0, 0, 16, 16))
+    # Draw numbers
+    bitmap.blt(32, 60, numbersbitmap.bitmap, Rect.new(@north * 16, 0, 16, 16))
+    bitmap.blt(14, 69, numbersbitmap.bitmap, Rect.new(@west * 16, 0, 16, 16))
+    bitmap.blt(50, 69, numbersbitmap.bitmap, Rect.new(@east * 16, 0, 16, 16))
+    bitmap.blt(32, 76, numbersbitmap.bitmap, Rect.new(@south * 16, 0, 16, 16))
+    cardbitmap.dispose
+    typebitmap.dispose
+    iconbitmap.dispose
+    numbersbitmap.dispose
+    return bitmap
+  end
+
+
+end  
 
 
 #===============================================================================
@@ -116,10 +172,10 @@ end
 # New Triad List simulating a TCG binder
 #===============================================================================
 def pbTriadBinder
-  pbTriadList() # For now, let's just call the old method
+  # pbTriadList() # For now, let's just call the old method
   # Once we finish the script below, we can start using it.
-    # scene = TripleTriadBinder_Scene.new
-    # screen = TripleTriadBinderScreen.new(scene)
-    # screen.pbStartScreen()
+    scene = TripleTriadBinder_Scene.new
+    screen = TripleTriadBinderScreen.new(scene)
+    screen.pbStartScreen()
    
 end
