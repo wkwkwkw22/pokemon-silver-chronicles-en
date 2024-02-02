@@ -4,3 +4,5 @@ Gregarlink10 - female character sprites
 Ekat99 - some tilesets
 Morlock-Liam - some tilesets
 PaperFire88 - Custom TCG Sprites
+PurpleZaffre - overworlds
+DiegoWT - Overworlds

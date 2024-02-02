@@ -20,14 +20,17 @@ class TriadCard
     return bitmap
   end
 
-  def createModifiedBitmap(owner)
+  def createModifiedBitmap(owner, isOnBoard = false)
+    Console.echo_li("owner #{owner}")
     return TriadCard.createImprovedBack if owner == 0
     bitmap = BitmapWrapper.new(80, 96)
-    if owner == 2   # Opponent
-      cardbitmap = AnimatedBitmap.new("Graphics/Pictures/Triple Triad/triad_card_back")
-    else            # Player
+    # if owner == 2   # Opponent
+    #   cardbitmap = AnimatedBitmap.new("Graphics/Pictures/Triple Triad/types/card_#{@type}")
+    # else            # Player
       cardbitmap = AnimatedBitmap.new("Graphics/Pictures/Triple Triad/types/card_#{@type}")
-    end
+    # end
+
+
     filename = @form > 0 ? "#{@species}_#{@form}" : @species
     iconbitmap = AnimatedBitmap.new("Graphics/Pictures/Triple Triad/Cards/#{filename}")
     # iconbitmap = AnimatedBitmap.new(GameData::Species.icon_filename(@species, @form))
@@ -37,7 +40,9 @@ class TriadCard
     # typebitmap = AnimatedBitmap.new(_INTL("Graphics/Pictures/types"))
     # type_number = GameData::Type.get(@type).icon_position
     # typerect = Rect.new(0, type_number * 28, 64, 28)
-    typebitmap = AnimatedBitmap.new("Graphics/Pictures/Triple Triad/types/#{@type}")
+    # typebitmap = AnimatedBitmap.new("Graphics/Pictures/Triple Triad/types/#{@type}")
+
+   
     
     # Draw Pokémon icon
     bitmap.blt(0, 0, iconbitmap.bitmap, Rect.new(0, 0, 80, 96))
@@ -48,8 +53,24 @@ class TriadCard
     bitmap.blt(14, 69, numbersbitmap.bitmap, Rect.new(@west * 16, 0, 16, 16))
     bitmap.blt(50, 69, numbersbitmap.bitmap, Rect.new(@east * 16, 0, 16, 16))
     bitmap.blt(32, 76, numbersbitmap.bitmap, Rect.new(@south * 16, 0, 16, 16))
+
+     # Let's add some image so we can identify who is owning the card on the board
+     if(isOnBoard)
+      
+      if owner == 2   # Opponent
+        boardOwner = AnimatedBitmap.new("Graphics/Pictures/Triple Triad/triad_card_opponent")
+      else            # Player
+        boardOwner = AnimatedBitmap.new("Graphics/Pictures/Triple Triad/triad_card_player")
+      end
+  
+      bitmap.blt(0, 0, boardOwner.bitmap, Rect.new(0, 0, 80, 96))
+  
+      boardOwner.dispose
+  
+    end
+
     cardbitmap.dispose
-    typebitmap.dispose
+    # typebitmap.dispose
     iconbitmap.dispose
     numbersbitmap.dispose
     return bitmap
@@ -179,3 +200,17 @@ def pbTriadBinder
     screen.pbStartScreen()
    
 end
+
+
+
+#===============================================================================
+# Give the player a particular card with an animation
+#===============================================================================
+# def pbGiveTriadCardWithAnimation(species, quantity = 1)
+#   # @todo: Add animation scene here
+#   sp = GameData::Species.try_get(species)
+#   return false if !sp
+#   return false if !$PokemonGlobal.triads.can_add?(sp.id, quantity)
+#   $PokemonGlobal.triads.add(sp.id, quantity)
+#   return true
+# end

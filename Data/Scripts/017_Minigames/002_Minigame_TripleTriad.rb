@@ -5,14 +5,51 @@
 #===============================================================================
 # Card class
 #===============================================================================
+
+# Order of the properties: species, form, real name, type, north, east, south, west
+customCards = [[:OAK, 0, "Professor Oak", :NORMAL, 10, 9, 8, 7 ]]
+# We have one triad card for each Pokemon species and form
+# But we have custom cards that are not Pokemon or different cards for the same pokemon form
+# We create a new class to handle these custom cards - We give the same properties as 
+# a Pokemon have to facilitate the handling of the cards later
+class CustomTriadCard
+    attr_reader :species
+    attr_reader :form
+    attr_reader :real_name
+    attr_reader :types
+    attr_reader :base_stats
+
+    def initialize(species, form)
+      if(species == :OAK )
+        Console.echo_li("Species is OAK")
+      end  
+      # @id                 = hash[:id]
+      # @species            = hash[:species]            || @id
+      # @form               = hash[:form]               || 0
+      # GameData::Stat.each_main do |s|
+      #   @base_stats[s.id] = 1 if !@base_stats[s.id] || @base_stats[s.id] <= 0
+      #   @evs[s.id]        = 0 if !@evs[s.id] || @evs[s.id] < 0
+      # end
+    end    
+end  
 class TriadCard
   attr_reader :species, :form
   attr_reader :north, :east, :south, :west
   attr_reader :type
 
+  def readCard(species, form = 0)
+    species_data = GameData::Species.get_species_form(species, form)
+    if !species_data
+      Console.echo_li("Species not found: #{species} (form #{form})")
+      CustomTriadCard.new(species, form)
+    end  
+
+  end  
+
   def initialize(species, form = 0)
     @species = species
     @form    = form
+    readCard(species, form)
     species_data = GameData::Species.get_species_form(@species, @form)
     baseStats = species_data.base_stats
     hp      = baseStats[:HP]
@@ -129,40 +166,6 @@ class TriadCard
     return bitmap
   end
 
-
-
-  # def createModifiedBitmap(owner)
-  #   return TriadCard.createBack if owner == 0
-  #   bitmap = BitmapWrapper.new(80, 96)
-  #   if owner == 2   # Opponent
-  #     cardbitmap = AnimatedBitmap.new("Graphics/Pictures/triad_card_opponent")
-  #   else            # Player
-  #     cardbitmap = AnimatedBitmap.new("Graphics/Pictures/triad_card_player")
-  #   end
-  #   typebitmap = AnimatedBitmap.new(_INTL("Graphics/Pictures/types"))
-  #   filename = @form > 0 ? "#{@species}_#{@form}" : @species
-  #   iconbitmap = AnimatedBitmap.new("Graphics/Pictures/Triple Triad/Cards/#{filename}")
-  #   # iconbitmap = AnimatedBitmap.new(GameData::Species.icon_filename(@species, @form))
-  #   numbersbitmap = AnimatedBitmap.new("Graphics/Pictures/triad_numbers")
-  #   # Draw card background
-  #   bitmap.blt(0, 0, cardbitmap.bitmap, Rect.new(0, 0, cardbitmap.width, cardbitmap.height))
-  #   # Draw type icon
-  #   type_number = GameData::Type.get(@type).icon_position
-  #   typerect = Rect.new(0, type_number * 28, 64, 28)
-  #   bitmap.blt(8, 50, typebitmap.bitmap, typerect, 192)
-  #   # Draw Pokémon icon
-  #   bitmap.blt(8, 24, iconbitmap.bitmap, Rect.new(0, 0, 64, 64))
-  #   # Draw numbers
-  #   bitmap.blt(8, 16, numbersbitmap.bitmap, Rect.new(@west * 16, 0, 16, 16))
-  #   bitmap.blt(22, 6, numbersbitmap.bitmap, Rect.new(@north * 16, 0, 16, 16))
-  #   bitmap.blt(36, 16, numbersbitmap.bitmap, Rect.new(@east * 16, 0, 16, 16))
-  #   bitmap.blt(22, 26, numbersbitmap.bitmap, Rect.new(@south * 16, 0, 16, 16))
-  #   cardbitmap.dispose
-  #   typebitmap.dispose
-  #   iconbitmap.dispose
-  #   numbersbitmap.dispose
-  #   return bitmap
-  # end
 end
 
 
@@ -203,7 +206,7 @@ class TriadScene
     # Allocate viewport
     @viewport = Viewport.new(0, 0, Graphics.width, Graphics.height)
     @viewport.z = 99999
-    addBackgroundPlane(@sprites, "background", "triad_bg", @viewport)
+    addBackgroundPlane(@sprites, "background", "Triple Triad/triad_bg", @viewport)
     @sprites["helpwindow"] = Window_AdvancedTextPokemon.newWithSize(
       "", 0, Graphics.height - 64, Graphics.width, 64, @viewport
     )
@@ -318,7 +321,8 @@ class TriadScene
         preview.bitmap&.dispose
         if command.index < cardStorage.length
           item = cardStorage[command.index]
-          preview.bitmap = TriadCard.new(item[0]).createBitmap(1)
+          # Selecting cards before battle
+          preview.bitmap = TriadCard.new(item[0]).createModifiedBitmap(1)
         end
         index = command.index
       end
@@ -344,7 +348,7 @@ class TriadScene
           pbPlayDecisionSE
           sprite = @sprites["player#{chosenCards.length}"]
           sprite.bitmap&.dispose
-          @cardBitmaps[chosenCards.length] = TriadCard.new(item[0]).createBitmap(1)
+          @cardBitmaps[chosenCards.length] = TriadCard.new(item[0]).createModifiedBitmap(1)
           sprite.bitmap = @cardBitmaps[chosenCards.length]
           chosenCards.push(item[0])
           @battle.pbSubtract(cardStorage, item[0])
@@ -386,7 +390,7 @@ class TriadScene
       @sprites["player#{i}"].x      = Graphics.width - 92
       @sprites["player#{i}"].y      = 44 + (44 * i)
       @sprites["player#{i}"].z      = 2
-      @sprites["player#{i}"].bitmap = TriadCard.new(cards[i]).createBitmap(1)
+      @sprites["player#{i}"].bitmap = TriadCard.new(cards[i]).createModifiedBitmap(1)
       @cardBitmaps.push(@sprites["player#{i}"].bitmap)
     end
   end
@@ -397,7 +401,7 @@ class TriadScene
       @sprites["opponent#{i}"].x      = 12
       @sprites["opponent#{i}"].y      = 44 + (44 * i)
       @sprites["opponent#{i}"].z      = 2
-      @sprites["opponent#{i}"].bitmap = @battle.openHand ? TriadCard.new(cards[i]).createBitmap(2) : TriadCard.createBack
+      @sprites["opponent#{i}"].bitmap = @battle.openHand ? TriadCard.new(cards[i]).createModifiedBitmap(2) : TriadCard.createImprovedBack
       @opponentCardBitmaps.push(@sprites["opponent#{i}"].bitmap)
       @opponentCardIndexes.push(i)
     end
@@ -559,7 +563,7 @@ class TriadScene
     @opponentCardIndexes.length.times do |i|
       sprite = @sprites["opponent#{@opponentCardIndexes[i]}"]
       if i == cardIndex
-        @opponentCardBitmaps[@opponentCardIndexes[i]] = triadCard.createBitmap(2)
+        @opponentCardBitmaps[@opponentCardIndexes[i]] = triadCard.createModifiedBitmap(2)
         sprite.bitmap&.dispose
         sprite.bitmap = @opponentCardBitmaps[@opponentCardIndexes[i]]
         sprite.x = (Graphics.width / 2) - 118 + (position[0] * 78)
@@ -591,7 +595,8 @@ class TriadScene
       next if !@boardSprites[i]
       @boardSprites[i].bitmap&.dispose
       owner = @battle.getOwner(x, y)
-      @boardSprites[i].bitmap = @boardCards[i].createBitmap(owner)
+      # Here we need to apply a different rule for the card color, so we can identify the owner
+      @boardSprites[i].bitmap = @boardCards[i].createModifiedBitmap(owner, true)
     end
   end
 
