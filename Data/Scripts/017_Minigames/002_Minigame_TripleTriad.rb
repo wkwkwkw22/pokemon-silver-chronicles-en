@@ -7,41 +7,73 @@
 #===============================================================================
 
 # Order of the properties: species, form, real name, type, north, east, south, west
-customCards = [[:OAK, 0, "Professor Oak", :NORMAL, 10, 9, 8, 7 ]]
+
+def pbGetCustomCards
+  cardOak = CustomTriadCard.new(:OAK, "Professor Oak", :NORMAL, 10, 9, 8, 7)
+  cardOak2 = CustomTriadCard.new(:OAK_2, "Professor Oak 2", :NORMAL, 10, 9, 8, 7)
+  rattata2 = CustomTriadCard.new(:RATTATA_2, "Rattata", :NORMAL, 3, 4, 2, 1)
+
+  customCards = [cardOak, cardOak2, rattata2]
+  return customCards
+end
+
 # We have one triad card for each Pokemon species and form
 # But we have custom cards that are not Pokemon or different cards for the same pokemon form
 # We create a new class to handle these custom cards - We give the same properties as 
 # a Pokemon have to facilitate the handling of the cards later
 class CustomTriadCard
-    attr_reader :species
-    attr_reader :form
-    attr_reader :real_name
-    attr_reader :types
-    attr_reader :base_stats
+  attr_reader :species
+  attr_reader :north, :east, :south, :west
+  attr_reader :name
+  attr_reader :type
 
-    def initialize(species, form)
-      if(species == :OAK )
-        Console.echo_li("Species is OAK")
-      end  
-      # @id                 = hash[:id]
-      # @species            = hash[:species]            || @id
-      # @form               = hash[:form]               || 0
-      # GameData::Stat.each_main do |s|
-      #   @base_stats[s.id] = 1 if !@base_stats[s.id] || @base_stats[s.id] <= 0
-      #   @evs[s.id]        = 0 if !@evs[s.id] || @evs[s.id] < 0
-      # end
+    def initialize(species, name, type, north, east, south, west)
+     @species = species
+      @name = name
+      @type = type
+      @north = north
+      @east = east
+      @south = south
+      @west = west
     end    
 end  
 class TriadCard
   attr_reader :species, :form
   attr_reader :north, :east, :south, :west
   attr_reader :type
+  attr_reader :name
 
   def readCard(species, form = 0)
     species_data = GameData::Species.get_species_form(species, form)
     if !species_data
       Console.echo_li("Species not found: #{species} (form #{form})")
-      CustomTriadCard.new(species, form)
+      species_to_find = species
+      found_card = pbGetCustomCards().find { |card| card.species == species_to_find }
+
+      Console.echo_li("Species found? #{found_card}")
+      Console.echo_li("species prop #{found_card.species}")
+      @name = found_card.name
+      @type  = found_card.type
+      @west  = found_card.west
+      @east  = found_card.east
+      @north = found_card.north
+      @south = found_card.south
+    else
+      species_data = GameData::Species.get_species_form(@species, @form)
+      baseStats = species_data.base_stats
+      hp      = baseStats[:HP]
+      attack  = baseStats[:ATTACK]
+      defense = baseStats[:DEFENSE]
+      spAtk   = baseStats[:SPECIAL_ATTACK]
+      spDef   = baseStats[:SPECIAL_DEFENSE]
+      speed   = baseStats[:SPEED]
+      @name = species_data.form_name || species_data.real_name
+      @type  = species_data.types[0]
+      @type  = species_data.types[1] if @type == :NORMAL && species_data.types[1]
+      @west  = baseStatToValue(attack + (speed / 3))
+      @east  = baseStatToValue(defense + (hp / 3))
+      @north = baseStatToValue(spAtk + (speed / 3))
+      @south = baseStatToValue(spDef + (hp / 3))
     end  
 
   end  
@@ -50,20 +82,6 @@ class TriadCard
     @species = species
     @form    = form
     readCard(species, form)
-    species_data = GameData::Species.get_species_form(@species, @form)
-    baseStats = species_data.base_stats
-    hp      = baseStats[:HP]
-    attack  = baseStats[:ATTACK]
-    defense = baseStats[:DEFENSE]
-    spAtk   = baseStats[:SPECIAL_ATTACK]
-    spDef   = baseStats[:SPECIAL_DEFENSE]
-    speed   = baseStats[:SPEED]
-    @type  = species_data.types[0]
-    @type  = species_data.types[1] if @type == :NORMAL && species_data.types[1]
-    @west  = baseStatToValue(attack + (speed / 3))
-    @east  = baseStatToValue(defense + (hp / 3))
-    @north = baseStatToValue(spAtk + (speed / 3))
-    @south = baseStatToValue(spDef + (hp / 3))
   end
 
   def baseStatToValue(stat)
@@ -297,7 +315,9 @@ class TriadScene
     commands    = []
     chosenCards = []
     cardStorage.each do |item|
-      commands.push(_INTL("{1} x{2}", GameData::Species.get(item[0]).name, item[1]))
+      loadedCard = TriadCard.new(item[0])
+      commands.push(_INTL("{1} x{2}", loadedCard.name, item[1]))
+      # commands.push(_INTL("{1} x{2}", GameData::Species.get(item[0]).name, item[1]))
     end
     command = Window_CommandPokemonEx.newWithSize(commands, 0, 0, Graphics.width / 2, Graphics.height - 64, @viewport)
     @sprites["helpwindow"].text = _INTL("Choose {1} cards to use for this duel.", @battle.maxCards)
@@ -354,7 +374,7 @@ class TriadScene
           @battle.pbSubtract(cardStorage, item[0])
           commands = []
           cardStorage.each do |item|
-            commands.push(_INTL("{1} x{2}", GameData::Species.get(item[0]).name, item[1]))
+            commands.push(_INTL("{1} x{2}", TriadCard.new(item[0]).name, item[1]))
           end
           command.commands = commands
           command.index = commands.length - 1 if command.index >= commands.length
@@ -804,13 +824,14 @@ class TriadScreen
     if oppdeck.is_a?(Array) && oppdeck.length == self.maxCards   # Preset
       opponentCards = []
       oppdeck.each do |i|
-        species_data = GameData::Species.try_get(i)
-        if !species_data
-          @scene.pbDisplayPaused(_INTL("Opponent has an illegal card, \"{1}\".", i))
-          @scene.pbEndScene
-          return 0
-        end
-        opponentCards.push(species_data.id)
+        # species_data = GameData::Species.try_get(i)
+        # if !species_data
+        #   @scene.pbDisplayPaused(_INTL("Opponent has an illegal card, \"{1}\".", i))
+        #   @scene.pbEndScene
+        #   return 0
+        # end
+        Console.echo_li("Will add this to the opponent's deck: #{i}")
+        opponentCards.push(i)
       end
     else
       species_keys = GameData::Species.keys
@@ -1358,8 +1379,13 @@ end
 #===============================================================================
 def pbGiveTriadCard(species, quantity = 1)
   sp = GameData::Species.try_get(species)
-  return false if !sp
-  return false if !$PokemonGlobal.triads.can_add?(sp.id, quantity)
-  $PokemonGlobal.triads.add(sp.id, quantity)
+  # return false if !sp
+  return false if !$PokemonGlobal.triads.can_add?(species, quantity)
+  # Console.echo_li("sp value id #{sp.id}")
+  Console.echo_li("species value is #{species}")
+
+  # $PokemonGlobal.triads.add(sp.id, quantity)
+  $PokemonGlobal.triads.add(species, quantity)
+
   return true
 end

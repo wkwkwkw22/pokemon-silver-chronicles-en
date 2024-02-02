@@ -110,9 +110,9 @@ class TripleTriadBinder_Scene
     imagepos.push([bitmapCard, 
     START_X_POS + (CARD_WIDTH * (coord % TOTAL_COLUMNS)), START_Y_POS + (CARD_HEIGHT * (coord / TOTAL_COLUMNS).floor)])
     coord += 1
-    end
-    # Draw all images
-    pbDrawImagePositionsModified(overlay, imagepos)
+  end
+  # Draw all images
+  pbDrawImagePositionsModified(overlay, imagepos)
   end
 
 
@@ -149,7 +149,8 @@ class TripleTriadBinder_Scene
       # species = GameData::Species.get(item[0])
   
       item = @cards[cardIndex]
-      species = GameData::Species.get(@cards[cardIndex][0])
+      species = TriadCard.new(@cards[cardIndex][0])
+      # species = GameData::Species.get(@cards[cardIndex][0])
 
       name = cardIndex ? species.name : ""
       Console.echo_li("Write something here #{item[1]}")

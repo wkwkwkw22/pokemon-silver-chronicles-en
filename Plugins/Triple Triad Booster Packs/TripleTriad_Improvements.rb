@@ -203,14 +203,3 @@ end
 
 
 
-#===============================================================================
-# Give the player a particular card with an animation
-#===============================================================================
-# def pbGiveTriadCardWithAnimation(species, quantity = 1)
-#   # @todo: Add animation scene here
-#   sp = GameData::Species.try_get(species)
-#   return false if !sp
-#   return false if !$PokemonGlobal.triads.can_add?(sp.id, quantity)
-#   $PokemonGlobal.triads.add(sp.id, quantity)
-#   return true
-# end

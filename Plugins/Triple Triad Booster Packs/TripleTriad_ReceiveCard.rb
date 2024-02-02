@@ -134,7 +134,7 @@ class ReceiveCardScene
     @sprites["item"].opacity-=14.16
     end
     pbGiveTriadCard(@card, @quantity)
-    speciesname = GameData::Species.get(@card).name
+    speciesname =  TriadCard.new(@card).name
     pbMessage(_INTL("\\You obtained a \\c[1] {1} card!\\wtnp[30]", speciesname))
     pbMessage(_INTL("You put the {1} Card in your Binder.", speciesname))
     loop do
