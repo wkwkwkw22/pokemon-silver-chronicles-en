@@ -106,6 +106,9 @@ class TriadCard
   end
 
   def bonus(opponent)
+    value = Effectiveness.calculate_one(@type, opponent.type)
+    Console.echo_li("type: #{@type} - opponent type: #{opponent.type}")
+    Console.echo_li("Calculated bonus: #{value}")
     case Effectiveness.calculate_one(@type, opponent.type)
     when Effectiveness::INEFFECTIVE            then return -2
     when Effectiveness::NOT_VERY_EFFECTIVE_ONE then return -1
@@ -724,17 +727,23 @@ class TriadScreen
       if attacker.owner != defender.owner
         attack  = attacker.attack(i)
         defense = defender.defense(i)
+        Console.echo_li("Attacker before: (#{attack})")
+
         if @elements
+
+          Console.echo_li("DEFAULT ELEMENT?: #{attacker.type}")
+          Console.echo_li("CARD ELEMENT?: #{attacker.card.type}")
+
+          # attack += attacker.bonus(attacker.type)
           # If attacker's type matches the tile's element, add
           # a bonus of 1 (only for original attacker, not combos)
           attack += 1 if !recurse && attacker.type == attacker.card.type
-        else
-          # Modifier depends on opponent's Pokémon type:
+        end
+        # Modifier depends on opponent's Pokémon type:
           # +1 - Super effective
           # -1 - Not very effective
           # -2 - Immune
-#         attack += attacker.bonus(defender)
-        end
+        attack += attacker.bonus(defender)
         if attack > defense || (attack == defense && @sameWins)
           flips.push([defenderX, defenderY])
           if attackerParam.nil?
@@ -1226,7 +1235,7 @@ def pbSellTriads
   commands = []
   $PokemonGlobal.triads.length.times do |i|
     item = $PokemonGlobal.triads[i]
-    speciesname = GameData::Species.get(item[0]).name
+    speciesname = TriadCard.new(item[0]).name
     commands.push(_INTL("{1} x{2}", speciesname, item[1]))
     total_cards += item[1]
   end
@@ -1251,7 +1260,7 @@ def pbSellTriads
   preview.y = (Graphics.height / 2) - 48
   preview.z = 4
   item = $PokemonGlobal.triads.get_item(cmdwindow.index)
-  preview.bitmap = TriadCard.new(item).createBitmap(1)
+  preview.bitmap = TriadCard.new(item).createModifiedBitmap(1)
   olditem = $PokemonGlobal.triads.get_item(cmdwindow.index)
   done = false
   Graphics.frame_reset
@@ -1266,7 +1275,7 @@ def pbSellTriads
       if olditem != item
         preview.bitmap&.dispose
         if item
-          preview.bitmap = TriadCard.new(item).createBitmap(1)
+          preview.bitmap = TriadCard.new(item).createModifiedBitmap(1)
         end
         olditem = item
       end
@@ -1280,7 +1289,7 @@ def pbSellTriads
           break
         end
         item = $PokemonGlobal.triads.get_item(cmdwindow.index)
-        itemname = GameData::Species.get(item).name
+        itemname = TriadCard.new(item).name
         quantity = $PokemonGlobal.triads.quantity(item)
         price = TriadCard.new(item).price
         if price == 0
@@ -1309,7 +1318,7 @@ def pbSellTriads
             commands = []
             $PokemonGlobal.triads.length.times do |i|
               item = $PokemonGlobal.triads[i]
-              speciesname = GameData::Species.get(item[0]).name
+              speciesname = TriadCard.new(item[0]).name
               commands.push(_INTL("{1} x{2}", speciesname, item[1]))
             end
             commands.push(_INTL("CANCEL"))
@@ -1378,7 +1387,7 @@ end
 # Give the player a particular card
 #===============================================================================
 def pbGiveTriadCard(species, quantity = 1)
-  sp = GameData::Species.try_get(species)
+  # sp = GameData::Species.try_get(species)
   # return false if !sp
   return false if !$PokemonGlobal.triads.can_add?(species, quantity)
   # Console.echo_li("sp value id #{sp.id}")

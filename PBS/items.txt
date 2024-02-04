@@ -8428,30 +8428,85 @@ Price = 0
 FieldUse = Direct
 Flags = KeyItem
 Description = A report of all the discovered kinds of UNOWN.
-#-------------------------------
-[BOOSTERPACK]
- Name = Booster Pack
- NamePlural = Booster Packs
- Pocket = 1
- Price = 1000
- FieldUse = Direct
- Flags = Fling_30
- Description = A booster pack for Triple Triad game. Contains 5 cards.
- #-------------------------------
- [STARTERPACK]
- Name = Starter Pack
- NamePlural = Starter Packs
- Pocket = 1
- Price = 500
- FieldUse = Direct
- Flags = Fling_30
- Description = A booster pack for Triple Triad game. Contains 3 starter cards.
  #-------------------------------
 [TCGBINDER]
 Name = TCG Binder
 NamePlural = TCG Binder's
-Pocket = 8
+Pocket = 6
 Price = 0
 FieldUse = Direct
 Flags = KeyItem
 Description = A binder to keep your cards.
+#-------------------------------
+[BOOSTERPACK_GENESIS]
+Name = Booster Pack Genesis
+NamePlural = Booster Packs Genesis
+Pocket = 6
+Price = 5000
+FieldUse = Direct
+Flags = Fling_30
+Description = A booster pack for Triple Triad game. Contains 5 random cards.
+#-------------------------------
+[BOOSTERPACK_COLOSSEUM]
+Name = Booster Pack Colosseum
+NamePlural = Booster Packs Colosseum
+Pocket = 6
+Price = 5000
+FieldUse = Direct
+Flags = Fling_30
+Description = A booster pack for Triple Triad game. Contains 5 random cards.
+#-------------------------------
+[BOOSTERPACK_DISCOVERY]
+Name = Booster Pack Dicovery
+NamePlural = Booster Packs Dicovery
+Pocket = 6
+Price = 10000
+FieldUse = Direct
+Flags = Fling_30
+Description = A booster pack for Triple Triad game. Contains 5 random cards.
+#-------------------------------
+[BOOSTERPACK_EVOLUTION]
+Name = Booster Pack Evolution
+NamePlural = Booster Packs Evolution
+Pocket = 6
+Price = 10000
+FieldUse = Direct
+Flags = Fling_30
+Description = A booster pack for Triple Triad game. Contains 5 random cards.
+#-------------------------------
+[BOOSTERPACK_DESTINY]
+Name = Booster Pack Destiny
+NamePlural = Booster Packs Destiny
+Pocket = 6
+Price = 15000
+FieldUse = Direct
+Flags = Fling_30
+Description = A booster pack for Triple Triad game. Contains 5 random cards.
+#-------------------------------
+[BOOSTERPACK_MYSTERY]
+Name = Booster Pack Mystery
+NamePlural = Booster Packs Mystery
+Pocket = 6
+Price = 15000
+FieldUse = Direct
+Flags = Fling_30
+Description = A booster pack for Triple Triad game. Contains 5 random cards.
+#-------------------------------
+[BOOSTERPACK_REVELATION]
+Name = Booster Pack Revelation
+NamePlural = Booster Packs Revelation
+Pocket = 6
+Price = 20000
+FieldUse = Direct
+Flags = Fling_30
+Description = A booster pack for Triple Triad game. Contains 5 random cards.
+#-------------------------------
+[BOOSTERPACK_LABORATORY]
+Name = Booster Pack Laboratory
+NamePlural = Booster Packs Laboratory
+Pocket = 6
+Price = 20000
+FieldUse = Direct
+Flags = Fling_30
+Description = A booster pack for Triple Triad game. Contains 5 random cards.
+#-------------------------------
