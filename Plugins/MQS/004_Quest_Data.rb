@@ -128,11 +128,36 @@ module QuestModule
   TCGInitiation = {
     :ID => "9",
     :Name => "Pokémon Cards",
-    :QuestGiver => "TCG Fan Pedro",
-    :Stage1 => "Open the Booster Pack",
+    :QuestGiver => "TCG Fan Jack",
+    :Stage1 => "Open the Booster Pack.",
+    :Stage2 => "Win the TCG duel.",
     :Location1 => "Violet City Mart",
+    :Location2 => "Violet City Mart",
     :RewardString => "A nice Pokémon Card",
-    :QuestDescription => "This kid gave you a nice binder and a booster pack of Pokémon cards. He's really excited to see what you got! Open the pack and show him your new cards and learn how to play Pokémon TCG.",
+    :QuestDescription => "This guy gave you a nice binder and a booster pack of Pokémon cards. He's really excited to see what you got! Open the pack and show him your new cards and learn how to play Pokémon TCG.",
+  }
+
+  TCGLeague = {
+    :ID => "10",
+    :Name => "Pokémon Card Clubs Challenge",
+    :QuestGiver => "TCG Fan Jack",
+    :Stage1 => "Defeat the Grass Club.",
+    :Stage2 => "Defeat the Fighting Club.",
+    :Stage3 => "Defeat the Rock Club.",
+    :Stage4 => "Defeat the Water Club.",
+    :Stage5 => "Defeat the Lightning Club.",
+    :Stage6 => "Defeat the Psychic Club.",
+    :Stage7 => "Defeat the Fire Club.",
+    :Stage8 => "Defeat the Science Club.",
+    :Location1 => "??",
+    :Location2 => "??",
+    :Location3 => "??",
+    :Location4 => "??",
+    :Location5 => "??",
+    :Location6 => "??",
+    :Location7 => "??",
+    :Location8 => "??",
+    :QuestDescription => "Defeat all 8 Card Clubs in Johto. If you manage to defeat all the Club Masters, you may inherit the Legendary Pokémon Cards!",
   }
 
   

@@ -135,7 +135,7 @@ class ReceiveCardScene
     end
     pbGiveTriadCard(@card, @quantity)
     speciesname =  TriadCard.new(@card).name
-    pbMessage(_INTL("\\You obtained a \\c[1] {1} card!\\wtnp[30]", speciesname))
+    pbMessage(_INTL("You obtained a\\c[1] {1}\\c[0] card!\\wtnp[30]", speciesname))
     pbMessage(_INTL("You put the {1} Card in your Binder.", speciesname))
     loop do
       break

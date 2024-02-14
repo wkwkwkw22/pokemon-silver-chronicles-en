@@ -21,11 +21,11 @@ PluginManager.register({
 #-------------------------------------------------------------------------------
 GameData::TerrainTag.register({
   :id => :StairLeft,
-  :id_number => 17,
+  :id_number => 18,
 })
 GameData::TerrainTag.register({
   :id => :StairRight,
-  :id_number => 18,
+  :id_number => 19,
 })
 #-------------------------------------------------------------------------------
 # Existing Class Extensions

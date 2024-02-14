@@ -14,7 +14,7 @@ module CustomStairs
   DIRECTION_UP = 8 # This is the direction code RPG Maker uses
   ANIMATION_SPEED = 2
 
-  def self.transferUp(map, x, y)
+  def self.transferUp(map, x, y, shortStair = false)
     # This event just activates if the user is facing up or down
     return if $game_player.direction != DIRECTION_DOWN && $game_player.direction != DIRECTION_UP
     # Although this pokemon movement seems unnecessary, it actually
@@ -24,11 +24,23 @@ module CustomStairs
 
     if $game_player.direction == DIRECTION_DOWN
       $game_switches[STAIRCASE_UP_FROM_BEHIND] = true
-      pbMoveRoute($game_player,
-                  [PBMoveRoute::ThroughOn,
-                  PBMoveRoute::ChangeSpeed, ANIMATION_SPEED,
-                  PBMoveRoute::ChangeFreq, ANIMATION_SPEED,
-                  PBMoveRoute::Backward])
+      $game_map.refresh
+      if shortStair
+        pbMoveRoute($game_player,
+                    [PBMoveRoute::ThroughOn,
+                    PBMoveRoute::Down,
+                    PBMoveRoute::ThroughOff,
+                    PBMoveRoute::ChangeSpeed, ANIMATION_SPEED,
+                    PBMoveRoute::ChangeFreq, ANIMATION_SPEED,
+                    PBMoveRoute::Backward])
+      else 
+        pbMoveRoute($game_player,
+                    [PBMoveRoute::ThroughOn,
+                    PBMoveRoute::ChangeSpeed, ANIMATION_SPEED,
+                    PBMoveRoute::ChangeFreq, ANIMATION_SPEED,
+                    PBMoveRoute::Backward])
+      end  
+     
       pbWait(Graphics.frame_rate/ANIMATION_SPEED)
     else
       pbMoveRoute($game_player,
@@ -55,7 +67,17 @@ module CustomStairs
     FollowingPkmn.toggle_off(false)
     transferPlayer(map, x, y, DIRECTION_UP)
 
-    pbMoveRoute($game_player,
+    if(shortStair)
+      pbMoveRoute($game_player,
+      [
+        PBMoveRoute::ChangeSpeed, ANIMATION_SPEED,
+        PBMoveRoute::ChangeFreq, ANIMATION_SPEED,
+        PBMoveRoute::Up,
+        PBMoveRoute::ChangeSpeed, 3,
+        PBMoveRoute::ChangeFreq, 3,
+      ])
+    else
+      pbMoveRoute($game_player,
                 [
                   PBMoveRoute::ChangeSpeed, ANIMATION_SPEED,
                   PBMoveRoute::ChangeFreq, ANIMATION_SPEED,
@@ -64,6 +86,9 @@ module CustomStairs
                   PBMoveRoute::ChangeFreq, 3,
                   PBMoveRoute::Up
                 ])
+    end  
+
+    
 
     pbWait(Graphics.frame_rate)
     Followers.put_followers_on_player
@@ -74,7 +99,7 @@ module CustomStairs
 
 
 
-  def self.transferDown(map, x, y)
+  def self.transferDown(map, x, y, shortStair = false)
     # This event just activates if the user is facing up or down
     return if $game_player.direction != DIRECTION_DOWN && $game_player.direction != DIRECTION_UP
     # Although this pokemon movement seems unnecessary, it actually
@@ -91,6 +116,7 @@ module CustomStairs
                 PBMoveRoute::ChangeFreq, ANIMATION_SPEED,
                 PBMoveRoute::Backward,
                 PBMoveRoute::ThroughOn])
+                
 
     pbWait(Graphics.frame_rate/ANIMATION_SPEED)
     
