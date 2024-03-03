@@ -185,6 +185,7 @@ Environment = Cave
 Name = Azalea Town - Gym
 MapPosition = 0,14,15
 Environment = Grass
+Flags = PowerSpot
 #-------------------------------
 [049]   # Azalea Town - Gate
 Name = Azalea Town - Gate
@@ -1549,6 +1550,6 @@ Name = Observatório
 Outdoor = true
 MapPosition = 2,18,5
 #-------------------------------
-[857]
+[857]   # Regiao Kalos
 Name = Ice Path Copy
 Outdoor = false

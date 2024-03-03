@@ -11,11 +11,7 @@ Dialog lines to use on TCG:
 
 
 
-You should duel with many different people. Why don't you go to one of the Card Clubs. There are many people playing at the clubs.
-Collect new cards and try building a new deck!
 
-The 8 Club Masters each own a Master Medal.
-The different clubs use cards that are specific to that Club.
 
 Are you also hoping to inherit the Legendary Pokémon Cards?\nIf you want the Legendary Cards, you must defeat the Grand Masters.
 To duel the Grand Masters, you must first get the Master Medals.

@@ -160,6 +160,24 @@ module QuestModule
     :QuestDescription => "Defeat all 8 Card Clubs in Johto. If you manage to defeat all the Club Masters, you may inherit the Legendary Pokémon Cards!",
   }
 
+  SlowpokeWell = {
+    :ID => "11",
+    :Name => "Slowpoke Rescue",
+    :QuestGiver => "Kurt",
+    :Stage1 => "Check the Slowpoke Well.",
+    :Location1 => "Slowpoke Well",
+    :QuestDescription => "Team Rocket is cutting off SlowpokeTails for sale. Help Kurt to stop them!",
+  }
+
+  FarfetchRescue = {
+    :ID => "12",
+    :Name => "Lazy Farfetch'd",
+    :QuestGiver => "Charcoal Maker",
+    :Stage1 => "Find the Farfetch'd.",
+    :Location1 => "Ilex Forest",
+    :QuestDescription => "One of the FARFETCH'D that cut trees for charcoal took off in the forest. Bring it back to the Charcoal Maker Apprentice.",
+  }
+
   
   # Here's an extension of the above that includes multiple stages
   # Quest2 = {

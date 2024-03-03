@@ -134,10 +134,10 @@ class PokemonEggHatch_Scene
   end
 
   def pbCustomEventsAfterHatch(pokemon)
-    # After Professor Elm Togepi hatches, set switch 715 to true
+    # After Professor Elm Togepi hatches, set switch 716 to true
     # This switch is used on Common Event 059 to trigger a custom call from Professor Elm
     if(pokemon.obtain_text == "Professor Elm" && pokemon.species == :TOGEPI)
-      $game_switches[715] = true
+      $game_switches[716] = true
     end
   end  
 
